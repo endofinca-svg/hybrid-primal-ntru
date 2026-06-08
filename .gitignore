@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+.venv/
+venv/
+env/
+
+.DS_Store
+
+*.log
+*.tmp
+
+# large archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# optional experiment outputs
+# 如果你想上传 txt/图片结果，就不要忽略下面这些
+# *.txt
+# *.png
+# *.pdf

@@ -1,0 +1,384 @@
+
+==============================
+BAT-512: BAT paper key-recovery model
+==============================
+n          = 512
+d approx   = 1024
+paper beta = 475
+classical  = 2^148.70
+
+==============================
+BAT-1024: BAT paper key-recovery model
+==============================
+n          = 1024
+d approx   = 2048
+paper beta = 933
+classical  = 2^283.44
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = MATZOV
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^162.7, red: ≈2^162.7, δ: 1.003525, β: 476, d: 881, tag: usvp
+bdd                  :: rop: ≈2^158.0, red: ≈2^156.6, svp: ≈2^157.4, β: 454, η: 488, d: 873, tag: bdd
+bdd_hybrid           :: rop: ≈2^158.0, red: ≈2^156.7, svp: ≈2^157.4, β: 454, η: 488, ζ: 0, |S|: 1, d: 884, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^248.1, red: ≈2^247.4, svp: ≈2^246.7, β: 473, η: 2, ζ: 214, |S|: ≈2^282.6, d: 683, prob: ≈2^-84.3, ↻: ≈2^86.5, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^158.03
+
+[all finite attacks]
+usvp                 :: rop = 2^162.68, beta=476, d=881, delta=1.00352503864036
+bdd                  :: rop = 2^158.03, beta=454, d=873
+bdd_hybrid           :: rop = 2^158.05, beta=454, d=884
+bdd_mitm_hybrid      :: rop = 2^248.10, beta=473, d=683
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = MATZOV
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^162.1, red: ≈2^162.1, δ: 1.003484, β: 484, d: 541, tag: usvp
+bdd                  :: rop: ≈2^155.0, red: ≈2^153.6, svp: ≈2^154.3, β: 443, η: 477, d: 870, tag: bdd
+bdd_hybrid           :: rop: ≈2^155.0, red: ≈2^153.6, svp: ≈2^154.3, β: 443, η: 477, ζ: 0, |S|: 1, d: 877, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^250.9, red: ≈2^250.2, svp: ≈2^249.5, β: 481, η: 2, ζ: 210, |S|: ≈2^287.1, d: 692, prob: ≈2^-84.9, ↻: ≈2^87.1, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^154.98
+
+[all finite attacks]
+usvp                 :: rop = 2^162.08, beta=484, d=541, delta=1.00348363754419
+bdd                  :: rop = 2^154.98, beta=443, d=870
+bdd_hybrid           :: rop = 2^154.99, beta=443, d=877
+bdd_mitm_hybrid      :: rop = 2^250.91, beta=481, d=692
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = BDGL16
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^168.2, red: ≈2^168.2, δ: 1.003525, β: 476, d: 881, tag: usvp
+bdd                  :: rop: ≈2^161.0, red: ≈2^159.4, svp: ≈2^160.4, β: 446, η: 493, d: 864, tag: bdd
+bdd_hybrid           :: rop: ≈2^161.0, red: ≈2^159.4, svp: ≈2^160.4, β: 446, η: 493, ζ: 0, |S|: 1, d: 879, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^250.5, red: ≈2^249.7, svp: ≈2^249.2, β: 472, η: 2, ζ: 216, |S|: ≈2^294.6, d: 680, prob: ≈2^-80.9, ↻: ≈2^83.1, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^160.95
+
+[all finite attacks]
+usvp                 :: rop = 2^168.17, beta=476, d=881, delta=1.00352503864036
+bdd                  :: rop = 2^160.95, beta=446, d=864
+bdd_hybrid           :: rop = 2^160.96, beta=446, d=879
+bdd_mitm_hybrid      :: rop = 2^250.48, beta=472, d=680
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = BDGL16
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^169.8, red: ≈2^169.8, δ: 1.003484, β: 484, d: 541, tag: usvp
+bdd                  :: rop: ≈2^157.6, red: ≈2^156.2, svp: ≈2^156.9, β: 435, η: 481, d: 866, tag: bdd
+bdd_hybrid           :: rop: ≈2^157.6, red: ≈2^156.2, svp: ≈2^156.9, β: 435, η: 481, ζ: 0, |S|: 1, d: 871, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^253.6, red: ≈2^252.7, svp: ≈2^252.4, β: 479, η: 2, ζ: 212, |S|: ≈2^299.0, d: 689, prob: ≈2^-81.8, ↻: ≈2^84.0, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^157.55
+
+[all finite attacks]
+usvp                 :: rop = 2^169.81, beta=484, d=541, delta=1.00348363754419
+bdd                  :: rop = 2^157.55, beta=435, d=866
+bdd_hybrid           :: rop = 2^157.56, beta=435, d=871
+bdd_mitm_hybrid      :: rop = 2^253.55, beta=479, d=689
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = CoreSVP
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^139.0, red: ≈2^139.0, δ: 1.003525, β: 476, d: 881, tag: usvp
+bdd                  :: rop: ≈2^139.7, red: ≈2^138.7, svp: ≈2^138.7, β: 475, η: 475, d: 884, tag: bdd
+bdd_hybrid           :: rop: ≈2^139.7, red: ≈2^138.7, svp: ≈2^138.7, β: 475, η: 475, ζ: 0, |S|: 1, d: 898, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^239.9, red: ≈2^239.0, svp: ≈2^238.7, β: 475, η: 2, ζ: 204, |S|: ≈2^238.9, d: 694, prob: ≈2^-98.1, ↻: ≈2^100.3, tag: hybrid
+
+[best]
+best attack = usvp
+best rop    = 2^138.99
+
+[all finite attacks]
+usvp                 :: rop = 2^138.99, beta=476, d=881, delta=1.00352503864036
+bdd                  :: rop = 2^139.70, beta=475, d=884
+bdd_hybrid           :: rop = 2^139.70, beta=475, d=898
+bdd_mitm_hybrid      :: rop = 2^239.86, beta=475, d=694
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = CoreSVP
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^141.3, red: ≈2^141.3, δ: 1.003484, β: 484, d: 543, tag: usvp
+bdd                  :: rop: ≈2^136.8, red: ≈2^135.5, svp: ≈2^136.1, β: 464, η: 466, d: 886, tag: bdd
+bdd_hybrid           :: rop: ≈2^136.8, red: ≈2^135.5, svp: ≈2^136.1, β: 464, η: 466, ζ: 0, |S|: 1, d: 891, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^242.0, red: ≈2^241.2, svp: ≈2^240.8, β: 483, η: 2, ζ: 198, |S|: ≈2^243.3, d: 706, prob: ≈2^-98.0, ↻: ≈2^100.2, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^136.81
+
+[all finite attacks]
+usvp                 :: rop = 2^141.33, beta=484, d=543, delta=1.00348363754419
+bdd                  :: rop = 2^136.81, beta=464, d=886
+bdd_hybrid           :: rop = 2^136.81, beta=464, d=891
+bdd_mitm_hybrid      :: rop = 2^242.04, beta=483, d=706
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = BATPaperClassical
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^148.8, red: ≈2^148.8, δ: 1.003525, β: 476, d: 881, tag: usvp
+bdd                  :: rop: ≈2^148.9, red: ≈2^147.0, svp: ≈2^148.5, β: 470, η: 478, d: 886, tag: bdd
+bdd_hybrid           :: rop: ≈2^148.9, red: ≈2^147.0, svp: ≈2^148.5, β: 470, η: 478, ζ: 0, |S|: 1, d: 895, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^242.9, red: ≈2^242.1, svp: ≈2^241.7, β: 475, η: 2, ζ: 208, |S|: ≈2^257.7, d: 690, prob: ≈2^-91.8, ↻: ≈2^94.0, tag: hybrid
+
+[best]
+best attack = usvp
+best rop    = 2^148.77
+
+[all finite attacks]
+usvp                 :: rop = 2^148.77, beta=476, d=881, delta=1.00352503864036
+bdd                  :: rop = 2^148.93, beta=470, d=886
+bdd_hybrid           :: rop = 2^148.93, beta=470, d=895
+bdd_mitm_hybrid      :: rop = 2^242.94, beta=475, d=690
+
+==============================
+scheme      = BAT-512
+attack      = key recovery
+n, q        = 512, 257
+sigma_f     = 0.596000000000000
+cost model  = BATPaperClassical
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^150.4, red: ≈2^150.4, δ: 1.003484, β: 484, d: 541, tag: usvp
+bdd                  :: rop: ≈2^146.0, red: ≈2^144.1, svp: ≈2^145.5, β: 460, η: 468, d: 885, tag: bdd
+bdd_hybrid           :: rop: ≈2^146.0, red: ≈2^144.1, svp: ≈2^145.5, β: 460, η: 468, ζ: 0, |S|: 1, d: 888, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^245.4, red: ≈2^244.6, svp: ≈2^244.3, β: 483, η: 2, ζ: 204, |S|: ≈2^262.5, d: 700, prob: ≈2^-91.9, ↻: ≈2^94.1, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^145.99
+
+[all finite attacks]
+usvp                 :: rop = 2^150.41, beta=484, d=541, delta=1.00348363754419
+bdd                  :: rop = 2^145.99, beta=460, d=885
+bdd_hybrid           :: rop = 2^145.99, beta=460, d=888
+bdd_mitm_hybrid      :: rop = 2^245.44, beta=483, d=700
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = MATZOV
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^291.6, red: ≈2^291.6, δ: 1.002151, β: 934, d: 1729, tag: usvp
+bdd                  :: rop: ≈2^286.4, red: ≈2^284.7, svp: ≈2^285.9, β: 909, η: 948, d: 1752, tag: bdd
+bdd_hybrid           :: rop: ≈2^286.4, red: ≈2^284.7, svp: ≈2^285.9, β: 909, η: 948, ζ: 0, |S|: 1, d: 1762, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^501.9, red: ≈2^501.2, svp: ≈2^500.5, β: 933, η: 2, ζ: 386, |S|: ≈2^537.8, d: 1393, prob: ≈2^-208.5, ↻: ≈2^210.7, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^286.40
+
+[all finite attacks]
+usvp                 :: rop = 2^291.59, beta=934, d=1729, delta=1.00215137185802
+bdd                  :: rop = 2^286.40, beta=909, d=1752
+bdd_hybrid           :: rop = 2^286.40, beta=909, d=1762
+bdd_mitm_hybrid      :: rop = 2^501.93, beta=933, d=1393
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = MATZOV
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^294.2, red: ≈2^294.2, δ: 1.002121, β: 952, d: 1097, tag: usvp
+bdd                  :: rop: ≈2^279.7, red: ≈2^278.0, svp: ≈2^279.2, β: 885, η: 924, d: 1740, tag: bdd
+bdd_hybrid           :: rop: ≈2^279.7, red: ≈2^278.0, svp: ≈2^279.2, β: 885, η: 924, ζ: 0, |S|: 1, d: 1744, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^502.3, red: ≈2^501.7, svp: ≈2^500.7, β: 951, η: 2, ζ: 379, |S|: ≈2^547.5, d: 1413, prob: ≈2^-203.9, ↻: ≈2^206.1, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^279.68
+
+[all finite attacks]
+usvp                 :: rop = 2^294.18, beta=952, d=1097, delta=1.00212059164820
+bdd                  :: rop = 2^279.68, beta=885, d=1740
+bdd_hybrid           :: rop = 2^279.68, beta=885, d=1744
+bdd_mitm_hybrid      :: rop = 2^502.27, beta=951, d=1413
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = BDGL16
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^302.9, red: ≈2^302.9, δ: 1.002151, β: 934, d: 1729, tag: usvp
+bdd                  :: rop: ≈2^295.1, red: ≈2^293.8, svp: ≈2^294.4, β: 903, η: 952, d: 1751, tag: bdd
+bdd_hybrid           :: rop: ≈2^295.1, red: ≈2^293.9, svp: ≈2^294.4, β: 903, η: 952, ζ: 0, |S|: 1, d: 1757, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^504.9, red: ≈2^504.1, svp: ≈2^503.8, β: 933, η: 2, ζ: 389, |S|: ≈2^562.3, d: 1390, prob: ≈2^-199.6, ↻: ≈2^201.8, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^295.14
+
+[all finite attacks]
+usvp                 :: rop = 2^302.88, beta=934, d=1729, delta=1.00215137185802
+bdd                  :: rop = 2^295.14, beta=903, d=1751
+bdd_hybrid           :: rop = 2^295.14, beta=903, d=1757
+bdd_mitm_hybrid      :: rop = 2^504.93, beta=933, d=1390
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = BDGL16
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^307.5, red: ≈2^307.5, δ: 1.002121, β: 952, d: 1097, tag: usvp
+bdd                  :: rop: ≈2^288.0, red: ≈2^286.5, svp: ≈2^287.4, β: 878, η: 928, d: 1734, tag: bdd
+bdd_hybrid           :: rop: ≈2^288.0, red: ≈2^286.5, svp: ≈2^287.4, β: 878, η: 928, ζ: 0, |S|: 1, d: 1739, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^505.9, red: ≈2^505.2, svp: ≈2^504.4, β: 951, η: 2, ζ: 382, |S|: ≈2^571.6, d: 1410, prob: ≈2^-195.5, ↻: ≈2^197.7, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^288.02
+
+[all finite attacks]
+usvp                 :: rop = 2^307.48, beta=952, d=1097, delta=1.00212059164820
+bdd                  :: rop = 2^288.02, beta=878, d=1734
+bdd_hybrid           :: rop = 2^288.02, beta=878, d=1739
+bdd_mitm_hybrid      :: rop = 2^505.89, beta=951, d=1410
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = CoreSVP
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^272.7, red: ≈2^272.7, δ: 1.002151, β: 934, d: 1729, tag: usvp
+bdd                  :: rop: ≈2^273.2, red: ≈2^271.9, svp: ≈2^272.4, β: 931, η: 933, d: 1776, tag: bdd
+bdd_hybrid           :: rop: ≈2^273.2, red: ≈2^271.9, svp: ≈2^272.4, β: 931, η: 933, ζ: 0, |S|: 1, d: 1778, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^497.5, red: ≈2^496.6, svp: ≈2^496.5, β: 933, η: 2, ζ: 368, |S|: ≈2^502.8, d: 1411, prob: ≈2^-221.9, ↻: ≈2^224.1, tag: hybrid
+
+[best]
+best attack = usvp
+best rop    = 2^272.73
+
+[all finite attacks]
+usvp                 :: rop = 2^272.73, beta=934, d=1729, delta=1.00215137185802
+bdd                  :: rop = 2^273.17, beta=931, d=1776
+bdd_hybrid           :: rop = 2^273.17, beta=931, d=1778
+bdd_mitm_hybrid      :: rop = 2^497.51, beta=933, d=1411
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = CoreSVP
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^278.0, red: ≈2^278.0, δ: 1.002121, β: 952, d: 1097, tag: usvp
+bdd                  :: rop: ≈2^266.6, red: ≈2^265.1, svp: ≈2^266.0, β: 908, η: 911, d: 1760, tag: bdd
+bdd_hybrid           :: rop: ≈2^266.6, red: ≈2^265.1, svp: ≈2^266.0, β: 908, η: 911, ζ: 0, |S|: 1, d: 1761, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^497.6, red: ≈2^497.1, svp: ≈2^495.6, β: 951, η: 2, ζ: 374, |S|: ≈2^510.5, d: 1418, prob: ≈2^-217.2, ↻: ≈2^219.4, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^266.64
+
+[all finite attacks]
+usvp                 :: rop = 2^277.98, beta=952, d=1097, delta=1.00212059164820
+bdd                  :: rop = 2^266.64, beta=908, d=1760
+bdd_hybrid           :: rop = 2^266.64, beta=908, d=1761
+bdd_mitm_hybrid      :: rop = 2^497.56, beta=951, d=1418
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = BATPaperClassical
+shape model = gsa
+==============================
+usvp                 :: rop: ≈2^283.5, red: ≈2^283.5, δ: 1.002151, β: 934, d: 1729, tag: usvp
+bdd                  :: rop: ≈2^283.5, red: ≈2^282.3, svp: ≈2^282.6, β: 930, η: 934, d: 1753, tag: bdd
+bdd_hybrid           :: rop: ≈2^283.5, red: ≈2^282.4, svp: ≈2^282.6, β: 930, η: 934, ζ: 0, |S|: 1, d: 1777, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^500.8, red: ≈2^500.5, svp: ≈2^498.5, β: 933, η: 2, ζ: 386, |S|: ≈2^519.9, d: 1393, prob: ≈2^-215.4, ↻: ≈2^217.6, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^283.47
+
+[all finite attacks]
+usvp                 :: rop = 2^283.48, beta=934, d=1729, delta=1.00215137185802
+bdd                  :: rop = 2^283.47, beta=930, d=1753
+bdd_hybrid           :: rop = 2^283.48, beta=930, d=1777
+bdd_mitm_hybrid      :: rop = 2^500.81, beta=933, d=1393
+
+==============================
+scheme      = BAT-1024
+attack      = key recovery
+n, q        = 1024, 769
+sigma_f     = 0.659000000000000
+cost model  = BATPaperClassical
+shape model = zgsa
+==============================
+usvp                 :: rop: ≈2^288.1, red: ≈2^288.1, δ: 1.002121, β: 952, d: 1097, tag: usvp
+bdd                  :: rop: ≈2^276.9, red: ≈2^275.9, svp: ≈2^275.8, β: 908, η: 911, d: 1760, tag: bdd
+bdd_hybrid           :: rop: ≈2^276.9, red: ≈2^275.9, svp: ≈2^275.8, β: 908, η: 911, ζ: 0, |S|: 1, d: 1761, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^499.7, red: ≈2^498.8, svp: ≈2^498.7, β: 951, η: 2, ζ: 374, |S|: ≈2^534.2, d: 1418, prob: ≈2^-208.4, ↻: ≈2^210.6, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^276.88
+
+[all finite attacks]
+usvp                 :: rop = 2^288.08, beta=952, d=1097, delta=1.00212059164820
+bdd                  :: rop = 2^276.88, beta=908, d=1760
+bdd_hybrid           :: rop = 2^276.88, beta=908, d=1761
+bdd_mitm_hybrid      :: rop = 2^499.73, beta=951, d=1418

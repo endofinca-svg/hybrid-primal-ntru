@@ -1,0 +1,42 @@
+[pattern] pattern_hw not provided; use pattern_hw=170 for secret distribution 'gaussian'.
+running the estimator with probabilistic_bkz = False
+use_pattern = True, pattern_hw = 170
+use_scaling = False, xi_manual = None
+shape_model = gsa, cost_model = MATZOV
+n     k_pat    kappa    BKZ only    bit sec.       Hybrid    bit sec.  
+[kappa-search] shape=gsa, cost=MATZOV, k_pat=  4, best_kappa= 37, n_pat= 508, n_id= 471, d= 983, beta=444, log2M=47.5375, penalty_pat=-0.0000, P_pat=1.0000e+00, xi=1.000000, ||v||=18.6863, lambda1_GH=137.1005, red=154.1957, md=151.7632, cost=154.4409
+[kappa-search] shape=gsa, cost=MATZOV, k_pat=  5, best_kappa= 37, n_pat= 507, n_id= 470, d= 982, beta=443, log2M=47.5375, penalty_pat=-0.0000, P_pat=1.0000e+00, xi=1.000000, ||v||=18.6768, lambda1_GH=137.4352, red=153.9177, md=151.5285, cost=154.1697
+[kappa-search] shape=gsa, cost=MATZOV, k_pat=  6, best_kappa= 37, n_pat= 506, n_id= 469, d= 981, beta=442, log2M=47.5375, penalty_pat=-0.0000, P_pat=1.0000e+00, xi=1.000000, ||v||=18.6673, lambda1_GH=137.7714, red=153.6397, md=151.2937, cost=153.8987
+[kappa-search] shape=gsa, cost=MATZOV, k_pat=  7, best_kappa= 37, n_pat= 505, n_id= 468, d= 980, beta=441, log2M=47.5375, penalty_pat=0.0000, P_pat=1.0000e+00, xi=1.000000, ||v||=18.6578, lambda1_GH=138.1092, red=153.3617, md=151.0590, cost=153.6279
+[kappa-search] shape=gsa, cost=MATZOV, k_pat=  8, best_kappa= 37, n_pat= 504, n_id= 467, d= 979, beta=440, log2M=47.5375, penalty_pat=0.0000, P_pat=1.0000e+00, xi=1.000000, ||v||=18.6482, lambda1_GH=138.4486, red=153.0837, md=150.8242, cost=153.3573
+[kappa-search] shape=gsa, cost=MATZOV, k_pat=  9, best_kappa= 37, n_pat= 503, n_id= 466, d= 978, beta=439, log2M=47.5375, penalty_pat=0.0000, P_pat=1.0000e+00, xi=1.000000, ||v||=18.6387, lambda1_GH=138.7897, red=152.8057, md=150.5895, cost=153.0869
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 10, best_kappa= 37, n_pat= 502, n_id= 465, d= 977, beta=438, log2M=47.5375, penalty_pat=0.0002, P_pat=9.9984e-01, xi=1.000000, ||v||=18.6292, lambda1_GH=139.1323, red=152.5277, md=150.3547, cost=152.8169
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 11, best_kappa= 37, n_pat= 501, n_id= 464, d= 976, beta=437, log2M=47.5375, penalty_pat=0.0046, P_pat=9.9685e-01, xi=1.000000, ||v||=18.6196, lambda1_GH=139.4765, red=152.2498, md=150.1200, cost=152.5512
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 12, best_kappa= 37, n_pat= 500, n_id= 463, d= 975, beta=436, log2M=47.5375, penalty_pat=0.0327, P_pat=9.7759e-01, xi=1.000000, ||v||=18.6101, lambda1_GH=139.8224, red=151.9718, md=149.8853, cost=152.3095
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 13, best_kappa= 37, n_pat= 499, n_id= 462, d= 974, beta=435, log2M=47.5375, penalty_pat=0.1231, P_pat=9.1822e-01, xi=1.000000, ||v||=18.6005, lambda1_GH=140.1699, red=151.6938, md=149.6505, cost=152.1303
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 14, best_kappa= 37, n_pat= 498, n_id= 461, d= 973, beta=434, log2M=47.5375, penalty_pat=0.3079, P_pat=8.0783e-01, xi=1.000000, ||v||=18.5910, lambda1_GH=140.5191, red=151.4159, md=149.4158, cost=152.0457
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 15, best_kappa= 37, n_pat= 497, n_id= 460, d= 972, beta=433, log2M=47.5375, penalty_pat=0.5943, P_pat=6.6235e-01, xi=1.000000, ||v||=18.5814, lambda1_GH=140.8699, red=151.1380, md=149.1810, cost=152.0629
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 16, best_kappa= 37, n_pat= 496, n_id= 459, d= 971, beta=432, log2M=47.5375, penalty_pat=0.9704, P_pat=5.1037e-01, xi=1.000000, ||v||=18.5719, lambda1_GH=141.2225, red=150.8600, md=148.9463, cost=152.1700
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 17, best_kappa= 37, n_pat= 495, n_id= 458, d= 970, beta=431, log2M=47.5375, penalty_pat=1.4169, P_pat=3.7452e-01, xi=1.000000, ||v||=18.5623, lambda1_GH=141.5767, red=150.5821, md=148.7115, cost=152.3478
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 18, best_kappa= 37, n_pat= 494, n_id= 457, d= 969, beta=430, log2M=47.5375, penalty_pat=1.9153, P_pat=2.6511e-01, xi=1.000000, ||v||=18.5527, lambda1_GH=141.9326, red=150.3042, md=148.4768, cost=152.5777
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 19, best_kappa= 37, n_pat= 493, n_id= 456, d= 968, beta=429, log2M=47.5375, penalty_pat=2.4508, P_pat=1.8291e-01, xi=1.000000, ||v||=18.5432, lambda1_GH=142.2902, red=150.0263, md=148.2421, cost=152.8448
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 20, best_kappa= 37, n_pat= 492, n_id= 455, d= 967, beta=428, log2M=47.5375, penalty_pat=3.0121, P_pat=1.2396e-01, xi=1.000000, ||v||=18.5336, lambda1_GH=142.6495, red=149.7484, md=148.0073, cost=153.1380
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 21, best_kappa= 37, n_pat= 491, n_id= 454, d= 966, beta=427, log2M=47.5375, penalty_pat=3.5913, P_pat=8.2967e-02, xi=1.000000, ||v||=18.5240, lambda1_GH=143.0106, red=149.4705, md=147.7726, cost=153.4494
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 22, best_kappa= 37, n_pat= 490, n_id= 453, d= 965, beta=426, log2M=47.5375, penalty_pat=4.1831, P_pat=5.5049e-02, xi=1.000000, ||v||=18.5144, lambda1_GH=143.3734, red=149.1926, md=147.5378, cost=153.7736
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 23, best_kappa= 37, n_pat= 489, n_id= 452, d= 964, beta=425, log2M=47.5375, penalty_pat=4.7838, P_pat=3.6302e-02, xi=1.000000, ||v||=18.5048, lambda1_GH=143.7379, red=148.9147, md=147.3031, cost=154.1070
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 24, best_kappa= 37, n_pat= 488, n_id= 451, d= 963, beta=424, log2M=47.5375, penalty_pat=5.3909, P_pat=2.3833e-02, xi=1.000000, ||v||=18.4952, lambda1_GH=144.1043, red=148.6369, md=147.0683, cost=154.4469
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 25, best_kappa= 36, n_pat= 487, n_id= 451, d= 963, beta=424, log2M=46.2527, penalty_pat=6.0027, P_pat=1.5596e-02, xi=1.000000, ||v||=18.4952, lambda1_GH=144.1043, red=148.6369, md=145.7836, cost=154.8265
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 26, best_kappa= 35, n_pat= 486, n_id= 451, d= 963, beta=424, log2M=44.9679, penalty_pat=6.6182, P_pat=1.0179e-02, xi=1.000000, ||v||=18.4952, lambda1_GH=144.1043, red=148.6369, md=144.4988, cost=155.3348
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 27, best_kappa= 37, n_pat= 485, n_id= 448, d= 960, beta=422, log2M=47.5375, penalty_pat=7.2367, P_pat=6.6305e-03, xi=1.000000, ||v||=18.4664, lambda1_GH=145.2139, red=148.0784, md=146.5989, cost=155.7572
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 28, best_kappa= 37, n_pat= 484, n_id= 447, d= 959, beta=421, log2M=47.5375, penalty_pat=7.8576, P_pat=4.3114e-03, xi=1.000000, ||v||=18.4568, lambda1_GH=145.5874, red=147.8006, md=146.3641, cost=156.1118
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 29, best_kappa= 37, n_pat= 483, n_id= 446, d= 958, beta=420, log2M=47.5375, penalty_pat=8.4808, P_pat=2.7992e-03, xi=1.000000, ||v||=18.4471, lambda1_GH=145.9628, red=147.5228, md=146.1294, cost=156.4689
+[kappa-search] shape=gsa, cost=MATZOV, k_pat= 30, best_kappa= 37, n_pat= 482, n_id= 445, d= 957, beta=419, log2M=47.5375, penalty_pat=9.1059, P_pat=1.8149e-03, xi=1.000000, ||v||=18.4375, lambda1_GH=146.3399, red=147.2449, md=145.8946, cost=156.8282
+[kpat-search] exhaustive over k_pat in [4,30], shape=gsa, cost=MATZOV, best_kpat=14, best_kappa=37, cost=152.0457
+512   14       37       484         165.32         434       152.05    
+baseline xi                = 1.000000000000
+baseline ||v||             = 19.072000000000
+baseline lambda1_GH        = 124.621216644049
+best pattern length k_pat  = 14
+best kappa                 = 37
+best xi                    = 1.000000000000
+P_pat(best k_pat)          = 8.078325024975e-1

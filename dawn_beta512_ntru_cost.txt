@@ -1,0 +1,120 @@
+
+==============================
+cost model  = MATZOV
+shape model = gsa
+==============================
+Algorithm functools.partial(<estimator.ntru_primal.PrimalDSD object at 0x722726ca7470>, red_cost_model=<estimator.reduction.MATZOV object at 0x722726c617c0>, red_shape_model='gsa') on NTRUParameters(n=512, q=257, Xs=T(p=32, m=32, n=512), Xe=T(p=64, m=64, n=512), m=512, tag='DAWN-beta-512 NTRU [MATZOV, gsa]', ntru_type='matrix') failed with Dense sublattice attack not supported for Xs != Xe
+usvp                 :: rop: ≈2^145.4, red: ≈2^145.4, δ: 1.003888, β: 414, d: 805, tag: usvp
+bdd                  :: rop: ≈2^141.1, red: ≈2^139.3, svp: ≈2^140.7, β: 392, η: 428, d: 786, tag: bdd
+bdd_hybrid           :: rop: ≈2^138.3, red: ≈2^137.5, svp: ≈2^137.1, β: 290, η: 263, ζ: 146, |S|: ≈2^15.4, d: 613, prob: ≈2^-24.6, ↻: ≈2^26.8, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^134.3, red: ≈2^133.3, svp: ≈2^133.3, β: 219, η: 2, ζ: 341, |S|: ≈2^145.7, d: 352, prob: ≈2^-41.3, ↻: ≈2^43.5, tag: hybrid
+
+[best]
+best attack = bdd_mitm_hybrid
+best rop    = 2^134.29
+
+[all attacks]
+usvp                 :: rop = 2^145.40
+bdd                  :: rop = 2^141.14
+bdd_hybrid           :: rop = 2^138.31
+bdd_mitm_hybrid      :: rop = 2^134.29
+
+==============================
+cost model  = MATZOV
+shape model = zgsa
+==============================
+Algorithm functools.partial(<estimator.ntru_primal.PrimalDSD object at 0x722726ca7470>, red_cost_model=<estimator.reduction.MATZOV object at 0x722726c617c0>, red_shape_model='zgsa') on NTRUParameters(n=512, q=257, Xs=T(p=32, m=32, n=512), Xe=T(p=64, m=64, n=512), m=512, tag='DAWN-beta-512 NTRU [MATZOV, zgsa]', ntru_type='matrix') failed with Dense sublattice attack not supported for Xs != Xe
+usvp                 :: rop: ≈2^149.1, red: ≈2^149.1, δ: 1.003774, β: 432, d: 593, tag: usvp
+bdd                  :: rop: ≈2^131.6, red: ≈2^130.1, svp: ≈2^131.0, β: 358, η: 393, d: 810, tag: bdd
+bdd_hybrid           :: rop: ≈2^131.6, red: ≈2^130.1, svp: ≈2^131.0, β: 358, η: 393, ζ: 0, |S|: 1, d: 814, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^134.2, red: ≈2^133.3, svp: ≈2^133.2, β: 235, η: 2, ζ: 335, |S|: ≈2^154.3, d: 374, prob: ≈2^-36.7, ↻: ≈2^38.9, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^131.57
+
+[all attacks]
+usvp                 :: rop = 2^149.12
+bdd                  :: rop = 2^131.57
+bdd_hybrid           :: rop = 2^131.58
+bdd_mitm_hybrid      :: rop = 2^134.23
+
+==============================
+cost model  = BDGL16
+shape model = gsa
+==============================
+Algorithm functools.partial(<estimator.ntru_primal.PrimalDSD object at 0x722726ca7470>, red_cost_model=<estimator.reduction.BDGL16 object at 0x722726c61730>, red_shape_model='gsa') on NTRUParameters(n=512, q=257, Xs=T(p=32, m=32, n=512), Xe=T(p=64, m=64, n=512), m=512, tag='DAWN-beta-512 NTRU [BDGL16, gsa]', ntru_type='matrix') failed with Dense sublattice attack not supported for Xs != Xe
+usvp                 :: rop: ≈2^149.9, red: ≈2^149.9, δ: 1.003888, β: 414, d: 805, tag: usvp
+bdd                  :: rop: ≈2^143.3, red: ≈2^142.3, svp: ≈2^142.3, β: 388, η: 431, d: 780, tag: bdd
+bdd_hybrid           :: rop: ≈2^138.8, red: ≈2^137.5, svp: ≈2^138.1, β: 267, η: 311, ζ: 128, |S|: 1, d: 611, prob: ≈2^-28.7, ↻: ≈2^30.9, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^134.5, red: ≈2^133.5, svp: ≈2^133.5, β: 220, η: 2, ζ: 340, |S|: ≈2^150.3, d: 354, prob: ≈2^-39.2, ↻: ≈2^41.4, tag: hybrid
+
+[best]
+best attack = bdd_mitm_hybrid
+best rop    = 2^134.52
+
+[all attacks]
+usvp                 :: rop = 2^149.94
+bdd                  :: rop = 2^143.28
+bdd_hybrid           :: rop = 2^138.81
+bdd_mitm_hybrid      :: rop = 2^134.52
+
+==============================
+cost model  = BDGL16
+shape model = zgsa
+==============================
+Algorithm functools.partial(<estimator.ntru_primal.PrimalDSD object at 0x722726ca7470>, red_cost_model=<estimator.reduction.BDGL16 object at 0x722726c61730>, red_shape_model='zgsa') on NTRUParameters(n=512, q=257, Xs=T(p=32, m=32, n=512), Xe=T(p=64, m=64, n=512), m=512, tag='DAWN-beta-512 NTRU [BDGL16, zgsa]', ntru_type='matrix') failed with Dense sublattice attack not supported for Xs != Xe
+usvp                 :: rop: ≈2^154.8, red: ≈2^154.8, δ: 1.003774, β: 432, d: 593, tag: usvp
+bdd                  :: rop: ≈2^133.0, red: ≈2^131.5, svp: ≈2^132.3, β: 351, η: 397, d: 801, tag: bdd
+bdd_hybrid           :: rop: ≈2^132.5, red: ≈2^130.7, svp: ≈2^132.0, β: 296, η: 343, ζ: 64, |S|: 1, d: 700, prob: ≈2^-13.2, ↻: ≈2^15.4, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^134.8, red: ≈2^133.8, svp: ≈2^133.8, β: 235, η: 2, ζ: 335, |S|: ≈2^158.9, d: 374, prob: ≈2^-35.1, ↻: ≈2^37.3, tag: hybrid
+
+[best]
+best attack = bdd_hybrid
+best rop    = 2^132.48
+
+[all attacks]
+usvp                 :: rop = 2^154.76
+bdd                  :: rop = 2^132.98
+bdd_hybrid           :: rop = 2^132.48
+bdd_mitm_hybrid      :: rop = 2^134.81
+
+==============================
+cost model  = CoreSVP
+shape model = gsa
+==============================
+Algorithm functools.partial(<estimator.ntru_primal.PrimalDSD object at 0x722726ca7470>, red_cost_model=<__main__.CoreSVP object at 0x722732187ad0>, red_shape_model='gsa') on NTRUParameters(n=512, q=257, Xs=T(p=32, m=32, n=512), Xe=T(p=64, m=64, n=512), m=512, tag='DAWN-beta-512 NTRU [CoreSVP, gsa]', ntru_type='matrix') failed with Dense sublattice attack not supported for Xs != Xe
+usvp                 :: rop: ≈2^120.9, red: ≈2^120.9, δ: 1.003888, β: 414, d: 805, tag: usvp
+bdd                  :: rop: ≈2^121.7, red: ≈2^120.0, svp: ≈2^121.2, β: 411, η: 415, d: 798, tag: bdd
+bdd_hybrid           :: rop: ≈2^116.4, red: ≈2^115.6, svp: ≈2^115.2, β: 292, η: 237, ζ: 160, |S|: ≈2^15.6, d: 601, prob: ≈2^-28.1, ↻: ≈2^30.3, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^133.5, red: ≈2^132.6, svp: ≈2^132.4, β: 220, η: 2, ζ: 325, |S|: ≈2^94.1, d: 369, prob: ≈2^-66.1, ↻: ≈2^68.3, tag: hybrid
+
+[best]
+best attack = bdd_hybrid
+best rop    = 2^116.41
+
+[all attacks]
+usvp                 :: rop = 2^120.89
+bdd                  :: rop = 2^121.71
+bdd_hybrid           :: rop = 2^116.41
+bdd_mitm_hybrid      :: rop = 2^133.49
+
+==============================
+cost model  = CoreSVP
+shape model = zgsa
+==============================
+Algorithm functools.partial(<estimator.ntru_primal.PrimalDSD object at 0x722726ca7470>, red_cost_model=<__main__.CoreSVP object at 0x722732187ad0>, red_shape_model='zgsa') on NTRUParameters(n=512, q=257, Xs=T(p=32, m=32, n=512), Xe=T(p=64, m=64, n=512), m=512, tag='DAWN-beta-512 NTRU [CoreSVP, zgsa]', ntru_type='matrix') failed with Dense sublattice attack not supported for Xs != Xe
+usvp                 :: rop: ≈2^126.1, red: ≈2^126.1, δ: 1.003774, β: 432, d: 593, tag: usvp
+bdd                  :: rop: ≈2^112.2, red: ≈2^110.7, svp: ≈2^111.5, β: 379, η: 382, d: 819, tag: bdd
+bdd_hybrid           :: rop: ≈2^111.6, red: ≈2^110.6, svp: ≈2^110.5, β: 286, η: 258, ζ: 132, |S|: 265, d: 623, prob: ≈2^-24.9, ↻: ≈2^27.1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^131.9, red: ≈2^131.0, svp: ≈2^130.9, β: 229, η: 2, ζ: 321, |S|: ≈2^99.2, d: 382, prob: ≈2^-61.9, ↻: ≈2^64.1, tag: hybrid
+
+[best]
+best attack = bdd_hybrid
+best rop    = 2^111.58
+
+[all attacks]
+usvp                 :: rop = 2^126.14
+bdd                  :: rop = 2^112.17
+bdd_hybrid           :: rop = 2^111.58
+bdd_mitm_hybrid      :: rop = 2^131.94

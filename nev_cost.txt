@@ -1,0 +1,300 @@
+
+============================================================
+scheme      = NEV-512 / NEV'-512 NTRU-SK
+n, q        = 512, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = MATZOV
+shape model = gsa
+paper SK    = 145 bits
+paper BKZ   = 426
+============================================================
+usvp                 :: rop: ≈2^149.1, red: ≈2^149.1, δ: 1.003811, β: 426, d: 934, tag: usvp
+bdd                  :: rop: ≈2^145.1, red: ≈2^144.1, svp: ≈2^144.0, β: 408, η: 440, d: 912, tag: bdd
+bdd_hybrid           :: rop: ≈2^145.1, red: ≈2^144.2, svp: ≈2^144.0, β: 408, η: 440, ζ: 0, |S|: 1, d: 932, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^207.8, red: ≈2^206.9, svp: ≈2^206.7, β: 425, η: 2, ζ: 180, |S|: ≈2^257.7, d: 765, prob: ≈2^-56.5, ↻: ≈2^58.7, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^145.05
+gap to paper= +0.05 bits
+
+[all attacks]
+usvp                 :: rop = 2^149.11, beta=426, d=934, delta=1.00381131730092
+bdd                  :: rop = 2^145.05, beta=408, d=912, eta=440
+bdd_hybrid           :: rop = 2^145.08, beta=408, d=932, eta=440
+bdd_mitm_hybrid      :: rop = 2^207.82, beta=425, d=765, eta=2
+
+============================================================
+scheme      = NEV-512 / NEV'-512 NTRU-SK
+n, q        = 512, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = MATZOV
+shape model = zgsa
+paper SK    = 145 bits
+paper BKZ   = 426
+============================================================
+usvp                 :: rop: ≈2^148.3, red: ≈2^148.3, δ: 1.003793, β: 429, d: 596, tag: usvp
+bdd                  :: rop: ≈2^143.4, red: ≈2^142.2, svp: ≈2^142.6, β: 401, η: 435, d: 921, tag: bdd
+bdd_hybrid           :: rop: ≈2^143.4, red: ≈2^142.2, svp: ≈2^142.6, β: 401, η: 435, ζ: 0, |S|: 1, d: 927, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^211.2, red: ≈2^210.2, svp: ≈2^210.2, β: 429, η: 2, ζ: 183, |S|: ≈2^260.2, d: 766, prob: ≈2^-58.7, ↻: ≈2^60.9, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^143.42
+gap to paper= -1.58 bits
+
+[all attacks]
+usvp                 :: rop = 2^148.34, beta=429, d=596, delta=1.00379266173102
+bdd                  :: rop = 2^143.42, beta=401, d=921, eta=435
+bdd_hybrid           :: rop = 2^143.43, beta=401, d=927, eta=435
+bdd_mitm_hybrid      :: rop = 2^211.19, beta=429, d=766, eta=2
+
+============================================================
+scheme      = NEV-512 / NEV'-512 NTRU-SK
+n, q        = 512, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = BDGL16
+shape model = gsa
+paper SK    = 145 bits
+paper BKZ   = 426
+============================================================
+usvp                 :: rop: ≈2^153.7, red: ≈2^153.7, δ: 1.003811, β: 426, d: 934, tag: usvp
+bdd                  :: rop: ≈2^147.5, red: ≈2^146.3, svp: ≈2^146.6, β: 401, η: 446, d: 903, tag: bdd
+bdd_hybrid           :: rop: ≈2^147.5, red: ≈2^146.3, svp: ≈2^146.6, β: 401, η: 446, ζ: 0, |S|: 1, d: 927, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^209.3, red: ≈2^208.4, svp: ≈2^208.3, β: 425, η: 2, ζ: 192, |S|: ≈2^267.6, d: 753, prob: ≈2^-53.1, ↻: ≈2^55.3, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^147.48
+gap to paper= +2.48 bits
+
+[all attacks]
+usvp                 :: rop = 2^153.66, beta=426, d=934, delta=1.00381131730092
+bdd                  :: rop = 2^147.48, beta=401, d=903, eta=446
+bdd_hybrid           :: rop = 2^147.50, beta=401, d=927, eta=446
+bdd_mitm_hybrid      :: rop = 2^209.33, beta=425, d=753, eta=2
+
+============================================================
+scheme      = NEV-512 / NEV'-512 NTRU-SK
+n, q        = 512, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = BDGL16
+shape model = zgsa
+paper SK    = 145 bits
+paper BKZ   = 426
+============================================================
+usvp                 :: rop: ≈2^153.9, red: ≈2^153.9, δ: 1.003793, β: 429, d: 596, tag: usvp
+bdd                  :: rop: ≈2^145.7, red: ≈2^144.6, svp: ≈2^144.9, β: 395, η: 440, d: 906, tag: bdd
+bdd_hybrid           :: rop: ≈2^145.6, red: ≈2^144.6, svp: ≈2^144.6, β: 395, η: 439, ζ: 0, |S|: 1, d: 922, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^212.4, red: ≈2^211.4, svp: ≈2^211.4, β: 429, η: 2, ζ: 187, |S|: ≈2^270.0, d: 762, prob: ≈2^-55.0, ↻: ≈2^57.2, tag: hybrid
+
+[best]
+best attack = bdd_hybrid
+best rop    = 2^145.59
+gap to paper= +0.59 bits
+
+[all attacks]
+usvp                 :: rop = 2^153.89, beta=429, d=596, delta=1.00379266173102
+bdd                  :: rop = 2^145.73, beta=395, d=906, eta=440
+bdd_hybrid           :: rop = 2^145.59, beta=395, d=922, eta=439
+bdd_mitm_hybrid      :: rop = 2^212.40, beta=429, d=762, eta=2
+
+============================================================
+scheme      = NEV-512 / NEV'-512 NTRU-SK
+n, q        = 512, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = CoreSVP
+shape model = gsa
+paper SK    = 145 bits
+paper BKZ   = 426
+============================================================
+usvp                 :: rop: ≈2^124.4, red: ≈2^124.4, δ: 1.003811, β: 426, d: 934, tag: usvp
+bdd                  :: rop: ≈2^125.1, red: ≈2^123.8, svp: ≈2^124.4, β: 424, η: 426, d: 940, tag: bdd
+bdd_hybrid           :: rop: ≈2^125.1, red: ≈2^123.8, svp: ≈2^124.4, β: 424, η: 426, ζ: 0, |S|: 1, d: 945, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^208.0, red: ≈2^207.1, svp: ≈2^206.9, β: 425, η: 2, ζ: 160, |S|: ≈2^209.3, d: 785, prob: ≈2^-80.8, ↻: ≈2^83.0, tag: hybrid
+
+[best]
+best attack = usvp
+best rop    = 2^124.39
+gap to paper= -20.61 bits
+
+[all attacks]
+usvp                 :: rop = 2^124.39, beta=426, d=934, delta=1.00381131730092
+bdd                  :: rop = 2^125.13, beta=424, d=940, eta=426
+bdd_hybrid           :: rop = 2^125.13, beta=424, d=945, eta=426
+bdd_mitm_hybrid      :: rop = 2^208.00, beta=425, d=785, eta=2
+
+============================================================
+scheme      = NEV-512 / NEV'-512 NTRU-SK
+n, q        = 512, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = CoreSVP
+shape model = zgsa
+paper SK    = 145 bits
+paper BKZ   = 426
+============================================================
+usvp                 :: rop: ≈2^125.3, red: ≈2^125.3, δ: 1.003793, β: 429, d: 596, tag: usvp
+bdd                  :: rop: ≈2^123.9, red: ≈2^122.3, svp: ≈2^123.2, β: 419, η: 422, d: 936, tag: bdd
+bdd_hybrid           :: rop: ≈2^123.9, red: ≈2^122.3, svp: ≈2^123.2, β: 419, η: 422, ζ: 0, |S|: 1, d: 941, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^209.6, red: ≈2^208.6, svp: ≈2^208.6, β: 429, η: 2, ζ: 159, |S|: ≈2^212.0, d: 790, prob: ≈2^-81.1, ↻: ≈2^83.3, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^123.85
+gap to paper= -21.15 bits
+
+[all attacks]
+usvp                 :: rop = 2^125.27, beta=429, d=596, delta=1.00379266173102
+bdd                  :: rop = 2^123.85, beta=419, d=936, eta=422
+bdd_hybrid           :: rop = 2^123.85, beta=419, d=941, eta=422
+bdd_mitm_hybrid      :: rop = 2^209.59, beta=429, d=790, eta=2
+
+============================================================
+scheme      = NEV-1024 / NEV'-1024 NTRU-SK
+n, q        = 1024, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = MATZOV
+shape model = gsa
+paper SK    = 292 bits
+paper BKZ   = 953
+============================================================
+usvp                 :: rop: ≈2^297.0, red: ≈2^297.0, δ: 1.002119, β: 953, d: 1771, tag: usvp
+bdd                  :: rop: ≈2^291.9, red: ≈2^290.8, svp: ≈2^290.9, β: 931, η: 966, d: 1757, tag: bdd
+bdd_hybrid           :: rop: ≈2^291.9, red: ≈2^290.8, svp: ≈2^290.9, β: 931, η: 966, ζ: 0, |S|: 1, d: 1778, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^432.4, red: ≈2^431.4, svp: ≈2^431.3, β: 951, η: 2, ζ: 400, |S|: ≈2^549.0, d: 1392, prob: ≈2^-133.7, ↻: ≈2^135.9, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^291.86
+gap to paper= -0.14 bits
+
+[all attacks]
+usvp                 :: rop = 2^296.95, beta=953, d=1771, delta=1.00211891028513
+bdd                  :: rop = 2^291.86, beta=931, d=1757, eta=966
+bdd_hybrid           :: rop = 2^291.88, beta=931, d=1778, eta=966
+bdd_mitm_hybrid      :: rop = 2^432.36, beta=951, d=1392, eta=2
+
+============================================================
+scheme      = NEV-1024 / NEV'-1024 NTRU-SK
+n, q        = 1024, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = MATZOV
+shape model = zgsa
+paper SK    = 292 bits
+paper BKZ   = 953
+============================================================
+usvp                 :: rop: ≈2^298.8, red: ≈2^298.8, δ: 1.002091, β: 970, d: 1079, tag: usvp
+bdd                  :: rop: ≈2^286.1, red: ≈2^284.4, svp: ≈2^285.6, β: 908, η: 947, d: 1745, tag: bdd
+bdd_hybrid           :: rop: ≈2^285.9, red: ≈2^284.4, svp: ≈2^285.3, β: 908, η: 946, ζ: 0, |S|: 1, d: 1761, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^433.5, red: ≈2^432.6, svp: ≈2^432.5, β: 969, η: 2, ζ: 396, |S|: ≈2^559.1, d: 1409, prob: ≈2^-129.8, ↻: ≈2^132.0, tag: hybrid
+
+[best]
+best attack = bdd_hybrid
+best rop    = 2^285.93
+gap to paper= -6.07 bits
+
+[all attacks]
+usvp                 :: rop = 2^298.81, beta=970, d=1079, delta=1.00209077351012
+bdd                  :: rop = 2^286.11, beta=908, d=1745, eta=947
+bdd_hybrid           :: rop = 2^285.93, beta=908, d=1761, eta=946
+bdd_mitm_hybrid      :: rop = 2^433.52, beta=969, d=1409, eta=2
+
+============================================================
+scheme      = NEV-1024 / NEV'-1024 NTRU-SK
+n, q        = 1024, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = BDGL16
+shape model = gsa
+paper SK    = 292 bits
+paper BKZ   = 953
+============================================================
+usvp                 :: rop: ≈2^308.5, red: ≈2^308.5, δ: 1.002119, β: 953, d: 1771, tag: usvp
+bdd                  :: rop: ≈2^300.9, red: ≈2^299.4, svp: ≈2^300.2, β: 922, η: 972, d: 1747, tag: bdd
+bdd_hybrid           :: rop: ≈2^300.9, red: ≈2^299.4, svp: ≈2^300.2, β: 922, η: 972, ζ: 0, |S|: 1, d: 1771, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^431.7, red: ≈2^430.8, svp: ≈2^430.6, β: 951, η: 2, ζ: 408, |S|: ≈2^573.1, d: 1384, prob: ≈2^-121.0, ↻: ≈2^123.3, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^300.87
+gap to paper= +8.87 bits
+
+[all attacks]
+usvp                 :: rop = 2^308.47, beta=953, d=1771, delta=1.00211891028513
+bdd                  :: rop = 2^300.87, beta=922, d=1747, eta=972
+bdd_hybrid           :: rop = 2^300.88, beta=922, d=1771, eta=972
+bdd_mitm_hybrid      :: rop = 2^431.72, beta=951, d=1384, eta=2
+
+============================================================
+scheme      = NEV-1024 / NEV'-1024 NTRU-SK
+n, q        = 1024, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = BDGL16
+shape model = zgsa
+paper SK    = 292 bits
+paper BKZ   = 953
+============================================================
+usvp                 :: rop: ≈2^312.7, red: ≈2^312.7, δ: 1.002091, β: 970, d: 1079, tag: usvp
+bdd                  :: rop: ≈2^294.6, red: ≈2^292.7, svp: ≈2^294.1, β: 899, η: 951, d: 1752, tag: bdd
+bdd_hybrid           :: rop: ≈2^294.6, red: ≈2^292.7, svp: ≈2^294.1, β: 899, η: 951, ζ: 0, |S|: 1, d: 1755, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^435.0, red: ≈2^434.1, svp: ≈2^434.0, β: 969, η: 2, ζ: 416, |S|: ≈2^583.7, d: 1389, prob: ≈2^-119.1, ↻: ≈2^121.3, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^294.55
+gap to paper= +2.55 bits
+
+[all attacks]
+usvp                 :: rop = 2^312.72, beta=970, d=1079, delta=1.00209077351012
+bdd                  :: rop = 2^294.55, beta=899, d=1752, eta=951
+bdd_hybrid           :: rop = 2^294.55, beta=899, d=1755, eta=951
+bdd_mitm_hybrid      :: rop = 2^435.04, beta=969, d=1389, eta=2
+
+============================================================
+scheme      = NEV-1024 / NEV'-1024 NTRU-SK
+n, q        = 1024, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = CoreSVP
+shape model = gsa
+paper SK    = 292 bits
+paper BKZ   = 953
+============================================================
+usvp                 :: rop: ≈2^278.3, red: ≈2^278.3, δ: 1.002119, β: 953, d: 1771, tag: usvp
+bdd                  :: rop: ≈2^279.0, red: ≈2^277.7, svp: ≈2^278.3, β: 951, η: 953, d: 1763, tag: bdd
+bdd_hybrid           :: rop: ≈2^279.0, red: ≈2^277.7, svp: ≈2^278.3, β: 951, η: 953, ζ: 0, |S|: 1, d: 1792, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^435.1, red: ≈2^434.2, svp: ≈2^434.0, β: 951, η: 2, ζ: 384, |S|: ≈2^513.3, d: 1408, prob: ≈2^-154.3, ↻: ≈2^156.5, tag: hybrid
+
+[best]
+best attack = usvp
+best rop    = 2^278.28
+gap to paper= -13.72 bits
+
+[all attacks]
+usvp                 :: rop = 2^278.28, beta=953, d=1771, delta=1.00211891028513
+bdd                  :: rop = 2^279.01, beta=951, d=1763, eta=953
+bdd_hybrid           :: rop = 2^279.01, beta=951, d=1792, eta=953
+bdd_mitm_hybrid      :: rop = 2^435.12, beta=951, d=1408, eta=2
+
+============================================================
+scheme      = NEV-1024 / NEV'-1024 NTRU-SK
+n, q        = 1024, 769
+dist        = f' <- B_1, g <- B_1
+cost model  = CoreSVP
+shape model = zgsa
+paper SK    = 292 bits
+paper BKZ   = 953
+============================================================
+usvp                 :: rop: ≈2^283.2, red: ≈2^283.2, δ: 1.002091, β: 970, d: 1079, tag: usvp
+bdd                  :: rop: ≈2^273.3, red: ≈2^271.6, svp: ≈2^272.7, β: 930, η: 934, d: 1775, tag: bdd
+bdd_hybrid           :: rop: ≈2^273.3, red: ≈2^271.6, svp: ≈2^272.7, β: 930, η: 934, ζ: 0, |S|: 1, d: 1777, prob: 1, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^434.1, red: ≈2^433.1, svp: ≈2^433.1, β: 969, η: 2, ζ: 383, |S|: ≈2^523.9, d: 1422, prob: ≈2^-148.0, ↻: ≈2^150.2, tag: hybrid
+
+[best]
+best attack = bdd
+best rop    = 2^273.26
+gap to paper= -18.74 bits
+
+[all attacks]
+usvp                 :: rop = 2^283.24, beta=970, d=1079, delta=1.00209077351012
+bdd                  :: rop = 2^273.26, beta=930, d=1775, eta=934
+bdd_hybrid           :: rop = 2^273.26, beta=930, d=1777, eta=934
+bdd_mitm_hybrid      :: rop = 2^434.12, beta=969, d=1422, eta=2

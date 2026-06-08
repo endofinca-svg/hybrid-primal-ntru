@@ -1,0 +1,137 @@
+running the estimator with probabilistic_bkz = False
+use_pattern = True, pattern_hw = 64
+use_scaling = True, xi_manual = None
+shape_model = zgsa, cost_model = MATZOV
+n     k_pat    kappa    BKZ only    bit sec.       Hybrid    bit sec.  
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=  8, best_kappa= 68, log2M=45.9743, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=175.7077, cost=130.7297
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=  9, best_kappa= 67, log2M=45.3622, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=175.7077, cost=130.4920
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 10, best_kappa= 67, log2M=45.4263, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=176.1375, cost=130.2517
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 11, best_kappa= 67, log2M=45.4906, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=176.5694, cost=130.0133
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 12, best_kappa= 67, log2M=45.5551, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=177.0033, cost=129.7769
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 13, best_kappa= 67, log2M=45.6199, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=177.4394, cost=129.5424
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 14, best_kappa= 67, log2M=45.6848, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=177.8775, cost=129.3100
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 15, best_kappa= 66, log2M=45.0671, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=177.8775, cost=129.0782
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 16, best_kappa= 66, log2M=45.1315, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=178.3178, cost=128.8366
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 17, best_kappa= 66, log2M=45.1961, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=178.7602, cost=128.5970
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 18, best_kappa= 66, log2M=45.2608, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=179.2047, cost=128.3592
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 19, best_kappa= 65, log2M=44.6391, penalty_pat=-0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=179.2047, cost=128.1551
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 20, best_kappa= 64, log2M=44.0155, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=179.2047, cost=128.0047
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 21, best_kappa= 63, log2M=43.3902, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=179.2047, cost=127.8977
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 22, best_kappa= 65, log2M=44.8323, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=180.5513, cost=127.6830
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 23, best_kappa= 65, log2M=44.8971, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=181.0046, cost=127.4413
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 24, best_kappa= 65, log2M=44.9621, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=181.4600, cost=127.2015
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 25, best_kappa= 65, log2M=45.0273, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=181.9177, cost=126.9636
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 26, best_kappa= 65, log2M=45.0927, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=182.3777, cost=126.7277
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 27, best_kappa= 65, log2M=45.1584, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=182.8399, cost=126.4938
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 28, best_kappa= 65, log2M=45.2242, penalty_pat=0.0000, xi=1.414214, ||v||=15.4919, lambda1_GH=183.3044, cost=126.2620
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 29, best_kappa= 64, log2M=44.5935, penalty_pat=0.0001, xi=1.414214, ||v||=15.4919, lambda1_GH=183.3044, cost=126.0251
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 30, best_kappa= 64, log2M=44.6588, penalty_pat=0.0004, xi=1.414214, ||v||=15.4919, lambda1_GH=183.7711, cost=125.7841
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 31, best_kappa= 64, log2M=44.7243, penalty_pat=0.0011, xi=1.414214, ||v||=15.4919, lambda1_GH=184.2402, cost=125.5456
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 32, best_kappa= 64, log2M=44.7899, penalty_pat=0.0029, xi=1.414214, ||v||=15.4919, lambda1_GH=184.7116, cost=125.3100
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 33, best_kappa= 64, log2M=44.8558, penalty_pat=0.0067, xi=1.414214, ||v||=15.4919, lambda1_GH=185.1853, cost=125.0783
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 34, best_kappa= 64, log2M=44.9219, penalty_pat=0.0138, xi=1.414214, ||v||=15.4919, lambda1_GH=185.6613, cost=124.8520
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 35, best_kappa= 64, log2M=44.9883, penalty_pat=0.0258, xi=1.414214, ||v||=15.4919, lambda1_GH=186.1398, cost=124.6328
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 36, best_kappa= 63, log2M=44.3508, penalty_pat=0.0447, xi=1.414214, ||v||=15.4919, lambda1_GH=186.1398, cost=124.4107
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 37, best_kappa= 63, log2M=44.4165, penalty_pat=0.0723, xi=1.414214, ||v||=15.4919, lambda1_GH=186.6206, cost=124.1974
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 38, best_kappa= 63, log2M=44.4824, penalty_pat=0.1101, xi=1.414214, ||v||=15.4919, lambda1_GH=187.1038, cost=123.9963
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 39, best_kappa= 63, log2M=44.5486, penalty_pat=0.1594, xi=1.414214, ||v||=15.4919, lambda1_GH=187.5894, cost=123.8086
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 40, best_kappa= 63, log2M=44.6149, penalty_pat=0.2211, xi=1.414214, ||v||=15.4919, lambda1_GH=188.0775, cost=123.6353
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 41, best_kappa= 62, log2M=43.9723, penalty_pat=0.2955, xi=1.414214, ||v||=15.4919, lambda1_GH=188.0775, cost=123.4878
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 42, best_kappa= 61, log2M=43.3277, penalty_pat=0.3826, xi=1.414214, ||v||=15.4919, lambda1_GH=188.0775, cost=123.4121
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 43, best_kappa= 60, log2M=42.6813, penalty_pat=0.4823, xi=1.414214, ||v||=15.4919, lambda1_GH=188.0775, cost=123.3968
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 44, best_kappa= 62, log2M=44.1701, penalty_pat=0.5939, xi=1.414214, ||v||=15.4919, lambda1_GH=189.5564, cost=123.3201
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 45, best_kappa= 62, log2M=44.2365, penalty_pat=0.7168, xi=1.414214, ||v||=15.4919, lambda1_GH=190.0543, cost=123.2037
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 46, best_kappa= 62, log2M=44.3031, penalty_pat=0.8501, xi=1.414214, ||v||=15.4919, lambda1_GH=190.5548, cost=123.0998
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 47, best_kappa= 62, log2M=44.3699, penalty_pat=0.9932, xi=1.414214, ||v||=15.4919, lambda1_GH=191.0578, cost=123.0075
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 48, best_kappa= 62, log2M=44.4370, penalty_pat=1.1451, xi=1.414214, ||v||=15.4919, lambda1_GH=191.5633, cost=122.9262
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 49, best_kappa= 61, log2M=43.7864, penalty_pat=1.3050, xi=1.414214, ||v||=15.4919, lambda1_GH=191.5633, cost=122.8538
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 50, best_kappa= 61, log2M=43.8529, penalty_pat=1.4721, xi=1.414214, ||v||=15.4919, lambda1_GH=192.0714, cost=122.7782
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 51, best_kappa= 61, log2M=43.9195, penalty_pat=1.6457, xi=1.414214, ||v||=15.4919, lambda1_GH=192.5821, cost=122.7108
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 52, best_kappa= 61, log2M=43.9863, penalty_pat=1.8252, xi=1.414214, ||v||=15.4919, lambda1_GH=193.0954, cost=122.6512
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 53, best_kappa= 61, log2M=44.0534, penalty_pat=2.0098, xi=1.414214, ||v||=15.4919, lambda1_GH=193.6112, cost=122.5988
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 54, best_kappa= 61, log2M=44.1207, penalty_pat=2.1990, xi=1.414214, ||v||=15.4919, lambda1_GH=194.1298, cost=122.5530
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 55, best_kappa= 61, log2M=44.1882, penalty_pat=2.3924, xi=1.414214, ||v||=15.4919, lambda1_GH=194.6510, cost=122.5135
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 56, best_kappa= 60, log2M=43.5305, penalty_pat=2.5895, xi=1.414214, ||v||=15.4919, lambda1_GH=194.6510, cost=122.4756
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 57, best_kappa= 60, log2M=43.5973, penalty_pat=2.7898, xi=1.414214, ||v||=15.4919, lambda1_GH=195.1748, cost=122.4333
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 58, best_kappa= 60, log2M=43.6644, penalty_pat=2.9931, xi=1.414214, ||v||=15.4919, lambda1_GH=195.7013, cost=122.3957
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 59, best_kappa= 60, log2M=43.7317, penalty_pat=3.1990, xi=1.414214, ||v||=15.4919, lambda1_GH=196.2306, cost=122.3628
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 60, best_kappa= 60, log2M=43.7993, penalty_pat=3.4072, xi=1.414214, ||v||=15.4919, lambda1_GH=196.7626, cost=122.3341
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 61, best_kappa= 59, log2M=43.1360, penalty_pat=3.6175, xi=1.414214, ||v||=15.4919, lambda1_GH=196.7626, cost=122.3304
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 62, best_kappa= 58, log2M=42.4706, penalty_pat=3.8297, xi=1.414214, ||v||=15.4919, lambda1_GH=196.7626, cost=122.3887
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 63, best_kappa= 57, log2M=41.8032, penalty_pat=4.0437, xi=1.414214, ||v||=15.4919, lambda1_GH=196.7626, cost=122.4961
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 64, best_kappa= 59, log2M=43.3373, penalty_pat=4.2592, xi=1.414214, ||v||=15.4919, lambda1_GH=198.3751, cost=122.5006
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 65, best_kappa= 59, log2M=43.4048, penalty_pat=4.4761, xi=1.414214, ||v||=15.4919, lambda1_GH=198.9181, cost=122.4762
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 66, best_kappa= 59, log2M=43.4726, penalty_pat=4.6943, xi=1.414214, ||v||=15.4919, lambda1_GH=199.4640, cost=122.4550
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 67, best_kappa= 59, log2M=43.5406, penalty_pat=4.9137, xi=1.414214, ||v||=15.4919, lambda1_GH=200.0128, cost=122.4369
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 68, best_kappa= 59, log2M=43.6089, penalty_pat=5.1343, xi=1.414214, ||v||=15.4919, lambda1_GH=200.5644, cost=122.4221
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 69, best_kappa= 59, log2M=43.6774, penalty_pat=5.3559, xi=1.414214, ||v||=15.4919, lambda1_GH=201.1189, cost=122.4104
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 70, best_kappa= 58, log2M=43.0047, penalty_pat=5.5784, xi=1.414214, ||v||=15.4919, lambda1_GH=201.1189, cost=122.3981
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 71, best_kappa= 58, log2M=43.0725, penalty_pat=5.8019, xi=1.414214, ||v||=15.4919, lambda1_GH=201.6763, cost=122.3783
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 72, best_kappa= 58, log2M=43.1405, penalty_pat=6.0262, xi=1.414214, ||v||=15.4919, lambda1_GH=202.2366, cost=122.3613
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 73, best_kappa= 58, log2M=43.2088, penalty_pat=6.2514, xi=1.414214, ||v||=15.4919, lambda1_GH=202.7998, cost=122.3470
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 74, best_kappa= 58, log2M=43.2773, penalty_pat=6.4773, xi=1.414214, ||v||=15.4919, lambda1_GH=203.3661, cost=122.3355
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 75, best_kappa= 58, log2M=43.3460, penalty_pat=6.7040, xi=1.414214, ||v||=15.4919, lambda1_GH=203.9353, cost=122.3269
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 76, best_kappa= 58, log2M=43.4150, penalty_pat=6.9314, xi=1.414214, ||v||=15.4919, lambda1_GH=204.5075, cost=122.3210
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 77, best_kappa= 57, log2M=42.7345, penalty_pat=7.1596, xi=1.414214, ||v||=15.4919, lambda1_GH=204.5075, cost=122.3132
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 78, best_kappa= 57, log2M=42.8028, penalty_pat=7.3885, xi=1.414214, ||v||=15.4919, lambda1_GH=205.0827, cost=122.2987
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 79, best_kappa= 57, log2M=42.8713, penalty_pat=7.6180, xi=1.414214, ||v||=15.4919, lambda1_GH=205.6610, cost=122.2867
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 80, best_kappa= 57, log2M=42.9401, penalty_pat=7.8482, xi=1.414214, ||v||=15.4919, lambda1_GH=206.2424, cost=122.2774
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 81, best_kappa= 57, log2M=43.0091, penalty_pat=8.0791, xi=1.414214, ||v||=15.4919, lambda1_GH=206.8268, cost=122.2708
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 82, best_kappa= 56, log2M=42.3226, penalty_pat=8.3106, xi=1.414214, ||v||=15.4919, lambda1_GH=206.8268, cost=122.2893
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 83, best_kappa= 55, log2M=41.6338, penalty_pat=8.5427, xi=1.414214, ||v||=15.4919, lambda1_GH=206.8268, cost=122.3709
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 84, best_kappa= 54, log2M=40.9429, penalty_pat=8.7755, xi=1.414214, ||v||=15.4919, lambda1_GH=206.8268, cost=122.5015
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 85, best_kappa= 56, log2M=42.5281, penalty_pat=9.0089, xi=1.414214, ||v||=15.4919, lambda1_GH=208.5990, cost=122.5138
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 86, best_kappa= 56, log2M=42.5971, penalty_pat=9.2430, xi=1.414214, ||v||=15.4919, lambda1_GH=209.1960, cost=122.5056
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 87, best_kappa= 56, log2M=42.6663, penalty_pat=9.4777, xi=1.414214, ||v||=15.4919, lambda1_GH=209.7963, cost=122.4999
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 88, best_kappa= 56, log2M=42.7358, penalty_pat=9.7130, xi=1.414214, ||v||=15.4919, lambda1_GH=210.3997, cost=122.4969
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 89, best_kappa= 56, log2M=42.8056, penalty_pat=9.9489, xi=1.414214, ||v||=15.4919, lambda1_GH=211.0065, cost=122.4965
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 90, best_kappa= 56, log2M=42.8755, penalty_pat=10.1855, xi=1.414214, ||v||=15.4919, lambda1_GH=211.6165, cost=122.4989
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 91, best_kappa= 55, log2M=42.1789, penalty_pat=10.4227, xi=1.414214, ||v||=15.4919, lambda1_GH=211.6165, cost=122.5034
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 92, best_kappa= 55, log2M=42.2481, penalty_pat=10.6605, xi=1.414214, ||v||=15.4919, lambda1_GH=212.2298, cost=122.4968
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 93, best_kappa= 55, log2M=42.3176, penalty_pat=10.8990, xi=1.414214, ||v||=15.4919, lambda1_GH=212.8464, cost=122.4926
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 94, best_kappa= 55, log2M=42.3873, penalty_pat=11.1380, xi=1.414214, ||v||=15.4919, lambda1_GH=213.4664, cost=122.4911
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 95, best_kappa= 55, log2M=42.4573, penalty_pat=11.3777, xi=1.414214, ||v||=15.4919, lambda1_GH=214.0897, cost=122.4922
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 96, best_kappa= 55, log2M=42.5276, penalty_pat=11.6181, xi=1.414214, ||v||=15.4919, lambda1_GH=214.7164, cost=122.4959
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 97, best_kappa= 55, log2M=42.5981, penalty_pat=11.8590, xi=1.414214, ||v||=15.4919, lambda1_GH=215.3466, cost=122.5025
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 98, best_kappa= 55, log2M=42.6688, penalty_pat=12.1007, xi=1.414214, ||v||=15.4919, lambda1_GH=215.9802, cost=122.5118
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat= 99, best_kappa= 54, log2M=41.9627, penalty_pat=12.3429, xi=1.414214, ||v||=15.4919, lambda1_GH=215.9802, cost=122.5093
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=100, best_kappa= 54, log2M=42.0327, penalty_pat=12.5858, xi=1.414214, ||v||=15.4919, lambda1_GH=216.6173, cost=122.5093
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=101, best_kappa= 54, log2M=42.1029, penalty_pat=12.8293, xi=1.414214, ||v||=15.4919, lambda1_GH=217.2578, cost=122.5118
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=102, best_kappa= 53, log2M=41.3924, penalty_pat=13.0735, xi=1.414214, ||v||=15.4919, lambda1_GH=217.2578, cost=122.5604
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=103, best_kappa= 52, log2M=40.6795, penalty_pat=13.3184, xi=1.414214, ||v||=15.4919, lambda1_GH=217.2578, cost=122.6708
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=104, best_kappa= 54, log2M=42.3151, penalty_pat=13.5639, xi=1.414214, ||v||=15.4919, lambda1_GH=219.2008, cost=122.7949
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=105, best_kappa= 54, log2M=42.3864, penalty_pat=13.8100, xi=1.414214, ||v||=15.4919, lambda1_GH=219.8556, cost=122.8078
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=106, best_kappa= 53, log2M=41.6717, penalty_pat=14.0568, xi=1.414214, ||v||=15.4919, lambda1_GH=219.8556, cost=122.8151
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=107, best_kappa= 53, log2M=41.7421, penalty_pat=14.3043, xi=1.414214, ||v||=15.4919, lambda1_GH=220.5140, cost=122.8185
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=108, best_kappa= 53, log2M=41.8129, penalty_pat=14.5524, xi=1.414214, ||v||=15.4919, lambda1_GH=221.1761, cost=122.8246
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=109, best_kappa= 53, log2M=41.8839, penalty_pat=14.8013, xi=1.414214, ||v||=15.4919, lambda1_GH=221.8419, cost=122.8332
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=110, best_kappa= 53, log2M=41.9551, penalty_pat=15.0507, xi=1.414214, ||v||=15.4919, lambda1_GH=222.5114, cost=122.8447
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=111, best_kappa= 53, log2M=42.0266, penalty_pat=15.3009, xi=1.414214, ||v||=15.4919, lambda1_GH=223.1846, cost=122.8589
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=112, best_kappa= 53, log2M=42.0984, penalty_pat=15.5518, xi=1.414214, ||v||=15.4919, lambda1_GH=223.8615, cost=122.8759
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=113, best_kappa= 52, log2M=41.3748, penalty_pat=15.8033, xi=1.414214, ||v||=15.4919, lambda1_GH=223.8615, cost=122.8896
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=114, best_kappa= 52, log2M=41.4457, penalty_pat=16.0555, xi=1.414214, ||v||=15.4919, lambda1_GH=224.5423, cost=122.8973
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=115, best_kappa= 52, log2M=41.5170, penalty_pat=16.3084, xi=1.414214, ||v||=15.4919, lambda1_GH=225.2269, cost=122.9075
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=116, best_kappa= 52, log2M=41.5885, penalty_pat=16.5621, xi=1.414214, ||v||=15.4919, lambda1_GH=225.9153, cost=122.9204
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=117, best_kappa= 52, log2M=41.6602, penalty_pat=16.8164, xi=1.414214, ||v||=15.4919, lambda1_GH=226.6076, cost=122.9361
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=118, best_kappa= 52, log2M=41.7323, penalty_pat=17.0714, xi=1.414214, ||v||=15.4919, lambda1_GH=227.3038, cost=122.9546
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=119, best_kappa= 52, log2M=41.8046, penalty_pat=17.3271, xi=1.414214, ||v||=15.4919, lambda1_GH=228.0040, cost=122.9760
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=120, best_kappa= 51, log2M=41.0718, penalty_pat=17.5836, xi=1.414214, ||v||=15.4919, lambda1_GH=228.0040, cost=122.9969
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=121, best_kappa= 51, log2M=41.1433, penalty_pat=17.8407, xi=1.414214, ||v||=15.4919, lambda1_GH=228.7081, cost=123.0088
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=122, best_kappa= 50, log2M=40.4069, penalty_pat=18.0986, xi=1.414214, ||v||=15.4919, lambda1_GH=228.7081, cost=123.0931
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=123, best_kappa= 49, log2M=39.6679, penalty_pat=18.3572, xi=1.414214, ||v||=15.4919, lambda1_GH=228.7081, cost=123.2362
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=124, best_kappa= 51, log2M=41.3593, penalty_pat=18.6165, xi=1.414214, ||v||=15.4919, lambda1_GH=230.8445, cost=123.3216
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=125, best_kappa= 51, log2M=41.4318, penalty_pat=18.8766, xi=1.414214, ||v||=15.4919, lambda1_GH=231.5648, cost=123.3437
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=126, best_kappa= 51, log2M=41.5046, penalty_pat=19.1374, xi=1.414214, ||v||=15.4919, lambda1_GH=232.2892, cost=123.3688
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=127, best_kappa= 51, log2M=41.5778, penalty_pat=19.3989, xi=1.414214, ||v||=15.4919, lambda1_GH=233.0177, cost=123.3968
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=128, best_kappa= 50, log2M=40.8345, penalty_pat=19.6612, xi=1.414214, ||v||=15.4919, lambda1_GH=233.0177, cost=123.4179
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=129, best_kappa= 50, log2M=40.9067, penalty_pat=19.9243, xi=1.414214, ||v||=15.4919, lambda1_GH=233.7504, cost=123.4362
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=130, best_kappa= 50, log2M=40.9792, penalty_pat=20.1880, xi=1.414214, ||v||=15.4919, lambda1_GH=234.4874, cost=123.4572
+[kpat-search] exhaustive over k_pat in [8,130], shape=zgsa, cost=MATZOV, best_kpat=81, best_kappa=57, cost=122.2708
+512   81       57       432         151.0          297       122.27    
+baseline xi                = 1.414213562373
+baseline ||v||             = 16.000000000000
+baseline lambda1_GH        = 148.200437513398
+best pattern length k_pat  = 81
+best kappa                 = 57
+best xi                    = 1.414213562373
+P_pat(best k_pat)          = 3.697945344636e-3
