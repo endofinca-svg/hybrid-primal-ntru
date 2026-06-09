@@ -41,3 +41,12 @@ sage -python -u run_estimator.sage ...
 - `archive/deprecated_results/`：不再作为最终结论使用但仍保留的旧结果
 - `scripts/`：可复现实验的运行脚本
 - `docs/`：参数、模型和整理说明
+
+## Code organization
+
+- `run_estimator.sage` is the unified entry point.
+- `hybrid_estimator/` contains the modular estimator implementation.
+- `scripts/experiments/` contains reproducible experiment commands.
+- `scripts/plots/` contains plotting scripts.
+- `results/` stores selected logs and table data.
+- `archive/` stores legacy estimators, old scheme-specific scripts, generated Sage Python files, and old figures.

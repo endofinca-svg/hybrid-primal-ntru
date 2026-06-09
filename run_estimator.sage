@@ -5,13 +5,13 @@ from sage.all import *
 # Load modular components
 # ============================================================
 
-load("hybrid estimator/config.sage")
-load("hybrid estimator/dist_utils.sage")
-load("hybrid estimator/cost_models.sage")
-load("hybrid estimator/shape_models.sage")
-load("hybrid estimator/pattern_utils.sage")
-load("hybrid estimator/search_strategy.sage")
-load("hybrid estimator/cli.sage")
+load("hybrid_estimator/config.sage")
+load("hybrid_estimator/dist_utils.sage")
+load("hybrid_estimator/cost_models.sage")
+load("hybrid_estimator/shape_models.sage")
+load("hybrid_estimator/pattern_utils.sage")
+load("hybrid_estimator/search_strategy.sage")
+load("hybrid_estimator/cli.sage")
 
 
 # ============================================================
