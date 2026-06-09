@@ -1,0 +1,6 @@
+[pattern] pattern_hw not provided; use pattern_hw=512 for secret distribution 'binomial'.
+running the estimator with probabilistic_bkz = False
+use_pattern = True, pattern_hw = 512
+use_scaling = False, xi_manual = None
+shape_model = zgsa, cost_model = CoreSVP
+n     k_pat    kappa    BKZ only    bit sec.       Hybrid    bit sec.  

@@ -1,0 +1,7 @@
+[pattern] pattern_hw not provided; use pattern_hw=128 for secret distribution 'ternary'.
+running the estimator with probabilistic_bkz = False
+use_pattern = True, pattern_hw = 128
+use_scaling = True, xi_manual = None
+shape_model = zgsa, cost_model = CoreSVP
+n     k_pat    kappa    BKZ only    bit sec.       Hybrid    bit sec.  
+[kappa-search] shape=zgsa, cost=CoreSVP, k_pat=  8, best_kappa= 64, n_pat=1016, n_id= 952, d=1976, beta=765, log2M=43.0275, penalty_pat=-0.0000, P_pat=1.0000e+00, xi=1.219631, ||v||=19.2484, lambda1_GH=371.2788, red=223.3800, md=222.6057, cost=224.0442

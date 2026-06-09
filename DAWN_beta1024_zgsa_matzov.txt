@@ -1,0 +1,8 @@
+[pattern] pattern_hw not provided; use pattern_hw=128 for secret distribution 'ternary'.
+running the estimator with probabilistic_bkz = False
+use_pattern = True, pattern_hw = 128
+use_scaling = True, xi_manual = None
+shape_model = zgsa, cost_model = MATZOV
+n     k_pat    kappa    BKZ only    bit sec.       Hybrid    bit sec.  
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=  8, best_kappa= 92, n_pat=1016, n_id= 924, d=1948, beta=738, log2M=61.8521, penalty_pat=-0.0000, P_pat=1.0000e+00, xi=1.216869, ||v||=19.1115, lambda1_GH=386.3673, red=237.3419, md=235.0922, cost=237.6172
+[kappa-search] shape=zgsa, cost=MATZOV, k_pat=  9, best_kappa= 94, n_pat=1015, n_id= 921, d=1945, beta=736, log2M=63.2410, penalty_pat=-0.0000, P_pat=1.0000e+00, xi=1.214892, ||v||=19.0968, lambda1_GH=387.7961, red=236.7816, md=236.0116, cost=237.4474

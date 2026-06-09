@@ -1,0 +1,6 @@
+[pattern] pattern_hw not provided; use pattern_hw=404 for secret distribution 'gaussian'.
+running the estimator with probabilistic_bkz = False
+use_pattern = True, pattern_hw = 404
+use_scaling = False, xi_manual = None
+shape_model = zgsa, cost_model = MATZOV
+n     k_pat    kappa    BKZ only    bit sec.       Hybrid    bit sec.  
