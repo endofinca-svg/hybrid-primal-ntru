@@ -11,7 +11,8 @@ def evaluate_point(n, q,
                    pattern_hw, probabilistic_bkz, use_pattern,
                    use_scaling, xi_manual,
                    xi_base, k_pat, kappa,
-                   shape_model, cost_model):
+                   shape_model, cost_model,
+                   lower_order_bits=0.0):
     """
     Evaluate one fixed pair (k_pat, kappa).
 
@@ -199,12 +200,14 @@ def evaluate_point(n, q,
 
     log2M = H_pat * kappa
 
-    _, costCVP = batchCVPP_cost(
+    probCVP, costCVP = batchCVPP_cost(
         beta,
         log2M,
         sqrt(4 / 3),
-        1
+        1,
+        lower_order_bits=lower_order_bits
     )
+    costCVP_without_delta = costCVP - lower_order_bits
 
     costHybrid = log2_add(costBKZ, costCVP)
 
@@ -228,6 +231,10 @@ def evaluate_point(n, q,
         "target_norm": target_norm,
         "lambda1_est": lambda1_est,
         "red_cost": costBKZ,
+        "bdd_cost_without_delta": costCVP_without_delta,
+        "bdd_cost_with_delta": costCVP,
+        "batchcvpp_prob": probCVP,
+        "slicer_lower_order_bits": lower_order_bits,
         "md_cost": costCVP,
         "hybrid_cost": costHybrid,
         "total_cost": total_cost,
@@ -246,7 +253,9 @@ def best_kappa_for_kpat(n, q,
                         pattern_hw, probabilistic_bkz, use_pattern,
                         use_scaling, xi_manual, xi_base,
                         k_pat, shape_model, cost_model,
-                        kappa_min=0, kappa_max=100, verbose=False):
+                        kappa_min=0, kappa_max=100,
+                        lower_order_bits=0.0,
+                        verbose=False):
     """
     For a fixed k_pat, search the best kappa.
 
@@ -317,7 +326,8 @@ def best_kappa_for_kpat(n, q,
             k_pat=k_pat,
             kappa=kappa,
             shape_model=shape_model,
-            cost_model=cost_model
+            cost_model=cost_model,
+            lower_order_bits=lower_order_bits
         )
 
         if not r.get("ok", False):
@@ -410,6 +420,7 @@ def best_kpat_exhaustive_search(n, q,
                                 use_scaling, xi_manual, xi_base,
                                 shape_model, cost_model,
                                 kappa_max=100, kpat_max=130,
+                                lower_order_bits=0.0,
                                 verbose=False):
     """
     Exhaustively search over k_pat and kappa.
@@ -448,6 +459,7 @@ def best_kpat_exhaustive_search(n, q,
             cost_model=cost_model,
             kappa_min=0,
             kappa_max=kappa_max,
+            lower_order_bits=lower_order_bits,
             verbose=verbose
         )
 

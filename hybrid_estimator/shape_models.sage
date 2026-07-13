@@ -465,7 +465,7 @@ def profile_len_at_index(i, d, beta, shape_model, n_id, q, xi):
         return gsa_profile_len_at_index(i, d, n_id, q, beta, xi)
 
     elif shape_model == "zgsa":
-        return zgsa_profile_len_at_index(i, d, n_id, q, beta, xi)
+        return simulate_profile(shape_model, d, n_id, q, beta, xi)[i]
 
     else:
         raise ValueError(f"Unsupported shape model: {shape_model}")
@@ -501,7 +501,7 @@ def find_beta_scaled(d, n_id, q, xi, target_norm, shape_model="gsa"):
 
     target_sigma = target_norm / sqrt(d)
 
-    for beta in range(100, d // 2 + 1):
+    def success(beta):
         i = d - beta
 
         gso_len = profile_len_at_index(
@@ -516,7 +516,31 @@ def find_beta_scaled(d, n_id, q, xi, target_norm, shape_model="gsa"):
 
         lhs = 0.5 * log(beta) + log(target_sigma)
 
-        if lhs < log(gso_len):
-            return beta
+        return lhs < log(gso_len)
+
+    lo = 100
+    hi = d // 2
+
+    if not success(hi):
+        return infinity
+
+    while lo < hi:
+        mid = (lo + hi) // 2
+
+        if success(mid):
+            hi = mid
+        else:
+            lo = mid + 1
+
+    beta = lo
+
+    while beta > 100 and success(beta - 1):
+        beta -= 1
+
+    while beta <= d // 2 and not success(beta):
+        beta += 1
+
+    if beta <= d // 2:
+        return beta
 
     return infinity
