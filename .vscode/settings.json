@@ -1,18 +1,12 @@
 {
-  "files.associations": {
-    "*.sage": "python"
-  },
+    "files.associations": {
+        "*.sage": "python"
+    },
 
-  "python.analysis.typeCheckingMode": "off",
-  "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.diagnosticMode": "openFilesOnly",
 
-  "python.analysis.exclude": [
-    "**/*.sage",
-    "**/*.sage.py"
-  ],
-
-  "python.analysis.ignore": [
-    "**/*.sage",
-    "**/*.sage.py"
-  ]
+    "python.analysis.extraPaths": [
+        "/home/inca/lattice-estimator"
+    ]
 }
