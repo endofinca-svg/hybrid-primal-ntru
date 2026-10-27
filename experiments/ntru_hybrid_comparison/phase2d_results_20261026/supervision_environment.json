@@ -1,0 +1,29 @@
+{
+  "platform": "Linux",
+  "proc_available": true,
+  "current_cgroup": "0::/user.slice/user-1000.slice/session-3.scope",
+  "cgroup_root_writable": false,
+  "selected_backend": "linux_session_proc_identity",
+  "supported_ownership": [
+    "session",
+    "process_group"
+  ],
+  "popen_process_group_keyword_available": false,
+  "process_group_fallback": "preexec_fn=os.setpgrp, accepted only in a single-threaded supervisor",
+  "pidfd_available": true,
+  "strict_memory_limit": false,
+  "containment": "session members and observed descendants; no guarantee for unobserved setsid escape",
+  "systemd_user_probe": {
+    "argv": [
+      "systemctl",
+      "--user",
+      "show-environment"
+    ],
+    "returncode": 1,
+    "stderr": "Failed to connect to bus: Operation not permitted (consider using --machine=<user>@.host --user to connect to bus of other user)\n",
+    "stdout_line_count": 0
+  },
+  "cgroup_mounts": [
+    "1572 1570 0:28 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime master:9 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot"
+  ]
+}

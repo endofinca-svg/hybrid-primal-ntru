@@ -1,0 +1,167 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2a-manifest-v1",
+  "created_utc": "2026-10-26T12:26:25.334735+00:00",
+  "phase": "2A",
+  "status": "complete",
+  "acceptance_passed": true,
+  "phase2b_started": false,
+  "phase3_started": false,
+  "new_online_runs": 0,
+  "new_main_public_instances": 0,
+  "lattice_reduction_or_decoding_calls": 0,
+  "source_head": "452be18c741a2d81c106d3bfe3847428ed57229b",
+  "formal_test_summary": {
+    "tests_run": 50,
+    "runner_seconds": 1.149,
+    "success": true,
+    "exit_code": 0,
+    "timeout": false,
+    "failed_test_entries": [],
+    "error_test_entries": [],
+    "skipped_test_entries": [],
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 50
+  },
+  "acceptance_criteria": [
+    {
+      "id": "two_rules_independent_oracles",
+      "passed": true,
+      "evidence": [
+        "tests/test_candidates.py",
+        "candidate_checks.json"
+      ]
+    },
+    {
+      "id": "counts_order_ids_exact_dedup",
+      "passed": true,
+      "evidence": [
+        "tests/test_candidates.py",
+        "full80_manifest.example.json"
+      ]
+    },
+    {
+      "id": "no_fake_decoder_progress",
+      "passed": true,
+      "evidence": [
+        "candidate_checks.json"
+      ]
+    },
+    {
+      "id": "public_validation_reference_independent",
+      "passed": true,
+      "evidence": [
+        "tests/test_validation.py",
+        "tests/test_separation.py"
+      ]
+    },
+    {
+      "id": "negacyclic_and_other_valid_classification",
+      "passed": true,
+      "evidence": [
+        "tests/test_offline.py"
+      ]
+    },
+    {
+      "id": "zero_target_and_separate_coverage",
+      "passed": true,
+      "evidence": [
+        "tests/test_reconstruction.py",
+        "tests/test_offline.py",
+        "coverage_examples.json"
+      ]
+    },
+    {
+      "id": "small_exact_algebra_reconstruction",
+      "passed": true,
+      "evidence": [
+        "tests/test_reconstruction.py"
+      ]
+    },
+    {
+      "id": "frozen_integrity",
+      "passed": true,
+      "evidence": [
+        "preflight.json",
+        "sealed_integrity.json"
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "path": "experiments/ntru_hybrid_comparison/__init__.py",
+      "change": "added",
+      "sha256": "da8ba2ebf42bb5057f87919e0b7a8992045702ff5bf0c552def48cc0d8ce28c9"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/candidates.py",
+      "change": "added",
+      "sha256": "b031b93ba47a256a1dfdae197292af74fe02d9e13cbf359d0f76a9fa0b958d29"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/validation.py",
+      "change": "added",
+      "sha256": "1a46ce459dcbd51b2e7457fe2a04cfda099c270876b0050f508b7e3dfb3dac76"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/offline.py",
+      "change": "added",
+      "sha256": "8c8e2b2d86029703166b3e76b3e896a3cf5d25099feef4100098f01327f7de77"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/__init__.py",
+      "change": "added",
+      "sha256": "364bbdb5128f8979d6568b5d7edafcbf5d40eeabedd48a7d599cda47188cbb35"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_candidates.py",
+      "change": "added",
+      "sha256": "897c7949cc83eff423b57af68921c10a0ad3548e48f10a797ff5e156b7a4513a"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_validation.py",
+      "change": "added",
+      "sha256": "6f87209a9404ee23dc5b13c346d0d3b9a19e39af5e8feb295c7b0956cc52d40e"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_offline.py",
+      "change": "added",
+      "sha256": "35d04034691e02a26c883f137b9f4b5a100887259d2c6381949539c1d9950117"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_reconstruction.py",
+      "change": "added",
+      "sha256": "935d9e7e289a9e0d6d648d6f6c3d0284d5e57774af5f6b26bbadb76a92b1ec21"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_separation.py",
+      "change": "added",
+      "sha256": "3ef0e43a39bcd07f7cd3bab843a1242134a3cfa956ee392343372e9b5559394c"
+    }
+  ],
+  "artifact_sha256": {
+    "REPORT.md": "9338e3a6a4cb92964dfcc78d78a4e4eab9b2e55172da36431a3e9f88f9dc9d37",
+    "artifact_validation.json": "eff38da24c881861a60baabac1cb207379ac618f2844556347923065984926d2",
+    "candidate_checks.json": "a34ce7a0eead88934d926d15199f814433e683f11f240c9e8767a17ec1c63797",
+    "coverage_examples.json": "5a71d522a33ba347cde4f67813119271a347385734164a1048703c9c1df3e159",
+    "full80_manifest.example.json": "75ecc96dce3bb2efaacbb3c455df9e2d5dab81d18278622286af0adac418200a",
+    "modified_files.json": "650733297b3f4fea4a7d656b35fd30e0455d6491069225e31e1e0cd6393de817",
+    "next_stage_entry.json": "0b214da87029ac49fdc2451558a2c9c762e7a9bda0f430505ebcb65a5cf3ba2e",
+    "preflight.json": "df296159c0cd10f599987b50a6b59b7e62769aa6d0d17759bbd28e6c3d9617ff",
+    "sealed_integrity.json": "b0ccebe6fb0364f76ce4c5950123eec83ef446ac9db9ddeaf76027810a28b93d",
+    "tests.command.json": "39f2ce56ff2c36e2b6c2a5e82a4a9365521b03316145e15044b403541ac8a766",
+    "tests.stderr.txt": "69c2dbaecc493576b7b3609b15b5e3e5ea44349595b9031dd57deaacc5dec543",
+    "tests.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests_summary.json": "482e14d523ea10806e9d32b1af0a2dd5867416f36a64a3c267fc056d724654af"
+  },
+  "protected_file_count": 1681,
+  "protected_content_changes": [],
+  "private_reference_contents_read": false,
+  "private_reference_integrity_scope": "metadata only: size/mtime_ns/inode",
+  "review": {
+    "read_only_independent_review": "No stage2A blocker found; no additional experiments run",
+    "scope": "candidate/public validation/offline interfaces and formal test evidence"
+  },
+  "next_stage_entry": "next_stage_entry.json"
+}

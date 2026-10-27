@@ -1,0 +1,12 @@
+{
+  "tests_run": 145,
+  "passed": 145,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "runner_seconds": 3.787,
+  "success": true,
+  "exit_code": 0,
+  "timeout": false,
+  "scope": "pure/mocked tests only; no real backend calls"
+}

@@ -1,0 +1,11 @@
+{
+  "tests_run": 239,
+  "passed": 239,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "exit_code": 0,
+  "unittest_wall_seconds": 7.222,
+  "command": "timeout --signal=TERM --kill-after=2s 60s /usr/bin/python3 -B -m unittest discover -s experiments/ntru_hybrid_comparison/tests -t . -v",
+  "scope": "pure correctness plus lightweight supervisor fixtures; no main lattice calls"
+}

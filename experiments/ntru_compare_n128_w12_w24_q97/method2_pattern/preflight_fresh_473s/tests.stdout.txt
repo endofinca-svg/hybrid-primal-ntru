@@ -1,0 +1,2 @@
+{"audit_passed": true, "classification": "equivalent_secret", "output": "/tmp/tmpt942bt7k/method2/trial/custom_audit.json"}
+{"audit_passed": true, "classification": "equivalent_secret", "output": "/tmp/tmpuqd87y84/alternative/custom-audit.json"}

@@ -1,0 +1,11 @@
+{
+  "schema": "ntru-phase2b-sealed-integrity-v1",
+  "checked_utc": "2026-10-26T14:19:53.307998+00:00",
+  "protected_file_count": 1705,
+  "changed_files": [],
+  "private_metadata_checked_count": 1,
+  "private_metadata_changes": [],
+  "private_contents_read": false,
+  "scope": "Preserved phase1+phase2A outputs and modules; historical A/B and frozen backend enumerated by preflight. Private reference content not hashed or read.",
+  "intact": true
+}

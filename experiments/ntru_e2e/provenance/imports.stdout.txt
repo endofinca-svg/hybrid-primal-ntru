@@ -1,0 +1,25 @@
+{
+  "python": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:29:10) [GCC 14.3.0]",
+  "executable": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+  "prefix": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv",
+  "base_prefix": "/home/inca/miniforge3/envs/g6k",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "compiler": "gcc -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat",
+  "modules": {
+    "fpylll": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/__init__.py",
+    "g6k": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/__init__.py",
+    "g6k.siever": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/siever.cpython-310-x86_64-linux-gnu.so",
+    "g6k.slicer": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/slicer.cpython-310-x86_64-linux-gnu.so",
+    "numpy": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/__init__.py",
+    "Cython": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/Cython/__init__.py",
+    "cysignals": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/cysignals/__init__.py"
+  },
+  "versions": {
+    "fpylll": "0.6.4",
+    "numpy": "2.2.6",
+    "Cython": "3.2.4",
+    "cysignals": "1.12.5",
+    "pytest": "9.0.2",
+    "setuptools": "79.0.1"
+  }
+}

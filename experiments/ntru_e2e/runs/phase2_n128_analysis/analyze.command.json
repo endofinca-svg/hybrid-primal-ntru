@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "python3",
+    "experiments/ntru_e2e/runs/phase2_n128_analysis/analyze_saved_trials.py",
+    "--run-dir",
+    "experiments/ntru_e2e/runs/phase2",
+    "--output",
+    "experiments/ntru_e2e/runs/phase2_n128_analysis/trial_analysis.json",
+    "--csv",
+    "experiments/ntru_e2e/runs/phase2_n128_analysis/trials.csv"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-22T03:10:20.152610+00:00",
+  "timeout_seconds": 60.0,
+  "stdout": "analyze.stdout.txt",
+  "stderr": "analyze.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 0.3194237369898474,
+  "cpu_seconds": 0.286307,
+  "peak_rss_kib": 16820,
+  "finished_utc": "2026-10-22T03:10:20.471870+00:00"
+}

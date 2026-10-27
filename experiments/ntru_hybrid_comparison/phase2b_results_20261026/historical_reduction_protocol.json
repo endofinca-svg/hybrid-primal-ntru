@@ -1,0 +1,315 @@
+{
+  "schema": "ntru-phase2b-historical-protocol-extraction-v1",
+  "scope": "Read existing public config and reduction metadata only; no replay and no private reference inputs",
+  "historical_AB": [
+    {
+      "group": "A",
+      "source_config": "experiments/ntru_compare_n128_w12_w24_q97/baseline_tour2/config.json",
+      "source_result": "experiments/ntru_compare_n128_w12_w24_q97/baseline_tour2/result.json",
+      "config_sha256": "b24ebbb73d2ab06fc2c8b3c58ef38d40f270cee2432472f046c9862d665b1426",
+      "result_sha256": "88c29caaf8269ca98486e62fb7d19f8950c4e040aa4a67d1c04cdfe87ca915bb",
+      "dimension": 256,
+      "requested_configuration": {
+        "schema": "ntru-plain-primal-config-v1",
+        "n": 128,
+        "q": 97,
+        "w_f": 12,
+        "w_g": 24,
+        "xi": 1,
+        "k": 0,
+        "kappa": 0,
+        "threads": 1,
+        "solver_seed": 10001,
+        "lll_delta": 0.99,
+        "lll_eta": 0.51,
+        "lll_method": "proved",
+        "float_type": "mpfr",
+        "precision_bits": 192,
+        "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+        "bkz_start": 30,
+        "bkz_stop": 256,
+        "bkz_jump": 1,
+        "bkz_max_tours_per_beta": 2,
+        "bkz_clean_stops_current_beta": false,
+        "bkz_auto_abort": false,
+        "bkz_strategy": "fpylll BKZ.DEFAULT_STRATEGY through beta 100; unpruned above 100",
+        "success_check": "All basis rows after LLL and each complete BKZ tour; exact public relation, ternary weights, invertible f",
+        "warm_start": "Each tour and beta continue from the preceding reduced basis",
+        "online_timeout_seconds": null
+      },
+      "observed_environment": {
+        "python": "3.10.19",
+        "fpylll": "0.6.4",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+        "threads": 1,
+        "float_type": "mpfr",
+        "precision_bits": 192,
+        "strategy_path": "/home/inca/miniforge3/envs/g6k/share/fplll/strategies/default.json",
+        "strategy_sha256": "f516b0a6f0c580cff72e1e2c3562c44dc6f17e8f99613e9e4020e35481b27a18",
+        "strategy_max_beta": 100,
+        "strategy_above_max": "unpruned SVP; no preprocessing blocks"
+      },
+      "completed_stages": [
+        {
+          "stage_id": "lll",
+          "kind": "lll",
+          "beta": null,
+          "tour": 0,
+          "stage_wall_seconds": 26.777469592998386,
+          "cumulative_wall_seconds": 27.364435798008344,
+          "clean": null
+        },
+        {
+          "stage_id": "bkz_b030_t01",
+          "kind": "bkz",
+          "beta": 30,
+          "tour": 1,
+          "stage_wall_seconds": 27.7917985059903,
+          "cumulative_wall_seconds": 56.19471930300642,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b030_t02",
+          "kind": "bkz",
+          "beta": 30,
+          "tour": 2,
+          "stage_wall_seconds": 26.750138768999022,
+          "cumulative_wall_seconds": 83.01827881200006,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b031_t01",
+          "kind": "bkz",
+          "beta": 31,
+          "tour": 1,
+          "stage_wall_seconds": 38.32883090199903,
+          "cumulative_wall_seconds": 121.42647468500945,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b031_t02",
+          "kind": "bkz",
+          "beta": 31,
+          "tour": 2,
+          "stage_wall_seconds": 42.59551950499008,
+          "cumulative_wall_seconds": 164.12189634500828,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b032_t01",
+          "kind": "bkz",
+          "beta": 32,
+          "tour": 1,
+          "stage_wall_seconds": 36.6407768450008,
+          "cumulative_wall_seconds": 200.85027114900004,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b032_t02",
+          "kind": "bkz",
+          "beta": 32,
+          "tour": 2,
+          "stage_wall_seconds": 36.00559280300513,
+          "cumulative_wall_seconds": 236.9434790230007,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b033_t01",
+          "kind": "bkz",
+          "beta": 33,
+          "tour": 1,
+          "stage_wall_seconds": 48.60579479299486,
+          "cumulative_wall_seconds": 285.64494622300845,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b033_t02",
+          "kind": "bkz",
+          "beta": 33,
+          "tour": 2,
+          "stage_wall_seconds": 45.87040184599755,
+          "cumulative_wall_seconds": 331.6040564490104,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b034_t01",
+          "kind": "bkz",
+          "beta": 34,
+          "tour": 1,
+          "stage_wall_seconds": 43.914102597002056,
+          "cumulative_wall_seconds": 375.61155288601003,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b034_t02",
+          "kind": "bkz",
+          "beta": 34,
+          "tour": 2,
+          "stage_wall_seconds": 37.917108085006475,
+          "cumulative_wall_seconds": 413.63105610800267,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b035_t01",
+          "kind": "bkz",
+          "beta": 35,
+          "tour": 1,
+          "stage_wall_seconds": 59.09291023798869,
+          "cumulative_wall_seconds": 472.850164346004,
+          "clean": false
+        }
+      ],
+      "completed_tours": 11,
+      "observed_first_success": {
+        "beta": 35,
+        "tour": 1,
+        "scope": "First successful beta in this progressive, warm-started schedule; not a globally minimal beta."
+      },
+      "lll_flags_argument": "not explicitly supplied; backend API default, not independently observed in historical result",
+      "bkz_flags_argument": 0,
+      "actual_internal_lll_iterations": "not_observable",
+      "historical_fplll_version": "not_recorded_in_these_results",
+      "timing_scope": "Online includes imports, construction, LLL, all prior BKZ tours, scans and checkpoint writes; offline audit and key generation excluded."
+    },
+    {
+      "group": "B_k40",
+      "source_config": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k040/pattern001/config.json",
+      "source_result": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k040/pattern001/result.json",
+      "config_sha256": "b1b835c975e83f28eeffe74f6c392eebd6162f959d84f7c39b797e4bb2b4c852",
+      "result_sha256": "f215faa927522aebbd9334d0f7fc0f05774e97892d56a912f9a05f4d54e07d25",
+      "dimension": 216,
+      "requested_configuration": {
+        "schema": "ntru-plain-primal-config-v1",
+        "n": 128,
+        "q": 97,
+        "w_f": 12,
+        "w_g": 24,
+        "xi": 1,
+        "k": 40,
+        "kappa": 0,
+        "threads": 1,
+        "solver_seed": 10001,
+        "lll_delta": 0.99,
+        "lll_eta": 0.51,
+        "lll_method": "proved",
+        "float_type": "mpfr",
+        "precision_bits": 192,
+        "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+        "bkz_start": 30,
+        "bkz_stop": 216,
+        "bkz_jump": 1,
+        "bkz_max_tours_per_beta": 2,
+        "bkz_clean_stops_current_beta": false,
+        "bkz_auto_abort": false,
+        "bkz_strategy": "fpylll BKZ.DEFAULT_STRATEGY through beta 100; unpruned above 100",
+        "success_check": "All basis rows after LLL and each complete BKZ tour; exact public relation, ternary weights, invertible f",
+        "warm_start": "Each tour and beta continue from the preceding reduced basis",
+        "online_timeout_seconds": null,
+        "pattern_index": 0
+      },
+      "observed_environment": {
+        "python": "3.10.19",
+        "fpylll": "0.6.4",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+        "threads": 1,
+        "float_type": "mpfr",
+        "precision_bits": 192,
+        "strategy_path": "/home/inca/miniforge3/envs/g6k/share/fplll/strategies/default.json",
+        "strategy_sha256": "f516b0a6f0c580cff72e1e2c3562c44dc6f17e8f99613e9e4020e35481b27a18",
+        "strategy_max_beta": 100,
+        "strategy_above_max": "unpruned SVP; no preprocessing blocks"
+      },
+      "completed_stages": [
+        {
+          "stage_id": "lll",
+          "kind": "lll",
+          "beta": null,
+          "tour": 0,
+          "stage_wall_seconds": 30.964035430995864,
+          "cumulative_wall_seconds": 31.773600947999512,
+          "clean": null
+        },
+        {
+          "stage_id": "bkz_b030_t01",
+          "kind": "bkz",
+          "beta": 30,
+          "tour": 1,
+          "stage_wall_seconds": 38.30740020600206,
+          "cumulative_wall_seconds": 70.98721334199945,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b030_t02",
+          "kind": "bkz",
+          "beta": 30,
+          "tour": 2,
+          "stage_wall_seconds": 33.266285372999846,
+          "cumulative_wall_seconds": 104.32880124798976,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b031_t01",
+          "kind": "bkz",
+          "beta": 31,
+          "tour": 1,
+          "stage_wall_seconds": 45.58238280098885,
+          "cumulative_wall_seconds": 149.98877614698722,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b031_t02",
+          "kind": "bkz",
+          "beta": 31,
+          "tour": 2,
+          "stage_wall_seconds": 42.75747679499909,
+          "cumulative_wall_seconds": 192.82037094699626,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b032_t01",
+          "kind": "bkz",
+          "beta": 32,
+          "tour": 1,
+          "stage_wall_seconds": 46.09506005598814,
+          "cumulative_wall_seconds": 239.0169188909931,
+          "clean": false
+        },
+        {
+          "stage_id": "bkz_b032_t02",
+          "kind": "bkz",
+          "beta": 32,
+          "tour": 2,
+          "stage_wall_seconds": 47.052789296008996,
+          "cumulative_wall_seconds": 286.18393433399615,
+          "clean": false
+        }
+      ],
+      "completed_tours": 6,
+      "observed_first_success": {
+        "beta": 32,
+        "tour": 2,
+        "scope": "First successful beta in this progressive, warm-started schedule; not a globally minimal beta."
+      },
+      "lll_flags_argument": "not explicitly supplied; backend API default, not independently observed in historical result",
+      "bkz_flags_argument": 0,
+      "actual_internal_lll_iterations": "not_observable",
+      "historical_fplll_version": "not_recorded_in_these_results",
+      "timing_scope": "Online includes imports, construction, LLL, all prior BKZ tours, scans and checkpoint writes; offline audit and key generation excluded."
+    }
+  ],
+  "old_hybrid_current_source": {
+    "source": "experiments/ntru_e2e/phase2_adapter.py",
+    "source_sha256": "90c3ccaee7b49462014c0b3fa823598379a75ba389c5f4a3d7ee631086e74f08",
+    "float_type": "long double",
+    "precision_bits": "platform precision, not MPFR192",
+    "lll_delta_eta_method_flags": "defaults of LLL.Reduction(self.G); not explicitly specified in adapter",
+    "BKZ": "BKZReduction(G)(BKZ.Param(beta,max_loops=...,flags=BKZ.MAX_LOOPS))",
+    "max_loops_default": 2,
+    "completed_tours": "not_observable from this source/config alone",
+    "strategy_digest": "not explicitly recorded by old adapter",
+    "threads": 1,
+    "extra_final_lll": true
+  },
+  "new_schedule_freeze": false,
+  "warning": "B beta32tour2 is a progressive 216-dimensional pattern-primal success, not a cold-start minimum or a 212-dimensional hybrid basis."
+}

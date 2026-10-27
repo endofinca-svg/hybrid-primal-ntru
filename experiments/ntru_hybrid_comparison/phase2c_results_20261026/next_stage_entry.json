@@ -1,0 +1,51 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2d-entry-v1",
+  "status": "proposal_only_not_started",
+  "completed_phase": "2C",
+  "next_phase": "2D",
+  "phase2d_started": false,
+  "phase3_started": false,
+  "main_n128_compute_calls_in_phase2c": 0,
+  "ready_interfaces": {
+    "fixed_stage": "paired_decode.run_fixed_basis(input_path,method,mode=...,batch_size=...,backend_config=...,output_path=...)",
+    "methods": ["E", "D"],
+    "modes": ["fixed_basis_full_batch", "fixed_basis_first_public_valid"],
+    "backend_factory": "fixed_backend.build_backend(working,method,config)",
+    "backend_protocol": "constructor initializes private GSO; preprocess once; decode(targets,bounds_sq,backend_integer_ids) returns explicit candidates/terminal IDs/projection groups/timings/evidence",
+    "progress": "progress.TargetProgress(ids): submit/add_candidate/complete/error/cancel/snapshot",
+    "shared_reduction": "reduction.execute_reduction -> inputs.attach_reduction/save/load(require_reduced_verified=True)",
+    "public_check": "validation.validate_public_candidate",
+    "offline_only": "offline.classify_against_reference / diagnose_coverage"
+  },
+  "verified_real_scope": {
+    "actual_Babai": "n4,d6 historical small fixture and n15,d28 hand fixture",
+    "actual_Slicer": "n15,d28,DB128,sample_database_only,forced interface iterations,one actual kernel iteration per D run",
+    "production_bdgl2_preprocessing_actually_tested": false,
+    "source_at_execution": "real02.sources.json:214 source/runtime/fixture files",
+    "evidence": ["actual_results.json", "real02.summary.json", "real_output_validation.json"],
+    "performance_or_incremental_Slicer_benefit_proven": false
+  },
+  "remaining_tasks": [
+    "Independent end-to-end method entry: include public construction, reduction, database, every target and failure/retry, reconstruction/public validation, output and cleanup",
+    "Use actual executed common reduction products for main experiments; do not count hand/synthetic test fixtures as attack results",
+    "Absolute monotonic deadlines for trial/pattern/instance/global scope, frozen before execution and never raised while running",
+    "Bounded process-tree shutdown that verifies descendants are gone even if the direct parent exits on TERM; real lightweight stubborn-grandchild regression",
+    "Charge complete external process wall including all output/measurement sidecar and cleanup IO",
+    "Define per-trial memory scope and measure fresh process/process-tree usage; do not substitute historical RUSAGE_CHILDREN high-water",
+    "Persist starts/candidate/terminal events so interrupted trials cannot fabricate completion or disappear from total costs",
+    "Keep strict fixed-basis input digests and independent mutable D/E state; validate any requested injected precision",
+    "Keep internal target-translation records, external IDs and per-member lifts distinct from projection group identity",
+    "Support explicit cancellation/timeout semantics; currently first-public-valid drains returned batch and stops further submission",
+    "Record attempted and completed preprocessing/kernel calls separately; never infer work from generated candidate count",
+    "Before formal performance work, validate production preprocessing configuration and tune B/D/E fairly in separately authorized stages",
+    "Freeze zero-tail skip or separately timed nonzero-vector branch; preserve online public-only stopping and offline reference isolation"
+  ],
+  "limitations_to_preserve": [
+    "Current results are fixed-basis interface checks, not end-to-end acceleration",
+    "Forced Slicer iteration mode is interface_test_only",
+    "Candidate-level Slicer incremental use is unknown when not reliably attributable",
+    "Exact f/g uniqueness does not count independent keys modulo sign/rotation",
+    "Memory and randomization draw attempts remain unmeasured/not_observable",
+    "Main n128 package remains original_only/not_started/submitted0/completed0"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "ntru-public-pattern-probability-v1",
+  "n": 128,
+  "w_f": 12,
+  "formula": "p_k=C(n-k,w_f)/C(n,w_f); E[compatible shifts]=n*p_k",
+  "exactness": "Per-rotation probability and expectation are exact for uniformly sampled size-k patterns on any fixed weight-w_f support. The at-least-one formula treats shifts as independent and is only a heuristic.",
+  "truth_used": false,
+  "groups": [
+    {
+      "k": 12,
+      "dimension": 244,
+      "per_rotation_compatibility_probability": 0.28989430497601926,
+      "expected_compatible_unsigned_rotations": 37.106471036930465,
+      "at_least_one_compatible_rotation_independent_approximation": 1.0
+    },
+    {
+      "k": 24,
+      "dimension": 232,
+      "per_rotation_compatibility_probability": 0.07285652142533626,
+      "expected_compatible_unsigned_rotations": 9.325634742443041,
+      "at_least_one_compatible_rotation_independent_approximation": 0.9999376538947362
+    },
+    {
+      "k": 32,
+      "dimension": 224,
+      "per_rotation_compatibility_probability": 0.02632839319163855,
+      "expected_compatible_unsigned_rotations": 3.3700343285297345,
+      "at_least_one_compatible_rotation_independent_approximation": 0.9671299218969678
+    },
+    {
+      "k": 40,
+      "dimension": 216,
+      "per_rotation_compatibility_probability": 0.008655967850974325,
+      "expected_compatible_unsigned_rotations": 1.1079638849247135,
+      "at_least_one_compatible_rotation_independent_approximation": 0.6713582368908302
+    },
+    {
+      "k": 44,
+      "dimension": 212,
+      "per_rotation_compatibility_probability": 0.004762398892573742,
+      "expected_compatible_unsigned_rotations": 0.6095870582494389,
+      "at_least_one_compatible_rotation_independent_approximation": 0.45721567620979825
+    },
+    {
+      "k": 48,
+      "dimension": 208,
+      "per_rotation_compatibility_probability": 0.002539261890349339,
+      "expected_compatible_unsigned_rotations": 0.3250255219647154,
+      "at_least_one_compatible_rotation_independent_approximation": 0.2777896827155758
+    },
+    {
+      "k": 52,
+      "dimension": 204,
+      "per_rotation_compatibility_probability": 0.001307513242815505,
+      "expected_compatible_unsigned_rotations": 0.16736169508038465,
+      "at_least_one_compatible_rotation_independent_approximation": 0.1541990276846192
+    },
+    {
+      "k": 56,
+      "dimension": 200,
+      "per_rotation_compatibility_probability": 0.000647528232558814,
+      "expected_compatible_unsigned_rotations": 0.08288361376752819,
+      "at_least_one_compatible_rotation_independent_approximation": 0.07956644093817529
+    }
+  ]
+}

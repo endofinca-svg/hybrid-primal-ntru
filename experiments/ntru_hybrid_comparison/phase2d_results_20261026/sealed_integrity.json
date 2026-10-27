@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-27T08:21:31.107637+00:00",
+  "protected_sha256_count": 1810,
+  "mismatches": [],
+  "private_metadata_only": {
+    "experiments/ntru_compare_n128_w12_w24_q97/private/instance_01.truth.json": {
+      "before": {
+        "size": 2034,
+        "mtime_ns": 1792641127716281784,
+        "inode": 8001089
+      },
+      "after": {
+        "size": 2034,
+        "mtime_ns": 1792641127716281784,
+        "inode": 8001089
+      },
+      "unchanged": true
+    }
+  },
+  "private_contents_read": false,
+  "all_protected_unchanged": true
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "ntru-main-feasibility-independent-review-v1",
+  "reviewed_utc": "2026-10-27T09:43:30.767350+00:00",
+  "review_mode": "read-only raw result/source review; only this new review artifact written",
+  "critical_findings": [],
+  "reference_contents_read": false,
+  "new_backend_calls": 0,
+  "findings": {
+    "public_verification": "B owner public-valid recovery; D/E returned zero radius-qualified candidates and incurred zero public validation rejections",
+    "normal_D_entry": "production-labeled bdgl2 preprocessing completed, DB4096, projection40, no sample-only/forced iteration",
+    "actual_D_call_count_first_pattern": 1,
+    "actual_D_iterations_first_pattern": 0,
+    "requested_D_iteration_cap": 400,
+    "D_kernel_call_wall_seconds": 0.00010380700405221432,
+    "D_whole_decode_wall_seconds": 67.62167637501261,
+    "D_babai_lift_call_count": 1280,
+    "D_early_return_inference": "Pinned C++ tests projected saturation at slicer.cpp:517 before iteration/bucketing; counter increments only at:542. Enabled exported itercount_slicer remains0; all before/after stats unchanged. Normal early saturation before iterative improvement is supported.",
+    "D_iteration_interpretation": "400 is the maximum only, not actual execution. A normal function call and 80 completed lifts do not demonstrate iterative Slicer improvement or public recovery.",
+    "censored_costs": "E/D second pattern killed during reduction; checkpoint reduction_seconds0 is stale initialization. Method exact reduction total=null; completed first-pattern times and censored observation intervals retained, all attempt cost included in measured trial wall.",
+    "aggregate_call_count": "Latest posthoc summary may prove second-pattern0 from durable pre-GSO prefix; in-flight decode without definitive evidence must stay unknown. Raw first-pattern actualcall1/iterations0 unchanged.",
+    "interpretation": "This single shared-public-instance feasibility run does not show D/E beating B and cannot establish statistical acceleration or intrinsic lack of Slicer value."
+  },
+  "rows": [
+    {
+      "method": "B",
+      "execution_status": "completed",
+      "success_within_budget": true,
+      "total_wall_seconds": 260.4560172670026,
+      "cleanup_verified": true,
+      "deadlines_satisfied": true,
+      "attempts": [
+        {
+          "pattern_attempt_index": 0,
+          "execution_status": "completed",
+          "submitted": 0,
+          "completed": 0,
+          "unsubmitted": 0,
+          "owner_public_rejection_count": 0,
+          "durable_active_reduction_stage": null
+        }
+      ]
+    },
+    {
+      "method": "E",
+      "execution_status": "timeout",
+      "success_within_budget": false,
+      "total_wall_seconds": 595.1413609570009,
+      "cleanup_verified": true,
+      "deadlines_satisfied": true,
+      "attempts": [
+        {
+          "pattern_attempt_index": 0,
+          "execution_status": "completed",
+          "submitted": 80,
+          "completed": 80,
+          "unsubmitted": 0,
+          "owner_public_rejection_count": 0,
+          "durable_active_reduction_stage": null
+        },
+        {
+          "pattern_attempt_index": 1,
+          "execution_status": "timeout",
+          "submitted": 0,
+          "completed": 0,
+          "unsubmitted": 80,
+          "owner_public_rejection_count": 0,
+          "durable_active_reduction_stage": {
+            "beta": 32,
+            "kind": "bkz",
+            "stage_id": "bkz_b032_t02",
+            "started_utc": "2026-10-27T09:11:10.616537+00:00",
+            "status": "started",
+            "tour": 2
+          }
+        }
+      ]
+    },
+    {
+      "method": "D",
+      "execution_status": "timeout",
+      "success_within_budget": false,
+      "total_wall_seconds": 595.0974941270106,
+      "cleanup_verified": true,
+      "deadlines_satisfied": true,
+      "attempts": [
+        {
+          "pattern_attempt_index": 0,
+          "execution_status": "completed",
+          "submitted": 80,
+          "completed": 80,
+          "unsubmitted": 0,
+          "owner_public_rejection_count": 0,
+          "durable_active_reduction_stage": null
+        },
+        {
+          "pattern_attempt_index": 1,
+          "execution_status": "timeout",
+          "submitted": 0,
+          "completed": 0,
+          "unsubmitted": 80,
+          "owner_public_rejection_count": 0,
+          "durable_active_reduction_stage": {
+            "beta": 31,
+            "kind": "bkz",
+            "stage_id": "bkz_b031_t02",
+            "started_utc": "2026-10-27T09:20:30.828273+00:00",
+            "status": "started",
+            "tour": 2
+          }
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "experiments/ntru_hybrid_comparison/fixed_backend.py": "61ab756bd527b6de8742e17b1a76d3807c287183f7a33147e0306aa88d4883af",
+    "experiments/ntru_e2e/.deps/g6k_hybrid/kernel/slicer.cpp": "a45ce6c130b6ab88c6515ad6721b778525df007bc8a9b6b8c97ccbf4a47f4b40",
+    "experiments/ntru_e2e/.deps/g6k_hybrid/g6k/slicer.pyx": "e503c49171d191de7b56ac3cb94791a83012144e2754ecc53c595264e19e5d5b"
+  },
+  "posthoc_qualification_validation_all_passed": true,
+  "phase_accounting_review": "No critical conflict: interrupted reduction totals use null with nonadditive observed intervals; closed-known figures are lower bounds, not the full method reduction total."
+}

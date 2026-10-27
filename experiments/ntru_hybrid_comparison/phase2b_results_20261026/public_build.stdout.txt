@@ -1,0 +1,53 @@
+{
+  "schema": "ntru-public-input-build-check-v1",
+  "kind": "public_input_build_only",
+  "input_path": "experiments/ntru_hybrid_comparison/phase2b_results_20261026/public_inputs_n128_k40_kappa4.json",
+  "dimensions": {
+    "n": 128,
+    "q": 97,
+    "k": 40,
+    "kappa": 4,
+    "d": 212,
+    "d_pattern": 216
+  },
+  "basis_status": "original_only",
+  "reduction_executed": false,
+  "candidate_count": 80,
+  "original_basis_sha256": "e423d69e11ed9e618505fb44c93f0ed423d76813588657c621501c61f127d00f",
+  "ordered_candidates_sha256": "5d635f91f7426a02975fb5597bfba8955b87f01750cb7473807e139769e0e8c5",
+  "ordered_targets_sha256": "328273a7f25e4bf4c7e7df319d8a28cfeafd45631964e287243d21593f38cd39",
+  "id_mapping_sha256": "e1bf8f25ea91498262277e7cf5cc5bc216beab043f5532cd481ae50aa1b73bc8",
+  "payload_sha256": "679258670664a070714a01ab53a1fa2ed1fa2ddcea1beffdc3cdbc4251ee0528",
+  "input_file_sha256": "685595bb531d73d5326e4640570486203187200c7a7151d92a5af84caad32ed2",
+  "counts": {
+    "theoretical_full_nonzero_count": 80,
+    "generated_raw_count": 80,
+    "policy_kept_count": 80,
+    "exact_unique_count": 80,
+    "projection_group_count": null,
+    "submitted_count": 0,
+    "completed_count": 0
+  },
+  "roundtrip_equal": true,
+  "independent_working_copies": true,
+  "gso_constructed": false,
+  "nonzero_target_translation_count": 80,
+  "selection": {
+    "pattern_rule": "random.Random(seed); per index sample(range(n),k), then draw backend seed",
+    "pattern_type": "random_position_set",
+    "seed": 10001,
+    "pattern_index": 0,
+    "tail_rule": "largest kappa surviving original f coordinates, increasing order",
+    "backend_seed": 254991857,
+    "reference_used": false,
+    "compatibility_filtering": false,
+    "formal_experiment_selection_frozen": false
+  },
+  "timing": {
+    "construction_seconds": 1.8446917020010005,
+    "validated_atomic_save_seconds": 2.1233668839995516,
+    "two_loads_and_copy_check_seconds": 7.919955683999433,
+    "total_wall_seconds": 12.774210451996623,
+    "scope": "public example build/import metadata/validation/serialization/load check only; no reduction or decoding"
+  }
+}

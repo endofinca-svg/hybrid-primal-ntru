@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "60s",
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "experiments.ntru_hybrid_comparison.phase2d_results_20261026.run_tests"
+  ],
+  "env_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "first_run": {
+    "exit_code": 1,
+    "tests_run": 226,
+    "errors": 1,
+    "failure": "partial request JSON during replay; now caught and recorded",
+    "preserved": "tests_before_replay_fix*"
+  },
+  "final_run_stdout": "tests.stdout.txt",
+  "final_run_stderr": "tests.stderr.txt"
+}

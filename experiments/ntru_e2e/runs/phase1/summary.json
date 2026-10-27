@@ -1,0 +1,375 @@
+{
+  "schema": "ntru-e2e-phase1-completed-run-v1",
+  "completed_utc": "2026-10-21T14:10:06.435074+00:00",
+  "continuation": true,
+  "config_sha256": "d02b2b8cc04ec23dd8100c1bb88f3835ff8bd3cbdef643d16496b568960461d8",
+  "keygen_seeds": [
+    1,
+    2,
+    3
+  ],
+  "attack_seeds": [
+    10001,
+    10002,
+    10003
+  ],
+  "online_budget_seconds": 1800,
+  "instance_budget_seconds": 300,
+  "seed_1_preserved_without_retry": true,
+  "version_note": "seed 1 original unpatched upstream; seeds 2 and 3 pinned upstream plus recorded UID precision patch. This is a completion record, not a uniform-version success-rate measurement.",
+  "instances": [
+    {
+      "instance_id": "instance_01",
+      "keygen_seed": 1,
+      "attack_seed": 10001,
+      "backend_version": "pinned_unpatched",
+      "online_status": "timeout",
+      "online_exit_code": 0,
+      "worker_exit_code": -15,
+      "classification": "no_recovery",
+      "end_to_end_passed": false,
+      "failure_category": "timeout",
+      "pattern_count": 17,
+      "trial_statuses": [
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "no_recovery",
+        "timeout"
+      ],
+      "raw_tail_counts": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        728
+      ],
+      "filtered_tail_counts": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        72
+      ],
+      "lattice_db_sizes": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        320,
+        320,
+        320,
+        320,
+        320,
+        320,
+        320,
+        320,
+        320
+      ],
+      "slicer_calls_started": 8,
+      "slicer_calls_finished": 8,
+      "slicer_iterations": [
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400
+      ],
+      "returned_candidate_count": 0,
+      "valid_slicer_candidate_count": 0,
+      "processed_guess_counts": [
+        0,
+        2,
+        2,
+        4,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "unique_projected_target_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "target_db_sizes": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "successful_source": null,
+      "core_is_nonzero": null,
+      "equivalence": null,
+      "babai_valid_candidate_count": 8,
+      "early_basis_recovery_stages": [
+        "bkz",
+        "lll"
+      ],
+      "coverage": {
+        "has_compatible_nonzero_tail": true,
+        "has_compatible_rotation": true,
+        "has_pattern_compatible_rotation": true,
+        "has_processed_compatible_nonzero_tail": false,
+        "has_processed_compatible_rotation": false
+      },
+      "timings": {
+        "construction_seconds": 0.16347064300680358,
+        "reconstruction_validation_seconds": 7.095599903550465e-05,
+        "bkz_seconds": 0.48210834599922237,
+        "lattice_database_seconds": 16.3752356110017,
+        "slicer_seconds": 1.091050658000313,
+        "lifting_validation_seconds": 0.0016229270004259888,
+        "lll_seconds": 3.1072431759948813,
+        "completed_target_database_seconds_including_event_logging": 166.73080798400588,
+        "babai_diagnostic_seconds": 0.08463737300007779
+      },
+      "worker_wall_seconds": 299.56419072899917,
+      "online_wall_seconds": 300.81439143699936,
+      "online_cpu_seconds": 301.508998,
+      "peak_rss_kib": 852996,
+      "result": "instance_01.result.json",
+      "evaluation": "instance_01.evaluation.json",
+      "command": "instance_01_online.command.json"
+    },
+    {
+      "instance_id": "instance_02",
+      "keygen_seed": 2,
+      "attack_seed": 10002,
+      "backend_version": "pinned_with_uid_patch",
+      "online_status": "success",
+      "online_exit_code": 0,
+      "worker_exit_code": 0,
+      "classification": "equivalent_secret",
+      "end_to_end_passed": true,
+      "failure_category": null,
+      "pattern_count": 1,
+      "trial_statuses": [
+        "success"
+      ],
+      "raw_tail_counts": [
+        80
+      ],
+      "filtered_tail_counts": [
+        32
+      ],
+      "lattice_db_sizes": [
+        180
+      ],
+      "slicer_calls_started": 1,
+      "slicer_calls_finished": 1,
+      "slicer_iterations": [
+        1
+      ],
+      "returned_candidate_count": 8,
+      "valid_slicer_candidate_count": 8,
+      "processed_guess_counts": [
+        32
+      ],
+      "unique_projected_target_counts": [
+        16
+      ],
+      "target_db_sizes": [
+        256
+      ],
+      "successful_source": {
+        "stage": "slicer",
+        "trial_id": 0,
+        "target_id": 9,
+        "call_id": 1
+      },
+      "core_is_nonzero": true,
+      "equivalence": {
+        "shift": 24,
+        "sign": -1
+      },
+      "babai_valid_candidate_count": 8,
+      "early_basis_recovery_stages": [
+        "bkz",
+        "lll"
+      ],
+      "coverage": {
+        "has_compatible_nonzero_tail": true,
+        "has_compatible_rotation": true,
+        "has_pattern_compatible_rotation": true,
+        "has_processed_compatible_nonzero_tail": true,
+        "has_processed_compatible_rotation": true
+      },
+      "timings": {
+        "construction_seconds": 0.015544940997642698,
+        "reconstruction_validation_seconds": 0.01928559000225505,
+        "bkz_seconds": 0.02108680700257537,
+        "lattice_database_seconds": 0.726525378999213,
+        "slicer_seconds": 0.0024985860000015236,
+        "lifting_validation_seconds": 0.22667321400149376,
+        "lll_seconds": 0.02561393100040732,
+        "completed_target_database_seconds_including_event_logging": 0.20273532799910754,
+        "babai_diagnostic_seconds": 0.04541269299807027
+      },
+      "worker_wall_seconds": 2.1440880359987204,
+      "online_wall_seconds": 2.734349393998855,
+      "online_cpu_seconds": 2.694594,
+      "peak_rss_kib": 80084,
+      "result": "instance_02.result.json",
+      "evaluation": "instance_02.evaluation.json",
+      "command": "instance_02_online.command.json"
+    },
+    {
+      "instance_id": "instance_03",
+      "keygen_seed": 3,
+      "attack_seed": 10003,
+      "backend_version": "pinned_with_uid_patch",
+      "online_status": "success",
+      "online_exit_code": 0,
+      "worker_exit_code": 0,
+      "classification": "equivalent_secret",
+      "end_to_end_passed": true,
+      "failure_category": null,
+      "pattern_count": 1,
+      "trial_statuses": [
+        "success"
+      ],
+      "raw_tail_counts": [
+        80
+      ],
+      "filtered_tail_counts": [
+        32
+      ],
+      "lattice_db_sizes": [
+        180
+      ],
+      "slicer_calls_started": 1,
+      "slicer_calls_finished": 1,
+      "slicer_iterations": [
+        1
+      ],
+      "returned_candidate_count": 8,
+      "valid_slicer_candidate_count": 8,
+      "processed_guess_counts": [
+        32
+      ],
+      "unique_projected_target_counts": [
+        16
+      ],
+      "target_db_sizes": [
+        256
+      ],
+      "successful_source": {
+        "stage": "slicer",
+        "trial_id": 0,
+        "target_id": 9,
+        "call_id": 1
+      },
+      "core_is_nonzero": true,
+      "equivalence": {
+        "shift": 14,
+        "sign": -1
+      },
+      "babai_valid_candidate_count": 8,
+      "early_basis_recovery_stages": [
+        "bkz",
+        "lll"
+      ],
+      "coverage": {
+        "has_compatible_nonzero_tail": true,
+        "has_compatible_rotation": true,
+        "has_pattern_compatible_rotation": true,
+        "has_processed_compatible_nonzero_tail": true,
+        "has_processed_compatible_rotation": true
+      },
+      "timings": {
+        "construction_seconds": 0.01255216200297582,
+        "reconstruction_validation_seconds": 0.008730665998882614,
+        "bkz_seconds": 0.027323287999024615,
+        "lattice_database_seconds": 1.7989623690009466,
+        "slicer_seconds": 0.0053652660026273225,
+        "lifting_validation_seconds": 0.2189832900003239,
+        "lll_seconds": 0.07915961700200569,
+        "completed_target_database_seconds_including_event_logging": 0.30428778900022735,
+        "babai_diagnostic_seconds": 0.07942094100144459
+      },
+      "worker_wall_seconds": 3.53381471800094,
+      "online_wall_seconds": 4.181107177002559,
+      "online_cpu_seconds": 4.126695,
+      "peak_rss_kib": 80108,
+      "result": "instance_03.result.json",
+      "evaluation": "instance_03.evaluation.json",
+      "command": "instance_03_online.command.json"
+    }
+  ],
+  "online_wall_seconds": 307.7298480080008,
+  "online_cpu_seconds": 308.330287,
+  "online_acceptance_passed": true,
+  "all_predefined_instances_recorded": true,
+  "workflow_complete": true,
+  "budget_compliance_note": "Original seed 1 supervisor worker cap was 300 s; external wall includes 0.814 s existing process startup/cleanup overhead. No retry. Remaining workers use 295 s within 300 s commands."
+}

@@ -1,0 +1,13 @@
+case_id,instance_id,trial_id,instrumentation_version,inventory_status,worker_status,integrity_verified,charged_online_seconds,measured_online_seconds,baseline_censored,slicer_censored,pattern_compatible_rotations,compatible_nonzero_tail_rotations,completed_compatible_nonzero_tail_rotations,censored_calls,completed_calls,completed_target_call_count,completed_target_count,started_calls,submitted_target_call_count,submitted_target_count,slicer_only_raw_candidates,slicer_new_equivalence_classes,time_comparison_available,slicer_first_valid_faster
+n64_w4_8,instance_01,b20_s32_p0,v1,timeout,interrupted,True,28.272411589001422,28.272411589001422,False,True,112,30,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_01,b20_s32_p1,v1,timeout,interrupted,True,28.286868739000056,28.286868739000056,False,True,112,30,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_01,b25_s40_p0,v1,timeout,interrupted,True,28.289476672998717,28.289476672998717,False,True,112,30,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_01,b25_s40_p1,v1,timeout,interrupted,True,28.226091948999965,28.226091948999965,False,True,112,30,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_02,b20_s32_p0,v1,timeout,interrupted,True,28.124401673998364,28.124401673998364,True,True,112,24,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_02,b20_s32_p1,v1,timeout,interrupted,True,28.17190933600068,28.17190933600068,True,True,114,24,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_02,b25_s40_p0,v1,timeout,interrupted,True,28.17938342599882,28.17938342599882,True,True,112,24,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_02,b25_s40_p1,v1,interrupted_censored,interrupted,True,30,,True,True,114,24,0,0,0,0,0,0,0,0,0,0,False,
+n64_w4_8,instance_03,b20_s32_p0,v2,finished,complete,True,18.897211250998225,18.897211250998225,False,False,112,28,28,0,1,80,80,1,80,80,0,0,True,False
+n64_w4_8,instance_03,b20_s32_p1,v2,finished,complete,True,20.12769544299954,20.12769544299954,False,False,112,30,30,0,1,80,80,1,80,80,0,0,True,False
+n64_w4_8,instance_03,b25_s40_p0,v2,finished,complete,True,18.974741874997562,18.974741874997562,False,False,112,28,28,0,1,80,80,1,80,80,0,0,True,False
+n64_w4_8,instance_03,b25_s40_p1,v2,finished,complete,True,20.604865937002614,20.604865937002614,False,False,112,30,30,0,1,80,80,1,80,80,0,0,True,False

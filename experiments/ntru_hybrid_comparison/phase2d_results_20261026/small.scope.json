@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-10-27T08:18:18.810494+00:00",
+  "scope": "one B and one independent cold D/E pair; small control/interface acceptance only",
+  "maximum_lattice_dimension": 28,
+  "sum_requested_trial_budgets_seconds": 60,
+  "experiment_budget_seconds": 70,
+  "guard_cleanup_reserve_seconds": 0.2,
+  "trial_cleanup_reserve_seconds": 1,
+  "additional_lattice_runs_allowed": false,
+  "main_n128_compute_calls": 0,
+  "fixture_selection": "handwritten public fixtures, no private reference loaded; not selected for success",
+  "D_force_kernel_iterations": false,
+  "production_preprocessing": false
+}

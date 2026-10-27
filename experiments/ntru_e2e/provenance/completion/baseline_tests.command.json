@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "-m",
+    "pytest",
+    "-q",
+    "experiments/ntru_e2e/tests"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T14:04:38.579121+00:00",
+  "timeout_seconds": 60.0,
+  "stdout": "baseline_tests.stdout.txt",
+  "stderr": "baseline_tests.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 1.024596418999863,
+  "cpu_seconds": 1.008724,
+  "peak_rss_kib": 34448,
+  "finished_utc": "2026-10-21T14:04:39.603620+00:00"
+}

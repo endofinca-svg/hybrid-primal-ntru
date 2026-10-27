@@ -1,0 +1,176 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2c-manifest-v1",
+  "created_utc": "2026-10-26T14:58:42.100483+00:00",
+  "phase": "2C",
+  "status": "complete",
+  "acceptance_passed": true,
+  "phase2d_started": false,
+  "phase3_started": false,
+  "main_n128_compute_calls": 0,
+  "new_LLL_BKZ_calls": 0,
+  "real_check_attempts": 2,
+  "real_check_attempts_all_retained": true,
+  "real_check_wall_seconds_total": 3.3033169520022057,
+  "real_check_budget_seconds": 120,
+  "final_source_head": "452be18c741a2d81c106d3bfe3847428ed57229b",
+  "final_source_files": [
+    {
+      "path": "experiments/ntru_hybrid_comparison/progress.py",
+      "change": "added",
+      "sha256": "d5692a96b4fb664e418ee0ba8e010a0d6bb0d034cda936cff74a2f58a124ee8e"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/fixed_backend.py",
+      "change": "added",
+      "sha256": "61ab756bd527b6de8742e17b1a76d3807c287183f7a33147e0306aa88d4883af"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/paired_decode.py",
+      "change": "added",
+      "sha256": "5128032b15f2558c4ee1ebfd1d95ad70d1c30e80a65fca9238a67eda1d724c69"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_progress.py",
+      "change": "added",
+      "sha256": "23fad79dad14ee1b4178acf9e0aec87678ec83db4671e9c460ddd32596ed773a"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_fixed_backend.py",
+      "change": "added",
+      "sha256": "6a9844f878a97396c31b8e47d3659a90239dcf1082355feffb30b3acb8ac3610"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_paired_decode.py",
+      "change": "added",
+      "sha256": "53f5a77cf38f937a1214fc6ee3af50253fa9a1de71bd7b50df8aa75349dfd517"
+    }
+  ],
+  "final_execution_sources": "real02.sources.json",
+  "formal_pure_mock_tests": {
+    "tests_run": 149,
+    "passed": 149,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "runner_seconds": 3.835,
+    "success": true,
+    "exit_code": 0,
+    "timeout": false,
+    "scope": "pure/mocked tests only; no real backend calls"
+  },
+  "real_Babai_executed": true,
+  "real_Slicer_preprocessing_and_kernel_executed": true,
+  "real_outputs_public_revalidation": "real_output_validation.json",
+  "final_actual_results": "actual_results.json",
+  "acceptance_criteria": [
+    {
+      "id": "real_Babai",
+      "passed": true,
+      "evidence": "real02.legacy_E_full.json / real02.micro_E_full.json"
+    },
+    {
+      "id": "real_Slicer_preprocess_and_kernel",
+      "passed": true,
+      "evidence": "real02.micro_D_full.json: actual call evidence and iteration0to1"
+    },
+    {
+      "id": "exact_output_interpretation_and_public_validation",
+      "passed": true,
+      "evidence": "real_output_validation.json"
+    },
+    {
+      "id": "external_progress_states_and_counts",
+      "passed": true,
+      "evidence": "tests/test_progress.py / tests/test_paired_decode.py / actual_results.json"
+    },
+    {
+      "id": "same_verified_paired_input_and_independent_working_state",
+      "passed": true,
+      "evidence": "real02.summary.json / tests/test_paired_decode.py"
+    },
+    {
+      "id": "full_batch_and_public_first_modes",
+      "passed": true,
+      "evidence": "real02.summary.json"
+    },
+    {
+      "id": "no_hidden_reduction_or_precision_fallback",
+      "passed": true,
+      "evidence": "fixed_backend.py / real02.micro_D_full.json / real02.sources.json"
+    },
+    {
+      "id": "preserve_main_and_sealed_history",
+      "passed": true,
+      "evidence": "main_package_guard.json / sealed_integrity.json"
+    }
+  ],
+  "limitations": [
+    "Fixed-basis interface tests only; no performance or incremental Slicer benefit claim",
+    "Real D uses bounded sampling database and forced kernel mode, production bdgl2 not exercised",
+    "Exact solution uniqueness is not independent key recovery modulo sign/rotation",
+    "Candidate-specific Slicer incremental use unknown; randomization draw attempts not observable; memory null",
+    "Method timing sidecar excludes its own final reporting IO; enclosing command wall includes it"
+  ],
+  "protected_file_count": 1747,
+  "protected_content_changes": [],
+  "private_reference_contents_read": false,
+  "next_stage_entry": "next_stage_entry.json",
+  "artifact_sha256": {
+    "REPORT.md": "a73b70b373ca183eace60bb3051c74db996c7f09ba397c556c3448081c5eda12",
+    "actual_results.csv": "4b3d576c380b8cc6cbb8cdbaae70bf7848044b361d6d6fc53a2100436503d739",
+    "actual_results.json": "707542398102d15b2e43b9635d508a54386f1bd277991d03ca1686f92dd43d12",
+    "artifact_validation.json": "9f16b759652fe85c65420fe84251d52b65d353f41c02e5d0254d3039734443d1",
+    "main_package_guard.json": "a4c17c9eebe3a7d3a25b95b285a79c1ea179598c28d0718f843b6b19765b7256",
+    "micro_n15_d28.public_input.json": "53cef4f70669858a92a949836dbdc9f56dc87632ef0ada54fa2313062e125bcd",
+    "modified_files.json": "dde46f4aab2efb809a395964e9aa4f6fc3d9c3b18a1db75576bc9fda68601245",
+    "next_stage_entry.json": "04048bdd824b9237fd7b6c27261ce3da26c2f958f3d10c3639054901fdeca6a9",
+    "pre_trace_tests.command.json": "27dff02a595b2426dadb559bc99fa47b27707d97cede313bd02eeb91e564ecbd",
+    "pre_trace_tests.stderr.txt": "23d54e7cd88a761dcd3f2055fd2d526f6f44db22974d165412f4d9522c308110",
+    "pre_trace_tests.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pre_trace_tests_summary.json": "553d9c2a675ea1e8bc849efe1647613493938524946b511917ceb9cc75c0e58b",
+    "preflight.json": "81e689a5e028169a88515f27db768324f5fa61c604a853276d4a2deb1b9f6621",
+    "real01.actual_results.csv": "f2eb33e50b5afef2da77fab155f3ca73adecb8cd3a21b03405ef6a8c9f1cde63",
+    "real01.actual_results.json": "d341204f78c621b440ec08f16026288aa4a0aca180e77af01399e3f719d4ed2b",
+    "real01.command.json": "fa90c3bdee6e188c34c9d515f688a513235e6dc9a2d891d5dc17e5c356410a05",
+    "real01.legacy_E_full.json": "64fe3c22ed1af24e610db0fa9a8a8ed9a7e895cf721aa2b0ebecb03b70b100fe",
+    "real01.legacy_E_full.json.timings.json": "b07015f7971265cd0537db9ec65ed86d42b8dc7599ed1426416b1d70ed328b2d",
+    "real01.micro_D_first.json": "8d0ebb137f06495801a1cdfe38836f523f6b61b05281ba4c2f1682ac8737c8bb",
+    "real01.micro_D_first.json.timings.json": "8327261d7b8e2f30c0decc0a55965ae100dedebc4620ed7906133062f6faf77b",
+    "real01.micro_D_full.json": "56cbf23b39d77167df3e5d72cabb00695f99ecca6bf09990f9bf21fb710f65d0",
+    "real01.micro_D_full.json.timings.json": "5de3810cce25d5d589a7406b8574ebe263fb74d09e7001267da1e83e65a15cd0",
+    "real01.micro_E_first.json": "b36e5cd0e4ae1f08c9ddc7bbb241a9f3809751a00ac2e152528ab5dc7e59b02a",
+    "real01.micro_E_first.json.timings.json": "155f9153b71f78901c0740bcdc48c5c8d1d424301169f2a7aa0e906d5c05eaba",
+    "real01.micro_E_full.json": "d11a8197c10cecccd52fad8a9d488c80ab80ae4f04a7e7ddfdf35f0bba95d4cf",
+    "real01.micro_E_full.json.timings.json": "c5642368d35e352c77d560df68f6820692e0b654f7b7dbbedb79b8cd3a1f069a",
+    "real01.sources.json": "59eac04e90a85bf2fe1e9018b16cad45974cb6d46f63c8efa9ee4377269294e0",
+    "real01.started.json": "ca957d585f2ef817f2e4d0c212dcf23d83753b9f4fa577421b7e0b6bdd08eff7",
+    "real01.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "real01.stdout.txt": "4781e711045ee223da84168ea43b3f9300c1649a0a270a759cd7f9ef23c18f29",
+    "real01.summary.json": "49956362307619b0337c2b9fd92ae16d1f3d0db1425937d06f84a4afc33782ac",
+    "real02.command.json": "46f785a9d527a974e18e54eeca27f450ec0f11dd6b23a59108aa6f6f6a06ffaa",
+    "real02.legacy_E_full.json": "3d4e1a3c4420bd7f5c13861ef4b3d6710559643a28b05e4f83bfa1dd0e12d798",
+    "real02.legacy_E_full.json.timings.json": "01d2377c3d6284b0c123888fce854bf60621791c88b364db19b34919cd855d6b",
+    "real02.micro_D_first.json": "4c70debdc5aa0bd9c1c08736cd92ccc31a7b23185b49a36ff9f704dbf98ab773",
+    "real02.micro_D_first.json.timings.json": "0b773e2a1118059e9c35a3b653ad1e909eec5478b5d359446fb1c6ea99f3d187",
+    "real02.micro_D_full.json": "63a90754a99a842967dcabda48ad07cded1ae5688d98b67ee4a9f42045a77232",
+    "real02.micro_D_full.json.timings.json": "170209a7d276bac29e6ba3ed74089f457a48000acfb4dfaecafeafa5f0b40e01",
+    "real02.micro_E_first.json": "a6ce2592d49f47c8a7a3500299d675e7f680dcb7e734b31ae1954a58f25e2986",
+    "real02.micro_E_first.json.timings.json": "528df686c80156d08445e6e679c05bf1e9c94eb9d430cf42b85d060ccbd3f804",
+    "real02.micro_E_full.json": "4d7c12776e1686e29b2b6b5a6f58f71b8f1b36d27adfee92a36bac700e5f1ece",
+    "real02.micro_E_full.json.timings.json": "6ed6f605d7fbd43e3bdda2fe0540b790c1065c5aa387de79298434ed49f1198a",
+    "real02.sources.json": "62eaf36483c67004c4a0786ba5868298a0b6a531b36fae93f3090c76fc05f5d1",
+    "real02.started.json": "ca957d585f2ef817f2e4d0c212dcf23d83753b9f4fa577421b7e0b6bdd08eff7",
+    "real02.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "real02.stdout.txt": "4781e711045ee223da84168ea43b3f9300c1649a0a270a759cd7f9ef23c18f29",
+    "real02.summary.json": "2708d924c874440286fb942c67842d429160c810d9d547f2f97cd584355da7ff",
+    "real_check.py": "bd8631e4dbcd12981343ff3b510dcd36b7ac4fa9923021bf69ebddae7c1b3839",
+    "real_output_validation.json": "91ceda993a9795b39bb9a7f5bf67a66cf358306822425a252ce6cde0b6d00fcf",
+    "runtime_before_real02.json": "ca9a4d9069e0406f6f30acbaf0ee40f16a94fb6923166104f4d38e57f577a146",
+    "runtime_metadata.json": "c44057c9932c9f133bf87fe01b4a2478d33b7ac9f8a09960c8effd8b4ee2ccb1",
+    "sealed_integrity.json": "2bc2f316d913b82e1add09b517d20aad19362b6487f758994594bacddb7fddef",
+    "tests.command.json": "8501c624a1f28d9739bbbda01de780b6d8844bdc41658324d8669e7a7dddd860",
+    "tests.stderr.txt": "1299146e4bfea61ce3d7503d2ba096513bc3a126e815e87b1078ccf59e15e151",
+    "tests.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests_summary.json": "23c02d7f878c8b8842e254298fff9cfffeb721d163296d11209a76f60d612a54"
+  }
+}

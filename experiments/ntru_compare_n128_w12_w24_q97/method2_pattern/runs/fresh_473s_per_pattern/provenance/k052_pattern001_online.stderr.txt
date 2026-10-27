@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/solve.py", line 213, in solve
+    clean = bool(reduction.tour(params))
+  File "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/algorithms/bkz.py", line 162, in tour
+    clean &= self.svp_reduction(kappa, block_size, params, tracer)
+  File "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/algorithms/bkz2.py", line 105, in svp_reduction
+    self.svp_preprocessing(kappa, block_size, params, tracer=tracer)
+  File "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/algorithms/bkz2.py", line 75, in svp_preprocessing
+    clean &= BKZBase.svp_preprocessing(self, kappa, block_size, params, tracer)
+  File "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/algorithms/bkz.py", line 186, in svp_preprocessing
+    self.lll_obj(lll_start, lll_start, kappa + block_size)
+  File "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/solve.py", line 159, in interrupted
+    raise InterruptedError(f"Worker received signal {signum}; latest complete stage is preserved")
+InterruptedError: Worker received signal 15; latest complete stage is preserved

@@ -1,0 +1,221 @@
+{
+  "schema": "ntru-standalone-experiment-plan-v1",
+  "total_budget_seconds": 70.0,
+  "trials": [
+    {
+      "public_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2d_results_20261026/micro_B.public.json",
+      "config": {
+        "schema": "ntru-standalone-trial-config-v1",
+        "trial_budget_seconds": 20.0,
+        "cleanup_reserve_seconds": 1.0,
+        "pattern_limit_seconds": null,
+        "max_pattern_attempts": 1,
+        "k": 1,
+        "kappa": 0,
+        "pattern_seed": 20261027,
+        "tail_rule": "largest_remaining",
+        "minimum_attempt_work_seconds": 0.05,
+        "worker": {
+          "reduction_protocol": {
+            "schedule": [
+              {
+                "beta": 4,
+                "requested_tours": 1
+              }
+            ],
+            "float_type": "mpfr",
+            "precision_bits": 192,
+            "lll_delta": 0.99,
+            "lll_eta": 0.51,
+            "lll_method": "proved",
+            "lll_flags": 0,
+            "bkz_flags": 0,
+            "gso_flags": 0,
+            "tour_semantics": "strict",
+            "auto_abort": false,
+            "seed": 20261027,
+            "threads": 1,
+            "strategy": "fpylll_default_extend_unpruned",
+            "schema": "ntru-shared-reduction-protocol-v1",
+            "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+            "initial_lll_implementation": "fpylll.LLL.reduction",
+            "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+            "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+            "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+            "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+            "early_termination": "exception or external termination only; no public-success callback in this interface",
+            "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+            "main_experiment_schedule_frozen": false,
+            "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum"
+          },
+          "candidate_policy": {
+            "mode": "full_nonzero"
+          },
+          "target_representation": "centered_mod_q",
+          "backend_config": {
+            "float_type": "mpfr",
+            "precision_bits": 192,
+            "seed": 20261027
+          },
+          "check_basis_rows": true,
+          "zero_tail_policy": "skip",
+          "decode_stop_policy": "first_public_valid",
+          "batch_size": 1,
+          "interface_test_only": false
+        }
+      },
+      "method": "B",
+      "trial_id": "B-cold-0"
+    },
+    {
+      "public_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2d_results_20261026/micro_DE.public.json",
+      "config": {
+        "schema": "ntru-standalone-trial-config-v1",
+        "trial_budget_seconds": 20.0,
+        "cleanup_reserve_seconds": 1.0,
+        "pattern_limit_seconds": null,
+        "max_pattern_attempts": 1,
+        "k": 1,
+        "kappa": 1,
+        "pattern_seed": 20261027,
+        "tail_rule": "largest_remaining",
+        "minimum_attempt_work_seconds": 0.05,
+        "worker": {
+          "reduction_protocol": {
+            "schedule": [
+              {
+                "beta": 4,
+                "requested_tours": 1
+              }
+            ],
+            "float_type": "mpfr",
+            "precision_bits": 192,
+            "lll_delta": 0.99,
+            "lll_eta": 0.51,
+            "lll_method": "proved",
+            "lll_flags": 0,
+            "bkz_flags": 0,
+            "gso_flags": 0,
+            "tour_semantics": "strict",
+            "auto_abort": false,
+            "seed": 20261027,
+            "threads": 1,
+            "strategy": "fpylll_default_extend_unpruned",
+            "schema": "ntru-shared-reduction-protocol-v1",
+            "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+            "initial_lll_implementation": "fpylll.LLL.reduction",
+            "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+            "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+            "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+            "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+            "early_termination": "exception or external termination only; no public-success callback in this interface",
+            "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+            "main_experiment_schedule_frozen": false,
+            "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum"
+          },
+          "candidate_policy": {
+            "mode": "full_nonzero"
+          },
+          "target_representation": "centered_mod_q",
+          "backend_config": {
+            "float_type": "mpfr",
+            "precision_bits": 192,
+            "sieve_dim": 28,
+            "seed": 20261027,
+            "db_size": 128,
+            "nrand": 2,
+            "max_iterations": 1,
+            "preprocessing": "sample_database_only",
+            "buckets": 4,
+            "blocks": 1,
+            "multi_hash": 1,
+            "interface_test_mode": true,
+            "force_kernel_iterations": false
+          },
+          "check_basis_rows": true,
+          "zero_tail_policy": "skip",
+          "decode_stop_policy": "first_public_valid",
+          "batch_size": 1,
+          "interface_test_only": true
+        }
+      },
+      "method": "D",
+      "trial_id": "D-cold-0"
+    },
+    {
+      "public_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2d_results_20261026/micro_DE.public.json",
+      "config": {
+        "schema": "ntru-standalone-trial-config-v1",
+        "trial_budget_seconds": 20.0,
+        "cleanup_reserve_seconds": 1.0,
+        "pattern_limit_seconds": null,
+        "max_pattern_attempts": 1,
+        "k": 1,
+        "kappa": 1,
+        "pattern_seed": 20261027,
+        "tail_rule": "largest_remaining",
+        "minimum_attempt_work_seconds": 0.05,
+        "worker": {
+          "reduction_protocol": {
+            "schedule": [
+              {
+                "beta": 4,
+                "requested_tours": 1
+              }
+            ],
+            "float_type": "mpfr",
+            "precision_bits": 192,
+            "lll_delta": 0.99,
+            "lll_eta": 0.51,
+            "lll_method": "proved",
+            "lll_flags": 0,
+            "bkz_flags": 0,
+            "gso_flags": 0,
+            "tour_semantics": "strict",
+            "auto_abort": false,
+            "seed": 20261027,
+            "threads": 1,
+            "strategy": "fpylll_default_extend_unpruned",
+            "schema": "ntru-shared-reduction-protocol-v1",
+            "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+            "initial_lll_implementation": "fpylll.LLL.reduction",
+            "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+            "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+            "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+            "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+            "early_termination": "exception or external termination only; no public-success callback in this interface",
+            "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+            "main_experiment_schedule_frozen": false,
+            "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum"
+          },
+          "candidate_policy": {
+            "mode": "full_nonzero"
+          },
+          "target_representation": "centered_mod_q",
+          "backend_config": {
+            "float_type": "mpfr",
+            "precision_bits": 192,
+            "sieve_dim": 28,
+            "seed": 20261027,
+            "db_size": 128,
+            "nrand": 2,
+            "max_iterations": 1,
+            "preprocessing": "sample_database_only",
+            "buckets": 4,
+            "blocks": 1,
+            "multi_hash": 1,
+            "interface_test_mode": true,
+            "force_kernel_iterations": false
+          },
+          "check_basis_rows": true,
+          "zero_tail_policy": "skip",
+          "decode_stop_policy": "first_public_valid",
+          "batch_size": 1,
+          "interface_test_only": true
+        }
+      },
+      "method": "E",
+      "trial_id": "E-cold-0"
+    }
+  ]
+}

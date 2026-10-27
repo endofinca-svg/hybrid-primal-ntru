@@ -1,0 +1,26 @@
+{
+  "schema": "ntru-e2e-phase1-config-v1",
+  "n": 32,
+  "q": 257,
+  "w_f": 2,
+  "w_g": 4,
+  "xi": 1,
+  "experiment_seeds": [10001, 10002, 10003],
+  "threads": 1,
+  "instance_timeout_seconds": 300,
+  "total_timeout_seconds": 1800,
+  "max_patterns_per_configuration": 8,
+  "slicer_randomizations": 16,
+  "slicer_max_iterations": 400,
+  "bkz_max_loops": 2,
+  "configurations": [
+    {"name": "initial", "k": 2, "kappa": 4, "bkz_beta": 20, "sieve_dim": 28},
+    {"name": "fallback_2", "k": 4, "kappa": 4, "bkz_beta": 25, "sieve_dim": 32},
+    {"name": "fallback_3", "k": 4, "kappa": 6, "bkz_beta": 30, "sieve_dim": 32}
+  ],
+  "notes": [
+    "Budgets apply to all online attempts including diagnostic attempts; build and upstream smoke are separate.",
+    "All target bounds use only the fixed public weights; zero tails are excluded.",
+    "Configurations and budgets are frozen before observing any recovery result."
+  ]
+}

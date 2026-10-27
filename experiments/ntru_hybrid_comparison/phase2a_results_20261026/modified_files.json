@@ -1,0 +1,76 @@
+{
+  "schema": "ntru-phase2a-files-v1",
+  "phase": "2A",
+  "new_implementation_and_test_file_count": 10,
+  "implementation_and_test_files": [
+    {
+      "path": "experiments/ntru_hybrid_comparison/__init__.py",
+      "change": "added",
+      "sha256": "da8ba2ebf42bb5057f87919e0b7a8992045702ff5bf0c552def48cc0d8ce28c9"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/candidates.py",
+      "change": "added",
+      "sha256": "b031b93ba47a256a1dfdae197292af74fe02d9e13cbf359d0f76a9fa0b958d29"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/validation.py",
+      "change": "added",
+      "sha256": "1a46ce459dcbd51b2e7457fe2a04cfda099c270876b0050f508b7e3dfb3dac76"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/offline.py",
+      "change": "added",
+      "sha256": "8c8e2b2d86029703166b3e76b3e896a3cf5d25099feef4100098f01327f7de77"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/__init__.py",
+      "change": "added",
+      "sha256": "364bbdb5128f8979d6568b5d7edafcbf5d40eeabedd48a7d599cda47188cbb35"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_candidates.py",
+      "change": "added",
+      "sha256": "897c7949cc83eff423b57af68921c10a0ad3548e48f10a797ff5e156b7a4513a"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_validation.py",
+      "change": "added",
+      "sha256": "6f87209a9404ee23dc5b13c346d0d3b9a19e39af5e8feb295c7b0956cc52d40e"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_offline.py",
+      "change": "added",
+      "sha256": "35d04034691e02a26c883f137b9f4b5a100887259d2c6381949539c1d9950117"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_reconstruction.py",
+      "change": "added",
+      "sha256": "935d9e7e289a9e0d6d648d6f6c3d0284d5e57774af5f6b26bbadb76a92b1ec21"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_separation.py",
+      "change": "added",
+      "sha256": "3ef0e43a39bcd07f7cd3bab843a1242134a3cfa956ee392343372e9b5559394c"
+    }
+  ],
+  "modified_existing_implementation_files": [],
+  "result_directory": "experiments/ntru_hybrid_comparison/phase2a_results_20261026",
+  "result_artifacts": [
+    "REPORT.md",
+    "preflight.json",
+    "candidate_checks.json",
+    "full80_manifest.example.json",
+    "coverage_examples.json",
+    "tests.command.json",
+    "tests.stdout.txt",
+    "tests.stderr.txt",
+    "tests_summary.json",
+    "sealed_integrity.json",
+    "next_stage_entry.json",
+    "modified_files.json",
+    "artifact_validation.json",
+    "audit_manifest.json"
+  ],
+  "note": "Source files and this result directory are new. Existing untracked workspace content was present before this task and was not replaced. No git commit or push."
+}

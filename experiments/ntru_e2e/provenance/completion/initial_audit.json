@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-10-21T14:03:57.897129+00:00",
+  "branch": "experiments/ntru-e2e-phase1",
+  "head": "452be18c741a2d81c106d3bfe3847428ed57229b",
+  "status": "?? experiments/\n?? main.pdf\n",
+  "remotes": "origin\tgit@github.com:endofinca-svg/hybrid-primal-ntru.git (fetch)\norigin\tgit@github.com:endofinca-svg/hybrid-primal-ntru.git (push)\n",
+  "upstream_head": "bd72687b2ebbaff16fb692259f83b327bbcd9586",
+  "previous_online_wall_seconds": 300.81439143699936,
+  "patch_sha256": "e17fe06b6fb3d8695fcac6cfdb280a354080dae3cff4e5532cde81ec2599d34d",
+  "original_frozen_config_sha256": "d02b2b8cc04ec23dd8100c1bb88f3835ff8bd3cbdef643d16496b568960461d8",
+  "budget_note": "Old seed 1 timeout preserved. Patched acceptance uses unchanged 300 s per instance, all online attempts together remain <= 1800 s."
+}

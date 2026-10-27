@@ -1,0 +1,74 @@
+{
+  "original_schedule_sha256": "9d3fbb6d46230b58cda1b0f54ca12052d71b87492f71bced0cb13f69868aa3b2",
+  "schedules": [
+    {
+      "case_id": "n64_w4_8",
+      "instance_id": "instance_01",
+      "solver_seed": 10001,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            8,
+            45
+          ],
+          "backend_seed": 1771157796
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            15,
+            53
+          ],
+          "backend_seed": 1247747029
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w4_8",
+      "instance_id": "instance_02",
+      "solver_seed": 10002,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            29,
+            49
+          ],
+          "backend_seed": 229676848
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            4,
+            40
+          ],
+          "backend_seed": 30508287
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w4_8",
+      "instance_id": "instance_03",
+      "solver_seed": 10003,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            0,
+            25
+          ],
+          "backend_seed": 904735465
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            21,
+            53
+          ],
+          "backend_seed": 853684210
+        }
+      ]
+    }
+  ]
+}

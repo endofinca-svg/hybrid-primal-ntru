@@ -1,0 +1,66 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2b-entry-v1",
+  "status": "proposal_only_not_started",
+  "completed_current_phase": "2A",
+  "next_phase": "2B",
+  "phase2b_started": false,
+  "phase3_started": false,
+  "new_online_experiments_in_phase2a": 0,
+  "history_policy": "Preserve phase1 documents and frozen implementations; phase1 historical status fields remain unchanged",
+  "priority_groups": ["B", "D", "E"],
+  "interfaces_ready": {
+    "candidate_context": "candidates.context_from_public(public, tail_positions) -> CandidateContext",
+    "candidate_generation": "candidates.build_candidates(context, CandidatePolicy(mode, max_weight), supplied_candidates=None) -> CandidateBatch",
+    "public_validation": "validation.validate_public_candidate(public, f, g, constraints=PublicConstraints()) -> structured public_valid/checks/rejection_reasons",
+    "offline_classification": "offline.classify_against_reference(public, f, g, reference_f, reference_g, constraints=None)",
+    "offline_coverage": "offline.diagnose_coverage(public, reference_f, reference_g, pattern_positions, batch, outputs=None, constraints=None)",
+    "existing_pure_algebra": [
+      "algebra.basis_rows(A, q, C)",
+      "algebra.make_target(A, T, u, core_size, q=None)",
+      "algebra.reconstruct(v, target, P, C, T, u, n)"
+    ]
+  },
+  "interface_contracts": [
+    "Bind actual public-v1 document through context_from_public; record canonical content hash and public file byte hash separately",
+    "P/C/T are original f coordinates; validate full disjoint partition before online construction; preserve ordered C and T",
+    "u[i]=f[T[i]]; target sign is negative; reconstruct with the actual target representative used for that decoder return",
+    "Candidate order is weight/support/sign lexicographic, not the historical global lexicographic order",
+    "Candidate SHA IDs are independent of rule and decoder; explicitly map to any backend integer IDs and retain aliases",
+    "Deduplicate complete integer tails only; exact target aliases and internal projection groups are separate concepts",
+    "submitted/completed counts must come from real external-target events; projection_group_count remains null until measured",
+    "Online imports and early stopping use public validation only; reference classification and coverage are offline",
+    "No supplied output means public_valid_found=null; actual empty output means false",
+    "kappa=0 remains the independent primal nonzero-vector path; zero targets need an explicit separately timed policy"
+  ],
+  "implementation_todos": [
+    "New worker wrapper around existing Phase2Decoder without changing frozen implementations",
+    "Saved original/reduced basis loader and matching basis/input digests for paired D/E (later C/F)",
+    "Common target list with exact alias mapping, backend IDs, real submission/completion events and candidate origins",
+    "Separate fixed-basis full-batch decoding and independent end-to-end first-public-valid runs",
+    "Record actual precision/float type, LLL and BKZ strategy, schedule/tours; historical progressive success is only an anchor",
+    "Record actual Slicer projection dimension, compiled backend limit 64, randomizations and kernel iteration limits",
+    "Include construction/reduction/database/targets/decode/reconstruct/public verify/IO/cleanup costs and every failed attempt",
+    "Implement bounded process-tree supervisor and scoped memory measurement; no orphan descendant or historical RSS high-water substitution",
+    "Add appropriate targeted integration/regression checks; do not present them as stage3 attack acceptance"
+  ],
+  "stage3_gate_unchanged": {
+    "requires_separate_explicit_stage_and_freeze": true,
+    "n": 128,
+    "q": 97,
+    "w_f": 12,
+    "w_g": 24,
+    "k": 40,
+    "kappa": 4,
+    "candidate_rule": "full_nonzero, all80",
+    "must_freeze": [
+      "reduction schedule and tours",
+      "sieve projection dimension and limits",
+      "instance/pattern/tail/candidate order and seeds",
+      "instance and pattern counts",
+      "trial/pattern/instance/global wall budgets including cleanup",
+      "memory limit",
+      "Slicer randomization/iteration limits",
+      "zero-tail policy and early stopping"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    "experiments/ntru_e2e/runs/phase2_n64_first_weight_analysis/inspect_trial_evidence.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-22T01:39:24.255013+00:00",
+  "timeout_seconds": null,
+  "stdout": "trial_inspection_command.stdout.txt",
+  "stderr": "trial_inspection_command.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 0.4949345060013002,
+  "cpu_seconds": 0.49371899999999996,
+  "peak_rss_kib": 25084,
+  "finished_utc": "2026-10-22T01:39:24.749759+00:00"
+}

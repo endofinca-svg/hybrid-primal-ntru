@@ -1,0 +1,1 @@
+{"status": "passed", "n": 4, "d": 6, "mpfr_bits": 192, "lll_calls": 1, "bkz_tours": 1, "beta": 4, "exact_lattice_verified": true, "independent_gso_copies": true}

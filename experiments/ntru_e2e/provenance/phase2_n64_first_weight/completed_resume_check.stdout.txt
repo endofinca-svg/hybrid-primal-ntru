@@ -1,0 +1,52 @@
+{
+  "schema": "ntru-e2e-phase2-n64-completion-v1",
+  "status": "finished",
+  "completed_utc": "2026-10-22T01:10:21.165375+00:00",
+  "case_ids": [
+    "n64_w4_8"
+  ],
+  "new_online_trials": 0,
+  "scope_sha256": "91e0c127e1629bb3a9fc09584ec5c32bba136d0bd33e1775ff64652e880e2d05",
+  "evaluation_sha256": "b7409ffcbefd0754c351bc189711bec1707db7fe7ef7720edf50c2d35b0b3223",
+  "audit_sha256": "70435ffef40fae8d70dff366fb8b7d2fec30c6299e5b2cacf5f35475e0ab4f39",
+  "original_run_unchanged": true,
+  "phase1_preservation": {
+    "manifest": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/provenance/phase2/phase1_preservation_before.json",
+    "manifest_sha256": "aee39c9bd5a1f60de542f954b0832d75f2f0d86cb572d6e45b65d7e067f75bfb",
+    "checked_file_count": 135,
+    "passed": true
+  },
+  "selected_charged_online_seconds": 306.15505789199597,
+  "metrics": {
+    "censored_trial_comparisons": 4,
+    "full_censored_trial_comparisons": 8,
+    "instance_count": 3,
+    "integrity_verified_trials": 12,
+    "invalid_candidate_count": 0,
+    "invalid_candidate_reasons": {},
+    "recovered_instances_by_arm": {
+      "bkz_babai": 3,
+      "bkz_rows": 3,
+      "direct_tail": 0,
+      "lll_babai": 3,
+      "lll_rows": 3,
+      "slicer": 1
+    },
+    "slicer_censored_trial_comparisons": 8,
+    "slicer_faster_trials": 0,
+    "time_comparable_trials": 4,
+    "trial_count": 12,
+    "trials_with_conclusive_extra_candidate": 0,
+    "trials_with_conclusive_extra_class": 0,
+    "trials_with_observed_slicer_new_class": 0,
+    "trials_with_observed_slicer_only_raw_candidate": 0,
+    "verified_candidates_by_arm": {
+      "bkz_babai": 88,
+      "bkz_rows": 926,
+      "direct_tail": 0,
+      "lll_babai": 112,
+      "lll_rows": 980,
+      "slicer": 32
+    }
+  }
+}

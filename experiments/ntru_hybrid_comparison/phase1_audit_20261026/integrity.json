@@ -1,0 +1,622 @@
+{
+  "schema": "ntru-phase1-existing-evidence-verification-v1",
+  "fresh_online_frozen_verification": {
+    "status": "passed",
+    "meaning": "Existing hash chain, frozen inputs, sources, configs/results/commands and caps checked; no reduction or evaluation executed",
+    "executed_argv": [
+      "python3",
+      "experiments/ntru_e2e/run_in_env.py",
+      "-"
+    ],
+    "executed_stdin": "from pathlib import Path\nfrom experiments.ntru_compare_n128_w12_w24_q97.method2_pattern.budgeted_search import verify\np=Path(\"experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern\").resolve()\ns=verify(p)\nprint({\"frozen_online_verification\":\"passed\",\"status\":s[\"status\"],\"groups\":len(s[\"groups\"])})\n"
+  },
+  "offline_output_hashes": {
+    "checked": 28,
+    "changed": []
+  },
+  "baseline_public_preservation": {
+    "checked": 69,
+    "changed": []
+  },
+  "successful_audits": [
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k012_pattern001.json",
+      "sha256": "64ca0751b039a66de89ac99db000b957e977f9403f3a652c7697f8af6c6ef7d5",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k024_pattern001.json",
+      "sha256": "751f603ef76bb1319f2977f19e32098c67ebebff4d8b3b7d2afbce83a3b84105",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k032_pattern001.json",
+      "sha256": "ff7aba5ea0b267f2d84dc91b867bb5a96a48cfaff360b0d957769fd6e0f3eb0d",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k038_pattern002.json",
+      "sha256": "db4e8a359ac085c84f63faf1def474c3dd8c72febf4deb0a7dad8c8f452eb673",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k040_pattern001.json",
+      "sha256": "1f48e0ba2e03fa3e6056c821bc86d0cddb0fc7d7171f4c290ea37678556e3e83",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k042_pattern003.json",
+      "sha256": "40be9b376a1f282c70c5bc206e1d283f6240d4f896c9e1c9c8f9715affdb46db",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k044_pattern003.json",
+      "sha256": "a0cc92b35ce46dd4afa0109d80e3f7ef5fea21fc9a5bcb7c212ea9f3c68862a4",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k048_pattern003.json",
+      "sha256": "982939c5a89a0260c466d6fac8923fb67813d96db8407ec7bdbc75812e3db0ee",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k052_pattern003.json",
+      "sha256": "f6e39ee2d043a9c8d9ada18f1689e54bb75e2c24f6317134531080a995907662",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    },
+    {
+      "file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/audit/k056_pattern026.json",
+      "sha256": "43b64f31c29d4dd0f41d0465950350f25a4b5a6c6f7aa6a2493f59b6da390f04",
+      "audit_passed": true,
+      "strict_lattice_equivalence_certified": true,
+      "classification": "equivalent_secret",
+      "candidate_public_valid": true,
+      "equivalence_present": true,
+      "failed_checks": [],
+      "missing_evidence": []
+    }
+  ],
+  "attempt_accounting": [
+    {
+      "k": 12,
+      "index": 0,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k012_pattern001_online.command.json",
+      "wall_seconds": 428.6885456780001,
+      "charged_wall_seconds": 428.6885456780001,
+      "charge_matches_command": true,
+      "pid": 93717,
+      "source_phase": "current"
+    },
+    {
+      "k": 24,
+      "index": 0,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k024_pattern001_online.command.json",
+      "wall_seconds": 346.6493807190127,
+      "charged_wall_seconds": 346.6493807190127,
+      "charge_matches_command": true,
+      "pid": 94371,
+      "source_phase": "current"
+    },
+    {
+      "k": 32,
+      "index": 0,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k032_pattern001_online.command.json",
+      "wall_seconds": 418.56920844600245,
+      "charged_wall_seconds": 418.56920844600245,
+      "charge_matches_command": true,
+      "pid": 94933,
+      "source_phase": "current"
+    },
+    {
+      "k": 38,
+      "index": 0,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k038_pattern001_online.command.json",
+      "wall_seconds": 471.46698937199835,
+      "charged_wall_seconds": 471.46698937199835,
+      "charge_matches_command": true,
+      "pid": 95223,
+      "source_phase": "current"
+    },
+    {
+      "k": 38,
+      "index": 1,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k038_pattern002_online.command.json",
+      "wall_seconds": 294.6589138970012,
+      "charged_wall_seconds": 294.6589138970012,
+      "charge_matches_command": true,
+      "pid": 95569,
+      "source_phase": "current"
+    },
+    {
+      "k": 40,
+      "index": 0,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k040_pattern001_online.command.json",
+      "wall_seconds": 286.49779491899244,
+      "charged_wall_seconds": 286.49779491899244,
+      "charge_matches_command": true,
+      "pid": 96041,
+      "source_phase": "current"
+    },
+    {
+      "k": 42,
+      "index": 0,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k042_pattern001_online.command.json",
+      "wall_seconds": 471.35575740800414,
+      "charged_wall_seconds": 471.35575740800414,
+      "charge_matches_command": true,
+      "pid": 96824,
+      "source_phase": "current"
+    },
+    {
+      "k": 42,
+      "index": 1,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k042_pattern002_online.command.json",
+      "wall_seconds": 471.10712306099595,
+      "charged_wall_seconds": 471.10712306099595,
+      "charge_matches_command": true,
+      "pid": 97104,
+      "source_phase": "current"
+    },
+    {
+      "k": 42,
+      "index": 2,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k042_pattern003_online.command.json",
+      "wall_seconds": 454.17334372201003,
+      "charged_wall_seconds": 454.17334372201003,
+      "charge_matches_command": true,
+      "pid": 97570,
+      "source_phase": "current"
+    },
+    {
+      "k": 44,
+      "index": 0,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k044_pattern001_online.command.json",
+      "wall_seconds": 471.4968793769949,
+      "charged_wall_seconds": 471.4968793769949,
+      "charge_matches_command": true,
+      "pid": 98152,
+      "source_phase": "current"
+    },
+    {
+      "k": 44,
+      "index": 1,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k044_pattern002_online.command.json",
+      "wall_seconds": 471.15621460799593,
+      "charged_wall_seconds": 471.15621460799593,
+      "charge_matches_command": true,
+      "pid": 99098,
+      "source_phase": "current"
+    },
+    {
+      "k": 44,
+      "index": 2,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k044_pattern003_online.command.json",
+      "wall_seconds": 227.3460029889975,
+      "charged_wall_seconds": 227.3460029889975,
+      "charge_matches_command": true,
+      "pid": 100451,
+      "source_phase": "current"
+    },
+    {
+      "k": 48,
+      "index": 0,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k048_pattern001_online.command.json",
+      "wall_seconds": 471.0863068559993,
+      "charged_wall_seconds": 471.0863068559993,
+      "charge_matches_command": true,
+      "pid": 100874,
+      "source_phase": "current"
+    },
+    {
+      "k": 48,
+      "index": 1,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k048_pattern002_online.command.json",
+      "wall_seconds": 471.28977881299215,
+      "charged_wall_seconds": 471.28977881299215,
+      "charge_matches_command": true,
+      "pid": 101360,
+      "source_phase": "current"
+    },
+    {
+      "k": 48,
+      "index": 2,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k048_pattern003_online.command.json",
+      "wall_seconds": 424.63723525899695,
+      "charged_wall_seconds": 424.63723525899695,
+      "charge_matches_command": true,
+      "pid": 102627,
+      "source_phase": "current"
+    },
+    {
+      "k": 52,
+      "index": 0,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k052_pattern001_online.command.json",
+      "wall_seconds": 471.38377878999745,
+      "charged_wall_seconds": 471.38377878999745,
+      "charge_matches_command": true,
+      "pid": 103291,
+      "source_phase": "current"
+    },
+    {
+      "k": 52,
+      "index": 1,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k052_pattern002_online.command.json",
+      "wall_seconds": 471.41692933099694,
+      "charged_wall_seconds": 471.41692933099694,
+      "charge_matches_command": true,
+      "pid": 103466,
+      "source_phase": "current"
+    },
+    {
+      "k": 52,
+      "index": 2,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k052_pattern003_online.command.json",
+      "wall_seconds": 234.35663423700316,
+      "charged_wall_seconds": 234.35663423700316,
+      "charge_matches_command": true,
+      "pid": 104075,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 0,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern001_online.command.json",
+      "wall_seconds": 471.36924404700403,
+      "charged_wall_seconds": 471.36924404700403,
+      "charge_matches_command": true,
+      "pid": 104304,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 1,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern002_online.command.json",
+      "wall_seconds": 471.6640388480009,
+      "charged_wall_seconds": 471.6640388480009,
+      "charge_matches_command": true,
+      "pid": 104626,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 2,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern003_online.command.json",
+      "wall_seconds": 471.3159158130002,
+      "charged_wall_seconds": 471.3159158130002,
+      "charge_matches_command": true,
+      "pid": 105630,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 3,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern004_online.command.json",
+      "wall_seconds": 471.2631603560003,
+      "charged_wall_seconds": 471.2631603560003,
+      "charge_matches_command": true,
+      "pid": 107066,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 4,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern005_online.command.json",
+      "wall_seconds": 471.14720716800366,
+      "charged_wall_seconds": 471.14720716800366,
+      "charge_matches_command": true,
+      "pid": 107990,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 5,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern006_online.command.json",
+      "wall_seconds": 471.03781595500186,
+      "charged_wall_seconds": 471.03781595500186,
+      "charge_matches_command": true,
+      "pid": 108761,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 6,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern007_online.command.json",
+      "wall_seconds": 471.10997906500415,
+      "charged_wall_seconds": 471.10997906500415,
+      "charge_matches_command": true,
+      "pid": 108833,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 7,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern008_online.command.json",
+      "wall_seconds": 471.2512520570017,
+      "charged_wall_seconds": 471.2512520570017,
+      "charge_matches_command": true,
+      "pid": 108898,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 8,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern009_online.command.json",
+      "wall_seconds": 471.16184732799593,
+      "charged_wall_seconds": 471.16184732799593,
+      "charge_matches_command": true,
+      "pid": 108988,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 9,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern010_online.command.json",
+      "wall_seconds": 471.0382235470024,
+      "charged_wall_seconds": 471.0382235470024,
+      "charge_matches_command": true,
+      "pid": 109057,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 10,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern011_online.command.json",
+      "wall_seconds": 471.2425143059954,
+      "charged_wall_seconds": 471.2425143059954,
+      "charge_matches_command": true,
+      "pid": 109116,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 11,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern012_online.command.json",
+      "wall_seconds": 471.0343774840003,
+      "charged_wall_seconds": 471.0343774840003,
+      "charge_matches_command": true,
+      "pid": 109245,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 12,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern013_online.command.json",
+      "wall_seconds": 471.3848545189976,
+      "charged_wall_seconds": 471.3848545189976,
+      "charge_matches_command": true,
+      "pid": 109306,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 13,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern014_online.command.json",
+      "wall_seconds": 471.1288766159996,
+      "charged_wall_seconds": 471.1288766159996,
+      "charge_matches_command": true,
+      "pid": 109374,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 14,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern015_online.command.json",
+      "wall_seconds": 471.2246993440058,
+      "charged_wall_seconds": 471.2246993440058,
+      "charge_matches_command": true,
+      "pid": 109437,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 15,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern016_online.command.json",
+      "wall_seconds": 471.1782747529942,
+      "charged_wall_seconds": 471.1782747529942,
+      "charge_matches_command": true,
+      "pid": 109493,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 16,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern017_online.command.json",
+      "wall_seconds": 471.04649664700264,
+      "charged_wall_seconds": 471.04649664700264,
+      "charge_matches_command": true,
+      "pid": 109756,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 17,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern018_online.command.json",
+      "wall_seconds": 471.1076104189997,
+      "charged_wall_seconds": 471.1076104189997,
+      "charge_matches_command": true,
+      "pid": 109822,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 18,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern019_online.command.json",
+      "wall_seconds": 471.08027761400444,
+      "charged_wall_seconds": 471.08027761400444,
+      "charge_matches_command": true,
+      "pid": 109889,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 19,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern020_online.command.json",
+      "wall_seconds": 470.98305345801055,
+      "charged_wall_seconds": 470.98305345801055,
+      "charge_matches_command": true,
+      "pid": 109957,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 20,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern021_online.command.json",
+      "wall_seconds": 471.39412055200955,
+      "charged_wall_seconds": 471.39412055200955,
+      "charge_matches_command": true,
+      "pid": 110013,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 21,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern022_online.command.json",
+      "wall_seconds": 471.3083248019975,
+      "charged_wall_seconds": 471.3083248019975,
+      "charge_matches_command": true,
+      "pid": 110074,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 22,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern023_online.command.json",
+      "wall_seconds": 471.2258382680011,
+      "charged_wall_seconds": 471.2258382680011,
+      "charge_matches_command": true,
+      "pid": 110167,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 23,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern024_online.command.json",
+      "wall_seconds": 471.1621068749955,
+      "charged_wall_seconds": 471.1621068749955,
+      "charge_matches_command": true,
+      "pid": 110229,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 24,
+      "status": "timeout",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern025_online.command.json",
+      "wall_seconds": 471.15570230399317,
+      "charged_wall_seconds": 471.15570230399317,
+      "charge_matches_command": true,
+      "pid": 110285,
+      "source_phase": "current"
+    },
+    {
+      "k": 56,
+      "index": 25,
+      "status": "success",
+      "command_file": "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern026_online.command.json",
+      "wall_seconds": 118.36698770998919,
+      "charged_wall_seconds": 118.36698770998919,
+      "charge_matches_command": true,
+      "pid": 110337,
+      "source_phase": "current"
+    }
+  ],
+  "all_attempt_charges_match_commands": true,
+  "no_private_truth_file_opened": true,
+  "basis_checkpoints_not_recomputed": "Historical exact proofs retained; this phase checks their recorded output hashes rather than rerunning independent evaluate."
+}

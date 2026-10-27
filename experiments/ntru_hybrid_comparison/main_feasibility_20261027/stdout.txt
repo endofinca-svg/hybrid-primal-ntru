@@ -1,0 +1,123 @@
+{
+  "summary": {
+    "schema": "ntru-trial-summary-v1",
+    "planned_trial_count": 3,
+    "started_trial_count": 3,
+    "not_started_planned_trial_count": 0,
+    "budget_eligible_success_count": 1,
+    "failed_trial_count": 2,
+    "timeout_trial_count": 2,
+    "exception_trial_count": 0,
+    "cleanup_failed_or_unverified_trial_count": 0,
+    "total_pattern_attempt_count": 5,
+    "total_actual_wall_cost_seconds": 1450.694872351014,
+    "cost_per_budget_eligible_success_seconds": 1450.694872351014,
+    "cost_per_success_unavailable_reason": null,
+    "cost_modes": [
+      "standalone_end_to_end"
+    ],
+    "groups": [
+      {
+        "method": "B",
+        "cost_mode": "standalone_end_to_end",
+        "cost_scope": "complete_cold_start_trial_including_failures_retries_and_cleanup",
+        "planned_trial_count": 1,
+        "started_trial_count": 1,
+        "not_started_planned_trial_count": 0,
+        "budget_eligible_success_count": 1,
+        "failed_trial_count": 0,
+        "timeout_trial_count": 0,
+        "exception_trial_count": 0,
+        "cleanup_failed_or_unverified_trial_count": 0,
+        "public_valid_observed_trial_count": 1,
+        "total_pattern_attempt_count": 1,
+        "total_actual_wall_cost_seconds": 260.4560172670026,
+        "cost_per_budget_eligible_success_seconds": 260.4560172670026,
+        "cost_per_success_unavailable_reason": null,
+        "counting_unit": "one_started_trial_contributes_at_most_one_success",
+        "failure_categories_may_overlap": true
+      },
+      {
+        "method": "D",
+        "cost_mode": "standalone_end_to_end",
+        "cost_scope": "complete_cold_start_trial_including_failures_retries_and_cleanup",
+        "planned_trial_count": 1,
+        "started_trial_count": 1,
+        "not_started_planned_trial_count": 0,
+        "budget_eligible_success_count": 0,
+        "failed_trial_count": 1,
+        "timeout_trial_count": 1,
+        "exception_trial_count": 0,
+        "cleanup_failed_or_unverified_trial_count": 0,
+        "public_valid_observed_trial_count": 0,
+        "total_pattern_attempt_count": 2,
+        "total_actual_wall_cost_seconds": 595.0974941270106,
+        "cost_per_budget_eligible_success_seconds": null,
+        "cost_per_success_unavailable_reason": "no_budget_eligible_success_observed",
+        "counting_unit": "one_started_trial_contributes_at_most_one_success",
+        "failure_categories_may_overlap": true
+      },
+      {
+        "method": "E",
+        "cost_mode": "standalone_end_to_end",
+        "cost_scope": "complete_cold_start_trial_including_failures_retries_and_cleanup",
+        "planned_trial_count": 1,
+        "started_trial_count": 1,
+        "not_started_planned_trial_count": 0,
+        "budget_eligible_success_count": 0,
+        "failed_trial_count": 1,
+        "timeout_trial_count": 1,
+        "exception_trial_count": 0,
+        "cleanup_failed_or_unverified_trial_count": 0,
+        "public_valid_observed_trial_count": 0,
+        "total_pattern_attempt_count": 2,
+        "total_actual_wall_cost_seconds": 595.1413609570009,
+        "cost_per_budget_eligible_success_seconds": null,
+        "cost_per_success_unavailable_reason": "no_budget_eligible_success_observed",
+        "counting_unit": "one_started_trial_contributes_at_most_one_success",
+        "failure_categories_may_overlap": true
+      }
+    ],
+    "trial_qualifications": [
+      {
+        "instance_id": "instance_01",
+        "method": "B",
+        "trial_id": "B-main-0",
+        "cost_mode": "standalone_end_to_end",
+        "qualified_success": true,
+        "disqualification_reasons": [],
+        "success_contribution": 1
+      },
+      {
+        "instance_id": "instance_01",
+        "method": "E",
+        "trial_id": "E-main-0",
+        "cost_mode": "standalone_end_to_end",
+        "qualified_success": false,
+        "disqualification_reasons": [
+          "no_public_valid_observed",
+          "not_success_within_budget",
+          "execution_not_completed_normally",
+          "no_independent_supervisor_public_validation"
+        ],
+        "success_contribution": 0
+      },
+      {
+        "instance_id": "instance_01",
+        "method": "D",
+        "trial_id": "D-main-0",
+        "cost_mode": "standalone_end_to_end",
+        "qualified_success": false,
+        "disqualification_reasons": [
+          "no_public_valid_observed",
+          "not_success_within_budget",
+          "execution_not_completed_normally",
+          "no_independent_supervisor_public_validation"
+        ],
+        "success_contribution": 0
+      }
+    ],
+    "posthoc_summary_not_part_of_online_success_decision": true
+  },
+  "experiment_hard_deadline_met": true
+}

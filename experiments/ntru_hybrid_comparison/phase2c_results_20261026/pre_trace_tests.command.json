@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "60s",
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "experiments/ntru_hybrid_comparison/tests",
+    "-t",
+    ".",
+    "-v"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-26T14:46:44.360346+00:00",
+  "finished_utc": "2026-10-26T14:46:48.568689+00:00",
+  "wall_seconds": 4.208317069998884,
+  "exit_code": 0,
+  "timeout_seconds": 60,
+  "kill_grace_seconds": 2,
+  "scope": "2A/2B reused +2C pure/mock correctness tests; real backend evidence separate real01.*"
+}

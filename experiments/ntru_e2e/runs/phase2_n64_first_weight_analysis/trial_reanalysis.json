@@ -1,0 +1,1101 @@
+{
+  "schema": "ntru-phase2-n64-trial-reanalysis-v1",
+  "case_id": "n64_w4_8",
+  "scope": "existing first-weight artifacts only; no online execution",
+  "status_counts": {
+    "timeout": 7,
+    "interrupted_censored": 1,
+    "finished": 4
+  },
+  "input_sha256": {
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/online_inventory.json": "990adb6738d6e4c013aa02b5c7968e7e43a5442a416a9a550abfd79ac9fefa96",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_01/b20_s32_p0.result.json": "b8d6c9068eba833b973eaa7f3f53c8d9d0c27e7b7faf56651514a80ca01f142c",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_01/b20_s32_p1.result.json": "a4e0c9a7ce1392ba8cfd963be31b4ee7556d72bd23a96684c66829b4bbe0fb18",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_01/b25_s40_p0.result.json": "a9074e2f946737f8f383d35f04645fef9ab58719dd4a3bbd46fa5d5800d0ed20",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_01/b25_s40_p1.result.json": "0394bc46b6b324246505f5dcb41398067c607d13383459b0370de779d8a95c86",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_02/b20_s32_p0.result.json": "67e0313624a247285cca897dcb2f39b187f58ea325956277a7492631f3512e80",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_02/b20_s32_p1.result.json": "b69108c88f8f03673056480ce50a82c7361ce58c2ff1bc44dcb9c40894c6c3bb",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_02/b25_s40_p0.result.json": "bd11f8c33378e6a115e06e47be942ecfc40ff3961c4db680d80541e2eb8f13a9",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_02/b25_s40_p1.result.json": "d4a57a480b1bebd5e8306de6e4171296619c9340d2a83921f56959d2ec37ee3e",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_03/b20_s32_p0.result.json": "4651133780074553a5b4f2ba6c4497e63d352a6145359421998e015a2ce2af7e",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_03/b20_s32_p1.result.json": "cbd642e63fa58b354be3516e5e7e0127d6599f179ac6b85529ebf5e658b8cc64",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_03/b25_s40_p0.result.json": "e40ce3fe89663f509d82ed1589f39d753f697edb78c3115ffbb54f105147ac62",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w4_8/instance_03/b25_s40_p1.result.json": "e1fd57a71be4db04b73c9144928137574f413e9b19c97bfb6192923fbe809728"
+  },
+  "script_sha256": "e7a98b98409194d662f3880ddb931d36f99e9fd6ed4e208cda09c01102364a1f",
+  "trials": [
+    {
+      "instance_id": "instance_01",
+      "trial_id": "b20_s32_p0",
+      "instrumentation_version": "v1",
+      "command_status": "timeout",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 348, in worker\n    for item in decoder.decode(result[\"targets\"], result[\"bounds_sq\"], list(range(len(result[\"targets\"])))):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py\", line 224, in decode\n    return super().decode(targets, bounds_sq, external_ids)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/slicer_adapter.py\", line 344, in decode\n    self._emit(\"decode_start\", \"decode\", decode_id=decode_id, target_count=len(integer_targets),\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py\", line 115, in _emit\n    super()._emit(event, phase, **fields)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/slicer_adapter.py\", line 173, in _emit\n    self._event_callback({\"event\": event, \"phase\": phase, \"preprocess_id\": self.preprocess_id,\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 268, in event\n    persist(record)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 181, in persist\n    temporary.write_text(json.dumps(result, indent=2, allow_nan=False) + \"\\n\")\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 325, in _iterencode_list\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 383, in _iterencode_dict\n    yield _key_separator\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "Slicer projection preparation before target DB",
+      "charged_online_seconds": 28.272411589001422,
+      "worker_wall_seconds": 27.657736383000156,
+      "checkpoint_io_seconds": 18.99425847001112,
+      "checkpoint_fraction_of_worker_wall": 0.6867611364495451,
+      "timings": {
+        "checkpoint_io_seconds": 18.99425847001112,
+        "construction_seconds": 0.1331622059988149,
+        "lll_setup_seconds": 1.6935819440004707,
+        "bkz_setup_seconds": 0.19944962499721441,
+        "database_setup_seconds": 0.7743325890005508
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.3361083130002953,
+          "operation_seconds": 0.2029461070014804,
+          "method_setup_seconds": 0.1331622059988149,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.821881268006109,
+          "operation_seconds": 1.9951371180068236,
+          "method_setup_seconds": 1.8267441499992856,
+          "first_valid_seconds": 1.8406919700028084,
+          "total_first_valid_seconds": 2.2034237870029756
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.4905551230040146,
+          "operation_seconds": 0.663810973004729,
+          "method_setup_seconds": 1.8267441499992856,
+          "first_valid_seconds": 1.9392597959995328,
+          "total_first_valid_seconds": 8.668857877000846
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.061837286986702,
+          "operation_seconds": 2.0356435119902017,
+          "method_setup_seconds": 2.0261937749965,
+          "first_valid_seconds": 2.0386194759994396,
+          "total_first_valid_seconds": 10.51610368600086
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.809293913993315,
+          "operation_seconds": 0.7831001389968151,
+          "method_setup_seconds": 2.0261937749965,
+          "first_valid_seconds": 2.1625775639986387,
+          "total_first_valid_seconds": 23.571278230003372
+        },
+        "slicer": {
+          "status": "running",
+          "seconds": 2.9690874069965503,
+          "operation_seconds": 0.16856104299949948,
+          "method_setup_seconds": 2.800526363997051,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": false
+      }
+    },
+    {
+      "instance_id": "instance_01",
+      "trial_id": "b20_s32_p1",
+      "instrumentation_version": "v1",
+      "command_status": "timeout",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 344, in worker\n    decoder.build_database()\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py\", line 179, in build_database\n    from g6k.siever import SaturationError, Siever\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/__init__.py\", line 24, in <module>\n    from .siever import Siever  # noqa\n  File \"g6k/siever.pyx\", line 33, in init g6k.siever\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/scipy/special/__init__.py\", line 821, in <module>\n    from ._support_alternative_backends import (\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/scipy/special/_support_alternative_backends.py\", line 6, in <module>\n    from scipy._lib._array_api import (\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/scipy/_lib/_array_api.py\", line 18, in <module>\n    from scipy._lib.array_api_compat import (\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/scipy/_lib/array_api_compat/numpy/__init__.py\", line 1, in <module>\n    from numpy import * # noqa: F403\n  File \"<frozen importlib._bootstrap>\", line 1073, in _handle_fromlist\n  File \"<frozen importlib._bootstrap>\", line 1075, in _handle_fromlist\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/__init__.py\", line 361, in __getattr__\n    import numpy.f2py as f2py\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/f2py/__init__.py\", line 18, in <module>\n    from . import f2py2e\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/f2py/f2py2e.py\", line 19, in <module>\n    from . import crackfortran\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/f2py/crackfortran.py\", line 621, in <module>\n    implicitpattern = re.compile(\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/re.py\", line 251, in compile\n    return _compile(pattern, flags)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/re.py\", line 303, in _compile\n    p = sre_compile.compile(pattern, flags)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_compile.py\", line 788, in compile\n    p = sre_parse.parse(p, flags)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 955, in parse\n    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 444, in _parse_sub\n    itemsappend(_parse(source, state, verbose, nested + 1,\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 841, in _parse\n    p = _parse_sub(source, state, sub_verbose, nested + 1)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 444, in _parse_sub\n    itemsappend(_parse(source, state, verbose, nested + 1,\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 841, in _parse\n    p = _parse_sub(source, state, sub_verbose, nested + 1)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 444, in _parse_sub\n    itemsappend(_parse(source, state, verbose, nested + 1,\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 841, in _parse\n    p = _parse_sub(source, state, sub_verbose, nested + 1)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 444, in _parse_sub\n    itemsappend(_parse(source, state, verbose, nested + 1,\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 530, in _parse\n    subpatternappend((LITERAL, _ord(this)))\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/sre_parse.py\", line 174, in append\n    self.data.append(code)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "lattice database construction",
+      "charged_online_seconds": 28.286868739000056,
+      "worker_wall_seconds": 27.64737892499761,
+      "checkpoint_io_seconds": 19.120395901980373,
+      "checkpoint_fraction_of_worker_wall": 0.6915807807261073,
+      "timings": {
+        "checkpoint_io_seconds": 19.120395901980373,
+        "construction_seconds": 0.13384405400211108,
+        "lll_setup_seconds": 1.6925440630002413,
+        "bkz_setup_seconds": 0.23973658600152703
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.35431376500127953,
+          "operation_seconds": 0.22046971099916846,
+          "method_setup_seconds": 0.13384405400211108,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.98205221301032,
+          "operation_seconds": 2.1556640960079676,
+          "method_setup_seconds": 1.8263881170023524,
+          "first_valid_seconds": 1.8390488400036702,
+          "total_first_valid_seconds": 2.2110300909989746
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.5979149310041976,
+          "operation_seconds": 0.7715268140018452,
+          "method_setup_seconds": 1.8263881170023524,
+          "first_valid_seconds": 1.9713371780017042,
+          "total_first_valid_seconds": 9.097498797000299
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.169130458023574,
+          "operation_seconds": 2.1030057550196943,
+          "method_setup_seconds": 2.0661247030038794,
+          "first_valid_seconds": 2.080208562005282,
+          "total_first_valid_seconds": 11.113082251999003
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.8577390600003127,
+          "operation_seconds": 0.7916143569964333,
+          "method_setup_seconds": 2.0661247030038794,
+          "first_valid_seconds": 2.190126882003824,
+          "total_first_valid_seconds": 24.50325053100096
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": false
+      }
+    },
+    {
+      "instance_id": "instance_01",
+      "trial_id": "b25_s40_p0",
+      "instrumentation_version": "v1",
+      "command_status": "timeout",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 348, in worker\n    for item in decoder.decode(result[\"targets\"], result[\"bounds_sq\"], list(range(len(result[\"targets\"])))):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py\", line 224, in decode\n    return super().decode(targets, bounds_sq, external_ids)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/slicer_adapter.py\", line 344, in decode\n    self._emit(\"decode_start\", \"decode\", decode_id=decode_id, target_count=len(integer_targets),\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py\", line 115, in _emit\n    super()._emit(event, phase, **fields)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/slicer_adapter.py\", line 173, in _emit\n    self._event_callback({\"event\": event, \"phase\": phase, \"preprocess_id\": self.preprocess_id,\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 268, in event\n    persist(record)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 181, in persist\n    temporary.write_text(json.dumps(result, indent=2, allow_nan=False) + \"\\n\")\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 325, in _iterencode_list\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 383, in _iterencode_dict\n    yield _key_separator\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "Slicer projection preparation before target DB",
+      "charged_online_seconds": 28.289476672998717,
+      "worker_wall_seconds": 27.543913631998294,
+      "checkpoint_io_seconds": 18.50959700201929,
+      "checkpoint_fraction_of_worker_wall": 0.6720031600925562,
+      "timings": {
+        "checkpoint_io_seconds": 18.50959700201929,
+        "construction_seconds": 0.16220118300043396,
+        "lll_setup_seconds": 1.6562936150003225,
+        "bkz_setup_seconds": 0.27331131100072525,
+        "database_setup_seconds": 1.077805459000956
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.3913260569970589,
+          "operation_seconds": 0.22912487399662496,
+          "method_setup_seconds": 0.16220118300043396,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.972872901988012,
+          "operation_seconds": 2.1543781039872556,
+          "method_setup_seconds": 1.8184947980007564,
+          "first_valid_seconds": 1.8298713019976276,
+          "total_first_valid_seconds": 2.2052202759987267
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.6003285870065156,
+          "operation_seconds": 0.7818337890057592,
+          "method_setup_seconds": 1.8184947980007564,
+          "first_valid_seconds": 1.9323416980041657,
+          "total_first_valid_seconds": 8.950036677000753
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 3.939128959002119,
+          "operation_seconds": 1.8473228500006371,
+          "method_setup_seconds": 2.0918061090014817,
+          "first_valid_seconds": 2.1036174050022964,
+          "total_first_valid_seconds": 11.127228747998743
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.772981901998719,
+          "operation_seconds": 0.6811757929972373,
+          "method_setup_seconds": 2.0918061090014817,
+          "first_valid_seconds": 2.208818434999557,
+          "total_first_valid_seconds": 23.42736689099911
+        },
+        "slicer": {
+          "status": "running",
+          "seconds": 3.322140358002798,
+          "operation_seconds": 0.15252879000036046,
+          "method_setup_seconds": 3.1696115680024377,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": false
+      }
+    },
+    {
+      "instance_id": "instance_01",
+      "trial_id": "b25_s40_p1",
+      "instrumentation_version": "v1",
+      "command_status": "timeout",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 344, in worker\n    decoder.build_database()\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py\", line 179, in build_database\n    from g6k.siever import SaturationError, Siever\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/__init__.py\", line 24, in <module>\n    from .siever import Siever  # noqa\n  File \"g6k/siever.pyx\", line 33, in init g6k.siever\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/scipy/__init__.py\", line 86, in <module>\n    from scipy._lib._ccallback import LowLevelCallable\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/scipy/_lib/_ccallback.py\", line 1, in <module>\n    from . import _ccallback_c\n  File \"_ccallback_c.pyx\", line 207, in init scipy._lib._ccallback_c\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/ctypes/__init__.py\", line 76, in CFUNCTYPE\n    def CFUNCTYPE(restype, *argtypes, **kw):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "lattice database construction",
+      "charged_online_seconds": 28.226091948999965,
+      "worker_wall_seconds": 27.60399211600088,
+      "checkpoint_io_seconds": 19.39233967998007,
+      "checkpoint_fraction_of_worker_wall": 0.7025193891697693,
+      "timings": {
+        "checkpoint_io_seconds": 19.39233967998007,
+        "construction_seconds": 0.1865914710033394,
+        "lll_setup_seconds": 1.6455039929969644,
+        "bkz_setup_seconds": 0.2428862790002313
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.4483053590047348,
+          "operation_seconds": 0.2617138880013954,
+          "method_setup_seconds": 0.1865914710033394,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.8858142270146345,
+          "operation_seconds": 2.0537187630143308,
+          "method_setup_seconds": 1.8320954640003038,
+          "first_valid_seconds": 1.8453044119996775,
+          "total_first_valid_seconds": 2.294616160001169
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.6199796670007345,
+          "operation_seconds": 0.7878842030004307,
+          "method_setup_seconds": 1.8320954640003038,
+          "first_valid_seconds": 1.9553307780042815,
+          "total_first_valid_seconds": 8.816306882003119
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.111586980012362,
+          "operation_seconds": 2.036605237011827,
+          "method_setup_seconds": 2.074981743000535,
+          "first_valid_seconds": 2.0886876660006237,
+          "total_first_valid_seconds": 11.057335151002917
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.781545386998914,
+          "operation_seconds": 0.7065636439983791,
+          "method_setup_seconds": 2.074981743000535,
+          "first_valid_seconds": 2.180267666997679,
+          "total_first_valid_seconds": 24.737192693002726
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": false
+      }
+    },
+    {
+      "instance_id": "instance_02",
+      "trial_id": "b20_s32_p0",
+      "instrumentation_version": "v1",
+      "command_status": "timeout",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 339, in worker\n    babai_arm(\"bkz_babai\", bkz_setup)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 284, in babai_arm\n    accept(name, item)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 253, in accept\n    persist()\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 181, in persist\n    temporary.write_text(json.dumps(result, indent=2, allow_nan=False) + \"\\n\")\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 325, in _iterencode_list\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 313, in _iterencode_list\n    yield buf + _intstr(value)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "BKZ Babai",
+      "charged_online_seconds": 28.124401673998364,
+      "worker_wall_seconds": 27.563597364001907,
+      "checkpoint_io_seconds": 19.68397606902363,
+      "checkpoint_fraction_of_worker_wall": 0.7141294298084229,
+      "timings": {
+        "checkpoint_io_seconds": 19.68397606902363,
+        "construction_seconds": 0.18548691899923142,
+        "lll_setup_seconds": 1.95883629200398,
+        "bkz_setup_seconds": 0.24465252400113968
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.4257347709972237,
+          "operation_seconds": 0.24024785199799226,
+          "method_setup_seconds": 0.18548691899923142,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 4.40117911798734,
+          "operation_seconds": 2.2568559069841285,
+          "method_setup_seconds": 2.1443232110032113,
+          "first_valid_seconds": 2.158712701006152,
+          "total_first_valid_seconds": 2.5725331460016605
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 3.031382779008709,
+          "operation_seconds": 0.8870595680054976,
+          "method_setup_seconds": 2.1443232110032113,
+          "first_valid_seconds": 2.2061012420017505,
+          "total_first_valid_seconds": 9.979994267003349
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.279475739986083,
+          "operation_seconds": 1.8905000049817318,
+          "method_setup_seconds": 2.388975735004351,
+          "first_valid_seconds": 2.4042795680070412,
+          "total_first_valid_seconds": 13.055544629001815
+        },
+        "bkz_babai": {
+          "status": "running",
+          "seconds": 2.5876844590020482,
+          "operation_seconds": 0.19870872399769723,
+          "method_setup_seconds": 2.388975735004351,
+          "first_valid_seconds": 2.4325324460078264,
+          "total_first_valid_seconds": 27.104830755000876
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 16,
+        "bkz_babai_raw_count": 3,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": false
+      }
+    },
+    {
+      "instance_id": "instance_02",
+      "trial_id": "b20_s32_p1",
+      "instrumentation_version": "v1",
+      "command_status": "timeout",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 339, in worker\n    babai_arm(\"bkz_babai\", bkz_setup)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 283, in babai_arm\n    for item in decoder.iter_babai(result[\"targets\"], result[\"bounds_sq\"], list(range(len(result[\"targets\"])))):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py\", line 130, in iter_babai\n    coefficients = [_integer(x) for x in self.G.babai(target)]\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "BKZ Babai",
+      "charged_online_seconds": 28.17190933600068,
+      "worker_wall_seconds": 27.641212945000007,
+      "checkpoint_io_seconds": 20.664051332030795,
+      "checkpoint_fraction_of_worker_wall": 0.7475812068431207,
+      "timings": {
+        "checkpoint_io_seconds": 20.664051332030795,
+        "construction_seconds": 0.13665611499891384,
+        "lll_setup_seconds": 1.48442747000081,
+        "bkz_setup_seconds": 0.20291189100316842
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.3273655319972022,
+          "operation_seconds": 0.19070941699828836,
+          "method_setup_seconds": 0.13665611499891384,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.232094394006708,
+          "operation_seconds": 1.6110108090069843,
+          "method_setup_seconds": 1.6210835849997238,
+          "first_valid_seconds": 1.6325713119986176,
+          "total_first_valid_seconds": 1.9611864559992682
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.172021556987602,
+          "operation_seconds": 0.550937971987878,
+          "method_setup_seconds": 1.6210835849997238,
+          "first_valid_seconds": 1.6411133680048806,
+          "total_first_valid_seconds": 8.129500745999394
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 3.8830486499718972,
+          "operation_seconds": 2.059053173969005,
+          "method_setup_seconds": 1.8239954760028922,
+          "first_valid_seconds": 1.8361077990011836,
+          "total_first_valid_seconds": 10.430915823999385
+        },
+        "bkz_babai": {
+          "status": "running",
+          "seconds": 2.549846603007609,
+          "operation_seconds": 0.7258511270047165,
+          "method_setup_seconds": 1.8239954760028922,
+          "first_valid_seconds": 1.8819053760053066,
+          "total_first_valid_seconds": 24.484047545000067
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 16,
+        "bkz_babai_raw_count": 15,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": false
+      }
+    },
+    {
+      "instance_id": "instance_02",
+      "trial_id": "b25_s40_p0",
+      "instrumentation_version": "v1",
+      "command_status": "timeout",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 339, in worker\n    babai_arm(\"bkz_babai\", bkz_setup)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 284, in babai_arm\n    accept(name, item)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 253, in accept\n    persist()\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 181, in persist\n    temporary.write_text(json.dumps(result, indent=2, allow_nan=False) + \"\\n\")\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 325, in _iterencode_list\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 313, in _iterencode_list\n    yield buf + _intstr(value)\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "BKZ Babai",
+      "charged_online_seconds": 28.17938342599882,
+      "worker_wall_seconds": 27.586537825998676,
+      "checkpoint_io_seconds": 19.91755250503047,
+      "checkpoint_fraction_of_worker_wall": 0.7220026170250099,
+      "timings": {
+        "checkpoint_io_seconds": 19.91755250503047,
+        "construction_seconds": 0.14113446500050486,
+        "lll_setup_seconds": 1.8026682930030802,
+        "bkz_setup_seconds": 0.20430504300020402
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.3774170770011551,
+          "operation_seconds": 0.23628261200065026,
+          "method_setup_seconds": 0.14113446500050486,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.9936517929891124,
+          "operation_seconds": 2.0498490349855274,
+          "method_setup_seconds": 1.943802758003585,
+          "first_valid_seconds": 1.9561594020015036,
+          "total_first_valid_seconds": 2.361429672997474
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.767602980005904,
+          "operation_seconds": 0.8238002220023191,
+          "method_setup_seconds": 1.943802758003585,
+          "first_valid_seconds": 2.0049450600017735,
+          "total_first_valid_seconds": 9.211697909999202
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.177177694986312,
+          "operation_seconds": 2.0290698939825234,
+          "method_setup_seconds": 2.148107801003789,
+          "first_valid_seconds": 2.1636451200029114,
+          "total_first_valid_seconds": 12.048337038999307
+        },
+        "bkz_babai": {
+          "status": "running",
+          "seconds": 2.5133746570027142,
+          "operation_seconds": 0.36526685599892517,
+          "method_setup_seconds": 2.148107801003789,
+          "first_valid_seconds": 2.1941645210026763,
+          "total_first_valid_seconds": 26.427497625998512
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 16,
+        "bkz_babai_raw_count": 6,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": false
+      }
+    },
+    {
+      "instance_id": "instance_02",
+      "trial_id": "b25_s40_p1",
+      "instrumentation_version": "v1",
+      "command_status": "interrupted_censored",
+      "worker_status": "interrupted",
+      "interruption_evidence": {
+        "type": "WorkerInterrupted",
+        "message": "Worker interrupted by signal 15",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 328, in worker\n    rows_arm(\"lll_rows\", construction_seconds + lll_seconds, result[\"bases\"][\"lll\"])\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 277, in rows_arm\n    accept(name, {\"target_id\": None, \"v\": [sign * x for x in row],\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 253, in accept\n    persist()\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 181, in persist\n    temporary.write_text(json.dumps(result, indent=2, allow_nan=False) + \"\\n\")\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 325, in _iterencode_list\n    yield from chunks\n  File \"/home/inca/miniforge3/envs/g6k/lib/python3.10/json/encoder.py\", line 303, in _iterencode_list\n    elif value is None:\n  File \"/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/solve_phase2.py\", line 288, in interrupted\n    raise WorkerInterrupted(f\"Worker interrupted by signal {signum}\")\nWorkerInterrupted: Worker interrupted by signal 15\n"
+      },
+      "last_phase": "LLL row validation",
+      "charged_online_seconds": 30,
+      "worker_wall_seconds": 5.323847423998814,
+      "checkpoint_io_seconds": 2.3296766319872404,
+      "checkpoint_fraction_of_worker_wall": 0.4375926743290079,
+      "timings": {
+        "checkpoint_io_seconds": 2.3296766319872404,
+        "construction_seconds": 0.14877273599995533,
+        "lll_setup_seconds": 1.838121377004427
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.3977381080003397,
+          "operation_seconds": 0.24896537200038438,
+          "method_setup_seconds": 0.14877273599995533,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "running",
+          "seconds": 2.7312309960107086,
+          "operation_seconds": 0.7443368830063264,
+          "method_setup_seconds": 1.9868941130043822,
+          "first_valid_seconds": 1.998617044002458,
+          "total_first_valid_seconds": 2.4067348899989156
+        },
+        "lll_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "method_setup_seconds": null,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        }
+      },
+      "slicer_calls_started": 0,
+      "slicer_calls_finished": 0,
+      "slicer_kernel_seconds": [],
+      "slicer_iterations": [],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 0,
+        "lll_babai_raw_count": 0,
+        "bkz_babai_raw_count": 0,
+        "slicer_intersection_lll_babai": 0,
+        "slicer_intersection_bkz_babai": 0,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 0,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": true
+      }
+    },
+    {
+      "instance_id": "instance_03",
+      "trial_id": "b20_s32_p0",
+      "instrumentation_version": "v2",
+      "command_status": "finished",
+      "worker_status": "complete",
+      "interruption_evidence": null,
+      "last_phase": "completed",
+      "charged_online_seconds": 18.897211250998225,
+      "worker_wall_seconds": 18.4388898899997,
+      "checkpoint_io_seconds": 6.676422517011815,
+      "checkpoint_fraction_of_worker_wall": 0.36208375649733454,
+      "timings": {
+        "checkpoint_io_seconds": 6.676422517011815,
+        "construction_seconds": 0.13451707399872248,
+        "lll_setup_seconds": 1.7492577390039514,
+        "bkz_setup_seconds": 0.228470562997245,
+        "database_setup_seconds": 0.7609693970007356
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.34506649999457295,
+          "operation_seconds": 0.21054942599585047,
+          "method_setup_seconds": 0.13451707399872248,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 4.033648345004622,
+          "operation_seconds": 2.1498735320019478,
+          "method_setup_seconds": 1.883774813002674,
+          "first_valid_seconds": 1.8983056729994132,
+          "total_first_valid_seconds": 2.174771072001022
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.661513946000923,
+          "operation_seconds": 0.7777391329982493,
+          "method_setup_seconds": 1.883774813002674,
+          "first_valid_seconds": 2.0230040560054476,
+          "total_first_valid_seconds": 5.668870032000996
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.301928971999587,
+          "operation_seconds": 2.189683595999668,
+          "method_setup_seconds": 2.112245375999919,
+          "first_valid_seconds": 2.127971008998429,
+          "total_first_valid_seconds": 6.8208651800014195
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.8774272880000353,
+          "operation_seconds": 0.7651819120001164,
+          "method_setup_seconds": 2.112245375999919,
+          "first_valid_seconds": 2.2303258489992004,
+          "total_first_valid_seconds": 10.92838931499864
+        },
+        "slicer": {
+          "status": "complete",
+          "seconds": 5.651315222989069,
+          "operation_seconds": 2.7781004499884148,
+          "method_setup_seconds": 2.8732147730006545,
+          "first_valid_seconds": 4.244202274996496,
+          "total_first_valid_seconds": 16.443433131000347
+        }
+      },
+      "slicer_calls_started": 1,
+      "slicer_calls_finished": 1,
+      "slicer_kernel_seconds": [
+        0.005452240999147762
+      ],
+      "slicer_iterations": [
+        1
+      ],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 8,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 8,
+        "slicer_intersection_bkz_babai": 8,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 8,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": true
+      }
+    },
+    {
+      "instance_id": "instance_03",
+      "trial_id": "b20_s32_p1",
+      "instrumentation_version": "v2",
+      "command_status": "finished",
+      "worker_status": "complete",
+      "interruption_evidence": null,
+      "last_phase": "completed",
+      "charged_online_seconds": 20.12769544299954,
+      "worker_wall_seconds": 19.615221995001775,
+      "checkpoint_io_seconds": 6.508300152956508,
+      "checkpoint_fraction_of_worker_wall": 0.3317984448310048,
+      "timings": {
+        "checkpoint_io_seconds": 6.508300152956508,
+        "construction_seconds": 0.1385891760000959,
+        "lll_setup_seconds": 1.7936678119949647,
+        "bkz_setup_seconds": 0.21271663299921784,
+        "database_setup_seconds": 0.7406418880018464
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.3923680050029361,
+          "operation_seconds": 0.2537788290028402,
+          "method_setup_seconds": 0.1385891760000959,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.9970374520344194,
+          "operation_seconds": 2.0647804640393588,
+          "method_setup_seconds": 1.9322569879950606,
+          "first_valid_seconds": 1.945983683996019,
+          "total_first_valid_seconds": 2.260299952002242
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.6937217239974416,
+          "operation_seconds": 0.761464736002381,
+          "method_setup_seconds": 1.9322569879950606,
+          "first_valid_seconds": 2.058240399997885,
+          "total_first_valid_seconds": 5.4893362280017755
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.332097396985773,
+          "operation_seconds": 2.1871237759914948,
+          "method_setup_seconds": 2.1449736209942785,
+          "first_valid_seconds": 2.1580505599922617,
+          "total_first_valid_seconds": 6.615770271000656
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.9080908949908917,
+          "operation_seconds": 0.7631172739966132,
+          "method_setup_seconds": 2.1449736209942785,
+          "first_valid_seconds": 2.263083611993352,
+          "total_first_valid_seconds": 10.674978502000158
+        },
+        "slicer": {
+          "status": "complete",
+          "seconds": 7.061568532008096,
+          "operation_seconds": 4.175953023011971,
+          "method_setup_seconds": 2.885615508996125,
+          "first_valid_seconds": 4.295839276001061,
+          "total_first_valid_seconds": 16.25401236900143
+        }
+      },
+      "slicer_calls_started": 1,
+      "slicer_calls_finished": 1,
+      "slicer_kernel_seconds": [
+        0.008199334999517305
+      ],
+      "slicer_iterations": [
+        2
+      ],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 8,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 2,
+        "slicer_intersection_bkz_babai": 8,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 8,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": true
+      }
+    },
+    {
+      "instance_id": "instance_03",
+      "trial_id": "b25_s40_p0",
+      "instrumentation_version": "v2",
+      "command_status": "finished",
+      "worker_status": "complete",
+      "interruption_evidence": null,
+      "last_phase": "completed",
+      "charged_online_seconds": 18.974741874997562,
+      "worker_wall_seconds": 18.54294342600042,
+      "checkpoint_io_seconds": 6.6063939789855795,
+      "checkpoint_fraction_of_worker_wall": 0.3562753672495312,
+      "timings": {
+        "checkpoint_io_seconds": 6.6063939789855795,
+        "construction_seconds": 0.17401710799822467,
+        "lll_setup_seconds": 1.8517353260031086,
+        "bkz_setup_seconds": 0.1786098620032135,
+        "database_setup_seconds": 1.0500567810013308
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.38083448999896063,
+          "operation_seconds": 0.20681738200073596,
+          "method_setup_seconds": 0.17401710799822467,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 4.125807537009678,
+          "operation_seconds": 2.1000551030083443,
+          "method_setup_seconds": 2.0257524340013333,
+          "first_valid_seconds": 2.038792999999714,
+          "total_first_valid_seconds": 2.3150598059983167
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.7746403879900754,
+          "operation_seconds": 0.7488879539887421,
+          "method_setup_seconds": 2.0257524340013333,
+          "first_valid_seconds": 2.1596431309953914,
+          "total_first_valid_seconds": 5.616336938997847
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.353552755004785,
+          "operation_seconds": 2.1491904590002378,
+          "method_setup_seconds": 2.204362296004547,
+          "first_valid_seconds": 2.215941850005038,
+          "total_first_valid_seconds": 6.649929219998739
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.985889686002338,
+          "operation_seconds": 0.781527389997791,
+          "method_setup_seconds": 2.204362296004547,
+          "first_valid_seconds": 2.3476963070061174,
+          "total_first_valid_seconds": 10.774821873998008
+        },
+        "slicer": {
+          "status": "complete",
+          "seconds": 5.93077450801502,
+          "operation_seconds": 2.676355431009142,
+          "method_setup_seconds": 3.2544190770058776,
+          "first_valid_seconds": 4.586060477005958,
+          "total_first_valid_seconds": 16.620931151999685
+        }
+      },
+      "slicer_calls_started": 1,
+      "slicer_calls_finished": 1,
+      "slicer_kernel_seconds": [
+        0.006404826999641955
+      ],
+      "slicer_iterations": [
+        1
+      ],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 8,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 8,
+        "slicer_intersection_bkz_babai": 8,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 8,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": true
+      }
+    },
+    {
+      "instance_id": "instance_03",
+      "trial_id": "b25_s40_p1",
+      "instrumentation_version": "v2",
+      "command_status": "finished",
+      "worker_status": "complete",
+      "interruption_evidence": null,
+      "last_phase": "completed",
+      "charged_online_seconds": 20.604865937002614,
+      "worker_wall_seconds": 20.143680405999476,
+      "checkpoint_io_seconds": 6.742299299017759,
+      "checkpoint_fraction_of_worker_wall": 0.3347103986523571,
+      "timings": {
+        "checkpoint_io_seconds": 6.742299299017759,
+        "construction_seconds": 0.13499308099926566,
+        "lll_setup_seconds": 1.7438444689978496,
+        "bkz_setup_seconds": 0.25491305599643965,
+        "database_setup_seconds": 1.2114755759976106
+      },
+      "arm_timings": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 0.32643897099842434,
+          "operation_seconds": 0.19144588999915868,
+          "method_setup_seconds": 0.13499308099926566,
+          "first_valid_seconds": null,
+          "total_first_valid_seconds": null
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 3.980188701985753,
+          "operation_seconds": 2.101351151988638,
+          "method_setup_seconds": 1.8788375499971153,
+          "first_valid_seconds": 1.896526823995373,
+          "total_first_valid_seconds": 2.1507066809972457
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 2.6796904019938665,
+          "operation_seconds": 0.8008528519967513,
+          "method_setup_seconds": 1.8788375499971153,
+          "first_valid_seconds": 2.018480388996977,
+          "total_first_valid_seconds": 5.53279407899754
+        },
+        "bkz_rows": {
+          "status": "complete",
+          "seconds": 4.321587966998777,
+          "operation_seconds": 2.187837361005222,
+          "method_setup_seconds": 2.133750605993555,
+          "first_valid_seconds": 2.1503010539927345,
+          "total_first_valid_seconds": 6.740713180999592
+        },
+        "bkz_babai": {
+          "status": "complete",
+          "seconds": 2.8966366839958937,
+          "operation_seconds": 0.7628860780023388,
+          "method_setup_seconds": 2.133750605993555,
+          "first_valid_seconds": 2.272965091993683,
+          "total_first_valid_seconds": 10.888961488999485
+        },
+        "slicer": {
+          "status": "complete",
+          "seconds": 7.341028149981867,
+          "operation_seconds": 3.995801967990701,
+          "method_setup_seconds": 3.3452261819911655,
+          "first_valid_seconds": 4.854422747979697,
+          "total_first_valid_seconds": 17.063561281996954
+        }
+      },
+      "slicer_calls_started": 1,
+      "slicer_calls_finished": 1,
+      "slicer_kernel_seconds": [
+        0.012750230001984164
+      ],
+      "slicer_iterations": [
+        2
+      ],
+      "slicer_target_db_rejections": 0,
+      "overlap": {
+        "slicer_raw_count": 8,
+        "lll_babai_raw_count": 8,
+        "bkz_babai_raw_count": 8,
+        "slicer_intersection_lll_babai": 2,
+        "slicer_intersection_bkz_babai": 8,
+        "slicer_intersection_rows": 0,
+        "slicer_new_vs_rows": 8,
+        "slicer_new_vs_all_baselines": 0,
+        "identical_to_bkz_babai": true
+      }
+    }
+  ]
+}

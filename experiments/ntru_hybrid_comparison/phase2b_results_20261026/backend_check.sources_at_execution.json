@@ -1,0 +1,7 @@
+{
+  "scope": "owned reduction implementation and tiny-check script exactly as used by the completed one-time check, captured before post-check validator hardening",
+  "sha256": {
+    "experiments/ntru_hybrid_comparison/reduction.py": "dae98314b77685141da7b4b3722d669f76e7831d71dd6553bc707fadb5e9213f",
+    "experiments/ntru_hybrid_comparison/phase2b_results_20261026/backend_check.py": "3285a5db576f7e1be24c762c9f36db46edaaa51137bc713d71b670ed99c15d19"
+  }
+}

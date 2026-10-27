@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "python",
+    "experiments/ntru_e2e/run_in_env.py",
+    "-m",
+    "pytest",
+    "-q",
+    "experiments/ntru_e2e/tests/test_algebra.py",
+    "experiments/ntru_e2e/tests/test_io.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T11:50:41.888519+00:00",
+  "timeout_seconds": 90.0,
+  "stdout": "math_audit_tests.stdout.txt",
+  "stderr": "math_audit_tests.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 1.3850613750000775,
+  "cpu_seconds": 1.339713,
+  "peak_rss_kib": 33808,
+  "finished_utc": "2026-10-21T11:50:43.273304+00:00"
+}

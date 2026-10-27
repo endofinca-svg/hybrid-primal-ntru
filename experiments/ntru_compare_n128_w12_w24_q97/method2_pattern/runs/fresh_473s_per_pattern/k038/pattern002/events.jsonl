@@ -1,0 +1,16 @@
+{"event": "worker_started", "stage": "initialization", "elapsed_seconds": 0.0027953230019193143, "recorded_utc": "2026-10-22T11:36:17.001548+00:00"}
+{"event": "stage_started", "stage": "lll", "elapsed_seconds": 0.8253810220048763, "recorded_utc": "2026-10-22T11:36:17.824137+00:00"}
+{"event": "stage_completed", "stage": "lll", "elapsed_seconds": 32.54589536599815, "recorded_utc": "2026-10-22T11:36:49.544651+00:00"}
+{"event": "stage_started", "stage": "bkz_b030_t01", "elapsed_seconds": 33.472640949999914, "recorded_utc": "2026-10-22T11:36:50.471398+00:00"}
+{"event": "stage_completed", "stage": "bkz_b030_t01", "elapsed_seconds": 71.15652287199919, "recorded_utc": "2026-10-22T11:37:28.155277+00:00"}
+{"event": "stage_started", "stage": "bkz_b030_t02", "elapsed_seconds": 71.15922058699653, "recorded_utc": "2026-10-22T11:37:28.157976+00:00"}
+{"event": "stage_completed", "stage": "bkz_b030_t02", "elapsed_seconds": 113.19432652000978, "recorded_utc": "2026-10-22T11:38:10.193080+00:00"}
+{"event": "stage_started", "stage": "bkz_b031_t01", "elapsed_seconds": 113.19726048099983, "recorded_utc": "2026-10-22T11:38:10.196013+00:00"}
+{"event": "stage_completed", "stage": "bkz_b031_t01", "elapsed_seconds": 155.53405618100078, "recorded_utc": "2026-10-22T11:38:52.532812+00:00"}
+{"event": "stage_started", "stage": "bkz_b031_t02", "elapsed_seconds": 155.5361510750081, "recorded_utc": "2026-10-22T11:38:52.534905+00:00"}
+{"event": "stage_completed", "stage": "bkz_b031_t02", "elapsed_seconds": 201.30798655300168, "recorded_utc": "2026-10-22T11:39:38.306744+00:00"}
+{"event": "stage_started", "stage": "bkz_b032_t01", "elapsed_seconds": 201.31188537600974, "recorded_utc": "2026-10-22T11:39:38.310639+00:00"}
+{"event": "stage_completed", "stage": "bkz_b032_t01", "elapsed_seconds": 251.4245822320081, "recorded_utc": "2026-10-22T11:40:28.423342+00:00"}
+{"event": "stage_started", "stage": "bkz_b032_t02", "elapsed_seconds": 251.42840607400285, "recorded_utc": "2026-10-22T11:40:28.427161+00:00"}
+{"event": "stage_completed", "stage": "bkz_b032_t02", "elapsed_seconds": 294.3514135440055, "recorded_utc": "2026-10-22T11:41:11.350169+00:00"}
+{"event": "worker_finished", "stage": "finished", "elapsed_seconds": 294.3546113860066, "recorded_utc": "2026-10-22T11:41:11.353361+00:00"}

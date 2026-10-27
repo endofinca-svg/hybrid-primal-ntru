@@ -1,0 +1,37 @@
+{
+  "schema": "ntru-e2e-final-artifact-audit-v1",
+  "phase1_acceptance_passed": true,
+  "all_predefined_instances_recorded": true,
+  "online_wall_seconds": 307.7298480080008,
+  "records": [
+    {
+      "instance_id": "instance_01",
+      "evaluation_recomputed_equal": true,
+      "exact_candidate_vectors_checked": 0,
+      "raw_event_count": 2343,
+      "checkpoint_event_count": 2342,
+      "extra_raw_events": [
+        "target_retry"
+      ],
+      "end_to_end_passed": false
+    },
+    {
+      "instance_id": "instance_02",
+      "evaluation_recomputed_equal": true,
+      "exact_candidate_vectors_checked": 8,
+      "raw_event_count": 57,
+      "checkpoint_event_count": 57,
+      "extra_raw_events": [],
+      "end_to_end_passed": true
+    },
+    {
+      "instance_id": "instance_03",
+      "evaluation_recomputed_equal": true,
+      "exact_candidate_vectors_checked": 8,
+      "raw_event_count": 57,
+      "checkpoint_event_count": 57,
+      "extra_raw_events": [],
+      "end_to_end_passed": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "ntru-fresh-pattern-budget-frozen-v1",
+  "prepared_utc": "2026-10-22T11:08:24.009344+00:00",
+  "policy_sha256": "8d782a3af256364a87dfb933f72bb7add499a4dd53f3fcc699ed8b08739579ab",
+  "inputs": {
+    "public": {
+      "source": "experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+      "sha256": "8c03b57a732fb8114d900ff47c2b04f93ca257bef5066db0988e74a10d89baf9",
+      "frozen": "provenance/public.frozen.json"
+    },
+    "plan": {
+      "source": "experiments/ntru_compare_n128_w12_w24_q97/plan_tour2.json",
+      "sha256": "3242230709841ec407236041191e92b9fca2d681a38f33a5714245a02cd4b1cf",
+      "frozen": "provenance/plan.frozen.json"
+    },
+    "baseline_summary": {
+      "source": "experiments/ntru_compare_n128_w12_w24_q97/baseline_tour2/summary.json",
+      "sha256": "2c08a28fd91d02a47c48f0645da0053c8dc768414e8bf7bf94a4e5fae2e08baa",
+      "frozen": "provenance/baseline_summary.frozen.json"
+    },
+    "baseline_config": {
+      "source": "experiments/ntru_compare_n128_w12_w24_q97/baseline_tour2/config.json",
+      "sha256": "b24ebbb73d2ab06fc2c8b3c58ef38d40f270cee2432472f046c9862d665b1426",
+      "frozen": "provenance/baseline_config.frozen.json"
+    },
+    "baseline_result": {
+      "source": "experiments/ntru_compare_n128_w12_w24_q97/baseline_tour2/result.json",
+      "sha256": "88c29caaf8269ca98486e62fb7d19f8950c4e040aa4a67d1c04cdfe87ca915bb",
+      "frozen": "provenance/baseline_result.frozen.json"
+    },
+    "baseline_manifest": {
+      "source": "experiments/ntru_compare_n128_w12_w24_q97/run_manifest_tour2.json",
+      "sha256": "7cf7f07fba4656e7a6cae518de5312c136006b7cea9bb64fba5572ee5dddf0db",
+      "frozen": "provenance/baseline_manifest.frozen.json"
+    }
+  },
+  "source_sha256": {
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/__init__.py": "ac378d4e2497f56edf1961ade26fa2efcdda98ee8f0ee993273cfc4ee288f063",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/solve.py": "fd8b7a76f554320c7c717ddc129926735bb366b5eed84f0d65a26d414e64120e",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/run.py": "a6320519269a1bdc36bd1ecc7c69ab05bdfb38e05bc157882b7fd982c2e6256f",
+    "experiments/ntru_compare_n128_w12_w24_q97/__init__.py": "cf3427b477ae5eeb247ca0ce6abfd65f545246b7825f97ba44e248adec7d3284",
+    "experiments/ntru_e2e/algebra.py": "16f7e9b59cdb5b5559b56c5075dcef3c950ad68c24b862626ac7b0acdfba910b",
+    "experiments/ntru_e2e/record_command.py": "7ce403963707c49d938f5330d3986f9351519e913a3ec5250a9c068b2c61bf62",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/budgeted_search.py": "a7ade67a377ec45dbf5f5ccd1b98e25bf0646b3d761a1d2b4efb01fe71401765"
+  },
+  "environment_sha256": "46f7b355f858ebfdce95c33e9777c7a72b9c7764404f1483364f2bb483034801",
+  "baseline_truth_sha256": "826542033537f18264a6d88d652a053880b34d2e95b30b74e74faba8d8377be4"
+}

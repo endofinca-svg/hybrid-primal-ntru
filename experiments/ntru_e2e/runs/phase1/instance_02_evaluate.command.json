@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/home/inca/miniforge3/bin/python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "-m",
+    "experiments.ntru_e2e.evaluate",
+    "--public",
+    "experiments/ntru_e2e/runs/phase1/public/instance_02.json",
+    "--truth",
+    "experiments/ntru_e2e/runs/phase1/private/instance_02.truth.json",
+    "--result",
+    "experiments/ntru_e2e/runs/phase1/instance_02.result.json",
+    "--output",
+    "experiments/ntru_e2e/runs/phase1/instance_02.evaluation.json"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T14:08:49.396066+00:00",
+  "timeout_seconds": 60,
+  "stdout": "instance_02_evaluate.stdout.txt",
+  "stderr": "instance_02_evaluate.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 0.32467519599958905,
+  "cpu_seconds": 0.308852,
+  "peak_rss_kib": 20812,
+  "finished_utc": "2026-10-21T14:08:49.720520+00:00"
+}

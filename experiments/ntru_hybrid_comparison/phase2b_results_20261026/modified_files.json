@@ -1,0 +1,71 @@
+{
+  "schema": "ntru-phase2b-files-v1",
+  "phase": "2B",
+  "new_implementation_and_test_file_count": 10,
+  "implementation_and_test_files": [
+    {
+      "path": "experiments/ntru_hybrid_comparison/reduction.py",
+      "change": "added",
+      "sha256": "9bf04f0416a28f6c956534caca17ebabc8f849300283482cbdd7be63b8f7844b",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/exact_lattice.py",
+      "change": "added",
+      "sha256": "946c072a7fcf5f895353ffc5a4c3af8fead8584142bdacb8e27624a206aea093",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/id_mapping.py",
+      "change": "added",
+      "sha256": "f3dd701f5d7ad2e755182633e03cc602fd6cc9fc9a2a890929073e35e08ad98e",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/inputs.py",
+      "change": "added",
+      "sha256": "06fe20b21f3cd9ac048e73d57d886a89ebc136f4d305960920743f4390cc4b44",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/build_public_inputs.py",
+      "change": "added",
+      "sha256": "fc89afc72b216931e3057116b3517335f054d671d0f178594c76a08b658955f7",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_reduction.py",
+      "change": "added",
+      "sha256": "7096c7755a76c27bbf36bcaa98784358a419b46a6f2ddd22c2e6541e07bfe137",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_exact_lattice.py",
+      "change": "added",
+      "sha256": "09572f8079ea98409b988be5ebe3f99ad813dcae3e38c4e618e3247db3b2d86d",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_id_mapping.py",
+      "change": "added",
+      "sha256": "004739417736a3426dc378ec946296c1a1edbb87ac327ffe5deaea6cb4eef620",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_inputs.py",
+      "change": "added",
+      "sha256": "8bfed93b355efa24657f2189283e77703a6f3ef48dbbbf037381bd972e064083",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_input_boundaries.py",
+      "change": "added",
+      "sha256": "9ce940c58531d8c9eb94dd816dcf857bb331a695cfb70e247ca8982d47f704ef",
+      "modified_before_formal_tests": true
+    }
+  ],
+  "modified_existing_implementation_files": [],
+  "result_directory": "experiments/ntru_hybrid_comparison/phase2b_results_20261026",
+  "additional_once_only_check_script": "backend_check.py",
+  "scope_note": "Old untracked workspace content preserved; no stage2A source change, no backend or dependency change, no commit or push."
+}

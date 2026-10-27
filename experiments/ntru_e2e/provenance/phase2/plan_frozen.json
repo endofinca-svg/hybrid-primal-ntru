@@ -1,0 +1,123 @@
+{
+  "frozen_utc": "2026-10-21T14:56:11.228031+00:00",
+  "config_sha256": "3e55f67477e2d2647911c8244b9e3c93049c4e2b9354b3d215e546b43148bcf6",
+  "plan": {
+    "schema": "ntru-e2e-phase2-plan-v1",
+    "q": 257,
+    "xi": 1,
+    "threads": 1,
+    "total_online_budget_seconds": 1800,
+    "supervisor_allowance_seconds": 2,
+    "k": 2,
+    "kappa": 4,
+    "patterns_per_instance": 2,
+    "bkz_max_loops": 2,
+    "slicer_randomizations": 16,
+    "slicer_max_iterations": 400,
+    "choices": [
+      {
+        "name": "b20_s32",
+        "bkz_beta": 20,
+        "sieve_dim": 32
+      },
+      {
+        "name": "b25_s40",
+        "bkz_beta": 25,
+        "sieve_dim": 40
+      }
+    ],
+    "cases": [
+      {
+        "name": "n64_w4_8",
+        "n": 64,
+        "w_f": 4,
+        "w_g": 8,
+        "keygen_seeds": [
+          1,
+          2,
+          3
+        ],
+        "solver_seeds": [
+          10001,
+          10002,
+          10003
+        ],
+        "trial_budget_seconds": 30,
+        "instance_budget_seconds": 150
+      },
+      {
+        "name": "n64_w6_12",
+        "n": 64,
+        "w_f": 6,
+        "w_g": 12,
+        "keygen_seeds": [
+          1,
+          2,
+          3
+        ],
+        "solver_seeds": [
+          10001,
+          10002,
+          10003
+        ],
+        "trial_budget_seconds": 30,
+        "instance_budget_seconds": 150
+      },
+      {
+        "name": "n64_w8_16",
+        "n": 64,
+        "w_f": 8,
+        "w_g": 16,
+        "keygen_seeds": [
+          1,
+          2,
+          3
+        ],
+        "solver_seeds": [
+          10001,
+          10002,
+          10003
+        ],
+        "trial_budget_seconds": 30,
+        "instance_budget_seconds": 150
+      },
+      {
+        "name": "n128_w8_16",
+        "n": 128,
+        "w_f": 8,
+        "w_g": 16,
+        "keygen_seeds": [
+          1
+        ],
+        "solver_seeds": [
+          10001
+        ],
+        "trial_budget_seconds": 45,
+        "instance_budget_seconds": 210
+      },
+      {
+        "name": "n128_w12_24",
+        "n": 128,
+        "w_f": 12,
+        "w_g": 24,
+        "keygen_seeds": [
+          1
+        ],
+        "solver_seeds": [
+          10001
+        ],
+        "trial_budget_seconds": 45,
+        "instance_budget_seconds": 210
+      }
+    ],
+    "rules": [
+      "Freeze this plan and all online configs before key generation and online recovery; no result-dependent tuning or seed replacement.",
+      "Same two patterns and backend seeds are paired across both beta/s choices and all weights; all 80 nonzero ternary tails are processed.",
+      "Run all scheduled patterns even after success; timeout only censors its own trial. Preserve partial baseline evidence and attempt subsequent trials within budgets.",
+      "Per-pattern LLL rows and Babai, then BKZ rows and Babai, precede any lattice sieve database construction. Direct-tail public checking is a separate baseline.",
+      "Online wall budget includes every trial subprocess, imports, diagnostics, preprocessing, database build, decoding, validation and supervisor cleanup; setup/tests/generation/offline evaluation are separate.",
+      "n128 is bounded exploration with one key per weight, not a success-rate estimate. No push; phase1 files remain byte-identical."
+    ]
+  },
+  "prior_plan_status": "Previous discussion proposed these n64 weights and beta/s ranges but contained no frozen phase2 numeric budgets. These exact choices are frozen now before any phase2 key generation or online run."
+}

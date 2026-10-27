@@ -1,0 +1,29 @@
+{
+  "schema": "ntru-phase2-n64-reanalysis-manifest-v1",
+  "recorded_utc": "2026-10-22T01:43:00.413416+00:00",
+  "scope": "n64_w4_8 existing first-weight artifacts only",
+  "new_online_trials": 0,
+  "reductions_invoked": 0,
+  "slicer_kernels_invoked": 0,
+  "diagnostics": "existing saved projections, exact integer secret geometry and recorded trial evidence",
+  "previous_completion_manifest_sha256": "cedf89e571056663885bb573e971227af4958e80de5c4926ba4387f4c42f51a5",
+  "original_evidence_unchanged": true,
+  "files_sha256": {
+    "PHASE2_REANALYSIS.md": "bf7b6f6d40e87a85301f52f33d4efab56737cf522bedd49fb50d4f939e7031c3",
+    "runs/phase2_n64_first_weight_analysis/geometry_command.command.json": "3efed3cdaf16082a3ce5c0c614389b516c5dc8d06d8d7ed688757e27bf4a2d31",
+    "runs/phase2_n64_first_weight_analysis/geometry_command.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/phase2_n64_first_weight_analysis/geometry_command.stdout.txt": "3aed27a255926924fdfed50f5930f46f80860978dd7d34b24dcc6cf30a1f137b",
+    "runs/phase2_n64_first_weight_analysis/initial_projection_replay.json": "c93f13a39a9a349414e4212ca6fccf1cd6f2bf08ba79421d7c8b0233eff41050",
+    "runs/phase2_n64_first_weight_analysis/inspect_secret_geometry.py": "917fd7f51131e22aae05d9151761b559ecc7971a75f906e687e2bb500ef7da62",
+    "runs/phase2_n64_first_weight_analysis/inspect_trial_evidence.py": "e7a98b98409194d662f3880ddb931d36f99e9fd6ed4e208cda09c01102364a1f",
+    "runs/phase2_n64_first_weight_analysis/replay_projection_command.command.json": "8d92ecc5d921fb077259bfb76a777a85137e4829b5c179d57528758c22853144",
+    "runs/phase2_n64_first_weight_analysis/replay_projection_command.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/phase2_n64_first_weight_analysis/replay_projection_command.stdout.txt": "e0f9678067d00a314e072ba25a35c5ac1ed3447103288aec244e8fe1b7c8454f",
+    "runs/phase2_n64_first_weight_analysis/replay_saved_projections.py": "84580a70ac5e42498abc6b452942dadffeb68a31e22163830116cb5dc2307610",
+    "runs/phase2_n64_first_weight_analysis/secret_geometry.json": "92e8d29876fa1102e6ea62a53f024d1c8cb37c50e5bbb112442f8f4e6ff2dbfa",
+    "runs/phase2_n64_first_weight_analysis/trial_inspection_command.command.json": "fcf1b758cc99760c695dc67ddc63fd465b71a36e320fdd3fc2d6ce0acde50d3a",
+    "runs/phase2_n64_first_weight_analysis/trial_inspection_command.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/phase2_n64_first_weight_analysis/trial_inspection_command.stdout.txt": "8a027d6870644d8490f80d7f7a3810d4d963b4972cdb174a288071b906a19bb4",
+    "runs/phase2_n64_first_weight_analysis/trial_reanalysis.json": "047f58a1fe3c1987ee3a2e2b3d4a988d46d22a4dcda26fed3779a94a32324da6"
+  }
+}

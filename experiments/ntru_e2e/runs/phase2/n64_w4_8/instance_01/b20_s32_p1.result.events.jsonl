@@ -1,0 +1,14 @@
+{"event": "pattern_constructed", "target_count": 80, "worker_elapsed_seconds": 0.14837569700102904, "arm": null}
+{"event": "arm_complete", "method": "direct_tail", "worker_elapsed_seconds": 0.39591714600101113, "arm": "direct_tail"}
+{"event": "preprocess_start", "phase": "preprocessing", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 0.005007248000765685, "dimension": 122, "bkz_beta": 20, "sieve_dim": 32, "seed": 1247747029, "nthreads": 1, "staged": true, "worker_elapsed_seconds": 0.46002622399828397, "arm": null}
+{"event": "lll_start", "phase": "lll", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 0.01777016100095352, "worker_elapsed_seconds": 0.4727831939999305, "arm": null}
+{"event": "lll_complete", "phase": "lll", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 1.6940430190006737, "seconds": 1.6655831329990178, "worker_elapsed_seconds": 2.149056924998149, "arm": null}
+{"event": "arm_complete", "method": "lll_rows", "worker_elapsed_seconds": 8.708370891999948, "arm": "lll_rows"}
+{"event": "babai_diagnostic_complete", "phase": "babai_diagnostic", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 9.863824464002391, "target_count": 80, "candidate_count": 8, "worker_elapsed_seconds": 10.318846032998408, "arm": "lll_babai"}
+{"event": "arm_complete", "method": "lll_babai", "worker_elapsed_seconds": 10.392329343998426, "arm": "lll_babai"}
+{"event": "bkz_start", "phase": "bkz", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 10.150109239999438, "beta": 20, "max_loops": 2, "worker_elapsed_seconds": 10.605122459000995, "arm": null}
+{"event": "bkz_complete", "phase": "bkz", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 10.470074808999925, "seconds": 0.23961772400070913, "final_lll_normalization": true, "worker_elapsed_seconds": 10.925093596997613, "arm": null}
+{"event": "arm_complete", "method": "bkz_rows", "worker_elapsed_seconds": 23.88864907400057, "arm": "bkz_rows"}
+{"event": "babai_diagnostic_complete", "phase": "babai_diagnostic", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 25.94553314299992, "target_count": 80, "candidate_count": 8, "worker_elapsed_seconds": 26.400554346000717, "arm": "bkz_babai"}
+{"event": "arm_complete", "method": "bkz_babai", "worker_elapsed_seconds": 26.560974718999205, "arm": "bkz_babai"}
+{"event": "sieve_start", "phase": "sieve", "preprocess_id": "161576ff23885f56", "elapsed_seconds": 26.60888456700195, "algorithm": "bdgl2", "db_size": 0, "worker_elapsed_seconds": 27.06390136600021, "arm": null}

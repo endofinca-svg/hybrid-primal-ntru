@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-m",
+    "experiments.ntru_compare_n128_w12_w24_q97.method2_pattern.solve",
+    "--public",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+    "--config",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern011/config.json",
+    "--output",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern011/result.json"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-22T14:29:43.094865+00:00",
+  "timeout_seconds": 470.9226441029948,
+  "status": "timeout",
+  "stdout": "k056_pattern011_online.stdout.txt",
+  "stderr": "k056_pattern011_online.stderr.txt",
+  "pid": 109116,
+  "process_start_ticks": "10792338",
+  "exit_code": 1,
+  "wall_seconds": 471.2425143059954,
+  "cpu_seconds": 470.3439740000011,
+  "peak_rss_kib": 77388,
+  "finished_utc": "2026-10-22T14:37:33.857584+00:00"
+}

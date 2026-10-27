@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/home/inca/miniforge3/bin/python3",
+    "-B",
+    "-c",
+    "from pathlib import Path\nimport hashlib,json,sys\nfrom experiments.ntru_e2e.evaluate import evaluate_files,validate_candidate\nroot=Path(sys.argv[1]); run=root/'runs/phase1'; summary=json.loads((run/'summary.json').read_text()); records=[]\nassert (run/'config_phase1.json').read_bytes()==(root/'config_phase1.json').read_bytes()\nassert summary['config_sha256']==hashlib.sha256((root/'config_phase1.json').read_bytes()).hexdigest()\nfor index,record in enumerate(summary['instances'],1):\n name=f'instance_{index:02d}'; public_path=run/f'public/{name}.json'; public=json.loads(public_path.read_text()); result=json.loads((run/f'{name}.result.json').read_text()); evaluation=json.loads((run/f'{name}.evaluation.json').read_text())\n assert evaluation==evaluate_files(public_path,run/f'private/{name}.truth.json',run/f'{name}.result.json')\n assert set(public)=={'schema','instance_id','n','q','ring','h','distribution'}\n embedded=[ev for trial in result['trials'] for ev in trial['events']]; raw=[json.loads(line) for line in (run/f'{name}.result.events.jsonl').read_text().splitlines()]\n assert raw[:len(embedded)]==embedded\n assert record['slicer_calls_finished']==sum(ev['event']=='slicer_call_finished' for ev in raw)\n candidates=0\n for trial in result['trials']:\n  assert all(any(tail) for tail in trial['guesses'])\n  rows=trial.get('reduced_basis_rows')\n  for candidate in trial['slicer_candidates']:\n   coefficients=candidate['coefficients']; v=candidate['v']; tid=candidate['target_id']\n   assert v==[sum(c*row[j] for c,row in zip(coefficients,rows)) for j in range(len(v))]\n   residual=[x-t for x,t in zip(v,trial['targets'][tid])]\n   assert residual==candidate['g']+[candidate['f'][position] for position in trial['C']]\n   assert sum(x*x for x in residual)<=trial['public_bounds_sq'][tid]\n   assert validate_candidate(public,candidate)['valid']\n   candidates+=1\n records.append({'instance_id':name,'evaluation_recomputed_equal':True,'exact_candidate_vectors_checked':candidates,'raw_event_count':len(raw),'checkpoint_event_count':len(embedded),'extra_raw_events':[ev['event'] for ev in raw[len(embedded):]],'end_to_end_passed':evaluation['end_to_end_passed']})\nassert len(records)==3 and any(record['end_to_end_passed'] for record in records)\nassert abs(summary['online_wall_seconds']-sum(record['online_wall_seconds'] for record in summary['instances']))<1e-9\nassert summary['online_wall_seconds']<=1800\nassert all(record['online_wall_seconds']<=300 for record in summary['instances'][1:])\nassert json.loads((root/'provenance/completion/slicer_uid_regression.stdout.txt').read_text())['status']=='passed'\nfor label in ['rebuild_force','slicer_uid_regression','upstream_smoke','final_tests']:\n assert json.loads((root/f'provenance/completion/{label}.command.json').read_text())['exit_code']==0\nprint(json.dumps({'schema':'ntru-e2e-final-artifact-audit-v1','phase1_acceptance_passed':True,'all_predefined_instances_recorded':True,'online_wall_seconds':summary['online_wall_seconds'],'records':records},indent=2))\n",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T14:12:35.430510+00:00",
+  "timeout_seconds": 60,
+  "stdout": "artifact_audit.stdout.txt",
+  "stderr": "artifact_audit.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 0.3712013879994629,
+  "cpu_seconds": 0.36520299999999994,
+  "peak_rss_kib": 28960,
+  "finished_utc": "2026-10-21T14:12:35.801650+00:00"
+}

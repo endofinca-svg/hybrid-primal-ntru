@@ -1,0 +1,1 @@
+{"audit_passed": true, "recovered_groups": 10, "total_groups": 10, "report": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/REPORT.md"}

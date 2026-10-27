@@ -1,0 +1,10 @@
+{
+  "output": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2_n64_first_weight_analysis/trial_reanalysis.json",
+  "status_counts": {
+    "timeout": 7,
+    "interrupted_censored": 1,
+    "finished": 4
+  },
+  "all_censored_trials_have_no_kernel_start": true,
+  "complete_trial_slicer_equals_bkz_babai": true
+}

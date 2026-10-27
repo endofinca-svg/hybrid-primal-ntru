@@ -1,0 +1,28 @@
+{
+  "schema": "ntru-e2e-phase2-online-v1",
+  "q": 257,
+  "xi": 1,
+  "threads": 1,
+  "k": 2,
+  "kappa": 4,
+  "patterns_per_instance": 2,
+  "bkz_max_loops": 2,
+  "slicer_randomizations": 16,
+  "slicer_max_iterations": 400,
+  "choices": [
+    {
+      "name": "b20_s32",
+      "bkz_beta": 20,
+      "sieve_dim": 32
+    },
+    {
+      "name": "b25_s40",
+      "bkz_beta": 25,
+      "sieve_dim": 40
+    }
+  ],
+  "n": 64,
+  "w_f": 6,
+  "w_g": 12,
+  "plan_sha256": "3e55f67477e2d2647911c8244b9e3c93049c4e2b9354b3d215e546b43148bcf6"
+}

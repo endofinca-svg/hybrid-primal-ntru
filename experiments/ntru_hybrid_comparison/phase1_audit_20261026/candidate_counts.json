@@ -1,0 +1,50 @@
+{
+  "formula": "sum_{j=1..h}2^j*binom(kappa,j)",
+  "kappa4_full80_confirmed": true,
+  "rows": [
+    {
+      "kappa": 4,
+      "all_nonzero_ternary": 80,
+      "weight_1_to_2": 32,
+      "weight_1_to_3": 64
+    },
+    {
+      "kappa": 6,
+      "all_nonzero_ternary": 728,
+      "weight_1_to_2": 72,
+      "weight_1_to_3": 232
+    },
+    {
+      "kappa": 8,
+      "all_nonzero_ternary": 6560,
+      "weight_1_to_2": 128,
+      "weight_1_to_3": 576
+    },
+    {
+      "kappa": 10,
+      "all_nonzero_ternary": 59048,
+      "weight_1_to_2": 200,
+      "weight_1_to_3": 1160
+    },
+    {
+      "kappa": 12,
+      "all_nonzero_ternary": 531440,
+      "weight_1_to_2": 288,
+      "weight_1_to_3": 2048
+    }
+  ],
+  "current_enumerator": "All weights1..min(kappa,w_f), then global lexicographic sort; no configurable h=2/3 cap",
+  "required_counts_weight_le2": [
+    32,
+    72,
+    128,
+    200,
+    288
+  ],
+  "counts_match_request": true,
+  "no_targets_generated": true,
+  "sources": [
+    "experiments/ntru_e2e/algebra.py:248-263",
+    "experiments/ntru_e2e/solve_phase2.py:26-28,301-306"
+  ]
+}

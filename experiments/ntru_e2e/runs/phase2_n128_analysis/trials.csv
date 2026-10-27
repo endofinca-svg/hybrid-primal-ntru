@@ -1,0 +1,9 @@
+case_id,trial_id,command_status,command_exit_code,command_wall_seconds,snapshot_status,snapshot_stage,snapshot_wall_seconds,kernel_started_calls
+n128_w8_16,b20_s32_p0,timeout,-9,44.9165082790023,running,lll_setup,1.6512698459991952,0
+n128_w8_16,b20_s32_p1,timeout,-9,44.91820400500001,running,lll_setup,1.6873433940018003,0
+n128_w8_16,b25_s40_p0,timeout,-9,44.91357110100216,running,lll_setup,1.6198071409999102,0
+n128_w8_16,b25_s40_p1,timeout,-9,44.91054903899931,running,lll_setup,1.5791722840003786,0
+n128_w12_24,b20_s32_p0,timeout,143,43.020120795001276,interrupted,bkz_setup,42.61420496899882,0
+n128_w12_24,b20_s32_p1,timeout,143,43.08243514300193,interrupted,bkz_setup,42.636299904002954,0
+n128_w12_24,b25_s40_p0,timeout,143,43.12610643899825,interrupted,bkz_setup,42.65794816400012,0
+n128_w12_24,b25_s40_p1,timeout,143,43.02012733200172,interrupted,bkz_setup,42.59514653899896,0

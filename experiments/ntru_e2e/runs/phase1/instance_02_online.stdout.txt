@@ -1,0 +1,2 @@
+{"instance_id": "instance_02", "status": "success", "patterns": 1, "wall_seconds": 2.1440880359987204, "output": "experiments/ntru_e2e/runs/phase1/instance_02.result.json"}
+{"status": "success", "exit_code": 0, "timed_out": false, "wall_seconds": 2.4381676570010313}

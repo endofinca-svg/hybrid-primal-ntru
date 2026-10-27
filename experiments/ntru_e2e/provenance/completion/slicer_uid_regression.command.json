@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "experiments/ntru_e2e/check_slicer_uid.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T14:06:29.155061+00:00",
+  "timeout_seconds": 30.0,
+  "stdout": "slicer_uid_regression.stdout.txt",
+  "stderr": "slicer_uid_regression.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 1.2337980740012426,
+  "cpu_seconds": 1.189859,
+  "peak_rss_kib": 77420,
+  "finished_utc": "2026-10-21T14:06:30.388653+00:00"
+}

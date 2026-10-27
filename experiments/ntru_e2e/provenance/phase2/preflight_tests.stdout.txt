@@ -1,0 +1,19 @@
+.........................F............................................                                [100%]
+=================================== FAILURES ===================================
+_ BootstrapTests.test_patch_reconstructs_checkout_and_rerun_preserves_real_index _
+
+self = <test_bootstrap.BootstrapTests testMethod=test_patch_reconstructs_checkout_and_rerun_preserves_real_index>
+
+    def test_patch_reconstructs_checkout_and_rerun_preserves_real_index(self):
+        original_index = (self.source / ".git" / "index").read_bytes()
+        original_patch = self.patch.read_bytes()
+        self.assertEqual(apply_recorded_patch(self.source, self.patch, self.command_runner), "applied")
+        self.assertEqual(self.file.read_text(), self.patched)
+        self.assertEqual(apply_recorded_patch(self.source, self.patch, self.command_runner), "already_applied")
+>       self.assertEqual((self.source / ".git" / "index").read_bytes(), original_index)
+E       AssertionError: b'DIR[37 chars]8\xd6u\x01\xf6Qej\xd8\xd6u\x01\xf6Qe\x00\x00\x[325 chars]\xb8' != b'DIR[37 chars]8\xd6t9\xb8\xe0}j\xd8\xd6t9\xb8\xe0}\x00\x00\x[325 chars]\xa5'
+
+experiments/ntru_e2e/tests/test_bootstrap.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED experiments/ntru_e2e/tests/test_bootstrap.py::BootstrapTests::test_patch_reconstructs_checkout_and_rerun_preserves_real_index
+1 failed, 69 passed, 43 subtests passed in 2.95s

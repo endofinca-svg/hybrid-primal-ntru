@@ -1,0 +1,32 @@
+{
+  "schema": "ntru-phase1-model-v1",
+  "public_file": "experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+  "public_sha256": "8c03b57a732fb8114d900ff47c2b04f93ca257bef5066db0988e74a10d89baf9",
+  "public_schema": "ntru-e2e-public-v1",
+  "n": 128,
+  "q": 97,
+  "ring": "x^n+1",
+  "distribution": {
+    "kind": "fixed_weight_ternary",
+    "w_f": 12,
+    "w_g": 24
+  },
+  "h_length": 128,
+  "h_coefficients_canonical": true,
+  "public_contains_truth_fields": false,
+  "weights_mean": "Total nonzero counts, independent signs; no plus/minus balancing",
+  "expected_norm_sq": 36,
+  "public_relation": "h*f=g mod(q,x^n+1); A*f-g=0 mod q",
+  "multiplication_matrix": "A acts on coefficient columns",
+  "row_basis": "[[qI_n,0],[A_C^T,I_|C|]]; ambient order (g,f_C)",
+  "target": "t(u)=(-A_T*u,0); optional mod-q centering must be retained",
+  "reconstruction": "e=v-t=(g,f_C); insert f_T=u and f_P=0",
+  "rotation": "S(a)=(-a[n-1],a[0],...,a[n-2]); simultaneous signed negacyclic rotation of f and g",
+  "d_pat": "2*n-k",
+  "d_hybrid": "2*n-k-kappa",
+  "keygen_rejection": "Only noninvertible f; at most128 attempts",
+  "keygen_source": "experiments/ntru_e2e/generate.py:22-60",
+  "algebra_source": "experiments/ntru_e2e/algebra.py:47-303",
+  "historical_coordinate_partition": "Sorted P; T is last kappa of surviving sorted f coordinates; C is remainder",
+  "pattern_sampling": "Random coordinate subsets, not contiguous intervals"
+}

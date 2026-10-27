@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "30s",
+    "/usr/bin/python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "-B",
+    "experiments/ntru_hybrid_comparison/phase2c_results_20261026/real_check.py",
+    "real01"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-26T14:45:44.340200+00:00",
+  "finished_utc": "2026-10-26T14:45:45.988546+00:00",
+  "wall_seconds": 1.6483346310014895,
+  "exit_code": 0,
+  "timeout": false,
+  "timeout_seconds": 30,
+  "cleanup_grace_seconds": 2,
+  "max_cumulative_real_seconds": 120,
+  "scope": "small real backend interface calls only; no LLL/BKZ/main-n128 calls"
+}

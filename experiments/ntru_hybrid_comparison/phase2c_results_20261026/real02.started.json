@@ -1,0 +1,8 @@
+{
+  "scope": "small real fixed-basis interfaces only",
+  "hard_timeout_seconds": 30,
+  "max_dimension": 28,
+  "max_external_targets_per_method": 2,
+  "new_LLL_BKZ_calls": 0,
+  "main_n128_compute_calls": 0
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2-entry-v1",
+  "status": "proposal_only_not_started",
+  "authorized_current_phase": 1,
+  "next_phase": 2,
+  "priority": [
+    "B",
+    "D",
+    "E"
+  ],
+  "later_groups": [
+    "C",
+    "F"
+  ],
+  "reuse": [
+    "experiments/ntru_e2e/algebra.py",
+    "experiments/ntru_e2e/phase2_adapter.py",
+    "experiments/ntru_e2e/slicer_adapter.py",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/solve.py"
+  ],
+  "preserve_frozen_implementations": true,
+  "changes_needed": [
+    {
+      "id": "candidate_policy",
+      "files": [
+        "algebra-compatible new candidate generator",
+        "new config validation"
+      ],
+      "requirements": [
+        "full nonzero and configurable weight1..h",
+        "stable external IDs/order",
+        "raw/filtered/exact-deduplicated/internal-projection-group/submitted/completed counts",
+        "kappa4 full80; weight<=2 counts32,72,128,200,288; weight<=3 counts64,232,576,1160,2048"
+      ]
+    },
+    {
+      "id": "paired_decoders",
+      "files": [
+        "new worker around Phase2Decoder",
+        "saved basis loader"
+      ],
+      "requirements": [
+        "same original/reduced basis and target input list for D/E and C/F",
+        "separate phases for fixed-basis full-batch and independent end-to-end first-public-valid",
+        "actual Slicer projection dimension and kernel iterations",
+        "candidate origins rows/Babai/optional enumeration/Slicer distinguished",
+        "explicit zero-tail branch and coverage loss"
+      ]
+    },
+    {
+      "id": "fair_costs",
+      "files": [
+        "new runner/summarizer"
+      ],
+      "requirements": [
+        "separate necessary construction/reduction/database/target generation/decode/reconstruct/verify/IO/cleanup timings",
+        "count every failed/censored pattern",
+        "time budget includes all attempts",
+        "fixed basis metrics explicitly conditional",
+        "no finite cost per success when success_count0",
+        "per-method and total peak memory with precise scope"
+      ]
+    },
+    {
+      "id": "reduction_protocol",
+      "files": [
+        "shared or explicitly separated reduction config"
+      ],
+      "requirements": [
+        "record float type and precision/LLL delta eta method/BKZ strategy/actual tours",
+        "historical B success beta32tour2 is progressive schedule anchor not cold-start minimum",
+        "no unmeasured absolute beta frozen in this audit",
+        "each method separately tuned before holdout confirmation"
+      ]
+    },
+    {
+      "id": "supervision",
+      "files": [
+        "new process-tree supervisor"
+      ],
+      "requirements": [
+        "hard bound including cleanup",
+        "verify descendants are gone even if parent responds to TERM",
+        "no orphan worker after timeouts",
+        "real lightweight stubborn-grandchild regression",
+        "avoid historical RUSAGE_CHILDREN high-water masquerading as per-trial memory"
+      ]
+    },
+    {
+      "id": "validation",
+      "files": [
+        "new independent evaluation/reporting",
+        "new necessary correctness checks"
+      ],
+      "requirements": [
+        "public-valid recovery independent of truth array identity",
+        "separate original/signed-negacyclic-equivalent/other-valid classifications",
+        "three coverage events separate",
+        "new source/runtime/backend hashes and historical baseline provenance",
+        "no solver tests presented as phase3 attack acceptance"
+      ]
+    }
+  ],
+  "phase3_gate": {
+    "phase": 3,
+    "n": 128,
+    "q": 97,
+    "w_f": 12,
+    "w_g": 24,
+    "k": 40,
+    "kappa": 4,
+    "candidate_rule": "all80 nonzero ternary tails",
+    "separate_freeze_required": [
+      "beta/tour schedule",
+      "sieve_dim and backend maximum",
+      "pattern/tail/guess order and seeds",
+      "number of instances/patterns",
+      "trial/pattern/instance/global wall budgets",
+      "memory limit",
+      "Slicer randomizations/iteration limit",
+      "zero-tail branch and early stop"
+    ],
+    "must_not_start_from_phase1": true
+  },
+  "new_online_runs_in_phase1": 0
+}

@@ -1,0 +1,229 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2b-manifest-v1",
+  "created_utc": "2026-10-26T14:22:46.975233+00:00",
+  "phase": "2B",
+  "status": "complete",
+  "acceptance_passed": true,
+  "phase2c_started": false,
+  "phase3_started": false,
+  "new_main_public_instances": 0,
+  "main_n128_reduction_calls": 0,
+  "decoder_calls": 0,
+  "slicer_calls": 0,
+  "tiny_real_lll_calls": 1,
+  "tiny_real_bkz_tours": 1,
+  "source_head": "452be18c741a2d81c106d3bfe3847428ed57229b",
+  "formal_pure_tests": {
+    "tests_run": 91,
+    "passed": 91,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "runner_seconds": 1.816,
+    "exit_code": 0,
+    "timeout": false,
+    "success": true,
+    "scope": "pure correctness tests; no real backend reductions or decoding"
+  },
+  "tiny_backend_interface_status": "passed",
+  "main_sample": {
+    "schema": "ntru-public-input-build-check-v1",
+    "kind": "public_input_build_only",
+    "input_path": "experiments/ntru_hybrid_comparison/phase2b_results_20261026/public_inputs_n128_k40_kappa4.json",
+    "dimensions": {
+      "n": 128,
+      "q": 97,
+      "k": 40,
+      "kappa": 4,
+      "d": 212,
+      "d_pattern": 216
+    },
+    "basis_status": "original_only",
+    "reduction_executed": false,
+    "candidate_count": 80,
+    "original_basis_sha256": "e423d69e11ed9e618505fb44c93f0ed423d76813588657c621501c61f127d00f",
+    "ordered_candidates_sha256": "5d635f91f7426a02975fb5597bfba8955b87f01750cb7473807e139769e0e8c5",
+    "ordered_targets_sha256": "328273a7f25e4bf4c7e7df319d8a28cfeafd45631964e287243d21593f38cd39",
+    "id_mapping_sha256": "e1bf8f25ea91498262277e7cf5cc5bc216beab043f5532cd481ae50aa1b73bc8",
+    "payload_sha256": "679258670664a070714a01ab53a1fa2ed1fa2ddcea1beffdc3cdbc4251ee0528",
+    "input_file_sha256": "685595bb531d73d5326e4640570486203187200c7a7151d92a5af84caad32ed2",
+    "counts": {
+      "theoretical_full_nonzero_count": 80,
+      "generated_raw_count": 80,
+      "policy_kept_count": 80,
+      "exact_unique_count": 80,
+      "projection_group_count": null,
+      "submitted_count": 0,
+      "completed_count": 0
+    },
+    "roundtrip_equal": true,
+    "independent_working_copies": true,
+    "gso_constructed": false,
+    "nonzero_target_translation_count": 80,
+    "selection": {
+      "pattern_rule": "random.Random(seed); per index sample(range(n),k), then draw backend seed",
+      "pattern_type": "random_position_set",
+      "seed": 10001,
+      "pattern_index": 0,
+      "tail_rule": "largest kappa surviving original f coordinates, increasing order",
+      "backend_seed": 254991857,
+      "reference_used": false,
+      "compatibility_filtering": false,
+      "formal_experiment_selection_frozen": false
+    },
+    "timing": {
+      "construction_seconds": 1.8446917020010005,
+      "validated_atomic_save_seconds": 2.1233668839995516,
+      "two_loads_and_copy_check_seconds": 7.919955683999433,
+      "total_wall_seconds": 12.774210451996623,
+      "scope": "public example build/import metadata/validation/serialization/load check only; no reduction or decoding"
+    }
+  },
+  "source_files": [
+    {
+      "path": "experiments/ntru_hybrid_comparison/reduction.py",
+      "change": "added",
+      "sha256": "9bf04f0416a28f6c956534caca17ebabc8f849300283482cbdd7be63b8f7844b",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/exact_lattice.py",
+      "change": "added",
+      "sha256": "946c072a7fcf5f895353ffc5a4c3af8fead8584142bdacb8e27624a206aea093",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/id_mapping.py",
+      "change": "added",
+      "sha256": "f3dd701f5d7ad2e755182633e03cc602fd6cc9fc9a2a890929073e35e08ad98e",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/inputs.py",
+      "change": "added",
+      "sha256": "06fe20b21f3cd9ac048e73d57d886a89ebc136f4d305960920743f4390cc4b44",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/build_public_inputs.py",
+      "change": "added",
+      "sha256": "fc89afc72b216931e3057116b3517335f054d671d0f178594c76a08b658955f7",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_reduction.py",
+      "change": "added",
+      "sha256": "7096c7755a76c27bbf36bcaa98784358a419b46a6f2ddd22c2e6541e07bfe137",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_exact_lattice.py",
+      "change": "added",
+      "sha256": "09572f8079ea98409b988be5ebe3f99ad813dcae3e38c4e618e3247db3b2d86d",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_id_mapping.py",
+      "change": "added",
+      "sha256": "004739417736a3426dc378ec946296c1a1edbb87ac327ffe5deaea6cb4eef620",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_inputs.py",
+      "change": "added",
+      "sha256": "8bfed93b355efa24657f2189283e77703a6f3ef48dbbbf037381bd972e064083",
+      "modified_before_formal_tests": true
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_input_boundaries.py",
+      "change": "added",
+      "sha256": "9ce940c58531d8c9eb94dd816dcf857bb331a695cfb70e247ca8982d47f704ef",
+      "modified_before_formal_tests": true
+    }
+  ],
+  "acceptance_criteria": [
+    {
+      "id": "shared_reduction_protocol",
+      "passed": true,
+      "evidence": "reduction.py / historical_reduction_protocol.json"
+    },
+    {
+      "id": "public_basis_coordinates_targets",
+      "passed": true,
+      "evidence": "public_inputs_n128_k40_kappa4.json"
+    },
+    {
+      "id": "save_load_integrity_and_arbitrary_ints",
+      "passed": true,
+      "evidence": "tests/test_inputs.py"
+    },
+    {
+      "id": "exact_unimodular_same_lattice_proof",
+      "passed": true,
+      "evidence": "tests/test_exact_lattice.py / backend_check.execution.json"
+    },
+    {
+      "id": "stable_external_ids_independent_copies",
+      "passed": true,
+      "evidence": "tests/test_id_mapping.py / backend_check.result.json"
+    },
+    {
+      "id": "requested_actual_precision_history_costs",
+      "passed": true,
+      "evidence": "tests/test_reduction.py / tests/test_input_boundaries.py"
+    },
+    {
+      "id": "real_bounded_tiny_backend_interface",
+      "passed": true,
+      "evidence": "backend_check.command.json / backend_check.result.json"
+    },
+    {
+      "id": "main_public_build_without_reduction",
+      "passed": true,
+      "evidence": "public_build.command.json / public_inputs_n128_k40_kappa4.json.manifest.json"
+    },
+    {
+      "id": "frozen_preservation",
+      "passed": true,
+      "evidence": "sealed_integrity.json"
+    }
+  ],
+  "protected_file_count": 1705,
+  "protected_content_changes": [],
+  "private_reference_contents_read": false,
+  "execution_source_provenance_limit": "Tiny real check source-at-execution snapshot covers reduction.py and check script only; final module hashes and final validation of saved exact certificates recorded separately. No extra reduction for validation.",
+  "next_stage_entry": "next_stage_entry.json",
+  "artifact_sha256": {
+    "REPORT.md": "097b1f2a08060a0fd3d0ccee444db59e77961b6ec5ba757c6d9107c1a324021a",
+    "artifact_validation.json": "46427f580888da6e4910b61818d3d12f8812c2f4299a709cdfb17c7dfdc21ba7",
+    "backend_check.command.json": "aaa4a34447d8596b50eb3dcaf7e16498e3c8b86db7f5ee095bd1468f65f98ec8",
+    "backend_check.execution.json": "fe69e1582dd13398602b3cff6f6afdb78b80f918dc9cb4954490fe018d93bdb5",
+    "backend_check.original_input.json": "02f1ad9b8fc5a17321d0cf98ab4dc118761982373b827fbab60a975bc2bb2d5c",
+    "backend_check.post_hardening_validation.json": "f1880845e4ad6130d318d461edb26f154dc8b0e023fe1f400077e91e74f59b8c",
+    "backend_check.py": "3285a5db576f7e1be24c762c9f36db46edaaa51137bc713d71b670ed99c15d19",
+    "backend_check.reduced_input.json": "d60c39ea6bbdb071955c168094c6917d869840396ae5e3e1ab81f829cdbcc9db",
+    "backend_check.result.json": "7cbdc0ee916585889a8d3748a1d5e37ffa69a5a0c19d002ad336e345071b662e",
+    "backend_check.revalidation.command.json": "fd8ffdb901c1d13751031da5d9c4aaf758b93f809b16c49067977d0cb10b0d27",
+    "backend_check.revalidation.json": "8d65a775f355279a8131cfe0c067e02056966240e91b7b12948cce8403164261",
+    "backend_check.revalidation.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend_check.revalidation.stdout.txt": "b48815cde29efce4e8637812d7c5b1e17532d1b6737f273c41a97a4726ade9e5",
+    "backend_check.sources_at_execution.json": "d90d276967b6cc1dc34d1b0f3d1afb73b8ff17cfa1c3a6cccc1a7a606a3b10a8",
+    "backend_check.started.json": "ef45c9c59c506af2286b9273f05939ecdc6d55a7e31ac3851f387910d8c33a7d",
+    "backend_check.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend_check.stdout.txt": "5b7f7d377d8cd66b7e41b1280cb9dc8f787d64bfad70e45d5bf4d412ae37d214",
+    "historical_reduction_protocol.json": "fbe11f092f78e70b9e67d5091f41a8c47227b5ed7f40715c7e2a1524f55dbdaf",
+    "modified_files.json": "59dbd2c2035d851b1f5e4513e9da74b8ff6b5dbc25b5d0718dcffec053a687a6",
+    "next_stage_entry.json": "910784fb236e33dec6fe1216733cfde9021fc6e01fa21176403ae3b8eff762dc",
+    "preflight.json": "aafdb830517297a58f74926f5e701013e9fbc37c5333d23b73778089de87bf44",
+    "public_build.command.json": "bf18899541301deba3700f0bfd064d06eedb358ffc77bc45f060d76add20d47a",
+    "public_build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_build.stdout.txt": "72133ea1f4bb9e9c28d2b84e9fd75e10b4429477ae96ffa973519eaa446e90df",
+    "public_inputs_n128_k40_kappa4.json": "685595bb531d73d5326e4640570486203187200c7a7151d92a5af84caad32ed2",
+    "public_inputs_n128_k40_kappa4.json.manifest.json": "72133ea1f4bb9e9c28d2b84e9fd75e10b4429477ae96ffa973519eaa446e90df",
+    "sealed_integrity.json": "f60e801ba342181a8d1d518ec5b90aef0cdef50d5ae251630135fa768955903e",
+    "tests.command.json": "36d5c0ea8f16ef6767c350021cd4f40b98d5493ca9152e7b63f7bc9588faf5c2",
+    "tests.stderr.txt": "698ded12067f553d5f8f2b903a01a45cbb5cfcadf97b76489b3f49b943c7a270",
+    "tests.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests_summary.json": "98a5bb939c658b8f9b54afa46f36de073b5999b732fc0621c053b9ef030fff59"
+  }
+}

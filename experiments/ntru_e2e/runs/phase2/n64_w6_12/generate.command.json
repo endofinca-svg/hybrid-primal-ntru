@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "/home/inca/miniforge3/bin/python3",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/run_in_env.py",
+    "-m",
+    "experiments.ntru_e2e.generate",
+    "--output-dir",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w6_12",
+    "--n",
+    "64",
+    "--q",
+    "257",
+    "--wf",
+    "6",
+    "--wg",
+    "12",
+    "--seeds",
+    "1",
+    "2",
+    "3"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T15:14:07.083504+00:00",
+  "timeout_seconds": 60,
+  "stdout": "generate.stdout.txt",
+  "stderr": "generate.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 0.32439489500029595,
+  "cpu_seconds": 0.28778699999999996,
+  "peak_rss_kib": 19328,
+  "finished_utc": "2026-10-21T15:14:07.407802+00:00"
+}

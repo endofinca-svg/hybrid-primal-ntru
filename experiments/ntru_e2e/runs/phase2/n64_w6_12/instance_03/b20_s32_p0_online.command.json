@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "/home/inca/miniforge3/bin/python3",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/run_in_env.py",
+    "-m",
+    "experiments.ntru_e2e.solve_phase2",
+    "--public",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w6_12/public/instance_03.json",
+    "--config",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w6_12/online_config.json",
+    "--seed",
+    "10003",
+    "--pattern-index",
+    "0",
+    "--choice-index",
+    "0",
+    "--output",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w6_12/instance_03/b20_s32_p0.result.json"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T15:25:43.268181+00:00",
+  "timeout_seconds": 27.9,
+  "stdout": "b20_s32_p0_online.stdout.txt",
+  "stderr": "b20_s32_p0_online.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 17.802726274003362,
+  "cpu_seconds": 17.743852000000032,
+  "peak_rss_kib": 90844,
+  "finished_utc": "2026-10-21T15:26:01.070794+00:00"
+}

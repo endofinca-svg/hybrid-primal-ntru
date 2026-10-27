@@ -1,0 +1,9 @@
+{
+  "process_start_ticks": {
+    "93713": "9585111",
+    "93714": "9585117",
+    "93715": "9585136"
+  },
+  "solver_restart": false,
+  "purpose": "Independent-evaluate fallback only; no duplicated solvers or changed budget"
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "read-only runtime imports/version/hash metadata after realcheck; no GSO creation or backend computational call",
+  "captured_utc": "2026-10-26T14:49:31.944191+00:00",
+  "python": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:29:10) [GCC 14.3.0]",
+  "executable": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+  "fpylll_version": "0.6.4",
+  "fplll_version": "5.5.0",
+  "g6k_revision_from_existing_runtime": "bd72687b2ebbaff16fb692259f83b327bbcd9586",
+  "loaded_modules": {
+    "g6k": {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/__init__.py",
+      "sha256": "adc98811f76b352dd68deec91bb24e0d9a89fec0f714146ebb68e2fc6aa74a3f"
+    },
+    "fpylll.fplll.gso": {
+      "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/fplll/gso.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "7203109b615943c8ee0d7d4fc9fd4ba86c4893792e170ed42f73107765724029"
+    },
+    "g6k.siever": {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/siever.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "ab8bf82195da61ab254e09dcc6bb71b2919ac78ec9953220e510fefb66a22bc3"
+    },
+    "g6k.slicer": {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/slicer.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "17218c3bebe3212c282a5af31e81ebf231f76db0e3c3447e6c90b652d3a6b610"
+    }
+  },
+  "additional_backend_computation_calls": 0
+}

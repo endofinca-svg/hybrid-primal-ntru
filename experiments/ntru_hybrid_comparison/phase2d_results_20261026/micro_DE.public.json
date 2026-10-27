@@ -1,0 +1,29 @@
+{
+  "schema": "ntru-e2e-public-v1",
+  "instance_id": "phase2d-hand-public-n15",
+  "n": 15,
+  "q": 17,
+  "ring": "x^n+1",
+  "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "distribution": {
+    "kind": "fixed_weight_ternary",
+    "w_f": 2,
+    "w_g": 2
+  }
+}

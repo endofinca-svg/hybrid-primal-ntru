@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "10s",
+    "/usr/bin/python3",
+    "-B",
+    "-c",
+    "import hashlib,json\nfrom pathlib import Path\nfrom experiments.ntru_hybrid_comparison.reduction import protocol_from_manifest,validate_execution_record\nfrom experiments.ntru_hybrid_comparison.inputs import load_input_bundle\nroot=Path.cwd(); d=root/\"experiments/ntru_hybrid_comparison/phase2b_results_20261026\"\ne=json.loads((d/\"backend_check.execution.json\").read_text())\nassert validate_execution_record(e[\"record\"],protocol_from_manifest(e[\"protocol\"]),original_basis=e[\"original_basis\"],reduced_basis=e[\"reduced_basis\"],transform=e[\"transform\"])\nassert load_input_bundle(d/\"backend_check.original_input.json\")[\"basis\"][\"status\"]==\"original_only\"\nassert load_input_bundle(d/\"backend_check.reduced_input.json\",require_reduced_verified=True)[\"basis\"][\"status\"]==\"reduced_verified\"\nfiles=[\"reduction.py\",\"inputs.py\",\"exact_lattice.py\",\"id_mapping.py\"]\nr={\"status\":\"passed\",\"execution_record_valid\":True,\"original_package_valid\":True,\"reduced_package_valid\":True,\"additional_reduction_calls\":0,\"additional_gso_creation_calls\":0,\"final_source_sha256\":{p:hashlib.sha256((root/\"experiments/ntru_hybrid_comparison\"/p).read_bytes()).hexdigest() for p in files},\"actual_source_snapshot\":\"backend_check.sources_at_execution.json\",\"actual_source_limitation\":\"Exact pre-hardening SHA recorded for owned reduction.py and backend_check.py only. Concurrent inputs.py and exact_lattice.py did not have a dedicated execution-time source snapshot. Final files are hashed here; existing saved real records and exact certificates pass their final validators. No additional real reduction or GSO is executed.\"}\nwith (d/\"backend_check.revalidation.json\").open(\"x\") as stream: json.dump(r,stream,indent=2);stream.write(\"\\n\")\nprint(json.dumps(r))\n"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-26T14:18:50.066747+00:00",
+  "scope": "pure saved-output revalidation; zero new backend calls",
+  "elapsed_seconds": 0.26399616799972137,
+  "exit_code": 0,
+  "finished_utc": "2026-10-26T14:18:50.330828+00:00"
+}

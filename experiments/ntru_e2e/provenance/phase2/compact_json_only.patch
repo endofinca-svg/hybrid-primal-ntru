@@ -1,0 +1,11 @@
+--- v1/solve_phase2.py
++++ v2/solve_phase2.py
+@@ -178,7 +178,7 @@
+             events_file.write(json.dumps(event_value, allow_nan=False) + "\n")
+             events_file.flush()
+         temporary = output.with_name(output.name + ".tmp")
+-        temporary.write_text(json.dumps(result, indent=2, allow_nan=False) + "\n")
++        temporary.write_text(json.dumps(result, separators=(",", ":"), allow_nan=False) + "\n")
+         temporary.replace(output)
+         checkpoint_seconds += time.perf_counter() - tick
+ 

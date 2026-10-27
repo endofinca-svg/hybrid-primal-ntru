@@ -1,0 +1,10 @@
+{
+  "beta": 4,
+  "bkz_tours_allowed": 1,
+  "decoder_calls_allowed": 0,
+  "dimension": 6,
+  "external_timeout_seconds": 30,
+  "lll_calls_allowed": 1,
+  "n": 4,
+  "purpose": "one tiny backend interface check, not a benchmark or phase3 acceptance"
+}

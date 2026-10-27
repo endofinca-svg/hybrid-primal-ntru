@@ -1,0 +1,15 @@
+n64_w4_8/instance_01/b20_s32_p0: 30.000s total budget
+  timeout, wall=28.272s, arms={'direct_tail': 'complete', 'lll_rows': 'complete', 'lll_babai': 'complete', 'bkz_rows': 'complete', 'bkz_babai': 'complete', 'slicer': 'running'}
+n64_w4_8/instance_01/b20_s32_p1: 30.000s total budget
+  timeout, wall=28.287s, arms={'direct_tail': 'complete', 'lll_rows': 'complete', 'lll_babai': 'complete', 'bkz_rows': 'complete', 'bkz_babai': 'complete', 'slicer': 'not_run'}
+n64_w4_8/instance_01/b25_s40_p0: 30.000s total budget
+  timeout, wall=28.289s, arms={'direct_tail': 'complete', 'lll_rows': 'complete', 'lll_babai': 'complete', 'bkz_rows': 'complete', 'bkz_babai': 'complete', 'slicer': 'running'}
+n64_w4_8/instance_01/b25_s40_p1: 30.000s total budget
+  timeout, wall=28.226s, arms={'direct_tail': 'complete', 'lll_rows': 'complete', 'lll_babai': 'complete', 'bkz_rows': 'complete', 'bkz_babai': 'complete', 'slicer': 'not_run'}
+n64_w4_8/instance_02/b20_s32_p0: 30.000s total budget
+  timeout, wall=28.124s, arms={'direct_tail': 'complete', 'lll_rows': 'complete', 'lll_babai': 'complete', 'bkz_rows': 'complete', 'bkz_babai': 'running', 'slicer': 'not_run'}
+n64_w4_8/instance_02/b20_s32_p1: 30.000s total budget
+  timeout, wall=28.172s, arms={'direct_tail': 'complete', 'lll_rows': 'complete', 'lll_babai': 'complete', 'bkz_rows': 'complete', 'bkz_babai': 'running', 'slicer': 'not_run'}
+n64_w4_8/instance_02/b25_s40_p0: 30.000s total budget
+  timeout, wall=28.179s, arms={'direct_tail': 'complete', 'lll_rows': 'complete', 'lll_babai': 'complete', 'bkz_rows': 'complete', 'bkz_babai': 'running', 'slicer': 'not_run'}
+n64_w4_8/instance_02/b25_s40_p1: 30.000s total budget

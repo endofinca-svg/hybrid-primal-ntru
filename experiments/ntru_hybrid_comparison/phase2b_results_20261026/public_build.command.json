@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "30s",
+    "/home/inca/miniforge3/envs/g6k/bin/python3.10",
+    "-B",
+    "-m",
+    "experiments.ntru_hybrid_comparison.build_public_inputs",
+    "--public",
+    "experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+    "--output",
+    "experiments/ntru_hybrid_comparison/phase2b_results_20261026/public_inputs_n128_k40_kappa4.json",
+    "--k",
+    "40",
+    "--kappa",
+    "4",
+    "--seed",
+    "10001",
+    "--pattern-index",
+    "0"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-26T14:19:14.579479+00:00",
+  "finished_utc": "2026-10-26T14:19:27.654824+00:00",
+  "wall_seconds": 13.075300206997781,
+  "exit_code": 0,
+  "timeout_seconds": 30,
+  "kill_after_seconds": 2,
+  "scope": "existing n128 public instance: original basis/candidates/targets only; no reduction, GSO or decoding"
+}

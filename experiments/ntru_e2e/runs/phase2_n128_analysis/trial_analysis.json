@@ -1,0 +1,833 @@
+{
+  "scope": "offline analysis of the eight saved n=128 trials; no online work",
+  "trials": [
+    {
+      "case_id": "n128_w8_16",
+      "trial_id": "b20_s32_p0",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w8_16/instance_01/b20_s32_p0.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": -9,
+      "command_wall_seconds": 44.9165082790023,
+      "snapshot_status": "running",
+      "snapshot_stage": "lll_setup",
+      "snapshot_wall_seconds": 1.6512698459991952,
+      "timings": {
+        "checkpoint_io_seconds": 0.05077677499866695,
+        "construction_seconds": 0.6854805929979193
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.5082819220006058,
+          "operation_seconds": 0.8228013290026865,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "arm_complete",
+          "method": "direct_tail",
+          "worker_elapsed_seconds": 1.549147230998642,
+          "arm": "direct_tail"
+        },
+        {
+          "event": "preprocess_start",
+          "phase": "preprocessing",
+          "preprocess_id": "6746ca0193172044",
+          "elapsed_seconds": 0.024507957001333125,
+          "dimension": 250,
+          "bkz_beta": 20,
+          "sieve_dim": 32,
+          "seed": 1771157796,
+          "nthreads": 1,
+          "staged": true,
+          "worker_elapsed_seconds": 1.6443358549986442,
+          "arm": null
+        },
+        {
+          "event": "lll_start",
+          "phase": "lll",
+          "preprocess_id": "6746ca0193172044",
+          "elapsed_seconds": 0.03144259900000179,
+          "worker_elapsed_seconds": 1.6512656499980949,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 0,
+        "minimum_norm_sq": null,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 224,
+        "zero_tail_signed_rotations": 170,
+        "nonzero_tail_signed_rotations": 54,
+        "distinct_nonzero_tails": 8,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 160
+      }
+    },
+    {
+      "case_id": "n128_w8_16",
+      "trial_id": "b20_s32_p1",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w8_16/instance_01/b20_s32_p1.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": -9,
+      "command_wall_seconds": 44.91820400500001,
+      "snapshot_status": "running",
+      "snapshot_stage": "lll_setup",
+      "snapshot_wall_seconds": 1.6873433940018003,
+      "timings": {
+        "checkpoint_io_seconds": 0.052313405998575035,
+        "construction_seconds": 0.6191737819972332
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.5404934839971247,
+          "operation_seconds": 0.9213197019998915,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "arm_complete",
+          "method": "direct_tail",
+          "worker_elapsed_seconds": 1.589717146998737,
+          "arm": "direct_tail"
+        },
+        {
+          "event": "preprocess_start",
+          "phase": "preprocessing",
+          "preprocess_id": "ed6ea17175d0e934",
+          "elapsed_seconds": 0.022544953997567063,
+          "dimension": 250,
+          "bkz_beta": 20,
+          "sieve_dim": 32,
+          "seed": 1247747029,
+          "nthreads": 1,
+          "staged": true,
+          "worker_elapsed_seconds": 1.6808923620010319,
+          "arm": null
+        },
+        {
+          "event": "lll_start",
+          "phase": "lll",
+          "preprocess_id": "ed6ea17175d0e934",
+          "elapsed_seconds": 0.02898329600066063,
+          "worker_elapsed_seconds": 1.6873375790019054,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 0,
+        "minimum_norm_sq": null,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 224,
+        "zero_tail_signed_rotations": 172,
+        "nonzero_tail_signed_rotations": 52,
+        "distinct_nonzero_tails": 8,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 160
+      }
+    },
+    {
+      "case_id": "n128_w8_16",
+      "trial_id": "b25_s40_p0",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w8_16/instance_01/b25_s40_p0.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": -9,
+      "command_wall_seconds": 44.91357110100216,
+      "snapshot_status": "running",
+      "snapshot_stage": "lll_setup",
+      "snapshot_wall_seconds": 1.6198071409999102,
+      "timings": {
+        "checkpoint_io_seconds": 0.0790459629970428,
+        "construction_seconds": 0.5618469209985051
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.4553923450002912,
+          "operation_seconds": 0.8935454240017862,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "arm_complete",
+          "method": "direct_tail",
+          "worker_elapsed_seconds": 1.5225433880004857,
+          "arm": "direct_tail"
+        },
+        {
+          "event": "preprocess_start",
+          "phase": "preprocessing",
+          "preprocess_id": "9461aa96fbe53883",
+          "elapsed_seconds": 0.02309631000025547,
+          "dimension": 250,
+          "bkz_beta": 25,
+          "sieve_dim": 40,
+          "seed": 1771157796,
+          "nthreads": 1,
+          "staged": true,
+          "worker_elapsed_seconds": 1.6100101430020004,
+          "arm": null
+        },
+        {
+          "event": "lll_start",
+          "phase": "lll",
+          "preprocess_id": "9461aa96fbe53883",
+          "elapsed_seconds": 0.03289723399939248,
+          "worker_elapsed_seconds": 1.6198024840014114,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 0,
+        "minimum_norm_sq": null,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 224,
+        "zero_tail_signed_rotations": 170,
+        "nonzero_tail_signed_rotations": 54,
+        "distinct_nonzero_tails": 8,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 160
+      }
+    },
+    {
+      "case_id": "n128_w8_16",
+      "trial_id": "b25_s40_p1",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w8_16/instance_01/b25_s40_p1.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": -9,
+      "command_wall_seconds": 44.91054903899931,
+      "snapshot_status": "running",
+      "snapshot_stage": "lll_setup",
+      "snapshot_wall_seconds": 1.5791722840003786,
+      "timings": {
+        "checkpoint_io_seconds": 0.04624224600411253,
+        "construction_seconds": 0.5629331739983172
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.448684338000021,
+          "operation_seconds": 0.8857511640017037,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "arm_complete",
+          "method": "direct_tail",
+          "worker_elapsed_seconds": 1.4872259959993244,
+          "arm": "direct_tail"
+        },
+        {
+          "event": "preprocess_start",
+          "phase": "preprocessing",
+          "preprocess_id": "287add429be72878",
+          "elapsed_seconds": 0.02347313700011,
+          "dimension": 250,
+          "bkz_beta": 25,
+          "sieve_dim": 40,
+          "seed": 1247747029,
+          "nthreads": 1,
+          "staged": true,
+          "worker_elapsed_seconds": 1.5718373989984684,
+          "arm": null
+        },
+        {
+          "event": "lll_start",
+          "phase": "lll",
+          "preprocess_id": "287add429be72878",
+          "elapsed_seconds": 0.030809708001470426,
+          "worker_elapsed_seconds": 1.57916773100078,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 0,
+        "minimum_norm_sq": null,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 224,
+        "zero_tail_signed_rotations": 172,
+        "nonzero_tail_signed_rotations": 52,
+        "distinct_nonzero_tails": 8,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 160
+      }
+    },
+    {
+      "case_id": "n128_w12_24",
+      "trial_id": "b20_s32_p0",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w12_24/instance_01/b20_s32_p0.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": 143,
+      "command_wall_seconds": 43.020120795001276,
+      "snapshot_status": "interrupted",
+      "snapshot_stage": "bkz_setup",
+      "snapshot_wall_seconds": 42.61420496899882,
+      "timings": {
+        "checkpoint_io_seconds": 0.27534116399328923,
+        "construction_seconds": 0.6453277239997988,
+        "lll_setup_seconds": 24.771372476996476
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.5228379189975385,
+          "operation_seconds": 0.8775101949977397,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 36.79261835699435,
+          "operation_seconds": 11.375918155998079,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 27.998972309997043,
+          "operation_seconds": 2.582272109000769,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "babai_diagnostic_complete",
+          "phase": "babai_diagnostic",
+          "preprocess_id": "0a0b6200d93d5664",
+          "elapsed_seconds": 38.81398726000043,
+          "target_count": 80,
+          "candidate_count": 0,
+          "worker_elapsed_seconds": 40.43479907700021,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "arm_complete",
+          "method": "lll_babai",
+          "worker_elapsed_seconds": 40.45693275600206,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "bkz_start",
+          "phase": "bkz",
+          "preprocess_id": "0a0b6200d93d5664",
+          "elapsed_seconds": 38.90412626699981,
+          "beta": 20,
+          "max_loops": 2,
+          "worker_elapsed_seconds": 40.524929442999564,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 250,
+        "minimum_norm_sq": 66049,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 212,
+        "zero_tail_signed_rotations": 142,
+        "nonzero_tail_signed_rotations": 70,
+        "distinct_nonzero_tails": 18,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 112
+      }
+    },
+    {
+      "case_id": "n128_w12_24",
+      "trial_id": "b20_s32_p1",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w12_24/instance_01/b20_s32_p1.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": 143,
+      "command_wall_seconds": 43.08243514300193,
+      "snapshot_status": "interrupted",
+      "snapshot_stage": "bkz_setup",
+      "snapshot_wall_seconds": 42.636299904002954,
+      "timings": {
+        "checkpoint_io_seconds": 0.2626778449921403,
+        "construction_seconds": 0.6443290349998279,
+        "lll_setup_seconds": 25.444990370000596
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.5717980829977023,
+          "operation_seconds": 0.9274690479978744,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 37.19908684199618,
+          "operation_seconds": 11.109767436995753,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 28.60855059900132,
+          "operation_seconds": 2.519231194000895,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "babai_diagnostic_complete",
+          "phase": "babai_diagnostic",
+          "preprocess_id": "84c1b62113d88f97",
+          "elapsed_seconds": 39.148694131999946,
+          "target_count": 80,
+          "candidate_count": 0,
+          "worker_elapsed_seconds": 40.823052675001236,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "arm_complete",
+          "method": "lll_babai",
+          "worker_elapsed_seconds": 40.845969362002506,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "bkz_start",
+          "phase": "bkz",
+          "preprocess_id": "84c1b62113d88f97",
+          "elapsed_seconds": 39.23596761999943,
+          "beta": 20,
+          "max_loops": 2,
+          "worker_elapsed_seconds": 40.910318726000696,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 250,
+        "minimum_norm_sq": 66049,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 210,
+        "zero_tail_signed_rotations": 142,
+        "nonzero_tail_signed_rotations": 68,
+        "distinct_nonzero_tails": 18,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 112
+      }
+    },
+    {
+      "case_id": "n128_w12_24",
+      "trial_id": "b25_s40_p0",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w12_24/instance_01/b25_s40_p0.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": 143,
+      "command_wall_seconds": 43.12610643899825,
+      "snapshot_status": "interrupted",
+      "snapshot_stage": "bkz_setup",
+      "snapshot_wall_seconds": 42.65794816400012,
+      "timings": {
+        "checkpoint_io_seconds": 0.28013230499709607,
+        "construction_seconds": 0.6011015580006642,
+        "lll_setup_seconds": 25.104233259000466
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.5329419230038184,
+          "operation_seconds": 0.9318403650031541,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 37.952202503998706,
+          "operation_seconds": 12.246867686997575,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 28.26347028500095,
+          "operation_seconds": 2.5581354679998185,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "babai_diagnostic_complete",
+          "phase": "babai_diagnostic",
+          "preprocess_id": "b385241604e7506c",
+          "elapsed_seconds": 39.98078674700082,
+          "target_count": 80,
+          "candidate_count": 0,
+          "worker_elapsed_seconds": 41.6261384419995,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "arm_complete",
+          "method": "lll_babai",
+          "worker_elapsed_seconds": 41.648404399002175,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "bkz_start",
+          "phase": "bkz",
+          "preprocess_id": "b385241604e7506c",
+          "elapsed_seconds": 40.070851673001016,
+          "beta": 25,
+          "max_loops": 2,
+          "worker_elapsed_seconds": 41.71619728500082,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 250,
+        "minimum_norm_sq": 66049,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 212,
+        "zero_tail_signed_rotations": 142,
+        "nonzero_tail_signed_rotations": 70,
+        "distinct_nonzero_tails": 18,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 112
+      }
+    },
+    {
+      "case_id": "n128_w12_24",
+      "trial_id": "b25_s40_p1",
+      "result": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n128_w12_24/instance_01/b25_s40_p1.result.json",
+      "instrumentation_version": "v2",
+      "command_status": "timeout",
+      "command_exit_code": 143,
+      "command_wall_seconds": 43.02012733200172,
+      "snapshot_status": "interrupted",
+      "snapshot_stage": "bkz_setup",
+      "snapshot_wall_seconds": 42.59514653899896,
+      "timings": {
+        "checkpoint_io_seconds": 0.2601944609959901,
+        "construction_seconds": 0.583751027003018,
+        "lll_setup_seconds": 25.149418351003987
+      },
+      "arms": {
+        "direct_tail": {
+          "status": "complete",
+          "seconds": 1.442929502001789,
+          "operation_seconds": 0.859178474998771,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_rows": {
+          "status": "complete",
+          "seconds": 38.07592912700784,
+          "operation_seconds": 12.342759749000834,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "lll_babai": {
+          "status": "complete",
+          "seconds": 28.195767362009065,
+          "operation_seconds": 2.462597984002059,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_rows": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "bkz_babai": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        },
+        "slicer": {
+          "status": "not_run",
+          "seconds": null,
+          "operation_seconds": null,
+          "first_valid_seconds": null,
+          "candidate_count": 0
+        }
+      },
+      "kernel_started_calls": 0,
+      "last_events": [
+        {
+          "event": "babai_diagnostic_complete",
+          "phase": "babai_diagnostic",
+          "preprocess_id": "9bfcbb398491426b",
+          "elapsed_seconds": 40.04153036199932,
+          "target_count": 80,
+          "candidate_count": 0,
+          "worker_elapsed_seconds": 41.57376757399834,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "arm_complete",
+          "method": "lll_babai",
+          "worker_elapsed_seconds": 41.59802810700057,
+          "arm": "lll_babai"
+        },
+        {
+          "event": "bkz_start",
+          "phase": "bkz",
+          "preprocess_id": "9bfcbb398491426b",
+          "elapsed_seconds": 40.122585252000135,
+          "beta": 25,
+          "max_loops": 2,
+          "worker_elapsed_seconds": 41.65481200100112,
+          "arm": null
+        }
+      ],
+      "lll_saved_basis": {
+        "row_count": 250,
+        "minimum_norm_sq": 66049,
+        "rows_within_secret_bound": 0
+      },
+      "offline_truth_geometry": {
+        "pattern_compatible_signed_rotations": 210,
+        "zero_tail_signed_rotations": 142,
+        "nonzero_tail_signed_rotations": 68,
+        "distinct_nonzero_tails": 18,
+        "all_nonzero_truth_tails_in_saved_guesses": true,
+        "universal_zero_tail_signed_rotation_lower_bound": 112
+      }
+    }
+  ]
+}

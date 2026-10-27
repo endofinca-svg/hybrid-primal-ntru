@@ -1,0 +1,774 @@
+{
+  "scope": "real small backend interface tests; forced Slicer work is not a performance result",
+  "attempt": "real02",
+  "rows": [
+    {
+      "case": "legacy_E_full",
+      "method": "E",
+      "mode": "fixed_basis_full_batch",
+      "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2b_results_20261026/backend_check.reduced_input.json",
+      "basis_sha256": "9c9c9a3f1ff0e94f09ed1bbf2c0fe561b66715bbd211d988be52b04438c184a1",
+      "progress": {
+        "schema": "ntru-external-target-progress-v1",
+        "scope": "external_target_events_only",
+        "target_count": 2,
+        "submitted_count": 2,
+        "completed_count": 2,
+        "errored_count": 0,
+        "cancelled_count": 0,
+        "pending_count": 0,
+        "unsubmitted_count": 0,
+        "returned_candidate_count": 2,
+        "public_valid_candidate_count": 2,
+        "public_valid_target_count": 2,
+        "unique_public_valid_solution_count": 2,
+        "solution_uniqueness": "exact_caller_supplied_full_solution_key",
+        "first_public_valid_seconds": 0.2002672579983482,
+        "conservation_holds": true,
+        "targets": [
+          {
+            "external_id": 0,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          },
+          {
+            "external_id": 1,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          }
+        ],
+        "events": [
+          {
+            "sequence": 0,
+            "event": "submitted",
+            "external_id": 0,
+            "elapsed_seconds": 0.1991703409985348
+          },
+          {
+            "sequence": 1,
+            "event": "submitted",
+            "external_id": 1,
+            "elapsed_seconds": 0.1991978529986227
+          },
+          {
+            "sequence": 2,
+            "event": "candidate_returned",
+            "external_id": 0,
+            "elapsed_seconds": 0.2002672579983482,
+            "public_valid": true,
+            "output_origin": "babai_only",
+            "solution_key": [
+              [
+                0,
+                0,
+                0,
+                -1
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "sequence": 3,
+            "event": "candidate_returned",
+            "external_id": 1,
+            "elapsed_seconds": 0.20091112599766348,
+            "public_valid": true,
+            "output_origin": "babai_only",
+            "solution_key": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                -1,
+                0,
+                0,
+                -1
+              ]
+            ]
+          },
+          {
+            "sequence": 4,
+            "event": "completed",
+            "external_id": 0,
+            "elapsed_seconds": 0.20100236299913377,
+            "reason": null
+          },
+          {
+            "sequence": 5,
+            "event": "completed",
+            "external_id": 1,
+            "elapsed_seconds": 0.20102473499719054,
+            "reason": null
+          }
+        ]
+      },
+      "metrics": {
+        "preprocess_count": 0,
+        "slicer_kernel_calls": 0,
+        "babai_precheck_target_count": 0,
+        "slicer_target_count": 0,
+        "preprocess_attempt_count": 0,
+        "slicer_kernel_completed_calls": 0,
+        "babai_decode_target_count": 2,
+        "projection_babai_target_count": 0,
+        "babai_decode_completed_target_count": 2,
+        "babai_lift_call_count": 0
+      },
+      "timings": {
+        "input_load_verify_seconds": 0.008500964002450928,
+        "gso_initialization_seconds": 0.19861486300214892,
+        "extra_preprocess_seconds": 8.121599967125803e-05,
+        "target_prepare_seconds": 3.0504997994285077e-05,
+        "decode_seconds": 0.0001173310010926798,
+        "lift_reconstruct_seconds": 0.00042891400153166614,
+        "public_verify_seconds": 0.0003786140005104244,
+        "result_output_seconds": 0.003216589000658132,
+        "bookkeeping_seconds": 0.0017219819928868674,
+        "total_wall_seconds": 0.21309097799894516,
+        "phase_semantics": "PHASES are exclusive; backend timings/call evidence are nested diagnostics, never added twice",
+        "reduction_and_construction_excluded": true,
+        "output_timing_scope": "includes main result serialization/write; excludes final metrics-sidecar reporting IO, which enclosing command wall includes"
+      },
+      "status": "completed",
+      "stop_reason": "full_batch_finished"
+    },
+    {
+      "case": "micro_E_full",
+      "method": "E",
+      "mode": "fixed_basis_full_batch",
+      "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2c_results_20261026/micro_n15_d28.public_input.json",
+      "basis_sha256": "11660468879eca246aff005857e322f08555a0d48f0c767b6a103a8703156387",
+      "progress": {
+        "schema": "ntru-external-target-progress-v1",
+        "scope": "external_target_events_only",
+        "target_count": 2,
+        "submitted_count": 2,
+        "completed_count": 2,
+        "errored_count": 0,
+        "cancelled_count": 0,
+        "pending_count": 0,
+        "unsubmitted_count": 0,
+        "returned_candidate_count": 2,
+        "public_valid_candidate_count": 2,
+        "public_valid_target_count": 2,
+        "unique_public_valid_solution_count": 2,
+        "solution_uniqueness": "exact_caller_supplied_full_solution_key",
+        "first_public_valid_seconds": 0.03229542699773447,
+        "conservation_holds": true,
+        "targets": [
+          {
+            "external_id": 0,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          },
+          {
+            "external_id": 1,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          }
+        ],
+        "events": [
+          {
+            "sequence": 0,
+            "event": "submitted",
+            "external_id": 0,
+            "elapsed_seconds": 0.02914556299947435
+          },
+          {
+            "sequence": 1,
+            "event": "submitted",
+            "external_id": 1,
+            "elapsed_seconds": 0.02917420999801834
+          },
+          {
+            "sequence": 2,
+            "event": "candidate_returned",
+            "external_id": 0,
+            "elapsed_seconds": 0.03229542699773447,
+            "public_valid": true,
+            "output_origin": "babai_only",
+            "solution_key": [
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "sequence": 3,
+            "event": "candidate_returned",
+            "external_id": 1,
+            "elapsed_seconds": 0.0335528229988995,
+            "public_valid": true,
+            "output_origin": "babai_only",
+            "solution_key": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "sequence": 4,
+            "event": "completed",
+            "external_id": 0,
+            "elapsed_seconds": 0.03363131999867619,
+            "reason": null
+          },
+          {
+            "sequence": 5,
+            "event": "completed",
+            "external_id": 1,
+            "elapsed_seconds": 0.0336519810007303,
+            "reason": null
+          }
+        ]
+      },
+      "metrics": {
+        "preprocess_count": 0,
+        "slicer_kernel_calls": 0,
+        "babai_precheck_target_count": 0,
+        "slicer_target_count": 0,
+        "preprocess_attempt_count": 0,
+        "slicer_kernel_completed_calls": 0,
+        "babai_decode_target_count": 2,
+        "projection_babai_target_count": 0,
+        "babai_decode_completed_target_count": 2,
+        "babai_lift_call_count": 0
+      },
+      "timings": {
+        "input_load_verify_seconds": 0.02633070899901213,
+        "gso_initialization_seconds": 0.028068446001270786,
+        "extra_preprocess_seconds": 0.0007654410001123324,
+        "target_prepare_seconds": 4.4707001507049426e-05,
+        "decode_seconds": 0.00037195400000200607,
+        "lift_reconstruct_seconds": 0.00123083200014662,
+        "public_verify_seconds": 0.0009163099966826849,
+        "result_output_seconds": 0.0038365210020856466,
+        "bookkeeping_seconds": 0.002702947003854206,
+        "total_wall_seconds": 0.06426786700467346,
+        "phase_semantics": "PHASES are exclusive; backend timings/call evidence are nested diagnostics, never added twice",
+        "reduction_and_construction_excluded": true,
+        "output_timing_scope": "includes main result serialization/write; excludes final metrics-sidecar reporting IO, which enclosing command wall includes"
+      },
+      "status": "completed",
+      "stop_reason": "full_batch_finished"
+    },
+    {
+      "case": "micro_D_full",
+      "method": "D",
+      "mode": "fixed_basis_full_batch",
+      "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2c_results_20261026/micro_n15_d28.public_input.json",
+      "basis_sha256": "11660468879eca246aff005857e322f08555a0d48f0c767b6a103a8703156387",
+      "progress": {
+        "schema": "ntru-external-target-progress-v1",
+        "scope": "external_target_events_only",
+        "target_count": 2,
+        "submitted_count": 2,
+        "completed_count": 2,
+        "errored_count": 0,
+        "cancelled_count": 0,
+        "pending_count": 0,
+        "unsubmitted_count": 0,
+        "returned_candidate_count": 2,
+        "public_valid_candidate_count": 2,
+        "public_valid_target_count": 2,
+        "unique_public_valid_solution_count": 2,
+        "solution_uniqueness": "exact_caller_supplied_full_solution_key",
+        "first_public_valid_seconds": 0.6776675729997805,
+        "conservation_holds": true,
+        "targets": [
+          {
+            "external_id": 0,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          },
+          {
+            "external_id": 1,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          }
+        ],
+        "events": [
+          {
+            "sequence": 0,
+            "event": "submitted",
+            "external_id": 0,
+            "elapsed_seconds": 0.6634834110009251
+          },
+          {
+            "sequence": 1,
+            "event": "submitted",
+            "external_id": 1,
+            "elapsed_seconds": 0.6635121760009497
+          },
+          {
+            "sequence": 2,
+            "event": "candidate_returned",
+            "external_id": 0,
+            "elapsed_seconds": 0.6776675729997805,
+            "public_valid": true,
+            "output_origin": "slicer_tail_with_babai_lift",
+            "solution_key": [
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "sequence": 3,
+            "event": "candidate_returned",
+            "external_id": 1,
+            "elapsed_seconds": 0.6787186020010267,
+            "public_valid": true,
+            "output_origin": "slicer_tail_with_babai_lift",
+            "solution_key": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "sequence": 4,
+            "event": "completed",
+            "external_id": 0,
+            "elapsed_seconds": 0.6788023499975679,
+            "reason": null
+          },
+          {
+            "sequence": 5,
+            "event": "completed",
+            "external_id": 1,
+            "elapsed_seconds": 0.6788225819982472,
+            "reason": null
+          }
+        ]
+      },
+      "metrics": {
+        "preprocess_count": 1,
+        "slicer_kernel_calls": 1,
+        "babai_precheck_target_count": 0,
+        "slicer_target_count": 2,
+        "preprocess_attempt_count": 1,
+        "slicer_kernel_completed_calls": 1,
+        "babai_decode_target_count": 0,
+        "projection_babai_target_count": 2,
+        "babai_decode_completed_target_count": 0,
+        "babai_lift_call_count": 4
+      },
+      "timings": {
+        "input_load_verify_seconds": 0.024498237002262613,
+        "gso_initialization_seconds": 0.027069575000496116,
+        "extra_preprocess_seconds": 0.6361037970018515,
+        "target_prepare_seconds": 0.008354718000191497,
+        "decode_seconds": 0.00012298100045882165,
+        "lift_reconstruct_seconds": 0.003285052996943705,
+        "public_verify_seconds": 0.0007281470025191084,
+        "result_output_seconds": 0.004008713000075659,
+        "bookkeeping_seconds": 0.0037231689966574777,
+        "total_wall_seconds": 0.7078943900014565,
+        "phase_semantics": "PHASES are exclusive; backend timings/call evidence are nested diagnostics, never added twice",
+        "reduction_and_construction_excluded": true,
+        "output_timing_scope": "includes main result serialization/write; excludes final metrics-sidecar reporting IO, which enclosing command wall includes"
+      },
+      "status": "completed",
+      "stop_reason": "full_batch_finished"
+    },
+    {
+      "case": "micro_E_first",
+      "method": "E",
+      "mode": "fixed_basis_first_public_valid",
+      "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2c_results_20261026/micro_n15_d28.public_input.json",
+      "basis_sha256": "11660468879eca246aff005857e322f08555a0d48f0c767b6a103a8703156387",
+      "progress": {
+        "schema": "ntru-external-target-progress-v1",
+        "scope": "external_target_events_only",
+        "target_count": 2,
+        "submitted_count": 1,
+        "completed_count": 1,
+        "errored_count": 0,
+        "cancelled_count": 0,
+        "pending_count": 0,
+        "unsubmitted_count": 1,
+        "returned_candidate_count": 1,
+        "public_valid_candidate_count": 1,
+        "public_valid_target_count": 1,
+        "unique_public_valid_solution_count": 1,
+        "solution_uniqueness": "exact_caller_supplied_full_solution_key",
+        "first_public_valid_seconds": 0.027989287998934742,
+        "conservation_holds": true,
+        "targets": [
+          {
+            "external_id": 0,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          },
+          {
+            "external_id": 1,
+            "state": "unsubmitted",
+            "returned_candidate_count": 0,
+            "public_valid_candidate_count": 0
+          }
+        ],
+        "events": [
+          {
+            "sequence": 0,
+            "event": "submitted",
+            "external_id": 0,
+            "elapsed_seconds": 0.025256347998947604
+          },
+          {
+            "sequence": 1,
+            "event": "candidate_returned",
+            "external_id": 0,
+            "elapsed_seconds": 0.027989287998934742,
+            "public_valid": true,
+            "output_origin": "babai_only",
+            "solution_key": [
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "sequence": 2,
+            "event": "completed",
+            "external_id": 0,
+            "elapsed_seconds": 0.02820240200162516,
+            "reason": null
+          }
+        ]
+      },
+      "metrics": {
+        "preprocess_count": 0,
+        "slicer_kernel_calls": 0,
+        "babai_precheck_target_count": 0,
+        "slicer_target_count": 0,
+        "preprocess_attempt_count": 0,
+        "slicer_kernel_completed_calls": 0,
+        "babai_decode_target_count": 1,
+        "projection_babai_target_count": 0,
+        "babai_decode_completed_target_count": 1,
+        "babai_lift_call_count": 0
+      },
+      "timings": {
+        "input_load_verify_seconds": 0.027159842997207306,
+        "gso_initialization_seconds": 0.024302448000526056,
+        "extra_preprocess_seconds": 0.0006760180003766436,
+        "target_prepare_seconds": 3.3347998396493495e-05,
+        "decode_seconds": 0.00018017500042333268,
+        "lift_reconstruct_seconds": 0.0006467460007115733,
+        "public_verify_seconds": 0.0003479850020084996,
+        "result_output_seconds": 0.0018726220005191863,
+        "bookkeeping_seconds": 0.002299463001691038,
+        "total_wall_seconds": 0.05751864800186013,
+        "phase_semantics": "PHASES are exclusive; backend timings/call evidence are nested diagnostics, never added twice",
+        "reduction_and_construction_excluded": true,
+        "output_timing_scope": "includes main result serialization/write; excludes final metrics-sidecar reporting IO, which enclosing command wall includes"
+      },
+      "status": "completed",
+      "stop_reason": "first_public_valid"
+    },
+    {
+      "case": "micro_D_first",
+      "method": "D",
+      "mode": "fixed_basis_first_public_valid",
+      "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2c_results_20261026/micro_n15_d28.public_input.json",
+      "basis_sha256": "11660468879eca246aff005857e322f08555a0d48f0c767b6a103a8703156387",
+      "progress": {
+        "schema": "ntru-external-target-progress-v1",
+        "scope": "external_target_events_only",
+        "target_count": 2,
+        "submitted_count": 1,
+        "completed_count": 1,
+        "errored_count": 0,
+        "cancelled_count": 0,
+        "pending_count": 0,
+        "unsubmitted_count": 1,
+        "returned_candidate_count": 1,
+        "public_valid_candidate_count": 1,
+        "public_valid_target_count": 1,
+        "unique_public_valid_solution_count": 1,
+        "solution_uniqueness": "exact_caller_supplied_full_solution_key",
+        "first_public_valid_seconds": 0.0450888710001891,
+        "conservation_holds": true,
+        "targets": [
+          {
+            "external_id": 0,
+            "state": "completed",
+            "returned_candidate_count": 1,
+            "public_valid_candidate_count": 1
+          },
+          {
+            "external_id": 1,
+            "state": "unsubmitted",
+            "returned_candidate_count": 0,
+            "public_valid_candidate_count": 0
+          }
+        ],
+        "events": [
+          {
+            "sequence": 0,
+            "event": "submitted",
+            "external_id": 0,
+            "elapsed_seconds": 0.03249318899906939
+          },
+          {
+            "sequence": 1,
+            "event": "candidate_returned",
+            "external_id": 0,
+            "elapsed_seconds": 0.0450888710001891,
+            "public_valid": true,
+            "output_origin": "slicer_tail_with_babai_lift",
+            "solution_key": [
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "sequence": 2,
+            "event": "completed",
+            "external_id": 0,
+            "elapsed_seconds": 0.04531715199846076,
+            "reason": null
+          }
+        ]
+      },
+      "metrics": {
+        "preprocess_count": 1,
+        "slicer_kernel_calls": 1,
+        "babai_precheck_target_count": 0,
+        "slicer_target_count": 1,
+        "preprocess_attempt_count": 1,
+        "slicer_kernel_completed_calls": 1,
+        "babai_decode_target_count": 0,
+        "projection_babai_target_count": 1,
+        "babai_decode_completed_target_count": 0,
+        "babai_lift_call_count": 2
+      },
+      "timings": {
+        "input_load_verify_seconds": 0.030996100998891052,
+        "gso_initialization_seconds": 0.028300063000642695,
+        "extra_preprocess_seconds": 0.003908788999979151,
+        "target_prepare_seconds": 0.007926936999865575,
+        "decode_seconds": 7.605400242027827e-05,
+        "lift_reconstruct_seconds": 0.001737651000439655,
+        "public_verify_seconds": 0.00073125799826812,
+        "result_output_seconds": 0.0031933940008457284,
+        "bookkeeping_seconds": 0.0030023910003365017,
+        "total_wall_seconds": 0.07987263800168876,
+        "phase_semantics": "PHASES are exclusive; backend timings/call evidence are nested diagnostics, never added twice",
+        "reduction_and_construction_excluded": true,
+        "output_timing_scope": "includes main result serialization/write; excludes final metrics-sidecar reporting IO, which enclosing command wall includes"
+      },
+      "status": "completed",
+      "stop_reason": "first_public_valid"
+    }
+  ],
+  "status": "passed",
+  "pair_input_equal": true,
+  "real_Babai_executed": true,
+  "real_Slicer_preprocessing_and_kernel_executed": true,
+  "new_LLL_BKZ_calls": 0,
+  "main_n128_compute_calls": 0
+}

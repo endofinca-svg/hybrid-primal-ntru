@@ -1,0 +1,17 @@
+diff --git a/kernel/hash_table.inl b/kernel/hash_table.inl
+index f7249ef..2855828 100755
+--- a/kernel/hash_table.inl
++++ b/kernel/hash_table.inl
+@@ -81,7 +81,11 @@ inline UidType UidHashTable::compute_uid_t(std::array<LFT,MAX_SIEVING_DIM> const
+     //int16_t check = 0;
+     for (size_t i=0; i<n; i++){
+         //check+=static_cast<int16_t>(128*y[i]);
+-        res+=(static_cast<int16_t>(128*y[i]))*uid_coeffs[i]; //TODO:use move from https://en.cppreference.com/w/cpp/algorithm/inner_product ?
++        // Local NTRU phase-one modification, 2026-10-21: higher precision UID.
++        // Small public NTRU targets can have normalized coordinates below
++        // 1/128. Preserve them instead of mapping every coordinate to UID 0.
++        // Symmetric rounding preserves compute_uid_t(-y) == -compute_uid_t(y).
++        res+=static_cast<UidType>(static_cast<int64_t>(std::llround(1048576.0*y[i])))*uid_coeffs[i];
+         //std::cout << y[i] << " " << static_cast<int16_t>(128*y[i]) << " " << res << std::endl;
+     }
+ 

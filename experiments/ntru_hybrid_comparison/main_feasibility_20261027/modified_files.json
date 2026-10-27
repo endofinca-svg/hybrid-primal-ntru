@@ -1,0 +1,45 @@
+{
+  "schema": "ntru-main-feasibility-files-v1",
+  "algorithm_files": [
+    {
+      "path": "experiments/ntru_hybrid_comparison/standalone.py",
+      "change": "modified",
+      "before_sha256": "a8fcaec42f0afca1372dac44b8c340aa88ce6cd11f27e459fbcda754a706a852",
+      "after_sha256": "58ac83adaef409530cebac02490e6af8cbc2fabe0848811889c5afd57df96112"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/standalone_worker.py",
+      "change": "modified",
+      "before_sha256": "b631c936a29cfa4963178b091f7fb0b109f79720c5caa8b408c0211f9ed97a85",
+      "after_sha256": "59e61b0b31b26049a97d978f4972f09fcde3501984590ac44b794d823a8fa62a"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/reduction.py",
+      "change": "modified",
+      "before_sha256": "9bf04f0416a28f6c956534caca17ebabc8f849300283482cbdd7be63b8f7844b",
+      "after_sha256": "1d5fa442fa21f364072dfa1113a03e16385224c5e51b3a0564909cbfe3a771c6"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/patterns.py",
+      "change": "added",
+      "sha256": "78e16f453d021225f3a1b78a3679eb1018a9dc09b7275bcb40042864d24baa86"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_patterns.py",
+      "change": "added",
+      "sha256": "0e26c5446b3d38f1904e8ad3321ab17c2cad171edc57bdf0c56eca50949aeff1"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_reduction_telemetry.py",
+      "change": "added",
+      "sha256": "bf69cb28802c7526378ea22c8ecd50389514762fac2c15f6d7b7bb244660d0ac"
+    }
+  ],
+  "scope": "deterministic public historical pattern and observational reduction telemetry only; no numeric algorithm or frozen backend edits",
+  "new_posthoc_scripts": [
+    "posthoc_validate.py",
+    "summarize_run.py"
+  ],
+  "runtime_backend_modified": false,
+  "historical_raw_results_modified": false
+}

@@ -1,0 +1,131 @@
+--- v1/run_phase2.py
++++ v2/run_phase2.py
+@@ -111,11 +111,84 @@
+         inventory = json.loads(inventory_path.read_text())
+         immutable_keys = ("schema", "config", "config_sha256", "source_sha256", "budget_scope",
+                           "total_online_budget_seconds", "online_wall_seconds", "instances",
+-                          "generation", "within_frozen_budgets", "schedule", "schedule_sha256")
++                          "generation", "within_frozen_budgets", "schedule", "schedule_sha256",
++                          "active_source_sha256", "active_instrumentation_version", "source_revisions")
+         if any(inventory.get(key) != summary.get(key) for key in immutable_keys):
+             raise ValueError("Preserving existing online inventory: it differs from the resumed run")
+     else:
+         atomic_json(inventory_path, summary)
++
++
++def stamp_trial_source(trial, summary, version=None):
++    """Keep the source used by each attempted trial, including older attempts."""
++    version = trial.get("instrumentation_version", version or summary.get("active_instrumentation_version", "v1"))
++    expected = (summary["source_sha256"] if version == "v1" else
++                summary.get("active_source_sha256", summary["source_sha256"]))
++    if version not in {"v1", summary.get("active_instrumentation_version", "v1")}:
++        raise ValueError(f"Unknown instrumentation version on trial: {version}")
++    if trial.get("source_sha256", expected) != expected:
++        raise ValueError("Stored trial source hashes do not match its instrumentation version")
++    trial.update(instrumentation_version=version, source_sha256=dict(expected))
++
++
++def validate_resume_sources(output_dir, summary):
++    """Allow the explicitly recorded checkpoint instrumentation migration only.
++
++    The initial source and paired schedule remain the original provenance.
++    A revision ledger must also commit to the unchanged plan and every public
++    online config.  This permits one v1-to-v2 change without replaying trials.
++    """
++    original = summary["source_sha256"]
++    ledger_path = output_dir / "instrumentation_revision.json"
++    if "schedule" in summary and file_sha(summary["schedule"]) != summary.get("schedule_sha256"):
++        raise ValueError("Frozen paired schedule changed since launch")
++    if ledger_path.exists():
++        revision = json.loads(ledger_path.read_text())
++        digest = file_sha(ledger_path)
++        references = summary.get("source_revisions", [])
++        if references and (len(references) != 1 or references[0].get("path") != str(ledger_path)
++                           or references[0].get("sha256") != digest):
++            raise ValueError("The recorded instrumentation revision ledger changed")
++        if revision.get("before_source_sha256") != original:
++            raise ValueError("Instrumentation revision must retain the initial source hashes")
++        after = revision.get("after_source_sha256")
++        if not isinstance(after, dict) or set(after) != set(original):
++            raise ValueError("Instrumentation revision must account for every original source file")
++        if any(after[name] != original[name] for name in original
++               if name not in {"run_phase2.py", "solve_phase2.py"}):
++            raise ValueError("Only the runner and worker instrumentation may change")
++        if (revision.get("from_instrumentation_version"), revision.get("to_instrumentation_version")) != ("v1", "v2"):
++            raise ValueError("Only the explicit v1-to-v2 instrumentation revision is supported")
++        configs = {trial["config"]: trial["config_sha256"]
++                   for record in summary["instances"] for trial in record["trials"]}
++        if (revision.get("plan_sha256") != summary["config_sha256"]
++                or revision.get("schedule_sha256") != summary.get("schedule_sha256")
++                or revision.get("online_config_sha256") != configs):
++            raise ValueError("Instrumentation revision cannot change the frozen plan, configs or schedule")
++        if file_sha(summary["config"]) != summary["config_sha256"] or any(file_sha(path) != value for path, value in configs.items()):
++            raise ValueError("Frozen plan or online config changed since launch")
++        if summary.get("active_source_sha256", original) not in (original, after):
++            raise ValueError("Active source hashes conflict with the instrumentation revision")
++        for name, expected in after.items():
++            if file_sha(HERE / name) != expected:
++                raise ValueError(f"Active instrumented source does not match its ledger: {name}")
++        summary.update(active_source_sha256=dict(after), active_instrumentation_version="v2",
++                       source_revisions=[{"path": str(ledger_path), "sha256": digest,
++                                          "from_instrumentation_version": "v1", "to_instrumentation_version": "v2",
++                                          "revision_id": revision.get("revision_id")}])
++        for record in summary["instances"]:
++            for trial in record["trials"]:
++                if trial["status"] != "pending" or Path(trial["command_prefix"]).with_suffix(".command.json").exists():
++                    if "instrumentation_version" in trial:
++                        stamp_trial_source(trial, summary)
++                    else:
++                        stamp_trial_source(trial, summary, version="v1")
++    else:
++        if summary.get("active_source_sha256", original) != original or summary.get("source_revisions"):
++            raise ValueError("The active source revision requires its preserved instrumentation ledger")
++        for name, expected in original.items():
++            if file_sha(HERE / name) != expected:
++                raise ValueError(f"Frozen online source changed since launch: {name}")
+ 
+ 
+ def placeholder(record, trial, status, reason):
+@@ -144,16 +217,14 @@
+         summary = json.loads(summary_path.read_text())
+         plan = json.loads(Path(summary["config"]).read_text())
+         validate_plan(plan, Path(summary["config"]))
+-        for name, digest in summary["source_sha256"].items():
+-            if file_sha(HERE / name) != digest:
+-                raise ValueError(f"Frozen online source changed since launch: {name}")
+-        if "schedule" in summary and file_sha(summary["schedule"]) != summary.get("schedule_sha256"):
+-            raise ValueError("Frozen paired schedule changed since launch")
++        validate_resume_sources(output_dir, summary)
+     else:
+         plan, summary = prepare(output_dir, config_path)
+     def persist():
+         summary["updated_utc"] = datetime.now(timezone.utc).isoformat()
+         atomic_json(summary_path, summary)
++    if resume:
++        persist()
+     if summary["status"] == "finished":
+         preserve_online_inventory(output_dir, summary)
+         return summary
+@@ -186,12 +257,13 @@
+             # Recover an attempted command after a parent interruption; never repeat it.
+             if metadata_path.exists():
+                 metadata = json.loads(metadata_path.read_text())
++                stamp_trial_source(trial, summary)
+                 overhead = plan["supervisor_allowance_seconds"] + MEASUREMENT_ALLOWANCE_SECONDS
+                 reservation = trial.get("reserved_online_seconds",
+                                         metadata.get("timeout_seconds", trial["trial_budget_seconds"] - overhead)
+                                         + overhead)
+                 charged = metadata.get("wall_seconds", reservation)
+-                recovered_status = ("interrupted" if metadata.get("status") == "running" else
++                recovered_status = ("interrupted_censored" if metadata.get("status") == "running" else
+                                     "timeout" if metadata.get("status") == "timeout" else
+                                     "finished" if metadata.get("exit_code") == 0 else "error")
+                 trial.update(status=recovered_status,
+@@ -216,6 +288,7 @@
+                 continue
+             print(f"{record['case_id']}/{record['instance_id']}/{trial['trial_id']}: {remaining:.3f}s total budget", flush=True)
+             trial["reserved_online_seconds"] = remaining
++            stamp_trial_source(trial, summary)
+             persist()
+             metadata = capture(command("solve_phase2", "--public", record["public"],
+                                       "--config", trial["config"], "--seed", record["solver_seed"],

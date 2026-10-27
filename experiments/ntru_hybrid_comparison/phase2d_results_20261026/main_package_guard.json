@@ -1,0 +1,19 @@
+{
+  "scope": "manifest/state/hash check only; no main algebra/GSO/reduction/decode",
+  "input_path": "experiments/ntru_hybrid_comparison/phase2b_results_20261026/public_inputs_n128_k40_kappa4.json",
+  "sha256_before": "685595bb531d73d5326e4640570486203187200c7a7151d92a5af84caad32ed2",
+  "sha256_after": "685595bb531d73d5326e4640570486203187200c7a7151d92a5af84caad32ed2",
+  "basis_status": "original_only",
+  "reduced_basis": null,
+  "execution_status": "not_started",
+  "counts": {
+    "completed_count": 0,
+    "exact_unique_count": 80,
+    "generated_raw_count": 80,
+    "policy_kept_count": 80,
+    "projection_group_count": null,
+    "submitted_count": 0,
+    "theoretical_full_nonzero_count": 80
+  },
+  "main_n128_compute_calls": 0
+}

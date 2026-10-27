@@ -1,0 +1,205 @@
+--- before/experiments/ntru_hybrid_comparison/standalone.py
++++ after/experiments/ntru_hybrid_comparison/standalone.py
+@@ -11,12 +11,12 @@
+ import math
+ import os
+ from pathlib import Path
+-import random
+ import time
+ 
+ from .budgets import cap_attempt, create_trial_window
+ from .candidates import context_from_public
+ from .inputs import canonical_bytes, content_sha256
++from .patterns import PATTERN_RULES, select_pattern
+ from .reduction import protocol_from_manifest
+ from .summarize import summarize_trials
+ from .supervisor import supervise_command
+@@ -26,7 +26,7 @@
+ SCHEMA = "ntru-standalone-trial-config-v1"
+ CONFIG_FIELDS = {"schema", "trial_budget_seconds", "cleanup_reserve_seconds", "pattern_limit_seconds",
+                  "max_pattern_attempts", "k", "kappa", "pattern_seed", "tail_rule", "worker",
+-                 "minimum_attempt_work_seconds"}
++                 "minimum_attempt_work_seconds", "pattern_rule"}
+ 
+ 
+ def _integer(value):
+@@ -41,7 +41,7 @@
+ 
+ 
+ def validate_trial_config(config, method):
+-    required = CONFIG_FIELDS - {"minimum_attempt_work_seconds", "pattern_limit_seconds"}
++    required = CONFIG_FIELDS - {"minimum_attempt_work_seconds", "pattern_limit_seconds", "pattern_rule"}
+     if (not isinstance(config, dict) or set(config) - CONFIG_FIELDS or required - set(config)
+             or config["schema"] != SCHEMA or method not in ("B", "D", "E")):
+         raise ValueError("unknown or missing public standalone trial configuration")
+@@ -54,6 +54,8 @@
+             raise ValueError(key + " must be a nonnegative integer")
+     if config["max_pattern_attempts"] < 1 or config["tail_rule"] != "largest_remaining":
+         raise ValueError("positive attempts and explicit largest_remaining tail rule required")
++    if config.get("pattern_rule", "random_sample_v1") not in PATTERN_RULES:
++        raise ValueError("unknown public pattern rule")
+     if (method == "B" and config["kappa"] != 0) or (method != "B" and config["kappa"] == 0):
+         raise ValueError("B requires kappa0; D/E require a nonzero tail")
+     if not isinstance(config["worker"], dict):
+@@ -181,7 +183,6 @@
+     journal = directory / "owner_online.jsonl"
+     _append(journal, {"event": "trial_started", "monotonic": clock(), "trial_id": trial_id,
+                       "method": method, "budget": record["budget"], "config_sha256": record["config_sha256"]})
+-    rng = random.Random(config["pattern_seed"])
+     seen_patterns = set()
+     try:
+         window.require_work("public_input_load", now=clock())
+@@ -204,7 +205,8 @@
+                 if not record["attempts"] or record["execution_status"] == "completed":
+                     record["execution_status"] = "budget_exhausted"
+                 break
+-            P = sorted(rng.sample(range(public["n"]), config["k"]))
++            P = select_pattern(public["n"], config["k"], config["pattern_seed"], index,
++                               config.get("pattern_rule", "random_sample_v1"))
+             remaining = [i for i in range(public["n"]) if i not in P]
+             split = len(remaining) - config["kappa"]
+             coordinates = {"P": P, "C": remaining[:split], "T": remaining[split:]}
+--- before/experiments/ntru_hybrid_comparison/standalone_worker.py
++++ after/experiments/ntru_hybrid_comparison/standalone_worker.py
+@@ -259,6 +259,18 @@
+             journal.emit("candidate", **row)
+             return row
+ 
++    def reduction_progress(payload):
++        # The executor's counters describe observed completed calls only.
++        # Persist progress even if the process is killed during its next tour;
++        # never infer completion from a stage_started event or a requested plan.
++        snapshot = deepcopy(payload)
++        snapshot.update(inherited_work_deadline=work,
++                        inherited_hard_deadline=request["hard_deadline"],
++                        observed_before_work_deadline=payload["observed_monotonic"] <= work)
++        result["reduction_progress"] = snapshot
++        journal.emit("reduction_progress", **snapshot)
++        journal.checkpoint()
++
+     try:
+         journal.emit("attempt_started", method=method, coordinates=result["coordinates"], seeds=result["seeds"])
+         journal.checkpoint()
+@@ -309,8 +321,11 @@
+             result["dimensions"] = {"n": n, "q": q, "k": len(P), "kappa": len(T), "d": len(original)}
+             validate_protocol(protocol, len(original))
+         with stage("reduction"):
+-            executor = reduction_executor or execute_reduction
+-            execution = executor(original, protocol)
++            if reduction_executor is None:
++                execution = execute_reduction(original, protocol, event_sink=reduction_progress)
++            else:
++                # Preserve the existing pure-test injection contract.
++                execution = reduction_executor(original, protocol)
+             result["reduction"] = deepcopy(execution["record"])
+             result["input_digests"]["reduced_basis_sha256"] = content_sha256(execution["reduced_basis"])
+         if execution["record"]["status"] != "completed" or execution["lattice_status"] != "reduced_verified":
+--- before/experiments/ntru_hybrid_comparison/reduction.py
++++ after/experiments/ntru_hybrid_comparison/reduction.py
+@@ -6,6 +6,7 @@
+ """
+ 
+ from dataclasses import asdict, dataclass
++from copy import deepcopy
+ from datetime import datetime, timezone
+ from hashlib import sha256
+ import importlib
+@@ -426,13 +427,19 @@
+     return [[int(matrix[i, j]) for j in range(matrix.ncols)] for i in range(matrix.nrows)]
+ 
+ 
+-def execute_reduction(original_basis, protocol, *, checkpoint=None):
++def execute_reduction(original_basis, protocol, *, checkpoint=None, event_sink=None):
+     """Explicitly execute MPFR initial LLL then each strict scheduled tour.
+ 
+     On an ordinary backend error, returns the last COMPLETE stage's matrix and
+     transform, plus the failed stage's actual charged time.  A killed process
+     cannot claim a completed stage.  This function has no budget/supervisor;
+     the caller must impose the authorized external process timeout.
++
++    An optional ``event_sink(payload)`` receives observational snapshots before
++    and after initialization, each actual LLL/tour, and the exact proof. These
++    snapshots contain no basis rows and do not alter the reduction schedule.
++    Sink IO is charged to executor wall; nested stage diagnostics must not be
++    added a second time to an enclosing worker's wall/IO accounting.
+ 
+     Continuation accepts only this executor's complete, exact-verified output.
+     It preserves all earlier stages and wall cost.  RNG state is not serialized;
+@@ -443,6 +450,8 @@
+     original = _matrix(original_basis)
+     d = len(original)
+     validate_protocol(protocol, d)
++    if event_sink is not None and not callable(event_sink):
++        raise ValueError("event_sink must be callable or None")
+     tick = time.perf_counter()
+     current, transform, previous = original, _identity(d), None
+     if checkpoint is not None:
+@@ -464,7 +473,25 @@
+     last_basis = [r[:] for r in current]
+     last_transform = [r[:] for r in transform]
+     active_tick = None
++
++    def emit_progress(kind):
++        if event_sink is not None:
++            event_sink({
++                "reduction_event": kind,
++                "observed_monotonic": time.monotonic(),
++                "executor_elapsed_seconds": time.perf_counter() - tick,
++                "reduction_record": deepcopy({
++                    "status": record["status"],
++                    "active_stage": record["active_stage"],
++                    "stages": record["stages"],
++                    "actual": record["actual"],
++                    "termination_reason": record["termination_reason"],
++                    "exact_lattice_verification": record.get("exact_lattice_verification"),
++                }),
++            })
++
+     try:
++        emit_progress("initialization_started")
+         record["backend"] = backend_metadata(protocol)
+         from fpylll import FPLLL, GSO, IntegerMatrix, LLL, BKZ
+         from fpylll.algorithms.bkz2 import BKZReduction
+@@ -486,6 +513,7 @@
+         strategies = list(load_strategies_json(record["backend"]["strategy"]["path"]))
+         for beta in range(len(strategies), d + 1):
+             strategies.append(Strategy(beta, [], []))
++        emit_progress("initialization_completed")
+         gso, reducer = None, None
+         requests = record["requested"]["stages"]
+         for request in requests[len(record["stages"]):]:
+@@ -502,6 +530,7 @@
+                 record["gso_setup_seconds"] = time.perf_counter() - setup
+             record["active_stage"] = dict(request, started_utc=_utc(), status="started")
+             active_tick = time.perf_counter()
++            emit_progress("stage_started")
+             if request["kind"] == "lll":
+                 LLL.reduction(matrix, U=U, delta=protocol.lll_delta, eta=protocol.lll_eta,
+                               method=protocol.lll_method, float_type="mpfr",
+@@ -520,6 +549,7 @@
+             record["active_stage"] = None
+             active_tick = None
+             last_basis, last_transform = _rows(matrix), _rows(U)
++            emit_progress("stage_completed")
+         record.update(status="completed", termination_reason="requested_schedule_completed")
+     except Exception as error:
+         record.update(status="error", termination_reason="backend_error",
+@@ -529,8 +559,10 @@
+                                            elapsed_seconds=time.perf_counter() - active_tick,
+                                            completed_tour=False, internal_progress="not_observable")
+             record["active_stage"] = None
++    emit_progress("proof_started")
+     proof = verify_unimodular_transform(original, last_basis, last_transform)
+     record["exact_lattice_verification"] = proof
++    emit_progress("proof_completed")
+     record["finished_utc"] = _utc()
+     record["elapsed_seconds"] = time.perf_counter() - tick
+     record["cumulative_seconds"] = record["prior_cumulative_seconds"] + record["elapsed_seconds"]
+@@ -542,6 +574,7 @@
+     validate_execution_record(record, protocol, original_basis=original,
+                               reduced_basis=last_basis if was_reduced else None,
+                               transform=last_transform if was_reduced else None)
++    emit_progress("executor_finished")
+     lattice_status = "reduced_verified" if was_reduced and proof["verified"] else "original_only"
+     return {"original_basis": original, "reduced_basis": last_basis if was_reduced else None,
+             "transform": last_transform if was_reduced else None,

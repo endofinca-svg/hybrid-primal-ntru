@@ -1,0 +1,1362 @@
+{
+  "schema": "ntru-main-posthoc-public-validation-v1",
+  "checked_utc": "2026-10-27T09:39:08.903388+00:00",
+  "all_checks_passed": true,
+  "posthoc_only": true,
+  "main_lattice_backend_calls": 0,
+  "reference_contents_read": false,
+  "protected_file_count": 1888,
+  "source_file_count": 237,
+  "private_metadata_only": [
+    {
+      "path": "experiments/ntru_compare_n128_w12_w24_q97/private/instance_01.truth.json",
+      "unchanged": true,
+      "content_read": false
+    }
+  ],
+  "pair_checks": [
+    {
+      "pattern_attempt_index": 0,
+      "public_inputs_equal_where_observed": true,
+      "reduced_basis_digest_equal_if_both_observed": true
+    },
+    {
+      "pattern_attempt_index": 1,
+      "public_inputs_equal_where_observed": true,
+      "reduced_basis_digest_equal_if_both_observed": null
+    }
+  ],
+  "trial_checks": [
+    {
+      "method": "B",
+      "trial_id": "B-main-0",
+      "execution_status": "completed",
+      "cleanup_verified": true,
+      "total_wall_seconds": 260.4560172670026,
+      "qualification": {
+        "qualified_success": true,
+        "disqualification_reasons": [],
+        "success_contribution": 1
+      },
+      "attempt_checks": [
+        {
+          "pattern_attempt_index": 0,
+          "counts": {
+            "submitted": 0,
+            "completed": 0,
+            "errored": 0,
+            "cancelled": 0,
+            "pending": 0
+          },
+          "event_errors": [],
+          "observed_stage_intervals": [
+            {
+              "stage": "public_load",
+              "started_monotonic": 85107.625099842,
+              "finished_event_monotonic": 85107.629671396,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.004571554003632627
+            },
+            {
+              "stage": "input_construction",
+              "started_monotonic": 85107.633309213,
+              "finished_event_monotonic": 85107.656542128,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.023232915002154186
+            },
+            {
+              "stage": "reduction",
+              "started_monotonic": 85107.660581155,
+              "finished_event_monotonic": 85367.530318531,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 259.86973737600783
+            },
+            {
+              "stage": "basis_row_recovery",
+              "started_monotonic": 85367.536111963,
+              "finished_event_monotonic": 85367.546359061,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.010247098005493172
+            },
+            {
+              "stage": "public_verify",
+              "started_monotonic": 85367.554421996,
+              "finished_event_monotonic": 85367.576759039,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.022337043003062718
+            }
+          ],
+          "reduction_telemetry": [
+            {
+              "event": "initialization_started",
+              "observed_monotonic": 85107.686945527,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 0.016837930990732275
+            },
+            {
+              "event": "initialization_completed",
+              "observed_monotonic": 85108.554216527,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 0.8841091629874427
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85108.568313756,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": null,
+                "kind": "lll",
+                "stage_id": "lll",
+                "started_utc": "2026-10-27T08:56:58.083401+00:00",
+                "status": "started",
+                "tour": null
+              },
+              "executor_elapsed_seconds": 0.8982050549966516
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85134.683544463,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 27.013437003988656
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85135.341645998,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t01",
+                "started_utc": "2026-10-27T08:57:24.856713+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 27.671537438000087
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85162.218636082,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": null,
+              "executor_elapsed_seconds": 54.54852933899383
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85162.231374885,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t02",
+                "started_utc": "2026-10-27T08:57:51.746453+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 54.56126619299175
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85193.111382554,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": null,
+              "executor_elapsed_seconds": 85.441275759993
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85193.126798887,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t01",
+                "started_utc": "2026-10-27T08:58:22.641884+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 85.45669018699846
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85229.597953803,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": null,
+              "executor_elapsed_seconds": 121.92784608399961
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85229.60391248,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t02",
+                "started_utc": "2026-10-27T08:58:59.119013+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 121.93380363399046
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85266.531241363,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": null,
+              "executor_elapsed_seconds": 158.86113495999598
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85266.542155402,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t01",
+                "started_utc": "2026-10-27T08:59:36.057111+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 158.87204673798988
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85302.995494211,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": null,
+              "executor_elapsed_seconds": 195.3253870059998
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85303.005064947,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t02",
+                "started_utc": "2026-10-27T09:00:12.520102+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 195.33495628599485
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85346.081550622,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 238.4114437429962
+            },
+            {
+              "event": "proof_started",
+              "observed_monotonic": 85346.093127667,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 238.42301953199785
+            },
+            {
+              "event": "proof_completed",
+              "observed_monotonic": 85367.426081009,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 259.7559752929956
+            },
+            {
+              "event": "executor_finished",
+              "observed_monotonic": 85367.499303945,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 259.82919594198756
+            }
+          ],
+          "reported_phase_timings": {
+            "basis_row_recovery_seconds": 0.0033842459961306304,
+            "bookkeeping_seconds": 0.0011302680359221995,
+            "decode_seconds": 0.0,
+            "event_checkpoint_io_seconds": 0.2434120930120116,
+            "extra_preprocess_seconds": 0.0,
+            "gso_initialization_seconds": 0.0,
+            "input_construction_seconds": 0.01961286799632944,
+            "lift_reconstruct_seconds": 0.0,
+            "public_load_seconds": 0.00027903998852707446,
+            "public_verify_seconds": 0.014977489990997128,
+            "reduction_attach_seconds": 0.0,
+            "reduction_seconds": 259.6791622959863,
+            "worker_wall_seconds": 259.96195830100623
+          },
+          "candidate_checks": [
+            {
+              "source": "basis_row",
+              "observed_monotonic": 85367.574631484,
+              "posthoc_public_validation": {
+                "public_valid": true,
+                "checks": {
+                  "public_format": true,
+                  "candidate_format": true,
+                  "dimensions": true,
+                  "integer_coefficients": true,
+                  "nonzero": true,
+                  "ternary": true,
+                  "weights": true,
+                  "norm_sq": true,
+                  "public_key_relation": true,
+                  "invertible": true
+                },
+                "rejection_reasons": [],
+                "norm_sq": 36,
+                "weights": {
+                  "f": 12,
+                  "g": 24
+                },
+                "require_invertible": true,
+                "invertibility_status": "invertible",
+                "expected_norm_sq": 36
+              },
+              "budget_success_not_inferred_from_posthoc_validation": true
+            }
+          ],
+          "censored_intervals_are_not_exact_backend_times": false
+        }
+      ]
+    },
+    {
+      "method": "E",
+      "trial_id": "E-main-0",
+      "execution_status": "timeout",
+      "cleanup_verified": true,
+      "total_wall_seconds": 595.1413609570009,
+      "qualification": {
+        "qualified_success": false,
+        "disqualification_reasons": [
+          "no_public_valid_observed",
+          "not_success_within_budget",
+          "execution_not_completed_normally",
+          "no_independent_supervisor_public_validation"
+        ],
+        "success_contribution": 0
+      },
+      "attempt_checks": [
+        {
+          "pattern_attempt_index": 0,
+          "counts": {
+            "submitted": 80,
+            "completed": 80,
+            "errored": 0,
+            "cancelled": 0,
+            "pending": 0
+          },
+          "event_errors": [],
+          "observed_stage_intervals": [
+            {
+              "stage": "public_load",
+              "started_monotonic": 85368.236358215,
+              "finished_event_monotonic": 85368.249120942,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.012762726997607388
+            },
+            {
+              "stage": "input_construction",
+              "started_monotonic": 85368.2653683,
+              "finished_event_monotonic": 85370.076936554,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 1.8115682540083071
+            },
+            {
+              "stage": "reduction",
+              "started_monotonic": 85370.086783839,
+              "finished_event_monotonic": 85642.289097246,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 272.2023134070041
+            },
+            {
+              "stage": "basis_row_recovery",
+              "started_monotonic": 85642.302549516,
+              "finished_event_monotonic": 85642.318897471,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.016347955010132864
+            },
+            {
+              "stage": "reduction_attach",
+              "started_monotonic": 85642.330644011,
+              "finished_event_monotonic": 85679.107621315,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 36.77697730399086
+            },
+            {
+              "stage": "gso_initialization",
+              "started_monotonic": 85679.120339197,
+              "finished_event_monotonic": 85700.56556133,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 21.445222132999334
+            },
+            {
+              "stage": "extra_preprocess",
+              "started_monotonic": 85700.584674737,
+              "finished_event_monotonic": 85700.657538487,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.07286374999966938
+            },
+            {
+              "stage": "decode",
+              "started_monotonic": 85701.798888289,
+              "finished_event_monotonic": 85704.819151773,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 3.0202634839952225
+            }
+          ],
+          "reduction_telemetry": [
+            {
+              "event": "initialization_started",
+              "observed_monotonic": 85370.13591056,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 0.024973650011816062
+            },
+            {
+              "event": "initialization_completed",
+              "observed_monotonic": 85371.273155956,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 1.1622193550138036
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85371.282258255,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": null,
+                "kind": "lll",
+                "stage_id": "lll",
+                "started_utc": "2026-10-27T09:01:20.797347+00:00",
+                "status": "started",
+                "tour": null
+              },
+              "executor_elapsed_seconds": 1.171320215013111
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85403.09304498,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 32.98210892100178
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85403.825237683,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t01",
+                "started_utc": "2026-10-27T09:01:53.340319+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 33.714299801009474
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85441.144224166,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": null,
+              "executor_elapsed_seconds": 71.03328877199965
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85441.152242658,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t02",
+                "started_utc": "2026-10-27T09:02:30.667330+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 71.04130462001194
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85473.575036897,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": null,
+              "executor_elapsed_seconds": 103.46409999000025
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85473.585931012,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t01",
+                "started_utc": "2026-10-27T09:03:03.101003+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 103.47499297501054
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85516.648704573,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": null,
+              "executor_elapsed_seconds": 146.53776813200966
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85516.663477844,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t02",
+                "started_utc": "2026-10-27T09:03:46.178567+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 146.55253976301174
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85555.326532939,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": null,
+              "executor_elapsed_seconds": 185.2155957900104
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85555.332322645,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t01",
+                "started_utc": "2026-10-27T09:04:24.847421+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 185.22138455000822
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85595.717812173,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": null,
+              "executor_elapsed_seconds": 225.60687576100463
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85595.728675945,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t02",
+                "started_utc": "2026-10-27T09:05:05.243763+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 225.61773792200256
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85627.353967522,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 257.24303124700964
+            },
+            {
+              "event": "proof_started",
+              "observed_monotonic": 85627.362113966,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 257.2511769620032
+            },
+            {
+              "event": "proof_completed",
+              "observed_monotonic": 85642.180358858,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 272.06942236900795
+            },
+            {
+              "event": "executor_finished",
+              "observed_monotonic": 85642.245635449,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 272.1346983760013
+            }
+          ],
+          "reported_phase_timings": {
+            "basis_row_recovery_seconds": 0.0047463740047533065,
+            "bookkeeping_seconds": 0.3251603478711331,
+            "decode_seconds": 3.008161834994098,
+            "event_checkpoint_io_seconds": 2.753291631132015,
+            "extra_preprocess_seconds": 0.058955611995770596,
+            "gso_initialization_seconds": 21.434670946997358,
+            "input_construction_seconds": 1.8001887159916805,
+            "lift_reconstruct_seconds": 0.0,
+            "public_load_seconds": 0.0021424500009743497,
+            "public_verify_seconds": 0.0,
+            "reduction_attach_seconds": 36.76524214600795,
+            "reduction_seconds": 272.0030725639954,
+            "worker_wall_seconds": 338.1556326229911
+          },
+          "candidate_checks": [],
+          "censored_intervals_are_not_exact_backend_times": false
+        },
+        {
+          "pattern_attempt_index": 1,
+          "counts": {
+            "submitted": 0,
+            "completed": 0,
+            "errored": 0,
+            "cancelled": 0,
+            "pending": 0
+          },
+          "event_errors": [],
+          "observed_stage_intervals": [
+            {
+              "stage": "public_load",
+              "started_monotonic": 85706.750443447,
+              "finished_event_monotonic": 85706.772664578,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.0222211310028797
+            },
+            {
+              "stage": "input_construction",
+              "started_monotonic": 85706.784340239,
+              "finished_event_monotonic": 85708.723791416,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 1.939451177007868
+            },
+            {
+              "stage": "reduction",
+              "started_monotonic": 85708.737423349,
+              "censored": true,
+              "finished_event_monotonic": null,
+              "last_durable_in_stage_observation_monotonic": 85961.101735847,
+              "verified_tree_empty_upper_monotonic": 85962.73025407,
+              "observed_elapsed_lower_seconds": 252.3643124980008,
+              "observed_elapsed_upper_seconds": 253.9928307210066,
+              "exact_backend_or_cpu_seconds": null,
+              "checkpoint_zero_phase_time_is_not_zero_actual_cost": true
+            }
+          ],
+          "reduction_telemetry": [
+            {
+              "event": "initialization_started",
+              "observed_monotonic": 85708.808869447,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 0.03287114900012966
+            },
+            {
+              "event": "initialization_completed",
+              "observed_monotonic": 85710.043619321,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 1.26762118699844
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85710.05862303,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": null,
+                "kind": "lll",
+                "stage_id": "lll",
+                "started_utc": "2026-10-27T09:06:59.573499+00:00",
+                "status": "started",
+                "tour": null
+              },
+              "executor_elapsed_seconds": 1.2826234899985138
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85743.197030911,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 34.42103374400176
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85743.979057317,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t01",
+                "started_utc": "2026-10-27T09:07:33.494105+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 35.20305812799779
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85782.633612911,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": null,
+              "executor_elapsed_seconds": 73.8576149129949
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85782.644888547,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t02",
+                "started_utc": "2026-10-27T09:08:12.159964+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 73.8688889759942
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85822.587149802,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": null,
+              "executor_elapsed_seconds": 113.81115117999434
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85822.593506454,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t01",
+                "started_utc": "2026-10-27T09:08:52.108599+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 113.8175068720011
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85868.106762067,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": null,
+              "executor_elapsed_seconds": 159.33076383300067
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85868.119895179,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t02",
+                "started_utc": "2026-10-27T09:09:37.634977+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 159.34389559699048
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85912.442033726,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": null,
+              "executor_elapsed_seconds": 203.6660367329896
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85912.45644491,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t01",
+                "started_utc": "2026-10-27T09:10:21.971526+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 203.68044533899229
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85961.088393588,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": null,
+              "executor_elapsed_seconds": 252.31239535099303
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85961.101448215,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t02",
+                "started_utc": "2026-10-27T09:11:10.616537+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 252.32544864199008
+            }
+          ],
+          "reported_phase_timings": {
+            "basis_row_recovery_seconds": 0.0,
+            "decode_seconds": 0.0,
+            "extra_preprocess_seconds": 0.0,
+            "gso_initialization_seconds": 0.0,
+            "input_construction_seconds": 1.9272472720040241,
+            "lift_reconstruct_seconds": 0.0,
+            "public_load_seconds": 0.0005846639978699386,
+            "public_verify_seconds": 0.0,
+            "reduction_attach_seconds": 0.0,
+            "reduction_seconds": 0.0
+          },
+          "candidate_checks": [],
+          "censored_intervals_are_not_exact_backend_times": true
+        }
+      ]
+    },
+    {
+      "method": "D",
+      "trial_id": "D-main-0",
+      "execution_status": "timeout",
+      "cleanup_verified": true,
+      "total_wall_seconds": 595.0974941270106,
+      "qualification": {
+        "qualified_success": false,
+        "disqualification_reasons": [
+          "no_public_valid_observed",
+          "not_success_within_budget",
+          "execution_not_completed_normally",
+          "no_independent_supervisor_public_validation"
+        ],
+        "success_contribution": 0
+      },
+      "attempt_checks": [
+        {
+          "pattern_attempt_index": 0,
+          "counts": {
+            "submitted": 80,
+            "completed": 80,
+            "errored": 0,
+            "cancelled": 0,
+            "pending": 0
+          },
+          "event_errors": [],
+          "observed_stage_intervals": [
+            {
+              "stage": "public_load",
+              "started_monotonic": 85963.383724957,
+              "finished_event_monotonic": 85963.393790766,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.010065808994113468
+            },
+            {
+              "stage": "input_construction",
+              "started_monotonic": 85963.409797551,
+              "finished_event_monotonic": 85965.247444407,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 1.837646856001811
+            },
+            {
+              "stage": "reduction",
+              "started_monotonic": 85965.260749345,
+              "finished_event_monotonic": 86235.635983718,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 270.37523437300115
+            },
+            {
+              "stage": "basis_row_recovery",
+              "started_monotonic": 86235.645289887,
+              "finished_event_monotonic": 86235.659777759,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.01448787200206425
+            },
+            {
+              "stage": "reduction_attach",
+              "started_monotonic": 86235.667514096,
+              "finished_event_monotonic": 86274.143548042,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 38.47603394600446
+            },
+            {
+              "stage": "gso_initialization",
+              "started_monotonic": 86274.151241365,
+              "finished_event_monotonic": 86292.920372724,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 18.769131358989398
+            },
+            {
+              "stage": "extra_preprocess",
+              "started_monotonic": 86292.929804535,
+              "finished_event_monotonic": 86295.729483802,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 2.7996792670019204
+            },
+            {
+              "stage": "decode",
+              "started_monotonic": 86296.560853353,
+              "finished_event_monotonic": 86364.192143229,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 67.63128987599339
+            }
+          ],
+          "reduction_telemetry": [
+            {
+              "event": "initialization_started",
+              "observed_monotonic": 85965.30874108,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 0.01986263200524263
+            },
+            {
+              "event": "initialization_completed",
+              "observed_monotonic": 85966.458360098,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 1.169482016004622
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85966.470926807,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": null,
+                "kind": "lll",
+                "stage_id": "lll",
+                "started_utc": "2026-10-27T09:11:15.986000+00:00",
+                "status": "started",
+                "tour": null
+              },
+              "executor_elapsed_seconds": 1.1820471920073032
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 85997.01246296,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 31.723584902996663
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 85997.735529826,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t01",
+                "started_utc": "2026-10-27T09:11:47.250591+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 32.44665056599479
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86034.371095863,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": null,
+              "executor_elapsed_seconds": 69.08221767299983
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86034.385527399,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t02",
+                "started_utc": "2026-10-27T09:12:23.900618+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 69.09664775300189
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86066.511406482,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": null,
+              "executor_elapsed_seconds": 101.22252921600011
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86066.52361382,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t01",
+                "started_utc": "2026-10-27T09:12:56.038699+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 101.23473424000258
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86105.964750827,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": null,
+              "executor_elapsed_seconds": 140.67587242499576
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86105.972177578,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t02",
+                "started_utc": "2026-10-27T09:13:35.487267+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 140.68329797200568
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86143.069056061,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": null,
+              "executor_elapsed_seconds": 177.78017802600516
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86143.080872762,
+              "completed_lll": 1,
+              "completed_tours": 4,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t01",
+                "started_utc": "2026-10-27T09:14:12.595944+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 177.7919932759978
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86183.54641385,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": null,
+              "executor_elapsed_seconds": 218.25753626599908
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86183.560461972,
+              "completed_lll": 1,
+              "completed_tours": 5,
+              "active_stage": {
+                "beta": 32,
+                "kind": "bkz",
+                "stage_id": "bkz_b032_t02",
+                "started_utc": "2026-10-27T09:14:53.075548+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 218.2715825089981
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86219.795919375,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 254.5070416140079
+            },
+            {
+              "event": "proof_started",
+              "observed_monotonic": 86219.808321708,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 254.5194428590039
+            },
+            {
+              "event": "proof_completed",
+              "observed_monotonic": 86235.499855869,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 270.21097892800753
+            },
+            {
+              "event": "executor_finished",
+              "observed_monotonic": 86235.590417514,
+              "completed_lll": 1,
+              "completed_tours": 6,
+              "active_stage": null,
+              "executor_elapsed_seconds": 270.30153904200415
+            }
+          ],
+          "reported_phase_timings": {
+            "basis_row_recovery_seconds": 0.005249463996733539,
+            "bookkeeping_seconds": 0.3155890770140104,
+            "decode_seconds": 67.62167637501261,
+            "event_checkpoint_io_seconds": 4.623561294021783,
+            "extra_preprocess_seconds": 2.794377114987583,
+            "gso_initialization_seconds": 18.761419378002756,
+            "input_construction_seconds": 1.8237103329884121,
+            "lift_reconstruct_seconds": 0.0,
+            "public_load_seconds": 0.0005351139989215881,
+            "public_verify_seconds": 0.0,
+            "reduction_attach_seconds": 38.469216376004624,
+            "reduction_seconds": 270.154441606981,
+            "worker_wall_seconds": 404.5697761330084
+          },
+          "candidate_checks": [],
+          "censored_intervals_are_not_exact_backend_times": false
+        },
+        {
+          "pattern_attempt_index": 1,
+          "counts": {
+            "submitted": 0,
+            "completed": 0,
+            "errored": 0,
+            "cancelled": 0,
+            "pending": 0
+          },
+          "event_errors": [],
+          "observed_stage_intervals": [
+            {
+              "stage": "public_load",
+              "started_monotonic": 86368.534421343,
+              "finished_event_monotonic": 86368.553651692,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 0.019230348989367485
+            },
+            {
+              "stage": "input_construction",
+              "started_monotonic": 86368.566980283,
+              "finished_event_monotonic": 86370.418880953,
+              "censored": false,
+              "observed_stage_wall_interval_seconds": 1.8519006700080354
+            },
+            {
+              "stage": "reduction",
+              "started_monotonic": 86370.429877047,
+              "censored": true,
+              "finished_event_monotonic": null,
+              "last_durable_in_stage_observation_monotonic": 86521.313500949,
+              "verified_tree_empty_upper_monotonic": 86557.87113456,
+              "observed_elapsed_lower_seconds": 150.883623902002,
+              "observed_elapsed_upper_seconds": 187.44125751299725,
+              "exact_backend_or_cpu_seconds": null,
+              "checkpoint_zero_phase_time_is_not_zero_actual_cost": true
+            }
+          ],
+          "reduction_telemetry": [
+            {
+              "event": "initialization_started",
+              "observed_monotonic": 86370.485854136,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 0.025556767999660224
+            },
+            {
+              "event": "initialization_completed",
+              "observed_monotonic": 86371.521389869,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 1.061093032010831
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86371.532514432,
+              "completed_lll": 0,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": null,
+                "kind": "lll",
+                "stage_id": "lll",
+                "started_utc": "2026-10-27T09:18:01.047585+00:00",
+                "status": "started",
+                "tour": null
+              },
+              "executor_elapsed_seconds": 1.0722153460083064
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86402.39799378,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": null,
+              "executor_elapsed_seconds": 31.937696855005925
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86403.112346794,
+              "completed_lll": 1,
+              "completed_tours": 0,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t01",
+                "started_utc": "2026-10-27T09:18:32.627429+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 32.652047854004195
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86435.562389265,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": null,
+              "executor_elapsed_seconds": 65.10209090200078
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86435.568290269,
+              "completed_lll": 1,
+              "completed_tours": 1,
+              "active_stage": {
+                "beta": 30,
+                "kind": "bkz",
+                "stage_id": "bkz_b030_t02",
+                "started_utc": "2026-10-27T09:19:05.083391+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 65.10799100701115
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86474.882418443,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": null,
+              "executor_elapsed_seconds": 104.42212198799825
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86474.893430948,
+              "completed_lll": 1,
+              "completed_tours": 2,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t01",
+                "started_utc": "2026-10-27T09:19:44.408506+00:00",
+                "status": "started",
+                "tour": 1
+              },
+              "executor_elapsed_seconds": 104.43313181999838
+            },
+            {
+              "event": "stage_completed",
+              "observed_monotonic": 86521.303236091,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": null,
+              "executor_elapsed_seconds": 150.84293851500843
+            },
+            {
+              "event": "stage_started",
+              "observed_monotonic": 86521.313246114,
+              "completed_lll": 1,
+              "completed_tours": 3,
+              "active_stage": {
+                "beta": 31,
+                "kind": "bkz",
+                "stage_id": "bkz_b031_t02",
+                "started_utc": "2026-10-27T09:20:30.828273+00:00",
+                "status": "started",
+                "tour": 2
+              },
+              "executor_elapsed_seconds": 150.85294698900543
+            }
+          ],
+          "reported_phase_timings": {
+            "basis_row_recovery_seconds": 0.0,
+            "decode_seconds": 0.0,
+            "extra_preprocess_seconds": 0.0,
+            "gso_initialization_seconds": 0.0,
+            "input_construction_seconds": 1.8371554170007585,
+            "lift_reconstruct_seconds": 0.0,
+            "public_load_seconds": 0.000671995003358461,
+            "public_verify_seconds": 0.0,
+            "reduction_attach_seconds": 0.0,
+            "reduction_seconds": 0.0
+          },
+          "candidate_checks": [],
+          "censored_intervals_are_not_exact_backend_times": true
+        }
+      ]
+    }
+  ],
+  "phase_interval_scope": "wall intervals include dispatch/journal time and are nonadditive diagnostics; open intervals are censored, not exact backend/CPU measurements"
+}

@@ -1,0 +1,1 @@
+{"instance_id": "instance_01", "status": "complete", "wall_seconds": 20.637599374000274, "output": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/n64_w8_16/instance_01/b25_s40_p0.result.json", "verified_candidates": {"direct_tail": 0, "lll_rows": 66, "lll_babai": 12, "bkz_rows": 66, "bkz_babai": 12, "slicer": 12}}

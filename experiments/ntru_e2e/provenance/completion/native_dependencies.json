@@ -1,0 +1,112 @@
+{
+  "recorded_utc": "2026-10-21T14:13:28.349867+00:00",
+  "base_prefix": "/home/inca/miniforge3/envs/g6k",
+  "packages": [
+    {
+      "name": "cysignals",
+      "version": "1.12.5",
+      "build": "py310hea6c23e_0",
+      "build_number": 0,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "cython",
+      "version": "3.2.4",
+      "build": "py310ha58568a_0",
+      "build_number": 0,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "fplll",
+      "version": "5.5.0",
+      "build": "hd20a173_0",
+      "build_number": 0,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "fpylll",
+      "version": "0.6.4",
+      "build": "py310h271740e_0",
+      "build_number": 0,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "gmp",
+      "version": "6.3.0",
+      "build": "hac33072_2",
+      "build_number": 2,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "libgcc",
+      "version": "15.2.0",
+      "build": "he0feb66_16",
+      "build_number": 16,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "libgcc-ng",
+      "version": "15.2.0",
+      "build": "h69a702a_16",
+      "build_number": 16,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "libgomp",
+      "version": "15.2.0",
+      "build": "he0feb66_16",
+      "build_number": 16,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "libopenblas",
+      "version": "0.3.30",
+      "build": "pthreads_h94d23a6_4",
+      "build_number": 4,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "libstdcxx",
+      "version": "15.2.0",
+      "build": "h934c35e_16",
+      "build_number": 16,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "libstdcxx-ng",
+      "version": "15.2.0",
+      "build": "hdf11a46_16",
+      "build_number": 16,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "mpfr",
+      "version": "4.2.1",
+      "build": "h90cbb55_3",
+      "build_number": 3,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "build": "py310hefbff90_0",
+      "build_number": 0,
+      "subdir": "linux-64"
+    },
+    {
+      "name": "pytest",
+      "version": "9.0.2",
+      "build": "pyhcf101f3_0",
+      "build_number": 0,
+      "subdir": "noarch"
+    },
+    {
+      "name": "python",
+      "version": "3.10.19",
+      "build": "h3c07f61_2_cpython",
+      "build_number": 2,
+      "subdir": "linux-64"
+    }
+  ],
+  "note": "Read-only conda package metadata for the existing dependency base; the experiment venv and G6K build live in .deps."
+}

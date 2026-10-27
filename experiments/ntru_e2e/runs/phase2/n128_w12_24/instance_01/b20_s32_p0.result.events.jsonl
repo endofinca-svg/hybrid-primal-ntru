@@ -1,0 +1,9 @@
+{"event": "pattern_constructed", "target_count": 80, "worker_elapsed_seconds": 0.6616672589989321, "arm": null}
+{"event": "arm_complete", "method": "direct_tail", "worker_elapsed_seconds": 1.5590545150007529, "arm": "direct_tail"}
+{"event": "preprocess_start", "phase": "preprocessing", "preprocess_id": "0a0b6200d93d5664", "elapsed_seconds": 0.02715035999790416, "dimension": 250, "bkz_beta": 20, "sieve_dim": 32, "seed": 1771157796, "nthreads": 1, "staged": true, "worker_elapsed_seconds": 1.6479575529992871, "arm": null}
+{"event": "lll_start", "phase": "lll", "preprocess_id": "0a0b6200d93d5664", "elapsed_seconds": 0.032614026000374, "worker_elapsed_seconds": 1.653414430002158, "arm": null}
+{"event": "lll_complete", "phase": "lll", "preprocess_id": "0a0b6200d93d5664", "elapsed_seconds": 24.7392307959999, "seconds": 24.699896433001413, "worker_elapsed_seconds": 26.360035894002067, "arm": null}
+{"event": "arm_complete", "method": "lll_rows", "worker_elapsed_seconds": 37.78006449299937, "arm": "lll_rows"}
+{"event": "babai_diagnostic_complete", "phase": "babai_diagnostic", "preprocess_id": "0a0b6200d93d5664", "elapsed_seconds": 38.81398726000043, "target_count": 80, "candidate_count": 0, "worker_elapsed_seconds": 40.43479907700021, "arm": "lll_babai"}
+{"event": "arm_complete", "method": "lll_babai", "worker_elapsed_seconds": 40.45693275600206, "arm": "lll_babai"}
+{"event": "bkz_start", "phase": "bkz", "preprocess_id": "0a0b6200d93d5664", "elapsed_seconds": 38.90412626699981, "beta": 20, "max_loops": 2, "worker_elapsed_seconds": 40.524929442999564, "arm": null}

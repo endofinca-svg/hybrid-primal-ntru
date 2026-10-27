@@ -1,0 +1,8 @@
+{
+  "requested_action": "Delete the entire generated n100 experiment directory",
+  "removed_directory": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n100_w10_w20",
+  "removed_file_count": 59,
+  "removed_utc": "2026-10-22T03:52:00.797026+00:00",
+  "old_directory_exists_after": false,
+  "scope": "Only ntru_compare_n100_w10_w20 removed; historical ntru_e2e experiments retained"
+}

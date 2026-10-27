@@ -1,0 +1,65 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2e-entry-v1",
+  "status": "proposal_only_not_started",
+  "completed_phase": "2D",
+  "phase2d_acceptance": "passed_with_explicit_capability_scope",
+  "next_phase": "2E",
+  "phase2e_started": false,
+  "phase3_started": false,
+  "main_n128_compute_calls_in_phase2d": 0,
+  "main_package_state": "original_only/not_started/submitted0/completed0",
+  "interfaces": {
+    "bounded_standalone": "guarded.run_guarded_experiment / run_guarded_trial",
+    "command_template_only_not_executed": "python -B -m experiments.ntru_hybrid_comparison.guarded --plan <frozen-public-plan.json> --output <new-output-dir>",
+    "owner": "standalone.run_trial(..., trial_started_at=<guard entry>, worker_ownership=process_group)",
+    "worker": "standalone_worker.run_attempt",
+    "fixed_stage_only": "paired_decode.run_fixed_basis",
+    "public_validation": "validation.validate_public_candidate",
+    "offline_only": "offline.classify_against_reference / diagnose_coverage"
+  },
+  "verified": {
+    "automated_tests_passed": 226,
+    "real_supervisor_tests": 17,
+    "exported_real_supervision_records": 14,
+    "real_lattice_trials": 3,
+    "lattice_reruns": 0,
+    "scope": "one independent B n4/d7 and one D/E n15/d28 pair; beta4 one tour; explicit20sec trial/70sec experiment",
+    "all_trial_cleanup_verified": true,
+    "all_trial_deadlines_satisfied": true,
+    "D_kernel_calls_without_force": 2,
+    "production_bdgl2_preprocessing_actually_accepted": false,
+    "algorithm_speedup_proven": false
+  },
+  "phase2e_work": [
+    "Review integrated public-only B/D/E flow, event replay, scope and final qualification before proposing main runs",
+    "Validate production preprocessing configuration separately from sample_database_only interface fixtures",
+    "Confirm actual projection dimension 28..min(d,compiled_cap64), block restrictions, database size, nrand semantics, iteration/thread limits and precision",
+    "Decide complete-schedule basis-row checking versus explicit per-tour public-success callbacks; do not describe historical progressive beta32tour2 as a cold-start minimum",
+    "Reconcile public pattern sampling protocol: standalone sample RNG does not consume the older builder's extra backend-seed draw",
+    "Keep fixed-basis paired D/E and independent cold end-to-end plans and cost summaries separate",
+    "Freeze public instance set, patterns/tails/candidate order and seeds, k/kappa, reduction schedules, zero-tail and stopping policy only after review",
+    "Freeze trial/pattern/instance/global budgets and nested cleanup reserves; record sampled RSS scope and absence of strict memory enforcement",
+    "Produce actual public plan/config files and executable commands without launching n128 from this entry",
+    "Preserve failure/timeout/retry denominator, zero-success null costs, original/equivalent/other-valid offline classifications and all three coverage events",
+    "Require separate authorization before stage3 main-parameter computation"
+  ],
+  "remaining_capability_limits": [
+    "No strict memory limit; sampled RSS can double count shared pages and miss short peaks",
+    "Unobserved active setsid escape is not guaranteed containment; current worker path does not detach",
+    "Owner blocking operations are session-supervised; small guard metadata IO is cooperative, measured and overrun-disqualifying, not a real-time OS guarantee",
+    "Python3.10 inner-PG launch requires a genuinely single-threaded owner",
+    "Basis rows are checked after the complete reduction schedule, not after individual tours",
+    "Production BDGL preprocessing performance not measured",
+    "Per-candidate incremental Slicer improvement and randomization redraw attempts remain unknown/not_observable",
+    "Micro fixture outcomes are control/interface acceptance, not evidence of acceleration"
+  ],
+  "evidence": [
+    "REPORT.md",
+    "actual_results.json",
+    "small_run/experiment.final.json",
+    "tests_summary.json",
+    "process_observations.json",
+    "sealed_integrity.json",
+    "main_package_guard.json"
+  ]
+}

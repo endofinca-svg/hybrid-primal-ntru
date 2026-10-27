@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-10-27T08:25:05.081382+00:00",
+  "all_passed": true,
+  "protected_files_unchanged": 1810,
+  "frozen_sources_unchanged": 230,
+  "report_links_all_exist": true,
+  "missing_links": [],
+  "phase2e_proposal_only": true,
+  "source_mismatches": [],
+  "git": {
+    "branch": "experiments/ntru-e2e-phase1",
+    "head": "452be18c741a2d81c106d3bfe3847428ed57229b",
+    "status": "?? experiments/\n?? main.pdf"
+  },
+  "test_summary": "tests_summary.json",
+  "real_results_validation": "actual_results.json"
+}

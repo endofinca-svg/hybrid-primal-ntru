@@ -1,0 +1,45 @@
+configure.ac:35: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+configure.ac:35: You should run autoupdate.
+m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+configure.ac:35: the top level
+configure.ac:68: warning: The macro 'AC_LANG_CPLUSPLUS' is obsolete.
+configure.ac:68: You should run autoupdate.
+./lib/autoconf/c.m4:270: AC_LANG_CPLUSPLUS is expanded from...
+configure.ac:68: the top level
+configure.ac:72: warning: $as_echo is obsolete; use AS_ECHO(["message"]) instead
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+m4/ax_pthread.m4:89: AX_PTHREAD is expanded from...
+configure.ac:72: the top level
+configure.ac:79: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:79: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:79: the top level
+configure.ac:99: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:99: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:99: the top level
+configure.ac:117: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:117: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:117: the top level
+configure.ac:137: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:137: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:137: the top level
+configure.ac:155: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:155: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:155: the top level
+configure.ac:193: warning: The macro 'AC_CONFIG_HEADER' is obsolete.
+configure.ac:193: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:193: the top level
+configure.ac:35: installing './compile'
+configure.ac:6: installing './config.guess'
+configure.ac:6: installing './config.sub'
+configure.ac:11: installing './install-sh'
+configure.ac:11: installing './missing'
+kernel/Makefile.am: installing './depcomp'

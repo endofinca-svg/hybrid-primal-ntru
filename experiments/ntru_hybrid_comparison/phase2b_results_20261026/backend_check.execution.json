@@ -1,0 +1,345 @@
+{
+  "lattice_status": "reduced_verified",
+  "original_basis": [
+    [
+      17,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      17,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      17,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      17,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      16,
+      1,
+      1,
+      0
+    ],
+    [
+      16,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "protocol": {
+    "auto_abort": false,
+    "bkz_flags": 0,
+    "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+    "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+    "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+    "early_termination": "exception or external termination only; no public-success callback in this interface",
+    "float_type": "mpfr",
+    "gso_flags": 0,
+    "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum",
+    "initial_lll_implementation": "fpylll.LLL.reduction",
+    "lll_delta": 0.99,
+    "lll_eta": 0.51,
+    "lll_flags": 0,
+    "lll_method": "proved",
+    "main_experiment_schedule_frozen": false,
+    "precision_bits": 192,
+    "schedule": [
+      {
+        "beta": 4,
+        "requested_tours": 1
+      }
+    ],
+    "schema": "ntru-shared-reduction-protocol-v1",
+    "seed": 20261026,
+    "strategy": "fpylll_default_extend_unpruned",
+    "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+    "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+    "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+    "threads": 1,
+    "tour_semantics": "strict"
+  },
+  "record": {
+    "active_stage": null,
+    "actual": {
+      "backend_internal_iterations": "not_observable",
+      "completed_lll_calls": 1,
+      "completed_tours": 1,
+      "float_type": "mpfr",
+      "gso_float_type": "mpfr",
+      "initial_lll_method_argument": "proved",
+      "precision_bits": 192,
+      "precision_observation": "FPLLL.get_precision plus explicit LLL precision argument and MPFR GSO type",
+      "rng_internal_state": "not_observable",
+      "seed_set": 20261026,
+      "strategy_sha256": "f516b0a6f0c580cff72e1e2c3562c44dc6f17e8f99613e9e4020e35481b27a18",
+      "threads": 1
+    },
+    "backend": {
+      "available_float_types": [
+        "d",
+        "ld",
+        "dpe",
+        "dd",
+        "qd",
+        "mpfr"
+      ],
+      "backend_probe_did_reduce": false,
+      "fplll_version": "5.5.0",
+      "fpylll_version": "0.6.4",
+      "precision_before_execution": 53,
+      "python": "3.10.19",
+      "python_implementation": "CPython",
+      "source_hashes": {
+        "fpylll.algorithms.bkz": {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/algorithms/bkz.py",
+          "sha256": "076ea4b76ac04ccde28e34b46d7b532f795eee2de580eea555c8eb368f25a06a"
+        },
+        "fpylll.algorithms.bkz2": {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/algorithms/bkz2.py",
+          "sha256": "7ab0890a7b35144967558af74156b1b18ec3d3085b4d1922295ff8a9ff0a76f0"
+        },
+        "fpylll.fplll.gso": {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/fplll/gso.cpython-310-x86_64-linux-gnu.so",
+          "sha256": "7203109b615943c8ee0d7d4fc9fd4ba86c4893792e170ed42f73107765724029"
+        },
+        "fpylll.fplll.lll": {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/fplll/lll.cpython-310-x86_64-linux-gnu.so",
+          "sha256": "8239497d6b7aee2d5b3e3a3580c01f0984e458d5c395fd4dca2f3e4b09fed3a4"
+        }
+      },
+      "strategy": {
+        "above_max": "unpruned SVP; no preprocessing blocks",
+        "byte_count": 8606859,
+        "kind": "fpylll_default_extend_unpruned",
+        "loaded_max_beta": 100,
+        "path": "/home/inca/miniforge3/envs/g6k/share/fplll/strategies/default.json",
+        "sha256": "f516b0a6f0c580cff72e1e2c3562c44dc6f17e8f99613e9e4020e35481b27a18"
+      },
+      "threads_before_execution": 1
+    },
+    "cumulative_seconds": 1.1804217450007854,
+    "elapsed_seconds": 1.1804217450007854,
+    "exact_lattice_verification": {
+      "basis_convention": "row",
+      "certificate_relation": "B_red=U*B_original",
+      "determinant": 1,
+      "dimension": 6,
+      "original_determinant": 83521,
+      "original_full_rank": true,
+      "reduced_determinant": 83521,
+      "rejection_reasons": [],
+      "transform_relation": true,
+      "unimodular": true,
+      "verified": true
+    },
+    "finished_utc": "2026-10-26T14:15:53.948064+00:00",
+    "gso_setup_seconds": 0.00016636600048514083,
+    "lineage": [],
+    "original_basis_sha256": "f0e6374ed7beddbcffd8185fe267c6cbd1b8d28e07aeaf111a090954c433aaad",
+    "prior_cumulative_seconds": 0.0,
+    "reduced_basis_sha256": "9c9c9a3f1ff0e94f09ed1bbf2c0fe561b66715bbd211d988be52b04438c184a1",
+    "requested": {
+      "protocol": {
+        "auto_abort": false,
+        "bkz_flags": 0,
+        "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+        "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+        "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+        "early_termination": "exception or external termination only; no public-success callback in this interface",
+        "float_type": "mpfr",
+        "gso_flags": 0,
+        "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum",
+        "initial_lll_implementation": "fpylll.LLL.reduction",
+        "lll_delta": 0.99,
+        "lll_eta": 0.51,
+        "lll_flags": 0,
+        "lll_method": "proved",
+        "main_experiment_schedule_frozen": false,
+        "precision_bits": 192,
+        "schedule": [
+          {
+            "beta": 4,
+            "requested_tours": 1
+          }
+        ],
+        "schema": "ntru-shared-reduction-protocol-v1",
+        "seed": 20261026,
+        "strategy": "fpylll_default_extend_unpruned",
+        "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+        "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+        "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+        "threads": 1,
+        "tour_semantics": "strict"
+      },
+      "stages": [
+        {
+          "beta": null,
+          "kind": "lll",
+          "stage_id": "lll",
+          "tour": null
+        },
+        {
+          "beta": 4,
+          "kind": "bkz",
+          "stage_id": "bkz_b004_t01",
+          "tour": 1
+        }
+      ],
+      "total_tours": 1
+    },
+    "schema": "ntru-reduction-execution-v1",
+    "stages": [
+      {
+        "beta": null,
+        "clean": null,
+        "elapsed_seconds": 0.016339575999154476,
+        "finished_utc": "2026-10-26T14:15:53.941249+00:00",
+        "kind": "lll",
+        "stage_id": "lll",
+        "started_utc": "2026-10-26T14:15:53.924837+00:00",
+        "status": "completed",
+        "tour": null
+      },
+      {
+        "beta": 4,
+        "clean": true,
+        "elapsed_seconds": 0.0059131199996045325,
+        "finished_utc": "2026-10-26T14:15:53.947484+00:00",
+        "kind": "bkz",
+        "stage_id": "bkz_b004_t01",
+        "started_utc": "2026-10-26T14:15:53.941546+00:00",
+        "status": "completed",
+        "tour": 1
+      }
+    ],
+    "started_utc": "2026-10-26T14:15:52.767774+00:00",
+    "status": "completed",
+    "termination_reason": "requested_schedule_completed",
+    "timing_scope": "executor wall: imports, strategy resolution, matrix/GSO setup, all completed and failed reduction work, exact proof; excludes input construction, serialization and decoding",
+    "transform_sha256": "1fabaa550cf2d8699db86da32eb426c32f777071de7fa723466d29fc4bb87468"
+  },
+  "reduced_basis": [
+    [
+      0,
+      0,
+      -1,
+      1,
+      1,
+      0
+    ],
+    [
+      -1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      11,
+      6,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      -6,
+      6,
+      -11,
+      0
+    ],
+    [
+      11,
+      6,
+      0,
+      0,
+      0,
+      6
+    ],
+    [
+      -6,
+      6,
+      0,
+      0,
+      0,
+      -11
+    ]
+  ],
+  "transform": [
+    [
+      0,
+      0,
+      -1,
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      -5,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      1,
+      -11,
+      0
+    ],
+    [
+      -5,
+      0,
+      0,
+      0,
+      0,
+      6
+    ],
+    [
+      10,
+      1,
+      0,
+      0,
+      0,
+      -11
+    ]
+  ]
+}

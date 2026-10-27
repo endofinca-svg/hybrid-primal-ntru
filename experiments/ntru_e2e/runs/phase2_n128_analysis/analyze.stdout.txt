@@ -1,0 +1,1 @@
+{"trial_count": 8, "output": "experiments/ntru_e2e/runs/phase2_n128_analysis/trial_analysis.json", "csv": "experiments/ntru_e2e/runs/phase2_n128_analysis/trials.csv"}

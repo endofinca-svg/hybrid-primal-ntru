@@ -1,0 +1,20 @@
+{
+  "schema": "ntru-four-method-step-completion-v1",
+  "status": "complete",
+  "completed_method": "plain_primal",
+  "protocol": "Exactly two unsuccessful BKZ tours per beta, beta starts at30 with unit increments; stop on success",
+  "active_plan": "plan_tour2.json",
+  "active_result_directory": "baseline_tour2",
+  "completed_utc": "2026-10-22T04:11:14.400820+00:00",
+  "completed_method_count": 1,
+  "planned_method_count": 4,
+  "summary": "baseline_tour2/summary.json",
+  "report": "BASELINE_TOUR2_REPORT.md",
+  "audit": "baseline_tour2/audit.json",
+  "tests": "24 passed, 10 subtests passed",
+  "first_success_beta": 35,
+  "first_success_tour": 1,
+  "online_total_wall_seconds": 473.1069381749985,
+  "prior_eight_tour_attempt": "Historical only, excluded from the active baseline",
+  "old_n100_directory_deleted": true
+}

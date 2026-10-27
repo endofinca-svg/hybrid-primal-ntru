@@ -1,0 +1,8 @@
+{
+  "generated": [
+    {
+      "public": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+      "truth": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/private/instance_01.truth.json"
+    }
+  ]
+}

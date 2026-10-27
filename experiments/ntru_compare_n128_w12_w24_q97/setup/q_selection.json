@@ -1,0 +1,62 @@
+{
+  "schema": "ntru-q-selection-v1",
+  "recorded_utc": "2026-10-22T03:51:46.671841+00:00",
+  "selected_q": 97,
+  "selection_before_key_generation": true,
+  "criteria": "A moderate prime smaller than 257 to reduce the short-secret gap; no attack-based q/seed search.",
+  "fixed_parameters": {
+    "n": 128,
+    "w_f": 12,
+    "w_g": 24,
+    "dimension": 256,
+    "secret_norm_sq": 36
+  },
+  "derivation": "det(B)=q^n, d=2n; GH=Gamma(d/2+1)^(1/d)/sqrt(pi)*sqrt(q). Fixed secret norm=sqrt(w_f+w_g).",
+  "candidate_geometry": [
+    {
+      "q": 97,
+      "dimension": 256,
+      "gh_norm": 38.63174881927842,
+      "secret_norm": 6.0,
+      "secret_to_gh_ratio": 0.1553126685532242
+    },
+    {
+      "q": 113,
+      "dimension": 256,
+      "gh_norm": 41.69631963566154,
+      "secret_norm": 6.0,
+      "secret_to_gh_ratio": 0.14389759221982726
+    },
+    {
+      "q": 127,
+      "dimension": 256,
+      "gh_norm": 44.20387702105165,
+      "secret_norm": 6.0,
+      "secret_to_gh_ratio": 0.13573470031016874
+    },
+    {
+      "q": 193,
+      "dimension": 256,
+      "gh_norm": 54.49255309467914,
+      "secret_norm": 6.0,
+      "secret_to_gh_ratio": 0.11010678816195645
+    },
+    {
+      "q": 257,
+      "dimension": 256,
+      "gh_norm": 62.881814223749636,
+      "secret_norm": 6.0,
+      "secret_to_gh_ratio": 0.09541709433907966
+    }
+  ],
+  "ring_check": {
+    "ring": "x^128+1 = Phi_256",
+    "q_prime": true,
+    "order_q_mod_256": 8,
+    "irreducible_factor_count": 16,
+    "irreducible_factor_degree": 8,
+    "square_free": true,
+    "actual_invertibility": "Every generated f is explicitly checked, with only nonunits rejected."
+  },
+  "limitations": "GH is a random-lattice heuristic, not a prediction or guarantee of LLL/BKZ success or runtime."
+}

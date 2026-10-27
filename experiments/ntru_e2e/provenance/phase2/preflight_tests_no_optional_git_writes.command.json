@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "env",
+    "GIT_OPTIONAL_LOCKS=0",
+    "python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "-m",
+    "pytest",
+    "-q",
+    "experiments/ntru_e2e/tests"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T15:13:41.356126+00:00",
+  "timeout_seconds": 90.0,
+  "stdout": "preflight_tests_no_optional_git_writes.stdout.txt",
+  "stderr": "preflight_tests_no_optional_git_writes.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 3.410867335001967,
+  "cpu_seconds": 3.3902789999999996,
+  "peak_rss_kib": 37864,
+  "finished_utc": "2026-10-21T15:13:44.766783+00:00"
+}

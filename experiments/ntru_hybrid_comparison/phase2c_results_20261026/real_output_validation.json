@@ -1,0 +1,48 @@
+{
+  "schema": "ntru-phase2c-output-check-v1",
+  "checked_utc": "2026-10-26T14:55:20.483518+00:00",
+  "scope": "JSON and exact public algebra revalidation of saved small real outputs only; no reference, GSO creation or backend computation",
+  "checks": [
+    {
+      "case": "legacy_E_full",
+      "candidate_count_revalidated": 2,
+      "public_validation_rechecked": true,
+      "exact_target_projection_conversions_checked": 0,
+      "count_conservation": true,
+      "exclusive_timing_sum_matches": true
+    },
+    {
+      "case": "micro_E_full",
+      "candidate_count_revalidated": 2,
+      "public_validation_rechecked": true,
+      "exact_target_projection_conversions_checked": 0,
+      "count_conservation": true,
+      "exclusive_timing_sum_matches": true
+    },
+    {
+      "case": "micro_D_full",
+      "candidate_count_revalidated": 2,
+      "public_validation_rechecked": true,
+      "exact_target_projection_conversions_checked": 2,
+      "count_conservation": true,
+      "exclusive_timing_sum_matches": true
+    },
+    {
+      "case": "micro_E_first",
+      "candidate_count_revalidated": 1,
+      "public_validation_rechecked": true,
+      "exact_target_projection_conversions_checked": 0,
+      "count_conservation": true,
+      "exclusive_timing_sum_matches": true
+    },
+    {
+      "case": "micro_D_first",
+      "candidate_count_revalidated": 1,
+      "public_validation_rechecked": true,
+      "exact_target_projection_conversions_checked": 1,
+      "count_conservation": true,
+      "exclusive_timing_sum_matches": true
+    }
+  ],
+  "all_passed": true
+}

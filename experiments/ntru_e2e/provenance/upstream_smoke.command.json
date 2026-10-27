@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "python3",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/run_in_env.py",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/test_slicer.py",
+    "--n",
+    "40",
+    "--betamax",
+    "20",
+    "--nexp",
+    "3",
+    "--approx_factor",
+    "0.99",
+    "--nthreads",
+    "1",
+    "--verbose"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps",
+  "started_utc": "2026-10-21T09:48:00.192158+00:00",
+  "timeout_seconds": 180.0,
+  "stdout": "upstream_smoke.stdout.txt",
+  "stderr": "upstream_smoke.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 8.727746319999824,
+  "cpu_seconds": 8.327054,
+  "peak_rss_kib": 119364,
+  "finished_utc": "2026-10-21T09:48:08.919701+00:00"
+}

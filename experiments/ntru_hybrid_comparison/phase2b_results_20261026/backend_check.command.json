@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "30s",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2b_results_20261026/backend_check.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "timeout_seconds": 30,
+  "kill_after_seconds": 2,
+  "started_utc": "2026-10-26T14:15:52.551076+00:00",
+  "scope": "single authorized tiny real LLL and at most one beta<=4 tour; no decoding",
+  "exit_code": 0,
+  "elapsed_seconds": 1.4763708379978198,
+  "finished_utc": "2026-10-26T14:15:54.027550+00:00",
+  "timed_out": false
+}

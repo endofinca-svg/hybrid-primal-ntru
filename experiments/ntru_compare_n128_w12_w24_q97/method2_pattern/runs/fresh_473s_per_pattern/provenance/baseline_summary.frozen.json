@@ -1,0 +1,104 @@
+{
+  "schema": "ntru-plain-primal-tour2-summary-v1",
+  "status": "complete",
+  "parameters": {
+    "dimension": 256,
+    "n": 128,
+    "q": 97,
+    "w_f": 12,
+    "w_g": 24
+  },
+  "instance_count": 1,
+  "keygen_seed": 1,
+  "solver_seed": 10001,
+  "first_success_stage": "bkz",
+  "first_success_beta": 35,
+  "first_success_tour": 1,
+  "online_total_wall_seconds": 473.1069381749985,
+  "online_total_cpu_seconds": 472.96416,
+  "online_first_valid_seconds": 472.8501781440136,
+  "reduction_total_wall_seconds": 470.2904444819724,
+  "scan_total_wall_seconds": 0.11114301400084514,
+  "worker_checkpoint_io_seconds": 0.32313298505323473,
+  "worker_peak_rss_kib": 80316,
+  "completed_bkz_tours": 11,
+  "candidate_norm_sq": 36,
+  "candidate_basis_row_index": 252,
+  "equivalence": {
+    "shift": 27,
+    "sign": 1
+  },
+  "audit_passed": true,
+  "exact_lattice_equivalence_certified": true,
+  "frozen_sources_unchanged": true,
+  "strict_two_tour_schedule_verified": true,
+  "fresh_initial_lll": true,
+  "historical_eight_tour_run_included_in_baseline": false,
+  "historical_eight_tour_wall_seconds_included": 0.0,
+  "beta_summary": [
+    {
+      "method": "LLL",
+      "beta": null,
+      "completed_tours": 0,
+      "reduction_wall_seconds": 26.777469592998386,
+      "scan_wall_seconds": 0.005437864994746633,
+      "final_minimum_norm_sq": 9409,
+      "public_valid_recovery": false
+    },
+    {
+      "method": "BKZ",
+      "beta": 30,
+      "completed_tours": 2,
+      "reduction_wall_seconds": 54.54193727498932,
+      "scan_wall_seconds": 0.009271239003282972,
+      "final_minimum_norm_sq": 9409,
+      "public_valid_recovery": false
+    },
+    {
+      "method": "BKZ",
+      "beta": 31,
+      "completed_tours": 2,
+      "reduction_wall_seconds": 80.9243504069891,
+      "scan_wall_seconds": 0.016335558000719175,
+      "final_minimum_norm_sq": 9409,
+      "public_valid_recovery": false
+    },
+    {
+      "method": "BKZ",
+      "beta": 32,
+      "completed_tours": 2,
+      "reduction_wall_seconds": 72.64636964800593,
+      "scan_wall_seconds": 0.01396284501242917,
+      "final_minimum_norm_sq": 9409,
+      "public_valid_recovery": false
+    },
+    {
+      "method": "BKZ",
+      "beta": 33,
+      "completed_tours": 2,
+      "reduction_wall_seconds": 94.4761966389924,
+      "scan_wall_seconds": 0.015345912004704587,
+      "final_minimum_norm_sq": 9409,
+      "public_valid_recovery": false
+    },
+    {
+      "method": "BKZ",
+      "beta": 34,
+      "completed_tours": 2,
+      "reduction_wall_seconds": 81.83121068200853,
+      "scan_wall_seconds": 0.015677781993872486,
+      "final_minimum_norm_sq": 9409,
+      "public_valid_recovery": false
+    },
+    {
+      "method": "BKZ",
+      "beta": 35,
+      "completed_tours": 1,
+      "reduction_wall_seconds": 59.09291023798869,
+      "scan_wall_seconds": 0.03511181299109012,
+      "final_minimum_norm_sq": 36,
+      "public_valid_recovery": true
+    }
+  ],
+  "scope": "One fixed reused key, fresh LLL, strict two-tour progressive schedule. The historical eight-tour run is excluded from this baseline and all its times. First successful beta is not globally minimal. Only method 1 of the intended four-method comparison has run."
+}

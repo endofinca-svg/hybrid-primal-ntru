@@ -1,0 +1,730 @@
+{
+  "schema": "ntru-posthoc-recovered-class-coverage-v1",
+  "created_utc": "2026-10-27T09:44:32.659903+00:00",
+  "scope": "All online B/E/D trials have ended. This examines only the public-valid class recovered by this batch B, not a private reference or all public-valid classes.",
+  "online_run_finished_before_diagnostic": true,
+  "diagnostic_inputs_used_online": false,
+  "used_for_online_pattern_seed_tail_threshold_or_stop": false,
+  "private_contents_read": false,
+  "private_reference_classification_performed": false,
+  "other_public_valid_classes_exhaustively_analyzed": false,
+  "new_lattice_computation": false,
+  "new_parameter_run": false,
+  "public_instance": {
+    "path": "experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+    "file_sha256": "8c03b57a732fb8114d900ff47c2b04f93ca257bef5066db0988e74a10d89baf9",
+    "public_content_sha256": "8e2e7cd27fdbd595d58a4baefb5326a4b04d05d0804962395ab9f74b26146bc7",
+    "public_content_hash_definition": "candidates.context_from_public canonical public instance hash",
+    "instance_id": "instance_01",
+    "schema": "ntru-e2e-public-v1",
+    "n": 128,
+    "q": 97,
+    "ring": "x^n+1",
+    "distribution": {
+      "kind": "fixed_weight_ternary",
+      "w_f": 12,
+      "w_g": 24
+    },
+    "h_length": 128,
+    "h_canonical_integer_list_sha256": "f8063d5ac8396eaf262bf70c199ac5c961ec7b3f26343565234221d99d6c8d7c",
+    "h_canonical_encoding": "json.dumps(h,sort_keys=True,separators=(comma,colon),allow_nan=False).encode(ascii)",
+    "h_nonzero_count": 127,
+    "h_min": 0,
+    "h_max": 96,
+    "h_is_one": false
+  },
+  "sources": {
+    "experiment": {
+      "path": "experiments/ntru_hybrid_comparison/main_feasibility_20261027/run/experiment.final.json",
+      "sha256": "363dfff63ae757d8f266124348e592bba3d2b3af45da9459f089250e03c51e9b"
+    },
+    "anchor_B_guard_trial": {
+      "path": "experiments/ntru_hybrid_comparison/main_feasibility_20261027/run/B-main-0/trial.final.json",
+      "sha256": "2640035d9f9d655c25680edfad3cd52d33076f12282c8824c401b18fa204f49c"
+    },
+    "public_protocol_plan": {
+      "path": "experiments/ntru_hybrid_comparison/main_feasibility_20261027/public_and_protocol_checks.json",
+      "sha256": "a675cf9bd83cc36818eb2481a68f32b401e8512f93bd8b3f4d85481376b10a7c"
+    },
+    "original_public": {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+      "sha256": "8c03b57a732fb8114d900ff47c2b04f93ca257bef5066db0988e74a10d89baf9"
+    }
+  },
+  "orbit_anchor": {
+    "role": "public-valid solution output by online B, passed to offline helpers as their orbit anchor; not private truth",
+    "method": "B",
+    "trial_id": "B-main-0",
+    "source": "basis_row",
+    "public_validation_rechecked_posthoc": {
+      "public_valid": true,
+      "checks": {
+        "public_format": true,
+        "candidate_format": true,
+        "dimensions": true,
+        "integer_coefficients": true,
+        "nonzero": true,
+        "ternary": true,
+        "weights": true,
+        "norm_sq": true,
+        "public_key_relation": true,
+        "invertible": true
+      },
+      "rejection_reasons": [],
+      "norm_sq": 36,
+      "weights": {
+        "f": 12,
+        "g": 24
+      },
+      "require_invertible": true,
+      "invertibility_status": "invertible",
+      "expected_norm_sq": 36
+    },
+    "pair_canonical_sha256": "db783e36c06ea5ab1206e84a76b5f80ec0da6ca88a9a9986f82e0e86c789d1d3",
+    "f_canonical_sha256": "fba66a4fd351f1f7f6195b9d60b58415475318556d9179eacfbcbd910efa4cb8",
+    "g_canonical_sha256": "82805a6f91e659dc7d8d7712dafcf7ecf6956b53dd57a385202bcde5487c3273"
+  },
+  "rotation_definition": {
+    "ring": "Z[x]/(x^128+1)",
+    "operation": "simultaneous x^power multiplication of both f and g; powers 0..255 include global sign because x^128=-1",
+    "ordinary_array_cyclic_shift_used": false,
+    "joint_orbit_exact_deduplication": true,
+    "unique_signed_joint_pair_count": 256
+  },
+  "B_original_output_on_first_pattern_tail": {
+    "pattern_attempt_index": 0,
+    "P_compatible": true,
+    "T4": [
+      121,
+      124,
+      125,
+      126
+    ],
+    "f_T4": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tail_weight": 0,
+    "tail_is_zero": true,
+    "covered_by_full80_nonzero_tail_list": false,
+    "is_decoder_success_for_D_or_E": false
+  },
+  "patterns": [
+    {
+      "pattern_attempt_index": 0,
+      "P": [
+        0,
+        1,
+        6,
+        9,
+        18,
+        25,
+        26,
+        29,
+        30,
+        31,
+        35,
+        36,
+        39,
+        42,
+        45,
+        46,
+        47,
+        51,
+        52,
+        54,
+        55,
+        59,
+        65,
+        69,
+        74,
+        76,
+        88,
+        90,
+        94,
+        96,
+        99,
+        105,
+        106,
+        111,
+        115,
+        118,
+        119,
+        122,
+        123,
+        127
+      ],
+      "T4": [
+        121,
+        124,
+        125,
+        126
+      ],
+      "actual_attempted_methods": [
+        "B",
+        "E",
+        "D"
+      ],
+      "planned_but_not_run_by_any_method": false,
+      "actual_online_attempts": {
+        "B": {
+          "attempted": true,
+          "execution_status": "completed",
+          "online_public_valid_observed": true,
+          "online_success_within_budget": true,
+          "submitted_count": 0,
+          "completed_count": 0
+        },
+        "E": {
+          "attempted": true,
+          "execution_status": "completed",
+          "online_public_valid_observed": false,
+          "online_success_within_budget": false,
+          "submitted_count": 80,
+          "completed_count": 80
+        },
+        "D": {
+          "attempted": true,
+          "execution_status": "completed",
+          "online_public_valid_observed": false,
+          "online_success_within_budget": false,
+          "submitted_count": 80,
+          "completed_count": 80
+        }
+      },
+      "counts_scope": "distinct joint (f,g) signed-negacyclic orbit pairs; positive and negative representatives count separately",
+      "compatible_signed_rotation_pair_count": 2,
+      "compatible_rotation_j_count_up_to_global_sign": 1,
+      "compatible_rotation_j_values": [
+        0
+      ],
+      "compatible_zero_tail_signed_pair_count": 2,
+      "compatible_nonzero_tail_signed_pair_count": 0,
+      "full80_covered_compatible_signed_pair_count": 0,
+      "distinct_compatible_nonzero_tail_count": 0,
+      "distinct_covered_nonzero_tail_count": 0,
+      "compatible_signed_rotations": [
+        {
+          "power": 0,
+          "canonical_rotation_j": 0,
+          "global_sign": 1,
+          "tail": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tail_is_zero": true,
+          "full80_nonzero_tail_covered": false
+        },
+        {
+          "power": 128,
+          "canonical_rotation_j": 0,
+          "global_sign": -1,
+          "tail": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tail_is_zero": true,
+          "full80_nonzero_tail_covered": false
+        }
+      ],
+      "compatible_tail_frequency": [
+        {
+          "tail": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "signed_pair_count": 2
+        }
+      ],
+      "full80_candidate_ordered_sha256": "bf98ebddf903511d1e2f35f7c2fc8008cf9096dc842fc9bcd16457cd95568f69",
+      "coverage_helper_result": {
+        "schema": "ntru-offline-coverage-v1",
+        "pattern_positions": [
+          0,
+          1,
+          6,
+          9,
+          18,
+          25,
+          26,
+          29,
+          30,
+          31,
+          35,
+          36,
+          39,
+          42,
+          45,
+          46,
+          47,
+          51,
+          52,
+          54,
+          55,
+          59,
+          65,
+          69,
+          74,
+          76,
+          88,
+          90,
+          94,
+          96,
+          99,
+          105,
+          106,
+          111,
+          115,
+          118,
+          119,
+          122,
+          123,
+          127
+        ],
+        "tail_positions": [
+          121,
+          124,
+          125,
+          126
+        ],
+        "candidate_ordered_sha256": "bf98ebddf903511d1e2f35f7c2fc8008cf9096dc842fc9bcd16457cd95568f69",
+        "pattern_compatible": true,
+        "nonzero_tail_covered": false,
+        "public_valid_found": null,
+        "coverage_state": "all_compatible_tails_zero",
+        "unique_orbit_pair_count": 256,
+        "compatible_orbit_pair_count": 2,
+        "zero_tail_orbit_pair_count": 2,
+        "nonzero_tail_orbit_pair_count": 0,
+        "covered_orbit_pair_count": 0,
+        "distinct_nonzero_tail_count": 0,
+        "distinct_covered_tail_count": 0,
+        "output_count": null,
+        "output_validations": null,
+        "zero_tail_excluded": true
+      },
+      "coverage_is_not_decoder_success": true
+    },
+    {
+      "pattern_attempt_index": 1,
+      "P": [
+        0,
+        5,
+        8,
+        16,
+        18,
+        19,
+        27,
+        28,
+        30,
+        32,
+        33,
+        34,
+        37,
+        45,
+        47,
+        48,
+        51,
+        55,
+        58,
+        66,
+        68,
+        70,
+        72,
+        80,
+        84,
+        87,
+        88,
+        90,
+        94,
+        96,
+        101,
+        105,
+        110,
+        113,
+        119,
+        122,
+        123,
+        124,
+        126,
+        127
+      ],
+      "T4": [
+        118,
+        120,
+        121,
+        125
+      ],
+      "actual_attempted_methods": [
+        "E",
+        "D"
+      ],
+      "planned_but_not_run_by_any_method": false,
+      "actual_online_attempts": {
+        "B": {
+          "attempted": false,
+          "execution_status": null,
+          "online_public_valid_observed": null,
+          "online_success_within_budget": null,
+          "submitted_count": null,
+          "completed_count": null
+        },
+        "E": {
+          "attempted": true,
+          "execution_status": "timeout",
+          "online_public_valid_observed": false,
+          "online_success_within_budget": false,
+          "submitted_count": 0,
+          "completed_count": 0
+        },
+        "D": {
+          "attempted": true,
+          "execution_status": "timeout",
+          "online_public_valid_observed": false,
+          "online_success_within_budget": false,
+          "submitted_count": 0,
+          "completed_count": 0
+        }
+      },
+      "counts_scope": "distinct joint (f,g) signed-negacyclic orbit pairs; positive and negative representatives count separately",
+      "compatible_signed_rotation_pair_count": 2,
+      "compatible_rotation_j_count_up_to_global_sign": 1,
+      "compatible_rotation_j_values": [
+        82
+      ],
+      "compatible_zero_tail_signed_pair_count": 2,
+      "compatible_nonzero_tail_signed_pair_count": 0,
+      "full80_covered_compatible_signed_pair_count": 0,
+      "distinct_compatible_nonzero_tail_count": 0,
+      "distinct_covered_nonzero_tail_count": 0,
+      "compatible_signed_rotations": [
+        {
+          "power": 82,
+          "canonical_rotation_j": 82,
+          "global_sign": 1,
+          "tail": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tail_is_zero": true,
+          "full80_nonzero_tail_covered": false
+        },
+        {
+          "power": 210,
+          "canonical_rotation_j": 82,
+          "global_sign": -1,
+          "tail": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tail_is_zero": true,
+          "full80_nonzero_tail_covered": false
+        }
+      ],
+      "compatible_tail_frequency": [
+        {
+          "tail": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "signed_pair_count": 2
+        }
+      ],
+      "full80_candidate_ordered_sha256": "6b2d0655e63c76911d0994d65ce9398071df0151d97f0c0344f4cf188d7f5fdd",
+      "coverage_helper_result": {
+        "schema": "ntru-offline-coverage-v1",
+        "pattern_positions": [
+          0,
+          5,
+          8,
+          16,
+          18,
+          19,
+          27,
+          28,
+          30,
+          32,
+          33,
+          34,
+          37,
+          45,
+          47,
+          48,
+          51,
+          55,
+          58,
+          66,
+          68,
+          70,
+          72,
+          80,
+          84,
+          87,
+          88,
+          90,
+          94,
+          96,
+          101,
+          105,
+          110,
+          113,
+          119,
+          122,
+          123,
+          124,
+          126,
+          127
+        ],
+        "tail_positions": [
+          118,
+          120,
+          121,
+          125
+        ],
+        "candidate_ordered_sha256": "6b2d0655e63c76911d0994d65ce9398071df0151d97f0c0344f4cf188d7f5fdd",
+        "pattern_compatible": true,
+        "nonzero_tail_covered": false,
+        "public_valid_found": null,
+        "coverage_state": "all_compatible_tails_zero",
+        "unique_orbit_pair_count": 256,
+        "compatible_orbit_pair_count": 2,
+        "zero_tail_orbit_pair_count": 2,
+        "nonzero_tail_orbit_pair_count": 0,
+        "covered_orbit_pair_count": 0,
+        "distinct_nonzero_tail_count": 0,
+        "distinct_covered_tail_count": 0,
+        "output_count": null,
+        "output_validations": null,
+        "zero_tail_excluded": true
+      },
+      "coverage_is_not_decoder_success": true
+    },
+    {
+      "pattern_attempt_index": 2,
+      "P": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        9,
+        13,
+        14,
+        17,
+        20,
+        21,
+        25,
+        27,
+        31,
+        33,
+        38,
+        41,
+        48,
+        50,
+        51,
+        52,
+        57,
+        59,
+        60,
+        72,
+        77,
+        81,
+        82,
+        87,
+        89,
+        90,
+        94,
+        100,
+        103,
+        106,
+        110,
+        116,
+        117,
+        119,
+        125
+      ],
+      "T4": [
+        123,
+        124,
+        126,
+        127
+      ],
+      "actual_attempted_methods": [],
+      "planned_but_not_run_by_any_method": true,
+      "actual_online_attempts": {
+        "B": {
+          "attempted": false,
+          "execution_status": null,
+          "online_public_valid_observed": null,
+          "online_success_within_budget": null,
+          "submitted_count": null,
+          "completed_count": null
+        },
+        "E": {
+          "attempted": false,
+          "execution_status": null,
+          "online_public_valid_observed": null,
+          "online_success_within_budget": null,
+          "submitted_count": null,
+          "completed_count": null
+        },
+        "D": {
+          "attempted": false,
+          "execution_status": null,
+          "online_public_valid_observed": null,
+          "online_success_within_budget": null,
+          "submitted_count": null,
+          "completed_count": null
+        }
+      },
+      "counts_scope": "distinct joint (f,g) signed-negacyclic orbit pairs; positive and negative representatives count separately",
+      "compatible_signed_rotation_pair_count": 2,
+      "compatible_rotation_j_count_up_to_global_sign": 1,
+      "compatible_rotation_j_values": [
+        49
+      ],
+      "compatible_zero_tail_signed_pair_count": 0,
+      "compatible_nonzero_tail_signed_pair_count": 2,
+      "full80_covered_compatible_signed_pair_count": 2,
+      "distinct_compatible_nonzero_tail_count": 2,
+      "distinct_covered_nonzero_tail_count": 2,
+      "compatible_signed_rotations": [
+        {
+          "power": 49,
+          "canonical_rotation_j": 49,
+          "global_sign": 1,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "tail_is_zero": false,
+          "full80_nonzero_tail_covered": true
+        },
+        {
+          "power": 177,
+          "canonical_rotation_j": 49,
+          "global_sign": -1,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "tail_is_zero": false,
+          "full80_nonzero_tail_covered": true
+        }
+      ],
+      "compatible_tail_frequency": [
+        {
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "signed_pair_count": 1
+        },
+        {
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "signed_pair_count": 1
+        }
+      ],
+      "full80_candidate_ordered_sha256": "62b7aaf9d760e5f9f2e7a8c56490619721ce8e789b24510ae5499705c37bb8d1",
+      "coverage_helper_result": {
+        "schema": "ntru-offline-coverage-v1",
+        "pattern_positions": [
+          0,
+          2,
+          3,
+          5,
+          6,
+          9,
+          13,
+          14,
+          17,
+          20,
+          21,
+          25,
+          27,
+          31,
+          33,
+          38,
+          41,
+          48,
+          50,
+          51,
+          52,
+          57,
+          59,
+          60,
+          72,
+          77,
+          81,
+          82,
+          87,
+          89,
+          90,
+          94,
+          100,
+          103,
+          106,
+          110,
+          116,
+          117,
+          119,
+          125
+        ],
+        "tail_positions": [
+          123,
+          124,
+          126,
+          127
+        ],
+        "candidate_ordered_sha256": "62b7aaf9d760e5f9f2e7a8c56490619721ce8e789b24510ae5499705c37bb8d1",
+        "pattern_compatible": true,
+        "nonzero_tail_covered": true,
+        "public_valid_found": null,
+        "coverage_state": "covered",
+        "unique_orbit_pair_count": 256,
+        "compatible_orbit_pair_count": 2,
+        "zero_tail_orbit_pair_count": 0,
+        "nonzero_tail_orbit_pair_count": 2,
+        "covered_orbit_pair_count": 2,
+        "distinct_nonzero_tail_count": 2,
+        "distinct_covered_tail_count": 2,
+        "output_count": null,
+        "output_validations": null,
+        "zero_tail_excluded": true
+      },
+      "coverage_is_not_decoder_success": true
+    }
+  ],
+  "interpretation_limits": [
+    "Compatibility means at least one jointly signed-negacyclic rotated B-output pair obeys f[P]=0.",
+    "Full80 covers all nonzero ternary tails; zero tails are excluded by the online skip rule. The separately charged zero-tail basis-row branch may recover a vector only if reduction exposes a suitable row.",
+    "A compatible covered tail does not imply Babai or Slicer reconstructs a public-valid vector.",
+    "No coverage result upgrades online timeout, pending, unsubmitted target, or zero decoder recovery to success.",
+    "The third planned pattern was not attempted online; its counts are hypothetical posthoc diagnostics only."
+  ]
+}

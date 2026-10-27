@@ -1,0 +1,164 @@
+[
+  {
+    "label": "clone",
+    "argv": [
+      "git",
+      "clone",
+      "--no-hardlinks",
+      "--no-checkout",
+      "/home/inca/g6k_hybrid",
+      "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+    "exit_code": 0,
+    "wall_seconds": 0.3425970599996617,
+    "stdout": "clone.stdout.txt",
+    "stderr": "clone.stderr.txt",
+    "finished_utc": "2026-10-21T09:22:09.490330+00:00"
+  },
+  {
+    "label": "checkout",
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "bd72687b2ebbaff16fb692259f83b327bbcd9586"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "exit_code": 0,
+    "wall_seconds": 1.0677896619999956,
+    "stdout": "checkout.stdout.txt",
+    "stderr": "checkout.stderr.txt",
+    "finished_utc": "2026-10-21T09:22:10.559178+00:00"
+  },
+  {
+    "label": "upstream_head",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "exit_code": 0,
+    "wall_seconds": 0.010733867999988433,
+    "stdout": "upstream_head.stdout.txt",
+    "stderr": "upstream_head.stderr.txt",
+    "finished_utc": "2026-10-21T09:22:10.571020+00:00"
+  },
+  {
+    "label": "create_venv",
+    "argv": [
+      "/home/inca/miniforge3/envs/g6k/bin/python",
+      "-m",
+      "venv",
+      "--system-site-packages",
+      "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+    "exit_code": 0,
+    "wall_seconds": 11.363415672999963,
+    "stdout": "create_venv.stdout.txt",
+    "stderr": "create_venv.stderr.txt",
+    "finished_utc": "2026-10-21T09:22:21.935672+00:00"
+  },
+  {
+    "label": "dependencies",
+    "argv": [
+      "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+      "-c",
+      "import fpylll,Cython,numpy,cysignals,pytest;print(fpylll.__version__,Cython.__version__,numpy.__version__)"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+    "exit_code": 0,
+    "wall_seconds": 1.3393596709997837,
+    "stdout": "dependencies.stdout.txt",
+    "stderr": "dependencies.stderr.txt",
+    "finished_utc": "2026-10-21T09:22:23.276838+00:00"
+  },
+  {
+    "label": "autoreconf",
+    "argv": [
+      "autoreconf",
+      "-i"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "exit_code": 0,
+    "wall_seconds": 15.750964449000094,
+    "stdout": "autoreconf.stdout.txt",
+    "stderr": "autoreconf.stderr.txt",
+    "finished_utc": "2026-10-21T09:22:39.029308+00:00"
+  },
+  {
+    "label": "configure",
+    "argv": [
+      "./configure",
+      "--with-max-sieving-dim=64",
+      "--with-stats=1",
+      "--with-stats-slicer=1"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "exit_code": 0,
+    "wall_seconds": 27.346971255000426,
+    "stdout": "configure.stdout.txt",
+    "stderr": "configure.stderr.txt",
+    "finished_utc": "2026-10-21T09:23:06.377646+00:00"
+  },
+  {
+    "label": "build",
+    "argv": [
+      "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+      "setup.py",
+      "build_ext",
+      "--inplace",
+      "-j2"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "exit_code": 0,
+    "wall_seconds": 167.65438382000002,
+    "stdout": "build.stdout.txt",
+    "stderr": "build.stderr.txt",
+    "finished_utc": "2026-10-21T09:25:54.033884+00:00"
+  },
+  {
+    "label": "imports",
+    "argv": [
+      "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+      "-c",
+      "import importlib,importlib.metadata,json,platform,sys,sysconfig\nfrom pathlib import Path\nmodules={name:importlib.import_module(name) for name in ['fpylll','g6k','g6k.siever','g6k.slicer','numpy','Cython','cysignals']}\nfrom g6k.slicer import RandomizedSlicer\nexpected=Path(sys.argv[1]).resolve()\nassert all(Path(modules[name].__file__).resolve().is_relative_to(expected) for name in ['g6k','g6k.siever','g6k.slicer'])\nprint(json.dumps({'python':sys.version,'executable':sys.executable,'prefix':sys.prefix,'base_prefix':sys.base_prefix,'platform':platform.platform(),'compiler':sysconfig.get_config_var('CC'),'modules':{k:v.__file__ for k,v in modules.items()},'versions':{k:importlib.metadata.version(k) for k in ['fpylll','numpy','Cython','cysignals','pytest','setuptools']}},indent=2))\n",
+      "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+    "exit_code": 0,
+    "wall_seconds": 2.0845578000003115,
+    "stdout": "imports.stdout.txt",
+    "stderr": "imports.stderr.txt",
+    "finished_utc": "2026-10-21T09:25:56.120755+00:00"
+  },
+  {
+    "label": "compiler",
+    "argv": [
+      "/usr/bin/g++",
+      "--version"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+    "exit_code": 0,
+    "wall_seconds": 0.008998981999866373,
+    "stdout": "compiler.stdout.txt",
+    "stderr": "compiler.stderr.txt",
+    "finished_utc": "2026-10-21T09:25:56.133487+00:00"
+  },
+  {
+    "label": "upstream_diff",
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "exit_code": 0,
+    "wall_seconds": 1.280720437999662,
+    "stdout": "upstream_diff.stdout.txt",
+    "stderr": "upstream_diff.stderr.txt",
+    "finished_utc": "2026-10-21T09:25:57.416259+00:00"
+  }
+]

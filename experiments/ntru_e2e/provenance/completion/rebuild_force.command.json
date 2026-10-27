@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "python3",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/run_in_env.py",
+    "setup.py",
+    "build_ext",
+    "--inplace",
+    "--force",
+    "-j2"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+  "started_utc": "2026-10-21T14:04:17.987864+00:00",
+  "timeout_seconds": 300.0,
+  "stdout": "rebuild_force.stdout.txt",
+  "stderr": "rebuild_force.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 122.6667855199994,
+  "cpu_seconds": 224.8456,
+  "peak_rss_kib": 438856,
+  "finished_utc": "2026-10-21T14:06:20.654498+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "ntru-budgeted-pattern-offline-sources-v1",
+  "source_sha256": {
+    "experiments/ntru_compare_n128_w12_w24_q97/__init__.py": "cf3427b477ae5eeb247ca0ce6abfd65f545246b7825f97ba44e248adec7d3284",
+    "experiments/ntru_compare_n128_w12_w24_q97/evaluate_baseline.py": "01eed32142bb6fd743bcd8886564e73ff2d4a6733ce62b6e3c53e55d6e6d7dcf",
+    "experiments/ntru_compare_n128_w12_w24_q97/evaluate_baseline_tour2.py": "1f7fc1981c6aec619beba9ceb3be62e6a1d89fe31a282560597e3eaebd9d42c9",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/__init__.py": "ac378d4e2497f56edf1961ade26fa2efcdda98ee8f0ee993273cfc4ee288f063",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/audit.py": "095253c7340f950335d88dd847b5b544ba00e3ad297fdf87eac6e528193623ee",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/budgeted_search.py": "a7ade67a377ec45dbf5f5ccd1b98e25bf0646b3d761a1d2b4efb01fe71401765",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/run.py": "a6320519269a1bdc36bd1ecc7c69ab05bdfb38e05bc157882b7fd982c2e6256f",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/solve.py": "fd8b7a76f554320c7c717ddc129926735bb366b5eed84f0d65a26d414e64120e",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/summarize_budgeted.py": "a4c6988045ab69cb7e93d5ee1188b55194fc3957a25b7798a5491c1a1c407ec1",
+    "experiments/ntru_e2e/algebra.py": "16f7e9b59cdb5b5559b56c5075dcef3c950ad68c24b862626ac7b0acdfba910b",
+    "experiments/ntru_e2e/record_command.py": "7ce403963707c49d938f5330d3986f9351519e913a3ec5250a9c068b2c61bf62"
+  },
+  "truth_gate": "Verified online_finished; all ten groups success or budget_exhausted."
+}

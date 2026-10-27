@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-m",
+    "experiments.ntru_compare_n128_w12_w24_q97.method2_pattern.budgeted_search",
+    "--run-dir",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern",
+    "--resume"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-22T11:08:31.062320+00:00",
+  "timeout_seconds": null,
+  "stdout": "online.stdout.txt",
+  "stderr": "online.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 19262.005798371,
+  "cpu_seconds": 19317.948655,
+  "peak_rss_kib": 77388,
+  "finished_utc": "2026-10-22T16:29:33.338420+00:00"
+}

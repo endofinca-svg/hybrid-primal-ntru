@@ -1,0 +1,1 @@
+{"classification": "equivalent_secret", "output": "experiments/ntru_e2e/runs/phase1/instance_02.evaluation.json"}

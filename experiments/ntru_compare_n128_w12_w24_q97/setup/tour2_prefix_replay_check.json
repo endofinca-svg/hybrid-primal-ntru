@@ -1,0 +1,42 @@
+{
+  "scope": "Two-tour run independently repeats the same LLL and first two beta30 tours; later beta30 tours from old run are excluded",
+  "all_first_three_checkpoints_identical": true,
+  "checkpoints": [
+    {
+      "checkpoint": "lll.basis.json",
+      "identical": true,
+      "old_sha256": "b89fe137ffae51d3ada433ad47b288063506cbbfa6e009883cf22f22966d7043",
+      "new_sha256": "b89fe137ffae51d3ada433ad47b288063506cbbfa6e009883cf22f22966d7043"
+    },
+    {
+      "checkpoint": "lll.transform.json",
+      "identical": true,
+      "old_sha256": "6f139dacbc5f6bb9268644b514d435e5f919345428e1e3897f48ace363d387b1",
+      "new_sha256": "6f139dacbc5f6bb9268644b514d435e5f919345428e1e3897f48ace363d387b1"
+    },
+    {
+      "checkpoint": "bkz_b030_t01.basis.json",
+      "identical": true,
+      "old_sha256": "5ac78ff0b59ea0403a4b1b0e51d57dd5c458714cbec3a10a40ae49c7c48b9164",
+      "new_sha256": "5ac78ff0b59ea0403a4b1b0e51d57dd5c458714cbec3a10a40ae49c7c48b9164"
+    },
+    {
+      "checkpoint": "bkz_b030_t01.transform.json",
+      "identical": true,
+      "old_sha256": "0f072bd03101744d42eb44c20047724c5567b12e165922645dde4b52960ebfd8",
+      "new_sha256": "0f072bd03101744d42eb44c20047724c5567b12e165922645dde4b52960ebfd8"
+    },
+    {
+      "checkpoint": "bkz_b030_t02.basis.json",
+      "identical": true,
+      "old_sha256": "da04843a342ed9d137285f582838532b19b58d0026b0893f306335fd27447c1f",
+      "new_sha256": "da04843a342ed9d137285f582838532b19b58d0026b0893f306335fd27447c1f"
+    },
+    {
+      "checkpoint": "bkz_b030_t02.transform.json",
+      "identical": true,
+      "old_sha256": "3c3daf341d965646cddb7cc9c0799e04deeb49523ec10767e822296dc1a11e5e",
+      "new_sha256": "3c3daf341d965646cddb7cc9c0799e04deeb49523ec10767e822296dc1a11e5e"
+    }
+  ]
+}

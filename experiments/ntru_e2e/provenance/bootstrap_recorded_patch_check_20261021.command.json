@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-c",
+    "import hashlib,json,os,subprocess,tempfile\nfrom pathlib import Path\nfrom experiments.ntru_e2e.bootstrap import COMMIT,HERE,apply_recorded_patch\ndef run(label,argv,cwd=None,timeout=None,env_update=None):\n    return subprocess.check_output(argv,cwd=cwd,timeout=timeout,text=True,env=dict(os.environ,**(env_update or {})),stderr=subprocess.PIPE)\npatch=HERE/'provenance'/'upstream_source.patch'\noriginal=subprocess.check_output(['git','-C',str(HERE/'.deps'/'g6k_hybrid'),'show',COMMIT+':kernel/hash_table.inl'])\nwith tempfile.TemporaryDirectory(prefix='ntru-recorded-patch-check-') as temporary:\n    source=Path(temporary)\n    target=source/'kernel'/'hash_table.inl'\n    target.parent.mkdir()\n    target.write_bytes(original)\n    target.chmod(0o755)\n    run('init',['git','init','--quiet'],source)\n    run('add',['git','add','kernel/hash_table.inl'],source)\n    run('commit',['git','-c','user.name=NTRU bootstrap check','-c','user.email=bootstrap@example.invalid','commit','--quiet','-m','Pinned upstream blob'],source)\n    first=apply_recorded_patch(source,patch,run)\n    second=apply_recorded_patch(source,patch,run)\n    assert first=='applied' and second=='already_applied'\n    print(json.dumps({'upstream_commit':COMMIT,'patch_sha256':hashlib.sha256(patch.read_bytes()).hexdigest(),'application':first,'repeat':second,'upstream_blob_sha256':hashlib.sha256(original).hexdigest(),'patched_blob_sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'checkout':'temporary copy only; existing .deps read using git show'},indent=2))\n"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T14:07:15.362634+00:00",
+  "timeout_seconds": null,
+  "stdout": "bootstrap_recorded_patch_check_20261021.stdout.txt",
+  "stderr": "bootstrap_recorded_patch_check_20261021.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 0.3586334080027882,
+  "cpu_seconds": 0.360045,
+  "peak_rss_kib": 19840,
+  "finished_utc": "2026-10-21T14:07:15.720738+00:00"
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "ntru-phase2d-files-v1",
+  "new_implementation_and_test_file_count": 12,
+  "implementation_and_test_files": [
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/budgets.py",
+      "change": "added",
+      "sha256": "44cfa7909e19686b3347447b9dbe4b0844df8f67aae5f878c2e18d4292a855a6"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/summarize.py",
+      "change": "added",
+      "sha256": "4168813c8f0a5e4d2a8bca8ee517ef6611edac3630d89148a894d9d9d4312217"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/supervisor.py",
+      "change": "added",
+      "sha256": "1cd4ae6962d22a1aa4fd7f52dff88933003bf5dd98d4897c63aeb55df1b4c950"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/standalone.py",
+      "change": "added",
+      "sha256": "a8fcaec42f0afca1372dac44b8c340aa88ce6cd11f27e459fbcda754a706a852"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/standalone_worker.py",
+      "change": "added",
+      "sha256": "b631c936a29cfa4963178b091f7fb0b109f79720c5caa8b408c0211f9ed97a85"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/guarded.py",
+      "change": "added",
+      "sha256": "5ff2825dc580ac85b924e18e85ba4210106120f7ef656ef018259b1d3f4672d0"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/tests/test_budgets.py",
+      "change": "added",
+      "sha256": "807ed4e02080383230b1e0294a271c7607ceeeafc6324231b40f48908b672403"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/tests/test_summarize.py",
+      "change": "added",
+      "sha256": "47078a1c8d43b36e3924ac3ebd89b1638cf755664e618dcdc288a4ce2d4baa2b"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/tests/test_supervisor.py",
+      "change": "added",
+      "sha256": "a424a8728e40ab169fcedc9be0c429a093d5217c7c38e2fc28add61eeb2a5faa"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/tests/test_standalone_runner.py",
+      "change": "added",
+      "sha256": "ba914f098ddfe264a3eee6525b8c0ca7ba38966d581371d48fce9ce312c13f58"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/tests/test_standalone_worker.py",
+      "change": "added",
+      "sha256": "f134cc5a1fcb29b534c31b6ed47089efdc1026545f9200373c90061b0c6ea0d4"
+    },
+    {
+      "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/tests/test_guarded.py",
+      "change": "added",
+      "sha256": "04c6b6236d898fe137f88eae9879ee10daaa6d22d39add9d5d3398e3088ba4e9"
+    }
+  ],
+  "modified_existing_implementation_files": [],
+  "preserved_protected_file_count": 1810,
+  "result_harnesses": [
+    "run_tests.py",
+    "finalize_evidence.py"
+  ],
+  "committed_or_pushed": false
+}

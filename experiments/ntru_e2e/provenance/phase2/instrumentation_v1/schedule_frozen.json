@@ -1,0 +1,268 @@
+{
+  "plan_sha256": "3e55f67477e2d2647911c8244b9e3c93049c4e2b9354b3d215e546b43148bcf6",
+  "schedules": [
+    {
+      "case_id": "n64_w4_8",
+      "instance_id": "instance_01",
+      "solver_seed": 10001,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            8,
+            45
+          ],
+          "backend_seed": 1771157796
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            15,
+            53
+          ],
+          "backend_seed": 1247747029
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w4_8",
+      "instance_id": "instance_02",
+      "solver_seed": 10002,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            29,
+            49
+          ],
+          "backend_seed": 229676848
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            4,
+            40
+          ],
+          "backend_seed": 30508287
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w4_8",
+      "instance_id": "instance_03",
+      "solver_seed": 10003,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            0,
+            25
+          ],
+          "backend_seed": 904735465
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            21,
+            53
+          ],
+          "backend_seed": 853684210
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w6_12",
+      "instance_id": "instance_01",
+      "solver_seed": 10001,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            8,
+            45
+          ],
+          "backend_seed": 1771157796
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            15,
+            53
+          ],
+          "backend_seed": 1247747029
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w6_12",
+      "instance_id": "instance_02",
+      "solver_seed": 10002,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            29,
+            49
+          ],
+          "backend_seed": 229676848
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            4,
+            40
+          ],
+          "backend_seed": 30508287
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w6_12",
+      "instance_id": "instance_03",
+      "solver_seed": 10003,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            0,
+            25
+          ],
+          "backend_seed": 904735465
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            21,
+            53
+          ],
+          "backend_seed": 853684210
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w8_16",
+      "instance_id": "instance_01",
+      "solver_seed": 10001,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            8,
+            45
+          ],
+          "backend_seed": 1771157796
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            15,
+            53
+          ],
+          "backend_seed": 1247747029
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w8_16",
+      "instance_id": "instance_02",
+      "solver_seed": 10002,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            29,
+            49
+          ],
+          "backend_seed": 229676848
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            4,
+            40
+          ],
+          "backend_seed": 30508287
+        }
+      ]
+    },
+    {
+      "case_id": "n64_w8_16",
+      "instance_id": "instance_03",
+      "solver_seed": 10003,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            0,
+            25
+          ],
+          "backend_seed": 904735465
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            21,
+            53
+          ],
+          "backend_seed": 853684210
+        }
+      ]
+    },
+    {
+      "case_id": "n128_w8_16",
+      "instance_id": "instance_01",
+      "solver_seed": 10001,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            16,
+            91
+          ],
+          "backend_seed": 1771157796
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            30,
+            107
+          ],
+          "backend_seed": 1247747029
+        }
+      ]
+    },
+    {
+      "case_id": "n128_w12_24",
+      "instance_id": "instance_01",
+      "solver_seed": 10001,
+      "patterns": [
+        {
+          "pattern_index": 0,
+          "P": [
+            16,
+            91
+          ],
+          "backend_seed": 1771157796
+        },
+        {
+          "pattern_index": 1,
+          "P": [
+            30,
+            107
+          ],
+          "backend_seed": 1247747029
+        }
+      ]
+    }
+  ],
+  "frozen_before_key_generation": true,
+  "source_sha256": {
+    "run_phase2.py": "013ba974e14edff2bfc53d6118da273f2664f06987407fa8f83714b18ac350e5",
+    "solve_phase2.py": "e957be699da3d88d334a7cc298d30114eb4bfe1890f88d402317b947719f9108",
+    "phase2_adapter.py": "90c3ccaee7b49462014c0b3fa823598379a75ba389c5f4a3d7ee631086e74f08",
+    "slicer_adapter.py": "713b2d3752292a1a0ae72f84336a9e9742180a78c8402c02ceb02544413e75c6",
+    "algebra.py": "16f7e9b59cdb5b5559b56c5075dcef3c950ad68c24b862626ac7b0acdfba910b",
+    "generate.py": "bb4b77a377c6356d35c0c394e79fe6e1f71bc746ac2d0ce8724b10ef9535ac90",
+    "run_in_env.py": "061ee2c4ecc89942cc2df24f8baf6166ee697699145bba244e6b3c4fec19b504"
+  }
+}

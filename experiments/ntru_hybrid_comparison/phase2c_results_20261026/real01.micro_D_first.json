@@ -1,0 +1,613 @@
+{
+  "schema": "ntru-paired-fixed-basis-decoding-v1",
+  "pipeline_method": "D",
+  "mode": "fixed_basis_first_public_valid",
+  "scope": "fixed_basis_decoding_stage_not_end_to_end",
+  "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2c_results_20261026/micro_n15_d28.public_input.json",
+  "input_file_sha256": "53cef4f70669858a92a949836dbdc9f56dc87632ef0ada54fa2313062e125bcd",
+  "input_kind": "test_fixture",
+  "pairing": {
+    "public_content_sha256": "63d618a9f8303ac6bb47953c6612da7885054d7e2c2e2337049a57503e0cbc66",
+    "original_basis_sha256": "5a0b27ac7b3e5d5f6a81a8be74be580385d2f9fcd6963d478b4fd2d81824aaa7",
+    "starting_basis_sha256": "11660468879eca246aff005857e322f08555a0d48f0c767b6a103a8703156387",
+    "candidate_ordered_sha256": "5198da534f9526c3a218ebe5556ebbb93ad621b7884a037a71733d8bd846b05e",
+    "ordered_targets_sha256": "479aaa045dade38bf2378e3559747b5b3a77a3b551f68d7c83d56077bc164ec1",
+    "id_mapping_sha256": "b4912d0ef231fe02218011c38ab9e5d34ac1893ba4f23622fbcd5e1734a92667",
+    "coordinates_sha256": "b651a05d2f6323539cecf2fe4ac0577fad95d80562969a7bdf4aa21dbb30884a"
+  },
+  "dimensions": {
+    "d": 28,
+    "d_pattern": 29,
+    "k": 1,
+    "kappa": 1,
+    "n": 15,
+    "q": 17
+  },
+  "backend_config": {
+    "float_type": "mpfr",
+    "precision_bits": 192,
+    "sieve_dim": 28,
+    "seed": 20261026,
+    "db_size": 128,
+    "nrand": 2,
+    "max_iterations": 1,
+    "preprocessing": "sample_database_only",
+    "buckets": 4,
+    "blocks": 1,
+    "multi_hash": 1,
+    "interface_test_mode": true,
+    "force_kernel_iterations": true
+  },
+  "shared_reduction": {
+    "protocol": {
+      "auto_abort": false,
+      "bkz_flags": 0,
+      "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+      "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+      "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+      "early_termination": "exception or external termination only; no public-success callback in this interface",
+      "float_type": "mpfr",
+      "gso_flags": 0,
+      "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum",
+      "initial_lll_implementation": "fpylll.LLL.reduction",
+      "lll_delta": 0.99,
+      "lll_eta": 0.51,
+      "lll_flags": 0,
+      "lll_method": "proved",
+      "main_experiment_schedule_frozen": false,
+      "precision_bits": 192,
+      "schedule": [],
+      "schema": "ntru-shared-reduction-protocol-v1",
+      "seed": 10001,
+      "strategy": "fpylll_default_extend_unpruned",
+      "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+      "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+      "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+      "threads": 1,
+      "tour_semantics": "strict"
+    },
+    "execution": {
+      "cumulative_seconds": 0.0,
+      "elapsed_seconds": 0.0,
+      "stages": [],
+      "status": "completed",
+      "timing_source": "synthetic_test_fixture_not_a_backend_measurement"
+    },
+    "excluded_from_this_method_wall": true,
+    "cost_is_not_zero": true
+  },
+  "zero_tail_policy": "skip; nonzero candidate batch; no added nonzero-vector branch",
+  "first_valid_time_origins": {
+    "method": "method entry before input loading",
+    "progress": "TargetProgress construction after input validation"
+  },
+  "basis_row_precheck_enabled": false,
+  "strict_fixed_basis": true,
+  "candidates": [
+    {
+      "backend_integer_id": 0,
+      "candidate_sha_id": "3553c49a13b861f871e2912ca8b41e634046d851fef2b39b3133eb66d3a5c349",
+      "target_index": 0,
+      "pipeline_method": "D",
+      "output_origin": "slicer_tail_with_babai_lift",
+      "slicer_invoked": true,
+      "slicer_used_in_returned_candidate": "unknown",
+      "reconstructed": {
+        "f": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "g": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "conversion_rejection": null,
+      "ambient_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_target_sha256": "5d50b2b7d78093960c655754d4a4d7a6e4ad284de3960b9c147da2a68bca0450",
+      "residual_sq": 1,
+      "public_validation": {
+        "public_valid": true,
+        "checks": {
+          "public_format": true,
+          "candidate_format": true,
+          "dimensions": true,
+          "integer_coefficients": true,
+          "nonzero": true,
+          "ternary": true,
+          "weights": true,
+          "norm_sq": true,
+          "public_key_relation": true,
+          "invertible": true
+        },
+        "rejection_reasons": [],
+        "norm_sq": 2,
+        "weights": {
+          "f": 1,
+          "g": 1
+        },
+        "require_invertible": true,
+        "invertibility_status": "invertible",
+        "expected_norm_sq": 2
+      }
+    }
+  ],
+  "protocol_errors": [],
+  "backend_batches": [
+    {
+      "submitted_ids": [
+        0
+      ],
+      "call_wall_seconds": 0.009093900000152644,
+      "backend_timings": {
+        "target_prepare_seconds": 0.007353337001404725,
+        "decode_seconds": 9.64739992923569e-05,
+        "lift_seconds": 0.0009318839984189253
+      },
+      "projection_groups": [
+        {
+          "projection_group": 0,
+          "projection": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.15800724923610687,
+            0.0
+          ],
+          "members": [
+            {
+              "backend_integer_id": 0,
+              "sign": 1,
+              "actual_target": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "insertion_before": 0,
+          "insertion_after": 2,
+          "internal_id": 0
+        }
+      ],
+      "call_evidence": [
+        {
+          "function": "RandomizedSlicer.bdgl_like_sieve",
+          "call_number": 1,
+          "external_ids": [
+            0
+          ],
+          "target_db_size": 2,
+          "saturation_index": 1,
+          "buckets": 4,
+          "blocks": 1,
+          "multi_hash": 1,
+          "max_iterations": 1,
+          "nrand": 2,
+          "target_db_entries_per_accepted_projection": 2,
+          "randomized_entries_per_accepted_projection": 1,
+          "randomization_draw_attempts": "not_observable",
+          "forced_interface_iterations": true,
+          "stats_before": {
+            "cdb_t-size:": 2,
+            "xorpopcnt": 1,
+            "xorpopcnt_pass": 1,
+            "fullscprods": 1,
+            "redsucc": 0,
+            "replacements": 0,
+            "collisions": 0,
+            "reds_during_randomization": 0,
+            "buck_over_max": 0,
+            "buck_over_num": 0,
+            "itercount_slicer": 0
+          },
+          "returned_normally": true,
+          "seconds": 9.64739992923569e-05,
+          "stats_after": {
+            "cdb_t-size:": 2,
+            "xorpopcnt": 35,
+            "xorpopcnt_pass": 35,
+            "fullscprods": 35,
+            "redsucc": 1,
+            "replacements": 1,
+            "collisions": 0,
+            "reds_during_randomization": 0,
+            "buck_over_max": 0,
+            "buck_over_num": 0,
+            "itercount_slicer": 1
+          },
+          "observable_iterations": 1
+        }
+      ],
+      "metrics": {
+        "preprocess_count": 1,
+        "slicer_kernel_calls": 1,
+        "slicer_kernel_completed_calls": 1,
+        "babai_precheck_target_count": 0,
+        "slicer_target_count": 1,
+        "babai_decode_target_count": 0,
+        "projection_babai_target_count": 1,
+        "babai_decode_completed_target_count": 0,
+        "babai_lift_call_count": 2
+      }
+    }
+  ],
+  "first_public_valid": {
+    "seconds": 0.062290660996950464,
+    "backend_integer_id": 0,
+    "progress": {
+      "schema": "ntru-external-target-progress-v1",
+      "scope": "external_target_events_only",
+      "target_count": 2,
+      "submitted_count": 1,
+      "completed_count": 1,
+      "errored_count": 0,
+      "cancelled_count": 0,
+      "pending_count": 0,
+      "unsubmitted_count": 1,
+      "returned_candidate_count": 1,
+      "public_valid_candidate_count": 1,
+      "public_valid_target_count": 1,
+      "unique_public_valid_solution_count": 1,
+      "solution_uniqueness": "exact_caller_supplied_full_solution_key",
+      "first_public_valid_seconds": 0.03505613499874016,
+      "conservation_holds": true,
+      "targets": [
+        {
+          "external_id": 0,
+          "state": "completed",
+          "returned_candidate_count": 1,
+          "public_valid_candidate_count": 1
+        },
+        {
+          "external_id": 1,
+          "state": "unsubmitted",
+          "returned_candidate_count": 0,
+          "public_valid_candidate_count": 0
+        }
+      ],
+      "events": [
+        {
+          "sequence": 0,
+          "event": "submitted",
+          "external_id": 0,
+          "elapsed_seconds": 0.024865139999747043
+        },
+        {
+          "sequence": 1,
+          "event": "candidate_returned",
+          "external_id": 0,
+          "elapsed_seconds": 0.03505613499874016,
+          "public_valid": true,
+          "output_origin": "slicer_tail_with_babai_lift",
+          "solution_key": [
+            [
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "observation_scope": "terminal backend reports already returned; candidate validation observed up to this point"
+    },
+    "batch_work_already_returned": true
+  },
+  "stop_reason": "first_public_valid",
+  "backend_metadata": {
+    "method": "D",
+    "gso": {
+      "status": "created_without_reduction",
+      "float_type": "mpfr",
+      "precision_bits": 192,
+      "transform_bookkeeping": true,
+      "precision_scope": "process-global MPFR precision fixed for every live decoder GSO"
+    },
+    "basis_changed": false,
+    "hidden_reduction_calls": 0,
+    "constructor_seconds": 0.0014307809979072772,
+    "backend_return_type": "integer basis coefficients converted to ambient integer vector",
+    "config": {
+      "sieve_dim": 28,
+      "seed": 20261026,
+      "db_size": 128,
+      "nrand": 2,
+      "max_iterations": 1,
+      "preprocessing": "sample_database_only",
+      "buckets": 4,
+      "blocks": 1,
+      "multi_hash": 1,
+      "interface_test_mode": true,
+      "force_kernel_iterations": true
+    },
+    "slicer_numeric_types": {
+      "GSO_export": "float64",
+      "target_projection_storage": "float32",
+      "integer_lifting": "Python arbitrary precision integers"
+    },
+    "strict_fixed_basis": true,
+    "additional_basis_transform": false,
+    "babai_roles": {
+      "independent_public_success_precheck": false,
+      "target_projection": "tail Babai shift, not a public-validity precheck",
+      "final_lift": "full ambient Babai using the returned projected residual"
+    },
+    "gso_transform_bookkeeping_recreated": false,
+    "gso_conversion_seconds_nested_in_preprocess": 2.91600008495152e-06,
+    "constructor_lll_interception": [
+      {
+        "left": 0,
+        "right": 28,
+        "action": "suppressed_without_calling_LLL"
+      }
+    ],
+    "lattice_db_size": 128,
+    "actual_projection_dimension": 28,
+    "compiled_projection_cap": 64,
+    "nthreads": 1,
+    "preprocessing": "sample_database_only",
+    "preprocessing_seconds": 0.00495387799674063,
+    "kernel_iteration_limit": 1,
+    "target_db_entries_per_accepted_projection": 2,
+    "randomized_entries_per_accepted_projection": 1,
+    "randomization_draw_attempts": "not_observable",
+    "interface_test_only": true
+  },
+  "metrics": {
+    "preprocess_count": 1,
+    "slicer_kernel_calls": 1,
+    "babai_precheck_target_count": 0,
+    "slicer_target_count": 1,
+    "slicer_kernel_completed_calls": 1,
+    "babai_decode_target_count": 0,
+    "projection_babai_target_count": 1,
+    "babai_decode_completed_target_count": 0,
+    "babai_lift_call_count": 2
+  },
+  "peak_memory_bytes": null,
+  "memory_scope": "not measured; no historical RSS substituted",
+  "progress": {
+    "schema": "ntru-external-target-progress-v1",
+    "scope": "external_target_events_only",
+    "target_count": 2,
+    "submitted_count": 1,
+    "completed_count": 1,
+    "errored_count": 0,
+    "cancelled_count": 0,
+    "pending_count": 0,
+    "unsubmitted_count": 1,
+    "returned_candidate_count": 1,
+    "public_valid_candidate_count": 1,
+    "public_valid_target_count": 1,
+    "unique_public_valid_solution_count": 1,
+    "solution_uniqueness": "exact_caller_supplied_full_solution_key",
+    "first_public_valid_seconds": 0.03505613499874016,
+    "conservation_holds": true,
+    "targets": [
+      {
+        "external_id": 0,
+        "state": "completed",
+        "returned_candidate_count": 1,
+        "public_valid_candidate_count": 1
+      },
+      {
+        "external_id": 1,
+        "state": "unsubmitted",
+        "returned_candidate_count": 0,
+        "public_valid_candidate_count": 0
+      }
+    ],
+    "events": [
+      {
+        "sequence": 0,
+        "event": "submitted",
+        "external_id": 0,
+        "elapsed_seconds": 0.024865139999747043
+      },
+      {
+        "sequence": 1,
+        "event": "candidate_returned",
+        "external_id": 0,
+        "elapsed_seconds": 0.03505613499874016,
+        "public_valid": true,
+        "output_origin": "slicer_tail_with_babai_lift",
+        "solution_key": [
+          [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "sequence": 2,
+        "event": "completed",
+        "external_id": 0,
+        "elapsed_seconds": 0.035296074998768745,
+        "reason": null
+      }
+    ]
+  },
+  "after_first_public_valid": {
+    "returned_candidates_ingested": 0,
+    "wall_seconds": 0.00039977400228963234,
+    "scope": "drain current batch and bookkeeping; no later batch submitted in first-public-valid mode"
+  },
+  "status": "completed",
+  "timings": {
+    "input_load_verify_seconds": 0.027110950999485794,
+    "gso_initialization_seconds": 0.019061528000747785,
+    "extra_preprocess_seconds": 0.00546777099953033,
+    "target_prepare_seconds": 0.007353337001404725,
+    "decode_seconds": 9.64739992923569e-05,
+    "lift_reconstruct_seconds": 0.001387815998896258,
+    "public_verify_seconds": 0.0003503820007608738,
+    "result_output_seconds": null,
+    "bookkeeping_seconds": 0.0018655139974725898,
+    "total_wall_seconds": 0.06269377299759071,
+    "phase_semantics": "PHASES are exclusive; backend timings/call evidence are nested diagnostics, never added twice",
+    "reduction_and_construction_excluded": true
+  },
+  "timing_authority": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/phase2c_results_20261026/real01.micro_D_first.json.timings.json"
+}

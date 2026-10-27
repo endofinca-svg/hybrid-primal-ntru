@@ -1,0 +1,52 @@
+{
+  "schema": "ntru-hybrid-comparison-phase1-audit-manifest-v1",
+  "status": "phase1_audit_complete_with_implementation_gaps",
+  "completed_local": "2026-10-26T18:33:44+08:00",
+  "current_phase": 1,
+  "phase2_started": false,
+  "new_keygen_or_online_trials": 0,
+  "tests_rerun": false,
+  "checks": {
+    "existing_83_sources_unchanged": true,
+    "existing_28_offline_outputs_match": true,
+    "existing_69_baseline_public_files_unchanged": true,
+    "all_44_command_charges_match": true,
+    "all10_existing_success_audits_pass": true,
+    "all11_backend_sources_match": true,
+    "both_backend_extensions_match": true,
+    "imported_module_paths_match_historical_environment": true,
+    "phase1_no_new_online_experiments": true
+  },
+  "changed_existing_sources": [],
+  "documents": [
+    "REPORT.md",
+    "CODE_REVIEW.md",
+    "BACKEND_REVIEW.md",
+    "HISTORY_REVIEW.md"
+  ],
+  "next_stage_entry": "stage2_entry.json",
+  "phase2_blockers": [
+    "limited-weight candidate generation and exact progress accounting",
+    "fixed-basis vs standalone end-to-end modes and method-local costs",
+    "public success distinct from reference classification",
+    "common or explicitly separated reduction precision/strategy/tour protocol",
+    "verified process-tree cleanup and per-experiment memory meaning"
+  ],
+  "output_sha256": {
+    "BACKEND_REVIEW.md": "30243b90d2e62dadab30c6d9138ad1deb30d1d3bb322341f38a4f06bef51094b",
+    "CODE_REVIEW.md": "5507b21785eba4dc48cfeb72297b2d2aeb81d64706cd8c87acf2cf28c5102ac7",
+    "HISTORY_REVIEW.md": "d97cbc0d1f9314fb6f6fdeab13fd4b24021b698b0ab86ea32c0c60d28f0827fe",
+    "REPORT.md": "2d8d2cdd373d95ba04d8cb28bcfe828f49d19c4ff8e391c9be1ebb116b751b4a",
+    "backend_integrity.json": "b4b52cfd1c27aab084ba57274fd87ab023ddf020d2cbe08ebed37f88f561e48a",
+    "baseline_comparison.csv": "4f834f382584d1db4650058df0f5ce6cfde03a9f5e8022b945a273b143838fe3",
+    "candidate_counts.json": "796f3d64f403d56461d0dc9eb547b9608236d1a68352cafe6b60b682fcc52ed5",
+    "historical_metrics.json": "4398f91fe7607c88844e40a1e759c34e3e41102c8441010f80d45bbeb322ee98",
+    "integrity.json": "7116bfeb0929046170314f0df092c4cff5aab2357092a4a336f3c34b3bc28eb3",
+    "model.json": "baea846baf378ef50a7fc797b186b9c81a55b28cef73f98a2da4e5b3505d0290",
+    "process_status.json": "e3970bcf84a09804a2d16e44c661bdb91ceb965fd1a273b3bc672f38a6124e84",
+    "runtime_probe.json": "eadef9342a6b6dcf133ea20b9ab24a658f1c6b7c42d33e5d95320119d1782427",
+    "source_snapshot.json": "3bbbe0e54f907f495e9bfff51c8e4204b938b1d3f94d2038aa4d1f6b26da0fb7",
+    "stage2_entry.json": "5020367696dcee337d9e0614927ee2199a09c23dc896bad9b1b1dc50f65e9cb2",
+    "workspace.json": "a59bbda6cce5461b78ce34505b0e82e01a3a3e8c0ac2907ac429a744bdbc4665"
+  }
+}

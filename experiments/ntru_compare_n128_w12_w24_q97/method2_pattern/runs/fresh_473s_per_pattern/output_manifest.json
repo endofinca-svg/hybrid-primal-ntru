@@ -1,0 +1,1027 @@
+{
+  "input_sha256": {
+    "attempt_artifacts": [
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k012_pattern001_online.command.json",
+            "sha256": "3804abb60f4b80a33e6c639a17018e343d3deec4617e0d21af627b12f89e3b7f"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k012/pattern001/config.json",
+            "sha256": "49c41a5151f20054384c25819bea60991c22e68dbd5d657a71e02ae1016a58a8"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k012/pattern001/events.jsonl",
+            "sha256": "64364de4163781935a6f55c81c61f4dada0f5b96edc0de9d6f059292b8640081"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k012/pattern001/result.json",
+            "sha256": "c1edc9345228bf318438cf7bb2e5eb71e02a96f4d1071c380517986ab89ed057"
+          }
+        },
+        "k": 12,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k024_pattern001_online.command.json",
+            "sha256": "07c1e9bcd617fb8a22683764e7af10d46b35398d6beb3bfe087fddd31ac4853d"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k024/pattern001/config.json",
+            "sha256": "d844b98477288791e76f0ad014414f29ebe404edd72c4190a43444866bb2c09e"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k024/pattern001/events.jsonl",
+            "sha256": "6f92e74ff81b7262c91058da1c9c0f143f99bba8b7bdc9fbd966a622aa285ed4"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k024/pattern001/result.json",
+            "sha256": "ae1bf2db53ded9bd6f0b390a7ae4771454b9363948a5a261bdac7366fa202928"
+          }
+        },
+        "k": 24,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k032_pattern001_online.command.json",
+            "sha256": "8d143ce8e6e6f3c83fe916d5491ef56daad9d44b1802114de42191d863426869"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k032/pattern001/config.json",
+            "sha256": "4ad9e6480092d8171ae60a241a53ea4cac9bfa7d4ae576bb86529e0442e937e1"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k032/pattern001/events.jsonl",
+            "sha256": "4680d52c2a60ccd91c63dbe6c664b230ff2a404dc43bf373d5cda158ecb0b1d6"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k032/pattern001/result.json",
+            "sha256": "93a6725fb3f1f678af27f057033744408e6cf475313758018e489ecc5bd86095"
+          }
+        },
+        "k": 32,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k038_pattern001_online.command.json",
+            "sha256": "ef361ed7e79de7d267ab99f689e09d37f403811043c245412d90dbd42984fa30"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k038/pattern001/config.json",
+            "sha256": "2e1eb89cfd7db732b125e80d0e2281fa3a479c297d3e25bdb27c7f5fc75fbd24"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k038/pattern001/events.jsonl",
+            "sha256": "12c2959fd910f55e44455a4fa67dda5c77e4bbe8f54ba52c94e2d6c1f3aa732a"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k038/pattern001/result.json",
+            "sha256": "7596afa766d7a95c1e7a53f8c0348cf841cb88d2da25ae93509aae30e117af3a"
+          }
+        },
+        "k": 38,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k038_pattern002_online.command.json",
+            "sha256": "994a575a6a6da29b30f7723dcd26370fe16b68724e3def244b3e1269e64c04d4"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k038/pattern002/config.json",
+            "sha256": "892447a6596e6add465d2a80806cb62920af8e2e260707b5e6725deb88fee471"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k038/pattern002/events.jsonl",
+            "sha256": "243a3d72f3a6dd057eb7473b32402d5e43f29615b8c97574e62de967302630d3"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k038/pattern002/result.json",
+            "sha256": "bd40bc76034a2a8acc83fdd9a9c404919bcf86768ec9e4a145bdc6ef7935fa2b"
+          }
+        },
+        "k": 38,
+        "pattern_index": 1
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k040_pattern001_online.command.json",
+            "sha256": "5e7dd3d12c6cdd083495a41bb9d6e2c65aaf33f705079b84021c01ac4cf258f2"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k040/pattern001/config.json",
+            "sha256": "b1b835c975e83f28eeffe74f6c392eebd6162f959d84f7c39b797e4bb2b4c852"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k040/pattern001/events.jsonl",
+            "sha256": "f21840cf5e700128902f43ffd66267c4ec207649f0377f6b825bb7583194383e"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k040/pattern001/result.json",
+            "sha256": "f215faa927522aebbd9334d0f7fc0f05774e97892d56a912f9a05f4d54e07d25"
+          }
+        },
+        "k": 40,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k042_pattern001_online.command.json",
+            "sha256": "2dd2adb45712311bedbdd5f13f02b92098fdfdfd745c2fccd6ff575a56657b88"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern001/config.json",
+            "sha256": "98a857b8ec6a548469fd8d7a669504d7f7102ecc47d0f567a9eaf03d13f84289"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern001/events.jsonl",
+            "sha256": "530945870a01552faaf402f3fae910bd9fdca89c78edb8cbc020d5706d5ef549"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern001/result.json",
+            "sha256": "2ee77f6fdcc32356282574160ac7f7f28ff0181ff2338b5cc0a90e878330a301"
+          }
+        },
+        "k": 42,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k042_pattern002_online.command.json",
+            "sha256": "4778f28ae84e6dc322473cd0ff3f24c251a7ba34f7093688af342db3f9e52e1b"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern002/config.json",
+            "sha256": "306330053296a801ec2f0d9252dd5f99332e4eac6e1e1a5efbaaeb56d311ef4f"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern002/events.jsonl",
+            "sha256": "647f9b7ba9c85ce81fb2bd3d3e294731187f379c6489cbe14efa9b9a1df6ce61"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern002/result.json",
+            "sha256": "32dea8cea4fca460856c85360ded3c5e11728a13a3c5b07571d720473d6c96ee"
+          }
+        },
+        "k": 42,
+        "pattern_index": 1
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k042_pattern003_online.command.json",
+            "sha256": "94d4b6e7d7650e986fddce60a0eefcc4d4a61bf90209a14ededfea1b72b39be8"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern003/config.json",
+            "sha256": "2e713529ae5a3a6fd410cf4ab43b111cc4dcb4b1e3343ca79c1e3a9b765d48b3"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern003/events.jsonl",
+            "sha256": "e79db12be16739a9ca045c29cd24d2cc92e6ea8a789e6d2bd1850b2d79d8cb7a"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k042/pattern003/result.json",
+            "sha256": "d32a5bbdb54c90b49bbb5eb1871e6694eabb19b3a5a94886a222569a851ad27d"
+          }
+        },
+        "k": 42,
+        "pattern_index": 2
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k044_pattern001_online.command.json",
+            "sha256": "4bfe381d5a5eda07bad2bf4bee3350c3f24a3a32d0257a4f6e26be5d121edf25"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern001/config.json",
+            "sha256": "dd86cb21d792f739e731877bcaf9aa6ca5f109aa0db2bae58e5f455f3158f70b"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern001/events.jsonl",
+            "sha256": "fee2eba16d27b0255db693ba4f6f616b029b0469db0812819d471127932c9456"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern001/result.json",
+            "sha256": "508fd38f98e296928a39a9510c56a46e1729460b360c60a0d2fcb9d5325bca82"
+          }
+        },
+        "k": 44,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k044_pattern002_online.command.json",
+            "sha256": "b5ae2fa3ef397bfecbb96cc9255f1e1de166613fae3380bf0f0dc7529adb0b77"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern002/config.json",
+            "sha256": "3db9b8fff773314bc6c04b4ec45ca2772cbda238cadcad0b7cb62dc75449aba5"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern002/events.jsonl",
+            "sha256": "06a3e1287708e4e1c50e49ea9ea372f18d2c185105dfa294af0b74162af65bda"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern002/result.json",
+            "sha256": "3763f21b9a86d4c8398d5c113b9570425221f76c238e8ed7cf10d9fe237f3e81"
+          }
+        },
+        "k": 44,
+        "pattern_index": 1
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k044_pattern003_online.command.json",
+            "sha256": "74f9978552ac8aacb9b62c26dbc4db5eb1834a54ff19f29c30e61295c7fb9a17"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern003/config.json",
+            "sha256": "9d774d20681431c5632ce3d99fd89be1289a709ee4de8fcc98e4e9d711b24b70"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern003/events.jsonl",
+            "sha256": "5acb391f73a8343b75180ef5bf586f0857686f0906addd9b500d3c65a3ea71af"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k044/pattern003/result.json",
+            "sha256": "274a6d72ccc09139562ba29716121af1da43983176b5e6089e7b8f12c2fe376f"
+          }
+        },
+        "k": 44,
+        "pattern_index": 2
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k048_pattern001_online.command.json",
+            "sha256": "7f8b9637fdd5e6782ee39f01273f3b5ddf57f68dbf84f48e96c6c6fdb887af00"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern001/config.json",
+            "sha256": "82f167c02b9c33829884f4ef8413489da456a6479ec2f23396b2999b9b500fd3"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern001/events.jsonl",
+            "sha256": "09692ac84bb7a8997a2ff8c0197986efd4e56fc45886fb7f0ea039eb77fe53c4"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern001/result.json",
+            "sha256": "9b5a73ce55b9ee1366abc061dab5cf711ae9123d4d86dcd65f2bddf6f95a5b70"
+          }
+        },
+        "k": 48,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k048_pattern002_online.command.json",
+            "sha256": "d386644657459fd84be38cef1d2852e37e878439c01dea91bcaa46d4ae3acfb1"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern002/config.json",
+            "sha256": "ca23d987f91ebdba4aa23819e1620a59eea6f7a981584facadbdd99594de1e43"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern002/events.jsonl",
+            "sha256": "95f37ff5459773367105e9555b311647a1d18949f262697eb5905e12ea182e46"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern002/result.json",
+            "sha256": "be3d527118b5166f6706b627fc191ee8e1a6f6ccbd11b9abf2b93e8e693f2cb4"
+          }
+        },
+        "k": 48,
+        "pattern_index": 1
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k048_pattern003_online.command.json",
+            "sha256": "026e033e22498122709590ccd8761c647060a2557cf1a0c0900d8fa358d457b9"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern003/config.json",
+            "sha256": "28374879c41bf82b51cc080ce7a7548e3ea822bedfe7ef7b9e545fe76859dfd5"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern003/events.jsonl",
+            "sha256": "43df9f1383c8455a15e345ef22d3cad8b542a60479cd9aac9e2a3eb77ce02f8d"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k048/pattern003/result.json",
+            "sha256": "2f01d5d46dba40326dda786ec256b8bb64fb192bdeabd283f5a1c2b040214de8"
+          }
+        },
+        "k": 48,
+        "pattern_index": 2
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k052_pattern001_online.command.json",
+            "sha256": "665a1ec390c7a234cc0700cd0d9b7cc668f85c0311d1701295448d0a23d87b05"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern001/config.json",
+            "sha256": "7310991b9ef4c5f9a0e6649cde6077b64ee8fd28c9e851c99fdaff94f0139316"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern001/events.jsonl",
+            "sha256": "561c1d3b089916c1b30771cda73d6eca8b25c2cd3b13580d24ef1d0c3e8fe8cc"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern001/result.json",
+            "sha256": "eccdac23f16edfa0b461ff20f228116f0b6d2b1ff7f5d4724a1849c9b7a6dbcf"
+          }
+        },
+        "k": 52,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k052_pattern002_online.command.json",
+            "sha256": "8115e44417b455d82d4dec5b61708391ece30e8e1259da22426941e3a01dde4c"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern002/config.json",
+            "sha256": "2933f01d73449d7d97cd4c704a5ea522ff2972bff26f26202381e67887371d9c"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern002/events.jsonl",
+            "sha256": "e64652aa12d09ed0baa3c954dfd8127d775cb532dd0742f14361fd68ebd4705b"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern002/result.json",
+            "sha256": "0fc496b0c9b7adb83eed5f905b08decf5ed5f4f38b3e5794110361502adc624a"
+          }
+        },
+        "k": 52,
+        "pattern_index": 1
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k052_pattern003_online.command.json",
+            "sha256": "465c6b0fccca49b11b72d21d5a5f219cf19f6ec1715df4d118e59152d54c51de"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern003/config.json",
+            "sha256": "6bd790507d54213bd605400b958d1a8fde16ce130da7e6137c15716afda41ff7"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern003/events.jsonl",
+            "sha256": "717c2a7dafe6f7f446bc333c5691ce39116fbacb0eb7b3d1d5606a57ecea68dc"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k052/pattern003/result.json",
+            "sha256": "1045f9f703275ee64e9cc06deecfc00ee684b01ccf3d55da3e255a260d54e618"
+          }
+        },
+        "k": 52,
+        "pattern_index": 2
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern001_online.command.json",
+            "sha256": "111dfc8853ff78574cad5b957c04bd9005a2ef71f2bf19c9c5fe87fc3efca1ee"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern001/config.json",
+            "sha256": "5aec1bd775b65922ef8c56f252fe6bddec039590aa5f591bf263640692123e05"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern001/events.jsonl",
+            "sha256": "4d0b9efa79a4fcf89edbfedf7b7ea9fe39816cda4935aafe8a220afa5eecf7b8"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern001/result.json",
+            "sha256": "280a49fc9efef014c8b2b19bcab998ac1c02787dd8ce631b9aa0ba8e48a905ec"
+          }
+        },
+        "k": 56,
+        "pattern_index": 0
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern002_online.command.json",
+            "sha256": "0e8b49764f343b80d77bdf619be720284eb7524552d01cbb69434362d0a04678"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern002/config.json",
+            "sha256": "6359546d285bdb949678447438231bf96b357885758fb5bcb70b27106f9b44d4"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern002/events.jsonl",
+            "sha256": "0308fa56465ea76d408104a58c69be2b3d5254bcdb7ba4da6daa37929df219bb"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern002/result.json",
+            "sha256": "067054f478438fc10510fd5a6753daad645356906783dcfa0e0a7330d9ffebe7"
+          }
+        },
+        "k": 56,
+        "pattern_index": 1
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern003_online.command.json",
+            "sha256": "bf8aa1e20076fe34195f821a98d92da99659590d8cb461b5c8112a6835964f9a"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern003/config.json",
+            "sha256": "cdecc8052cecb0532ade9c42a8de65d053f19d6298b1ac7b9fad6773ef09150e"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern003/events.jsonl",
+            "sha256": "5f54c98382b4b2d389dd07603cbaec5f456dec4d1712b687d4fb1222c6c8f7b2"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern003/result.json",
+            "sha256": "46c9cda940150215818a51b1b36bd2cfe088f974411f925e690e835eee058e85"
+          }
+        },
+        "k": 56,
+        "pattern_index": 2
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern004_online.command.json",
+            "sha256": "94d6c2eb159ebe2f8de21bbd0ed593aa86a52ea7afbbb58d98be7e3c386b12b6"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern004/config.json",
+            "sha256": "fe979391b23e6016aaaccf9fd9ee8c3b649a2901ca47ca213936f2d238df2a3c"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern004/events.jsonl",
+            "sha256": "778a967c812fa3d0d5cb6d54dda7e7a9e869647f0d42aee84f4fdac77c7d8ed5"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern004/result.json",
+            "sha256": "f9844530004aa33ace051a773d7d2b62b10aa0f0f76d096c7a9d98d5785d1239"
+          }
+        },
+        "k": 56,
+        "pattern_index": 3
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern005_online.command.json",
+            "sha256": "39f508d8966352823026f7c3386060bca965f4a3bdbc3c00863370df99a05b94"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern005/config.json",
+            "sha256": "fd2c0940fa3e6ff4e863f1cc08168c370cd2c582e0eb5b60db0efa6a872958ec"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern005/events.jsonl",
+            "sha256": "568c5263a63a0fc69e0fd13360c6216e60781bb8e6221a864f24d76c3bfff80d"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern005/result.json",
+            "sha256": "d8abad1793ca9853b17d83afbe93e36da51510d8ac2c8bcfbed477f166bba529"
+          }
+        },
+        "k": 56,
+        "pattern_index": 4
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern006_online.command.json",
+            "sha256": "3b1bcb6cb48ed10d53f1c9616798d1405f918dc1dd8c88e7d14655ba7804b118"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern006/config.json",
+            "sha256": "936da533a31bbf6508f942ed8ec25fd55e546e582dde348663c9d5400a94559b"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern006/events.jsonl",
+            "sha256": "82efa82078b118f035a7160267ac826887ae8cc6eb7f4f2484fe13f9ba85eb2e"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern006/result.json",
+            "sha256": "af21d199ba42fed8c75e6b0c9911ccd3bd3678121f27619ce3f2f91de8d07615"
+          }
+        },
+        "k": 56,
+        "pattern_index": 5
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern007_online.command.json",
+            "sha256": "5fe646f4822ca8b8c982b705091d7e361ba86bca9d835c27b69b0de3481c02cf"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern007/config.json",
+            "sha256": "6053fe63f9841ebed9ff6567e54ddc1684e4e118fd90880395a71fcb78591691"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern007/events.jsonl",
+            "sha256": "8a207bc3519094635b4286669a918f1b70a91ecf02018672986c23b287060b54"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern007/result.json",
+            "sha256": "13378f0e3f5a0dd9090b310e9435e69396c2cd475029e1f80fc97a065ee93148"
+          }
+        },
+        "k": 56,
+        "pattern_index": 6
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern008_online.command.json",
+            "sha256": "bd103728ebd8111d46d6262f3772d6627a9f00ac1dc98265779615458d38e255"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern008/config.json",
+            "sha256": "0d94a955e1c51f1788b02f36baa0f437f5e7ee91f0c8a4c7aed0995bd689960e"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern008/events.jsonl",
+            "sha256": "0a6f970b8b91d5252f462abb977e02069fe9cad8f392fa43c5d8a615c8728415"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern008/result.json",
+            "sha256": "0073dd85b8dc74fff5852ff6127eebe90f923165b69667fc57a92854a234f5ed"
+          }
+        },
+        "k": 56,
+        "pattern_index": 7
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern009_online.command.json",
+            "sha256": "de68b5433cff7f09bf168c81190d7670bd51770fd9218ceb13d3e7f8d2d7e211"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern009/config.json",
+            "sha256": "ea62d569d20caff53d9bde9fc804b43c372e129ef35a33ade731b1ddd7424217"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern009/events.jsonl",
+            "sha256": "e98c7136d7ee5987af2c4c4fe8a5f59e4b823b04a6a59a3e331d8bfc0431fdf7"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern009/result.json",
+            "sha256": "340058d890e6366307a5902bb686c3e273a12cacf3f607b59b9f78a7dc04da70"
+          }
+        },
+        "k": 56,
+        "pattern_index": 8
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern010_online.command.json",
+            "sha256": "eae3ae8da3c704b76ce39d63f3137cd578281b0d3f76e3e9da85bdccd28ab071"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern010/config.json",
+            "sha256": "bee0eb4c7afaf3fadbf0521d464fd183cb4bb2d6fa02b393f8859826d767fa1b"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern010/events.jsonl",
+            "sha256": "c2b5c23b81654f6326d224c53b1d0b31d5cab8cbe53350db54dc8407f3c0ec49"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern010/result.json",
+            "sha256": "c59a50a78ee28813c8d8eb9a83a1dac54e975abcbe3de4520c995bb9e8942dbd"
+          }
+        },
+        "k": 56,
+        "pattern_index": 9
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern011_online.command.json",
+            "sha256": "74176ffe33b2f72172535297dbfb18817c83096b95fec91e3237752a2d3f58d4"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern011/config.json",
+            "sha256": "fb50dfcb1bdc37c02e33481bb726cc651e71e45d94d9029e858c75267fc6e520"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern011/events.jsonl",
+            "sha256": "16074b84674d10822384d0cc8d18eb82b9e955f06996dd4ce2050137707b9c98"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern011/result.json",
+            "sha256": "8d24abcadc3b6f8bb6fe6a7750b4230d69f92e80a456459d9b15d365a6de80b8"
+          }
+        },
+        "k": 56,
+        "pattern_index": 10
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern012_online.command.json",
+            "sha256": "985ea50869fc55370cc3e9b1199073364d294faeab07de67fe901d0859f0dee1"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern012/config.json",
+            "sha256": "3e3673d29e02a5b487175d8459e2eaa44d8483f64e7b6f3d32fef40a244e74e7"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern012/events.jsonl",
+            "sha256": "ae56ebb7c04bfe6058d961e7c5c66723e6002fe03f2232d9be93cf1721b73c52"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern012/result.json",
+            "sha256": "8b6fd1e4c73b9a880dca8c661802e411fbb495da861cd4b43d4a0120f7577225"
+          }
+        },
+        "k": 56,
+        "pattern_index": 11
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern013_online.command.json",
+            "sha256": "484d7dff83edabdd768ee527b57e8de652d251934bd6178f4b58fff230d37509"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern013/config.json",
+            "sha256": "b9cde41ecf61569bb2ef5cafd04e17a779fcafb5f64a86cb0e54e38b6544ee68"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern013/events.jsonl",
+            "sha256": "c402ab3a71f0aa7c30209c07d9bf4673015efa6616a76191c56ca95538b9dd13"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern013/result.json",
+            "sha256": "abf86179300c983dfd7b35bac3de0cd297261aede0830ce31ab98a23af589f1f"
+          }
+        },
+        "k": 56,
+        "pattern_index": 12
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern014_online.command.json",
+            "sha256": "86ad14ec06e623e3c78be97d011fd9b15264dd0bf579856dcd9023c40262a5bb"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern014/config.json",
+            "sha256": "9b4b70524f36bd687d56940ac276b4a056d4d7b31732970bfd0746c6291f2380"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern014/events.jsonl",
+            "sha256": "a44c62462e74660e920e536be72e9718a97ba844c7f2c654fc16b2c986fd6b2a"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern014/result.json",
+            "sha256": "8f4d8e9a103309de567f95d2354e65ad873ad9cd9b3c1c8028070701f377a88d"
+          }
+        },
+        "k": 56,
+        "pattern_index": 13
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern015_online.command.json",
+            "sha256": "7bcdad66e170b48b5ae48e71d5428e1c74511eae3c4679391ca64e7eb4d50bfd"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern015/config.json",
+            "sha256": "53850020ce98cf1a455ef9d600af55aef4bc5e2e2765bb1bb55c28c3354245fc"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern015/events.jsonl",
+            "sha256": "bd35ac78706afb57f1f5822b0109d2ecd2f3e6a998afe49818112d7c67047fa5"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern015/result.json",
+            "sha256": "7a3796ade41813440fa615eb3733c8922f6ab25fd63ada9c7fb90d6432cf2d01"
+          }
+        },
+        "k": 56,
+        "pattern_index": 14
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern016_online.command.json",
+            "sha256": "02414c70f5f88681cdefded949339acd3ed151cf3d5bf9ab4db40d4420ae52b2"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern016/config.json",
+            "sha256": "f5b2f0ce617800e47c3afb0b19f4542602c07e2881167b8d7450db2980dbdbc2"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern016/events.jsonl",
+            "sha256": "e680cf7d8fe17ab4ffa21c578eb694c96c5c981a1d1942bad968a8ba5f5fb2af"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern016/result.json",
+            "sha256": "0cb86dc1b98513a3d6a06812488cd7e87fbf4cbf6ef982615eb5a9e9a1dce125"
+          }
+        },
+        "k": 56,
+        "pattern_index": 15
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern017_online.command.json",
+            "sha256": "3923f4154e82c3549b13ca39225ce9ab11a5706d9f667a78d8a0ca01bbe50645"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern017/config.json",
+            "sha256": "68c035150a6b6af114514d807d7f9572d049ff1988aff152f2e9a91a7d49af3e"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern017/events.jsonl",
+            "sha256": "db6dd5f12f83e8faf64a229c517f9e25ecb433fed7780239a4e1c9b7c4414ac6"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern017/result.json",
+            "sha256": "d1edf9333255df46b27cee4130c7c05280327b54f2dea34e8126ac9fb557a257"
+          }
+        },
+        "k": 56,
+        "pattern_index": 16
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern018_online.command.json",
+            "sha256": "55e40280addd63085688045663a930deb53a2058de283dd525f4680cbbdf9f29"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern018/config.json",
+            "sha256": "3b05c4598ce49f1def42d2a1e4f9fdaa658798c5af6c8a5d850883c6eb922dbf"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern018/events.jsonl",
+            "sha256": "32489efb71f7c9be8096b9634cfc3ad0b329a3a3ce0be959982ea9bac620667d"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern018/result.json",
+            "sha256": "b3a8e7caf2ffe53026cd9df05ebc1d603fdac7d012ff9ccde51f03a57bc677bd"
+          }
+        },
+        "k": 56,
+        "pattern_index": 17
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern019_online.command.json",
+            "sha256": "b97e9898a2d4ab884b53fb51522c6e0249c3128e9408b74837b40d826396eab3"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern019/config.json",
+            "sha256": "fbecf815a1d055029b6a89033b356855f9c2ebcc6d474703f88f28367b7585bc"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern019/events.jsonl",
+            "sha256": "38e54f3b5383b6aca0f46c24599e857ecf00a4a9ed232f14e1049395eb559c45"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern019/result.json",
+            "sha256": "4d198d08bd8c0ad7feee155f50c8e2ac98cd254551fa1981e53fc0d0e9835817"
+          }
+        },
+        "k": 56,
+        "pattern_index": 18
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern020_online.command.json",
+            "sha256": "d909cc15642d3a28156a647507049196914e6dd0bbb2d9e496228b6293531d01"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern020/config.json",
+            "sha256": "4dab98aeed55f8752e09d77cf2b537414d8675aec6417b71fe2ae3b5bed95ed8"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern020/events.jsonl",
+            "sha256": "a6b84a1dd99e8323a732f1ce544d6a8de09b36574280e5c07043e36b868b14c8"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern020/result.json",
+            "sha256": "4e1de78e1198ecc0886ee84ee5552cc1088a19f80af3e9a44a7948ad7ec3d85d"
+          }
+        },
+        "k": 56,
+        "pattern_index": 19
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern021_online.command.json",
+            "sha256": "ca96ec8dadb65eb5565b7bf5cbdb4a004f9632ab281919eef547a42ed1ebbb84"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern021/config.json",
+            "sha256": "851c1b8c5e3fd31acce02100a8e568f9c3aa4c327cb3e97e9a65cf63ea160bb7"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern021/events.jsonl",
+            "sha256": "144daa7f56eba516f8fdfc8ba3297dbe4490501077c258593a8cfcb64c939180"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern021/result.json",
+            "sha256": "d56f71316dc4c16f9bc381761502af77c12ceaa8b2619b05bd3bd6e9fd862aac"
+          }
+        },
+        "k": 56,
+        "pattern_index": 20
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern022_online.command.json",
+            "sha256": "5738324c3a5bc54355fed89b829e6d5387854e89cd8084bc964ff36062378285"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern022/config.json",
+            "sha256": "b05276a336f63be442b968daa2d15d0f7c754be00383b99ea09a686d19bdff58"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern022/events.jsonl",
+            "sha256": "597fdb6c162d3c4e01bd254cc501b89d72934b73a074293dba2b0bcd7ff3b659"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern022/result.json",
+            "sha256": "caa695afb9cf83f3c2aad5f13a3f269a6bd60f7625e0b703c0110a69293ffd91"
+          }
+        },
+        "k": 56,
+        "pattern_index": 21
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern023_online.command.json",
+            "sha256": "ac1adfac2610485991695b95b75618090a93402ffbd4771e7e51f56e6c8a9526"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern023/config.json",
+            "sha256": "46020337ea69a1b7e9b01f3cc0fb615b8b2bb583e2e12f4839e45a6b7452e31b"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern023/events.jsonl",
+            "sha256": "b965cb5569d58b80ea8f3865f77efeb229f3db4242f3536f18470d62d24b3451"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern023/result.json",
+            "sha256": "9893335226cdd2c57d09948009572f50331cbc60ac6af7b6c1f0b7f537fb01a5"
+          }
+        },
+        "k": 56,
+        "pattern_index": 22
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern024_online.command.json",
+            "sha256": "3c0299e55eb66b00427608d5a9cba9013aa20c9e7d5c788840e6f24e8cd22f84"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern024/config.json",
+            "sha256": "d758ac4dec590adbd2c56c8edeead7c19610f7231c6bbc4194cd45c0f7f1d7f7"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern024/events.jsonl",
+            "sha256": "ec3465a03662ee9fe1f6a3021262e4dcebaa13cf9457b852ea8eac007bf13fce"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern024/result.json",
+            "sha256": "b618a247fedbd5dc532d8b1049f73a0eac58e7be83946259656f156e1a301991"
+          }
+        },
+        "k": 56,
+        "pattern_index": 23
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern025_online.command.json",
+            "sha256": "b6c1df8cb29d52ea8eae65bbc3c3ba1605a94f76e3c2a4629cd62f71e565fe31"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern025/config.json",
+            "sha256": "571e007f6f2a321230e01ca0c4db091db997e0cfd67ae006078166cdcc0685ef"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern025/events.jsonl",
+            "sha256": "19b3fa942974b8727912457898ed980cd8670f705f66daded22c727db6ce905f"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern025/result.json",
+            "sha256": "eae20a40f2a1b297edf4e34a810455e195dfb66bfe8a1054f122c04322cd7da3"
+          }
+        },
+        "k": 56,
+        "pattern_index": 24
+      },
+      {
+        "artifacts": {
+          "command": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/provenance/k056_pattern026_online.command.json",
+            "sha256": "d245174a602a27b713070d1616834f6ec8607eaa77e707f64de9c0f070518b09"
+          },
+          "config": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern026/config.json",
+            "sha256": "76acf64899dcf9d9b680155f190ac6a51b93cbfbdf17edcc3fb61e5f753ce5e8"
+          },
+          "events": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern026/events.jsonl",
+            "sha256": "4eed201f248e0d398a1c14e3b92fd3aefe4a7bd72dea76d9580e576823085c1a"
+          },
+          "result": {
+            "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/runs/fresh_473s_per_pattern/k056/pattern026/result.json",
+            "sha256": "23cabcaece8274a9e52cb83843273e6f5114a12eae12566daced119abe4a0c39"
+          }
+        },
+        "k": 56,
+        "pattern_index": 25
+      }
+    ],
+    "baseline_config": "b24ebbb73d2ab06fc2c8b3c58ef38d40f270cee2432472f046c9862d665b1426",
+    "baseline_manifest": "7cf7f07fba4656e7a6cae518de5312c136006b7cea9bb64fba5572ee5dddf0db",
+    "baseline_result": "88c29caaf8269ca98486e62fb7d19f8950c4e040aa4a67d1c04cdfe87ca915bb",
+    "baseline_summary": "2c08a28fd91d02a47c48f0645da0053c8dc768414e8bf7bf94a4e5fae2e08baa",
+    "frozen_manifest": "69ea7613cd1b4d5bea38f356147cc67b0844b42df8ac8daf9dc1931ad6e57780",
+    "policy": "8d782a3af256364a87dfb933f72bb7add499a4dd53f3fcc699ed8b08739579ab",
+    "public": "8c03b57a732fb8114d900ff47c2b04f93ca257bef5066db0988e74a10d89baf9",
+    "run_manifest": "20ba92f694c09aaa82769dadedead5c1c928943fd3d76c6af3746eab922dab52",
+    "truth": "826542033537f18264a6d88d652a053880b34d2e95b30b74e74faba8d8377be4"
+  },
+  "offline_source_sha256": {
+    "experiments/ntru_compare_n128_w12_w24_q97/__init__.py": "cf3427b477ae5eeb247ca0ce6abfd65f545246b7825f97ba44e248adec7d3284",
+    "experiments/ntru_compare_n128_w12_w24_q97/evaluate_baseline.py": "01eed32142bb6fd743bcd8886564e73ff2d4a6733ce62b6e3c53e55d6e6d7dcf",
+    "experiments/ntru_compare_n128_w12_w24_q97/evaluate_baseline_tour2.py": "1f7fc1981c6aec619beba9ceb3be62e6a1d89fe31a282560597e3eaebd9d42c9",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/__init__.py": "ac378d4e2497f56edf1961ade26fa2efcdda98ee8f0ee993273cfc4ee288f063",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/audit.py": "095253c7340f950335d88dd847b5b544ba00e3ad297fdf87eac6e528193623ee",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/budgeted_search.py": "a7ade67a377ec45dbf5f5ccd1b98e25bf0646b3d761a1d2b4efb01fe71401765",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/run.py": "a6320519269a1bdc36bd1ecc7c69ab05bdfb38e05bc157882b7fd982c2e6256f",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/solve.py": "fd8b7a76f554320c7c717ddc129926735bb366b5eed84f0d65a26d414e64120e",
+    "experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/summarize_budgeted.py": "a4c6988045ab69cb7e93d5ee1188b55194fc3957a25b7798a5491c1a1c407ec1",
+    "experiments/ntru_e2e/algebra.py": "16f7e9b59cdb5b5559b56c5075dcef3c950ad68c24b862626ac7b0acdfba910b",
+    "experiments/ntru_e2e/record_command.py": "7ce403963707c49d938f5330d3986f9351519e913a3ec5250a9c068b2c61bf62"
+  },
+  "output_sha256": {
+    "REPORT.md": "ff1a940dcd01f82b2cea9f54f0d08dc1a7a5f168ddff54d4c07fb9e64a5cb634",
+    "attempts.csv": "86c1df9c2489e8c9a6183b329c44b2d1f6e6d15334aae69bba798968a69d9aef",
+    "audit/k012_pattern001.json": "64ca0751b039a66de89ac99db000b957e977f9403f3a652c7697f8af6c6ef7d5",
+    "audit/k024_pattern001.json": "751f603ef76bb1319f2977f19e32098c67ebebff4d8b3b7d2afbce83a3b84105",
+    "audit/k032_pattern001.json": "ff7aba5ea0b267f2d84dc91b867bb5a96a48cfaff360b0d957769fd6e0f3eb0d",
+    "audit/k038_pattern002.json": "db4e8a359ac085c84f63faf1def474c3dd8c72febf4deb0a7dad8c8f452eb673",
+    "audit/k040_pattern001.json": "1f48e0ba2e03fa3e6056c821bc86d0cddb0fc7d7171f4c290ea37678556e3e83",
+    "audit/k042_pattern003.json": "40be9b376a1f282c70c5bc206e1d283f6240d4f896c9e1c9c8f9715affdb46db",
+    "audit/k044_pattern003.json": "a0cc92b35ce46dd4afa0109d80e3f7ef5fea21fc9a5bcb7c212ea9f3c68862a4",
+    "audit/k048_pattern003.json": "982939c5a89a0260c466d6fac8923fb67813d96db8407ec7bdbc75812e3db0ee",
+    "audit/k052_pattern003.json": "f6e39ee2d043a9c8d9ada18f1689e54bb75e2c24f6317134531080a995907662",
+    "audit/k056_pattern026.json": "43b64f31c29d4dd0f41d0465950350f25a4b5a6c6f7aa6a2493f59b6da390f04",
+    "comparison.csv": "94ef387fc212ea66343a0f67225085adf254a09a1a819d03fdcf8232dab20f78",
+    "protocols.json": "bbb1153eef0df4a93c902a9d6e0fafb38f168c0089539590b5e4bbf74aebdc2e",
+    "provenance/offline_sources.json": "a6a68f04a3f79c96f7d2958df1b272d87f8d16f5090bb18d5d28a9cd48e70661",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/__init__.py": "cf3427b477ae5eeb247ca0ce6abfd65f545246b7825f97ba44e248adec7d3284",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/evaluate_baseline.py": "01eed32142bb6fd743bcd8886564e73ff2d4a6733ce62b6e3c53e55d6e6d7dcf",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/evaluate_baseline_tour2.py": "1f7fc1981c6aec619beba9ceb3be62e6a1d89fe31a282560597e3eaebd9d42c9",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/__init__.py": "ac378d4e2497f56edf1961ade26fa2efcdda98ee8f0ee993273cfc4ee288f063",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/audit.py": "095253c7340f950335d88dd847b5b544ba00e3ad297fdf87eac6e528193623ee",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/budgeted_search.py": "a7ade67a377ec45dbf5f5ccd1b98e25bf0646b3d761a1d2b4efb01fe71401765",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/run.py": "a6320519269a1bdc36bd1ecc7c69ab05bdfb38e05bc157882b7fd982c2e6256f",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/solve.py": "fd8b7a76f554320c7c717ddc129926735bb366b5eed84f0d65a26d414e64120e",
+    "provenance/offline_sources/experiments/ntru_compare_n128_w12_w24_q97/method2_pattern/summarize_budgeted.py": "a4c6988045ab69cb7e93d5ee1188b55194fc3957a25b7798a5491c1a1c407ec1",
+    "provenance/offline_sources/experiments/ntru_e2e/algebra.py": "16f7e9b59cdb5b5559b56c5075dcef3c950ad68c24b862626ac7b0acdfba910b",
+    "provenance/offline_sources/experiments/ntru_e2e/record_command.py": "7ce403963707c49d938f5330d3986f9351519e913a3ec5250a9c068b2c61bf62",
+    "stages.csv": "7eeae34ec035423dc1b4083e407eb7aa946adb6880b96098723ca5dce01e9b6e",
+    "summary.json": "2c9bb3333584b273696222b77ce05cd00d0eb483cfcbca1d29071ec5cf056138"
+  },
+  "schema": "ntru-budgeted-pattern-offline-output-manifest-v1"
+}

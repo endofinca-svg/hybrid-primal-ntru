@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "60s",
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "experiments/ntru_hybrid_comparison/tests",
+    "-t",
+    ".",
+    "-v"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-26T12:19:41.580102+00:00",
+  "finished_utc": "2026-10-26T12:19:43.027722+00:00",
+  "wall_seconds": 1.4471402550007042,
+  "exit_code": 0,
+  "timeout_seconds": 60,
+  "kill_after_seconds": 2,
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "scope": "Only stage2A pure candidate/public-validation/offline/algebra reconstruction/separation tests. No lattice reduction, new experiment keygen or decoding."
+}

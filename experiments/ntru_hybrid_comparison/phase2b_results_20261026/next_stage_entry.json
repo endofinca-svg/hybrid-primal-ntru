@@ -1,0 +1,68 @@
+{
+  "schema": "ntru-hybrid-comparison-phase2c-entry-v1",
+  "status": "proposal_only_not_started",
+  "completed_phase": "2B",
+  "next_phase": "2C",
+  "phase2c_started": false,
+  "phase3_started": false,
+  "main_n128_reduction_calls_in_phase2b": 0,
+  "decoder_calls_in_phase2b": 0,
+  "ready_interfaces": {
+    "build": "inputs.build_input_bundle(public,P,C,T,policy,remaining_positions=...,target_representation=...,reduction_protocol=...,provenance=...)",
+    "reduce": "reduction.execute_reduction(original_basis,ReductionProtocol(...),checkpoint=None)",
+    "record_check": "reduction.validate_execution_record(record,protocol,original_basis=...,reduced_basis=...,transform=...)",
+    "attach": "inputs.attach_reduction(bundle,execution,allow_unverified=False)",
+    "save": "inputs.save_input_bundle(path,bundle)",
+    "load": "inputs.load_input_bundle(path,require_reduced_verified=True)",
+    "private_copy": "inputs.create_working_copy(bundle,use_reduced=True,float_type=...,precision_bits=...)",
+    "identity": "id_mapping.reconcile_results(mapping,results_with_backend_integer_id)",
+    "reconstruct": "experiments.ntru_e2e.algebra.reconstruct(v_used,t_used,P,C,T,u,n)",
+    "public_check": "validation.validate_public_candidate(public,f,g,constraints=...)",
+    "offline_only": "offline.classify_against_reference / diagnose_coverage"
+  },
+  "public_example": {
+    "path": "public_inputs_n128_k40_kappa4.json",
+    "manifest": "public_inputs_n128_k40_kappa4.json.manifest.json",
+    "kind": "public_input_build_only",
+    "basis_status": "original_only",
+    "d": 212,
+    "candidate_count": 80,
+    "reduction_executed": false,
+    "formal_selection_frozen": false,
+    "can_be_used_as_already_reduced_decoder_input": false
+  },
+  "requirements_before_decoder_integration": [
+    "Freeze full source/runtime/backend hashes before starting formal work; real tiny check has an explicitly limited execution-time source snapshot",
+    "Keep frozen legacy implementations and phase1/2A/2B artifacts unchanged",
+    "Provide loader-based worker entry that does not implicitly re-run LLL/BKZ or change the paired saved basis",
+    "Reject original_only and reduced_unverified as formal reduced decoder inputs; distinguish test fixtures from actual main experiment products",
+    "Choose and separately freeze reduction schedule; historical B beta32tour2 is not a cold-start minimum or hybrid basis",
+    "Configure decoder GSO precision separately; same-process MPFR copies must use one precision",
+    "Use identical verified basis, candidate SHA/integer mapping, candidate order, and actual used targets for D/E",
+    "Record any additional backend target translations explicitly; always reconstruct with the matching actual target",
+    "Keep external targets distinct from exact target aliases and internal projection groups",
+    "Update submitted/completed from real decoder events only; generation and identity reconciliation do not count",
+    "Record rows/Babai/Slicer candidate origins, actual projection dimension, backend cap64, randomizations and iterations",
+    "Separate fixed-basis full-batch checks from independent end-to-end first-public-valid stopping",
+    "Add construction/reduction/database/targets/decode/reconstruction/public verification/IO/cleanup costs and scoped memory",
+    "Before long experiments, implement bounded process-tree cleanup and complete budget accounting in the separately authorized stage",
+    "Keep zero-tail branch/coverage loss explicit; kappa0 uses independent primal search",
+    "Use reference only offline after online outputs have been frozen"
+  ],
+  "not_implemented_in_phase2b": [
+    "real decoder worker",
+    "complete budget runner",
+    "general process-tree supervisor",
+    "n128 reduction or solving",
+    "parameter scans or final phase3 schedule"
+  ],
+  "current_backend_support": {
+    "reduction_float_type": "mpfr only",
+    "precision_bits": "integer >=64; 192 tested",
+    "lll_method": "proved initial LLL",
+    "flags": "LLL/BKZ/GSO explicit0 only",
+    "tours": "strict individual completed tour calls; no MAX_LOOPS/auto_abort execution mode",
+    "resume": "complete protocol boundary, same settings and verified original lattice; cumulative history retained; seed reset recorded, RNG state not restored",
+    "real_interface_check": "n4,d6,MPFR192,one LLL and one beta4 tour passed; no main experiment conclusion"
+  }
+}

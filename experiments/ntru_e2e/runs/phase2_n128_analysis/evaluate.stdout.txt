@@ -1,0 +1,49 @@
+{"case_id": "n128_w8_16", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b20_s32_p0", "trial_number": 1}
+{"case_id": "n128_w8_16", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b20_s32_p0", "trial_number": 1, "verified_candidates": 0}
+{"case_id": "n128_w8_16", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b20_s32_p1", "trial_number": 2}
+{"case_id": "n128_w8_16", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b20_s32_p1", "trial_number": 2, "verified_candidates": 0}
+{"case_id": "n128_w8_16", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b25_s40_p0", "trial_number": 3}
+{"case_id": "n128_w8_16", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b25_s40_p0", "trial_number": 3, "verified_candidates": 0}
+{"case_id": "n128_w8_16", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b25_s40_p1", "trial_number": 4}
+{"case_id": "n128_w8_16", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b25_s40_p1", "trial_number": 4, "verified_candidates": 0}
+{"case_id": "n128_w12_24", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b20_s32_p0", "trial_number": 5}
+{"case_id": "n128_w12_24", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b20_s32_p0", "trial_number": 5, "verified_candidates": 0}
+{"case_id": "n128_w12_24", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b20_s32_p1", "trial_number": 6}
+{"case_id": "n128_w12_24", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b20_s32_p1", "trial_number": 6, "verified_candidates": 0}
+{"case_id": "n128_w12_24", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b25_s40_p0", "trial_number": 7}
+{"case_id": "n128_w12_24", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b25_s40_p0", "trial_number": 7, "verified_candidates": 0}
+{"case_id": "n128_w12_24", "event": "trial_started", "instance_id": "instance_01", "trial_count": 8, "trial_id": "b25_s40_p1", "trial_number": 8}
+{"case_id": "n128_w12_24", "event": "trial_finished", "instance_id": "instance_01", "integrity_verified": true, "trial_count": 8, "trial_id": "b25_s40_p1", "trial_number": 8, "verified_candidates": 0}
+{
+  "censored_trial_comparisons": 8,
+  "full_censored_trial_comparisons": 8,
+  "instance_count": 2,
+  "integrity_verified_trials": 8,
+  "invalid_candidate_count": 0,
+  "invalid_candidate_reasons": {},
+  "output": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2_n128_analysis/evaluation_phase2.json",
+  "recovered_instances_by_arm": {
+    "bkz_babai": 0,
+    "bkz_rows": 0,
+    "direct_tail": 0,
+    "lll_babai": 0,
+    "lll_rows": 0,
+    "slicer": 0
+  },
+  "slicer_censored_trial_comparisons": 8,
+  "slicer_faster_trials": 0,
+  "time_comparable_trials": 0,
+  "trial_count": 8,
+  "trials_with_conclusive_extra_candidate": 0,
+  "trials_with_conclusive_extra_class": 0,
+  "trials_with_observed_slicer_new_class": 0,
+  "trials_with_observed_slicer_only_raw_candidate": 0,
+  "verified_candidates_by_arm": {
+    "bkz_babai": 0,
+    "bkz_rows": 0,
+    "direct_tail": 0,
+    "lll_babai": 0,
+    "lll_rows": 0,
+    "slicer": 0
+  }
+}

@@ -1,0 +1,1 @@
+{"output": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2_n64_first_weight_analysis/initial_projection_replay.json", "trial_count": 4, "all_exact_sets_equal": true, "initial_valid_counts": [8, 8, 8, 8], "exact_historical_match_counts": [8, 8, 8, 8]}

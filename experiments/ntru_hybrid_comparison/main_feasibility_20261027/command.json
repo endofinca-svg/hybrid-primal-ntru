@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "experiments.ntru_hybrid_comparison.guarded",
+    "--plan",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/main_feasibility_20261027/plan.json",
+    "--output",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/main_feasibility_20261027/run"
+  ],
+  "started_utc": "2026-10-27T08:56:56.620546+00:00",
+  "global_budget_seconds": 1920,
+  "trial_budget_seconds": 600,
+  "trial_cleanup_reserve_seconds": 5,
+  "guard_cleanup_reserve_seconds": 0.2,
+  "trial_order": [
+    "B",
+    "E",
+    "D"
+  ],
+  "max_patterns_per_trial": 3,
+  "outer_safety_timeout_seconds": 1940,
+  "source_snapshot": "sources.json",
+  "scope": "exactly one frozen main-instance B/E/D trial each; all retries remain within original deadlines"
+}

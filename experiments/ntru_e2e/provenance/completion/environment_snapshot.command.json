@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/home/inca/miniforge3/bin/python3",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/run_in_env.py",
+    "-c",
+    "import hashlib,importlib,importlib.metadata,json,platform,subprocess,sys,sysconfig\nfrom pathlib import Path\nroot=Path(sys.argv[1]); source=root/'.deps/g6k_hybrid'; runtime=json.loads((root/'.deps/runtime.json').read_text())\nmodules={name:importlib.import_module(name) for name in ['fpylll','g6k','g6k.siever','g6k.slicer','numpy','Cython','cysignals']}\nhead=subprocess.check_output(['git','rev-parse','HEAD'],cwd=source,text=True).strip()\nassert head=='bd72687b2ebbaff16fb692259f83b327bbcd9586'\nassert all(Path(modules[name].__file__).resolve().is_relative_to(source) for name in ['g6k','g6k.siever','g6k.slicer'])\npatch=(root/'provenance/upstream_source.patch').read_bytes()\nassert subprocess.check_output(['git','diff','--','kernel/hash_table.inl'],cwd=source)==patch\nfiles=['README.rst','setup.py','configure.ac','hybrid_attack.py','run_prog_hyb.py','tailBDD.py','g6k/slicer.pyx','kernel/slicer.cpp','kernel/hash_table.inl','utils.py','LICENSE']\nresult={'python':sys.version,'executable':sys.executable,'prefix':sys.prefix,'base_prefix':sys.base_prefix,'platform':platform.platform(),'compiler':sysconfig.get_config_var('CC'),'compiler_version':subprocess.check_output(['/usr/bin/g++','--version'],text=True).strip(),'upstream_commit':head,'upstream_url':'https://github.com/ElenaKirshanova/g6k_hybrid.git','runtime':runtime,'patch_sha256':hashlib.sha256(patch).hexdigest(),'modules':{name:mod.__file__ for name,mod in modules.items()},'versions':{name:importlib.metadata.version(name) for name in ['fpylll','numpy','Cython','cysignals','pytest','setuptools']},'source_files_sha256':{name:hashlib.sha256((source/name).read_bytes()).hexdigest() for name in files},'extension_sha256':{name:hashlib.sha256(Path(modules[name].__file__).read_bytes()).hexdigest() for name in ['g6k.siever','g6k.slicer']},'max_sieving_dimension':64,'isolation':'Separate experiment venv and rebuilt local G6K; read-only shared base dependency packages, not a hermetic dependency snapshot.'}\nprint(json.dumps(result,indent=2))\n",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T14:10:42.857439+00:00",
+  "timeout_seconds": 30,
+  "stdout": "environment_snapshot.stdout.txt",
+  "stderr": "environment_snapshot.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 1.2423808690000442,
+  "cpu_seconds": 1.2070079999999999,
+  "peak_rss_kib": 69324,
+  "finished_utc": "2026-10-21T14:10:44.099668+00:00"
+}

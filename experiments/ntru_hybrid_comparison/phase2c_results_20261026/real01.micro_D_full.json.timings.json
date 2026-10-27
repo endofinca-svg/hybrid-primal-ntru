@@ -1,0 +1,15 @@
+{
+  "input_load_verify_seconds": 0.02615131700076745,
+  "gso_initialization_seconds": 0.027180672997928923,
+  "extra_preprocess_seconds": 0.660447809001198,
+  "target_prepare_seconds": 0.006766332000552211,
+  "decode_seconds": 0.00012764499842887744,
+  "lift_reconstruct_seconds": 0.0032975569993141107,
+  "public_verify_seconds": 0.0019101109974144492,
+  "result_output_seconds": 0.003511648999847239,
+  "bookkeeping_seconds": 0.0034908200068457518,
+  "total_wall_seconds": 0.732883913002297,
+  "phase_semantics": "PHASES are exclusive; backend timings/call evidence are nested diagnostics, never added twice",
+  "reduction_and_construction_excluded": true,
+  "output_timing_scope": "includes main result serialization/write; excludes final metrics-sidecar reporting IO, which enclosing command wall includes"
+}

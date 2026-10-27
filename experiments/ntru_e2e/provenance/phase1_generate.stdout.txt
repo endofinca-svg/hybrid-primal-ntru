@@ -1,0 +1,16 @@
+{
+  "generated": [
+    {
+      "public": "experiments/ntru_e2e/runs/phase1/public/instance_01.json",
+      "truth": "experiments/ntru_e2e/runs/phase1/private/instance_01.truth.json"
+    },
+    {
+      "public": "experiments/ntru_e2e/runs/phase1/public/instance_02.json",
+      "truth": "experiments/ntru_e2e/runs/phase1/private/instance_02.truth.json"
+    },
+    {
+      "public": "experiments/ntru_e2e/runs/phase1/public/instance_03.json",
+      "truth": "experiments/ntru_e2e/runs/phase1/private/instance_03.truth.json"
+    }
+  ]
+}

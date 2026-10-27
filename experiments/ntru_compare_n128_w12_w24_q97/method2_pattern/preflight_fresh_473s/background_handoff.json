@@ -1,0 +1,28 @@
+{
+  "schema": "ntru-background-scope-handoff-v1",
+  "utc": "2026-10-22T13:44:38.612879+00:00",
+  "unit": "ntru-pattern-fresh-473s.scope",
+  "pids": [
+    93713,
+    93714,
+    93715,
+    107990
+  ],
+  "before_cgroups": {
+    "93713": "0::/user.slice/user-1000.slice/session-24.scope",
+    "93714": "0::/user.slice/user-1000.slice/session-24.scope",
+    "93715": "0::/user.slice/user-1000.slice/session-24.scope",
+    "107990": "0::/user.slice/user-1000.slice/session-24.scope"
+  },
+  "after_cgroups": {
+    "93713": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/ntru-pattern-fresh-473s.scope",
+    "93714": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/ntru-pattern-fresh-473s.scope",
+    "93715": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/ntru-pattern-fresh-473s.scope",
+    "107990": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/ntru-pattern-fresh-473s.scope"
+  },
+  "scope": "ControlGroup=/user.slice/user-1000.slice/user@1000.service/app.slice/ntru-pattern-fresh-473s.scope\nTasksCurrent=4\nActiveState=active\nSubState=running\n",
+  "user_linger": "State=active\nLinger=yes\n",
+  "no_restart": true,
+  "source_or_budget_changes": false,
+  "connection_dependency": "User manager with Linger=yes; no controlling terminal, all existing experiment wrapper/runner/worker processes moved out of SSH session scope."
+}

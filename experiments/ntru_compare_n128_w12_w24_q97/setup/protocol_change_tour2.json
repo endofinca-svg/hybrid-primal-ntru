@@ -1,0 +1,17 @@
+{
+  "schema": "ntru-protocol-change-v1",
+  "recorded_utc": "2026-10-22T03:59:28.920576+00:00",
+  "user_request": "After LLL, BKZ starts at 30, two tours per beta, then beta+1",
+  "previous_plan_sha256": "6c6ebff142b61ada1df7c9027bef36b0f90a2f8444a0c9d50af79d3d9d8b5c4f",
+  "new_plan_sha256": "3242230709841ec407236041191e92b9fca2d681a38f33a5714245a02cd4b1cf",
+  "previous_observed_status": "success",
+  "previous_success_beta": 30,
+  "previous_success_tour": 8,
+  "previous_online_wall_seconds": 314.7779405619949,
+  "previous_results": "baseline/result.json",
+  "new_results": "baseline_tour2/result.json",
+  "new_run_reuses_same_instance": true,
+  "new_run_restarts_from_initial_basis": true,
+  "previous_attempt_excluded_from_new_protocol_baseline_time": true,
+  "reason": "The old trajectory used tours 3..8, which are outside the new protocol. Restart avoids importing those reductions or resetting RNG mid-trajectory."
+}

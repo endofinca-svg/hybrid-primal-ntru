@@ -1,0 +1,25 @@
+{
+  "schema": "ntru-phase2a-artifact-validation-v1",
+  "checked_utc": "2026-10-26T12:26:25.334039+00:00",
+  "json_files_parsed": [
+    "candidate_checks.json",
+    "coverage_examples.json",
+    "full80_manifest.example.json",
+    "modified_files.json",
+    "next_stage_entry.json",
+    "preflight.json",
+    "sealed_integrity.json",
+    "tests.command.json",
+    "tests_summary.json"
+  ],
+  "missing_report_links": [],
+  "all_candidate_count_and_repeat_checks": true,
+  "formal_tests_summary_consistent": true,
+  "source_file_count": 10,
+  "protected_hashes_rechecked": 1681,
+  "protected_hash_changes": [],
+  "git_head_unchanged": true,
+  "git_status_after": "?? experiments/\n?? main.pdf\n",
+  "scope": "Artifact/schema/link/count/hash checks only; no test rerun or solver execution",
+  "pass": true
+}

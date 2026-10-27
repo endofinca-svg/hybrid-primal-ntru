@@ -1,0 +1,1345 @@
+{
+  "candidate_valid": true,
+  "candidate_validation": {
+    "combined_norm_sq": 6,
+    "f_norm_sq": 2,
+    "g_norm_sq": 4,
+    "reason": null,
+    "valid": true
+  },
+  "classification": "equivalent_secret",
+  "coverage": {
+    "has_compatible_nonzero_tail": true,
+    "has_compatible_rotation": true,
+    "has_pattern_compatible_rotation": true,
+    "has_processed_compatible_nonzero_tail": true,
+    "has_processed_compatible_rotation": true,
+    "trials": [
+      {
+        "compatible_nonzero_tail_rotations": [
+          {
+            "guess_ids": [
+              28
+            ],
+            "shift": 13,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "shift": 13,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "shift": 14,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "shift": 14,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "shift": 15,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "shift": 15,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "shift": 16,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "shift": 16,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "guess_ids": [
+              28
+            ],
+            "shift": 20,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "shift": 20,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "shift": 21,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "shift": 21,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "shift": 22,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "shift": 22,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "shift": 23,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "shift": 23,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "compatible_nonzero_tail_rotations_count": 16,
+        "compatible_rotations": [
+          {
+            "guess_ids": [
+              28
+            ],
+            "shift": 13,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "shift": 13,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "shift": 14,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "shift": 14,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "shift": 15,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "shift": 15,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "shift": 16,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "shift": 16,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "guess_ids": [
+              28
+            ],
+            "shift": 20,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "shift": 20,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "shift": 21,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "shift": 21,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "shift": 22,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "shift": 22,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "shift": 23,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "shift": 23,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "compatible_rotations_count": 16,
+        "invalid_processed_guess_ids": [],
+        "pattern_compatible_rotations": [
+          {
+            "shift": 0,
+            "sign": 1
+          },
+          {
+            "shift": 0,
+            "sign": -1
+          },
+          {
+            "shift": 1,
+            "sign": 1
+          },
+          {
+            "shift": 1,
+            "sign": -1
+          },
+          {
+            "shift": 2,
+            "sign": 1
+          },
+          {
+            "shift": 2,
+            "sign": -1
+          },
+          {
+            "shift": 3,
+            "sign": 1
+          },
+          {
+            "shift": 3,
+            "sign": -1
+          },
+          {
+            "shift": 5,
+            "sign": 1
+          },
+          {
+            "shift": 5,
+            "sign": -1
+          },
+          {
+            "shift": 6,
+            "sign": 1
+          },
+          {
+            "shift": 6,
+            "sign": -1
+          },
+          {
+            "shift": 7,
+            "sign": 1
+          },
+          {
+            "shift": 7,
+            "sign": -1
+          },
+          {
+            "shift": 8,
+            "sign": 1
+          },
+          {
+            "shift": 8,
+            "sign": -1
+          },
+          {
+            "shift": 9,
+            "sign": 1
+          },
+          {
+            "shift": 9,
+            "sign": -1
+          },
+          {
+            "shift": 10,
+            "sign": 1
+          },
+          {
+            "shift": 10,
+            "sign": -1
+          },
+          {
+            "shift": 11,
+            "sign": 1
+          },
+          {
+            "shift": 11,
+            "sign": -1
+          },
+          {
+            "shift": 12,
+            "sign": 1
+          },
+          {
+            "shift": 12,
+            "sign": -1
+          },
+          {
+            "shift": 13,
+            "sign": 1
+          },
+          {
+            "shift": 13,
+            "sign": -1
+          },
+          {
+            "shift": 14,
+            "sign": 1
+          },
+          {
+            "shift": 14,
+            "sign": -1
+          },
+          {
+            "shift": 15,
+            "sign": 1
+          },
+          {
+            "shift": 15,
+            "sign": -1
+          },
+          {
+            "shift": 16,
+            "sign": 1
+          },
+          {
+            "shift": 16,
+            "sign": -1
+          },
+          {
+            "shift": 18,
+            "sign": 1
+          },
+          {
+            "shift": 18,
+            "sign": -1
+          },
+          {
+            "shift": 19,
+            "sign": 1
+          },
+          {
+            "shift": 19,
+            "sign": -1
+          },
+          {
+            "shift": 20,
+            "sign": 1
+          },
+          {
+            "shift": 20,
+            "sign": -1
+          },
+          {
+            "shift": 21,
+            "sign": 1
+          },
+          {
+            "shift": 21,
+            "sign": -1
+          },
+          {
+            "shift": 22,
+            "sign": 1
+          },
+          {
+            "shift": 22,
+            "sign": -1
+          },
+          {
+            "shift": 23,
+            "sign": 1
+          },
+          {
+            "shift": 23,
+            "sign": -1
+          },
+          {
+            "shift": 25,
+            "sign": 1
+          },
+          {
+            "shift": 25,
+            "sign": -1
+          },
+          {
+            "shift": 26,
+            "sign": 1
+          },
+          {
+            "shift": 26,
+            "sign": -1
+          },
+          {
+            "shift": 27,
+            "sign": 1
+          },
+          {
+            "shift": 27,
+            "sign": -1
+          },
+          {
+            "shift": 28,
+            "sign": 1
+          },
+          {
+            "shift": 28,
+            "sign": -1
+          },
+          {
+            "shift": 30,
+            "sign": 1
+          },
+          {
+            "shift": 30,
+            "sign": -1
+          },
+          {
+            "shift": 31,
+            "sign": 1
+          },
+          {
+            "shift": 31,
+            "sign": -1
+          }
+        ],
+        "pattern_compatible_rotations_count": 56,
+        "processed_compatible_nonzero_tail_rotations": [
+          {
+            "guess_ids": [
+              28
+            ],
+            "processed_guess_ids": [
+              28
+            ],
+            "shift": 13,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "processed_guess_ids": [
+              3
+            ],
+            "shift": 13,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "processed_guess_ids": [
+              22
+            ],
+            "shift": 14,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "processed_guess_ids": [
+              9
+            ],
+            "shift": 14,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "processed_guess_ids": [
+              18
+            ],
+            "shift": 15,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "processed_guess_ids": [
+              13
+            ],
+            "shift": 15,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "processed_guess_ids": [
+              16
+            ],
+            "shift": 16,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "processed_guess_ids": [
+              15
+            ],
+            "shift": 16,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "guess_ids": [
+              28
+            ],
+            "processed_guess_ids": [
+              28
+            ],
+            "shift": 20,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "processed_guess_ids": [
+              3
+            ],
+            "shift": 20,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "processed_guess_ids": [
+              22
+            ],
+            "shift": 21,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "processed_guess_ids": [
+              9
+            ],
+            "shift": 21,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "processed_guess_ids": [
+              18
+            ],
+            "shift": 22,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "processed_guess_ids": [
+              13
+            ],
+            "shift": 22,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "processed_guess_ids": [
+              16
+            ],
+            "shift": 23,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "processed_guess_ids": [
+              15
+            ],
+            "shift": 23,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "processed_compatible_nonzero_tail_rotations_count": 16,
+        "processed_compatible_rotations": [
+          {
+            "guess_ids": [
+              28
+            ],
+            "processed_guess_ids": [
+              28
+            ],
+            "shift": 13,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "processed_guess_ids": [
+              3
+            ],
+            "shift": 13,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "processed_guess_ids": [
+              22
+            ],
+            "shift": 14,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "processed_guess_ids": [
+              9
+            ],
+            "shift": 14,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "processed_guess_ids": [
+              18
+            ],
+            "shift": 15,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "processed_guess_ids": [
+              13
+            ],
+            "shift": 15,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "processed_guess_ids": [
+              16
+            ],
+            "shift": 16,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "processed_guess_ids": [
+              15
+            ],
+            "shift": 16,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "guess_ids": [
+              28
+            ],
+            "processed_guess_ids": [
+              28
+            ],
+            "shift": 20,
+            "sign": 1,
+            "tail": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              3
+            ],
+            "processed_guess_ids": [
+              3
+            ],
+            "shift": 20,
+            "sign": -1,
+            "tail": [
+              -1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              22
+            ],
+            "processed_guess_ids": [
+              22
+            ],
+            "shift": 21,
+            "sign": 1,
+            "tail": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              9
+            ],
+            "processed_guess_ids": [
+              9
+            ],
+            "shift": 21,
+            "sign": -1,
+            "tail": [
+              0,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              18
+            ],
+            "processed_guess_ids": [
+              18
+            ],
+            "shift": 22,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              13
+            ],
+            "processed_guess_ids": [
+              13
+            ],
+            "shift": 22,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "guess_ids": [
+              16
+            ],
+            "processed_guess_ids": [
+              16
+            ],
+            "shift": 23,
+            "sign": 1,
+            "tail": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "guess_ids": [
+              15
+            ],
+            "processed_guess_ids": [
+              15
+            ],
+            "shift": 23,
+            "sign": -1,
+            "tail": [
+              0,
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "processed_compatible_rotations_count": 16,
+        "trial_id": 0,
+        "valid_partition": true
+      }
+    ]
+  },
+  "end_to_end_passed": true,
+  "equivalence": {
+    "shift": 14,
+    "sign": -1
+  },
+  "failure_category": null,
+  "instance_id": "instance_03",
+  "online_status": "success",
+  "provenance": {
+    "call_id": 1,
+    "candidate_index": 0,
+    "completed_call_verified": true,
+    "guess": [
+      0,
+      -1,
+      0,
+      0
+    ],
+    "lattice_membership_verified": true,
+    "partition_verified": true,
+    "reason": null,
+    "reconstruction_verified": true,
+    "residual_norm_sq": 5,
+    "source_is_slicer": true,
+    "target": [
+      -2,
+      1,
+      1,
+      -1,
+      1,
+      0,
+      -1,
+      2,
+      -1,
+      -1,
+      1,
+      -1,
+      0,
+      1,
+      -2,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      -2,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "target_id": 9,
+    "target_verified": true,
+    "trace_verified": true,
+    "trial_id": 0,
+    "v": [
+      -2,
+      1,
+      1,
+      -1,
+      1,
+      0,
+      -1,
+      2,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      2,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      -2,
+      1,
+      1,
+      -1,
+      1,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "public_sha256": "f1f53e797b9bd9c797222f73c184f8e348481ed8547b2b37a5b0b4c540168fb0",
+  "schema": "ntru-e2e-evaluation-v1",
+  "source_is_slicer": true,
+  "success": true
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "ntru-phase2c-files-v1",
+  "phase": "2C",
+  "new_implementation_and_test_file_count": 6,
+  "implementation_and_test_files": [
+    {
+      "path": "experiments/ntru_hybrid_comparison/progress.py",
+      "change": "added",
+      "sha256": "d5692a96b4fb664e418ee0ba8e010a0d6bb0d034cda936cff74a2f58a124ee8e"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/fixed_backend.py",
+      "change": "added",
+      "sha256": "61ab756bd527b6de8742e17b1a76d3807c287183f7a33147e0306aa88d4883af"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/paired_decode.py",
+      "change": "added",
+      "sha256": "5128032b15f2558c4ee1ebfd1d95ad70d1c30e80a65fca9238a67eda1d724c69"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_progress.py",
+      "change": "added",
+      "sha256": "23fad79dad14ee1b4178acf9e0aec87678ec83db4671e9c460ddd32596ed773a"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_fixed_backend.py",
+      "change": "added",
+      "sha256": "6a9844f878a97396c31b8e47d3659a90239dcf1082355feffb30b3acb8ac3610"
+    },
+    {
+      "path": "experiments/ntru_hybrid_comparison/tests/test_paired_decode.py",
+      "change": "added",
+      "sha256": "53f5a77cf38f937a1214fc6ee3af50253fa9a1de71bd7b50df8aa75349dfd517"
+    }
+  ],
+  "modified_existing_implementation_files": [],
+  "additional_result_script": "real_check.py",
+  "new_small_test_input": "micro_n15_d28.public_input.json",
+  "existing_untracked_content_preserved": true,
+  "committed_or_pushed": false
+}

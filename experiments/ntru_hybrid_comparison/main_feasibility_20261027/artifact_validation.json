@@ -1,0 +1,37 @@
+{
+  "schema": "ntru-main-feasibility-artifact-validation-v1",
+  "checked_utc": "2026-10-27T09:47:37.558835+00:00",
+  "all_passed": true,
+  "protected_file_count": 1888,
+  "frozen_source_input_runtime_count": 237,
+  "protected_mismatches": [],
+  "source_mismatches": [],
+  "report_links_valid": true,
+  "missing_links": [],
+  "independent_posthoc_checks_passed": true,
+  "posthoc_coverage_independently_reproduced": [
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      2
+    ]
+  ],
+  "actual_main_trials": 3,
+  "automatic_reruns": 0,
+  "parameters_revised_during_execution": false,
+  "git": {
+    "branch": "experiments/ntru-e2e-phase1",
+    "head": "452be18c741a2d81c106d3bfe3847428ed57229b",
+    "status": "?? experiments/\n?? main.pdf"
+  }
+}

@@ -1,0 +1,845 @@
+{
+  "scope": "Synthetic context manifest example; not an experimental key, chosen pattern, target generation or decoder submission",
+  "batch": {
+    "schema": "ntru-hybrid-candidate-batch-v1",
+    "context": {
+      "instance_id": "static-count-check-not-an-attack-instance",
+      "public_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "n": 16,
+      "tail_positions": [
+        7,
+        1,
+        12,
+        3
+      ]
+    },
+    "public_sha256_scope": "canonical public-v1 JSON content, not file bytes",
+    "policy": {
+      "mode": "full_nonzero",
+      "max_weight": null
+    },
+    "order": "weight_ascending/support_lexicographic/sign_lexicographic(-1,+1)",
+    "counts": {
+      "theoretical_full_nonzero_count": 80,
+      "generated_raw_count": 80,
+      "policy_kept_count": 80,
+      "exact_unique_count": 80,
+      "projection_group_count": null,
+      "submitted_count": 0,
+      "completed_count": 0
+    },
+    "count_definitions": {
+      "theoretical_full_nonzero_count": "3**kappa - 1; theoretical, not generated",
+      "generated_raw_count": "actual entries generated or received, before filtering",
+      "policy_kept_count": "entries satisfying the nonzero weight policy, before exact deduplication",
+      "exact_unique_count": "complete integer tail vectors after exact deduplication, keep first",
+      "projection_group_count": "backend projection groups; null until actually computed",
+      "submitted_count": "external targets actually submitted to a decoder; zero in phase 2A",
+      "completed_count": "external targets returned with an explicit decoder status; zero in phase 2A"
+    },
+    "ordered_sha256": "d7d33e04585d74b82c1d29f2415439028295cfe52436098be434606a46703a6d",
+    "ordered_sha256_scope": "context plus ordered complete tails and candidate IDs; excludes policy/run progress",
+    "candidates": [
+      {
+        "candidate_id": "6a11a2a135cd8ab547642f42ec8ee89f0ed726a5ead3feb2feda2e17c73c8669",
+        "u": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "5327770974313bc7773429cbe66e92c39856d72e27e6dd489546217d71c348ac",
+        "u": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "1e212b01445175a6c859d9ef6a79d17eecc51238464ecdc14eaddedce7892827",
+        "u": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "eb8be1f81c1f7d0a473e19a1aa280ab50ec659a59fe0e2a0892fc4dd7bb13ce7",
+        "u": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "ba4a08dda4b1107a4d77f34dab07f3b4e0efa60276820d3ddc357ac276b0f254",
+        "u": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "16927cb27c109a7bf55b235caa6f2c13c371babe3e9bd1d7b122a526bb010aa5",
+        "u": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "059a8d0a965ce27408d1ca5fe78f2403096d4d5b0da75114be83df15c4205b7d",
+        "u": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "950d5e8d80a268b6033ace312dbacd91de6b8d238e186a272192521b30507a7a",
+        "u": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "weight": 1
+      },
+      {
+        "candidate_id": "225f8d1e75abfa706808464ccb14c58f017ed7f04dd40588acf644bb6a640bd0",
+        "u": [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "65c52d4924491f31012c1ec9eaba9221a1de1fb48e53b41f631d06591f56593b",
+        "u": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "db0b39a47ff662d8832cacfa529a50e0b1a645ad44e6a56b617ab8dc435e5e06",
+        "u": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "554dc91fe3de0b07ae7104c169e98ea39cd2ca5da7fc372cfa6095cd4221caac",
+        "u": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "1bd64febcb26adb62b1e1db2a235b7a55f252140c4d8855a698616ad06e9b9fa",
+        "u": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "61abea47dd3f84df146d7453a1a81fe6edb1c479c9fe5f9d698df84e3a30ec00",
+        "u": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "b53b04c4e2968618b16af9d4d15729ab5378aeea35172c74270aeed9bd8ad8ff",
+        "u": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "790572306e92b026ede5fe05a801d14df1b5de91471418947c7e4e5e300031d9",
+        "u": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "8fe1a493774614c6c74e83554a00a9642d32b31dfcd270d9dc3b2d07ae678c55",
+        "u": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "49227cf2adc46aec07e959e595aa5a93d5452871aef346aaf20a4d35e034d3df",
+        "u": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "62b833545b1dbfae7c5a08bc0013969ba4adb06a13a1863426ea058e48b576f7",
+        "u": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "9589601bace66107e3f8d8efcf94bc8cbc6ba6a0b666679b0a1d9b0f7c11ddd4",
+        "u": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "c891517339a322189f977aff38a7e291a2ce41f8788fd2019b16b5739eb6b486",
+        "u": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "04a25e7b7826465fe82bb66073f24c4245cf449a17e57c56847febed7ee463e8",
+        "u": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "b176f7aca96ba4a184e2cff493ca6de7ccd1f2cf5a16e1e6ed0c70bd88021663",
+        "u": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "240f345160ecd9a15bee9f1e51f8a5e8add4c97ea0dfd3c675d465945c1b390e",
+        "u": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "07cafeb7786d275237ef615c29b3d2854b89a3dba125a44b697f0f8b0005b57e",
+        "u": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "12a6d6a909ee9e6570dc73ed16ea09bd1fbcc4d46da339fbb8c568c845a49a5f",
+        "u": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "1990526be9e4b9ad502cc25bb4451c466d52684812a2ff6c9f2a152acd4f4173",
+        "u": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "88b6667fd12029eb8c512600da826449e396f13b8fd1be6c2517fdf470e449e3",
+        "u": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "fce45966402aec1bdfc450487784237e322d256520ce3d88a5d23347c3c2ce2a",
+        "u": [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "8b31797dcf7b15b2e4490541b26ae29a4560a05f07f8ece2d50c3257760014f2",
+        "u": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "504d7623ff214b8917e8e3b0df9a1f4b121207adba87a03eed5178c67d0430b1",
+        "u": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "0582aa46ad2f478576e104e5053eb03065107b5853a46757406f11a4e32b069f",
+        "u": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "weight": 2
+      },
+      {
+        "candidate_id": "81b4aedc783ec9050a292339df235bad4f0908c9a927ac0474a2f2b89a5ebb98",
+        "u": [
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "b19aefedbf08ca4d7f48494fd33b453b74b57d2d6919dc3d705f7da5c854e08f",
+        "u": [
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "7613a3454b690236dac2b46fca9160defdbb8352d7db9df207adb83725bc32d7",
+        "u": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "d029ba1e7c785bf5924bb8d9de5e7ef4a52c2f6920d0b440e008884539a69a5c",
+        "u": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "95a1af8a83eaecc61fee35f566d0101b3ebf13fc525e9cfa71358581a574f585",
+        "u": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "7fbb65b2b22ab119f05f8e0167dda9f748346bf0b04d179c60a623d89e0caf8c",
+        "u": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "7a65aa4c42196893e32903027ab700d8a758678cbcc1b6e19f10860e0d27abdd",
+        "u": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "b16f0119e1638475812397be007e8324eb949b3869f1a164ced0aa36b9c370ec",
+        "u": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "438abfc07af7cc2073d8de393f7bf00449dadf54f47e1581e061fdb64beb0f31",
+        "u": [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "b30adcd300c584c90abf1c5b9ef1cfda12f04065929e661d0f5d069de7909f38",
+        "u": [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "1da7c0358ad8789774ecaa22e13476e74513655b2867cf036cb8fe13ebb6d1e7",
+        "u": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "e27ee7de6d26b25fb3eb622005a12416a068aa60e2d717eeaa1515274a6d3d5e",
+        "u": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "6682df666c2c18bd919bc83ba4cb8a811392225b14e3aa518169e4076988203f",
+        "u": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "35a976fa8be344e3ddeb6f29cf200f2c4acf5dd2684c76544492776ec5c76b5a",
+        "u": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "92724ccef7a0c2d0365e15b1ae5c0b53991dbdf6d0f6f4c5a7aac9fc02b48221",
+        "u": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "68401649f5cd597cd0e83518fc9ae77777ae6ee6c4cf17054e20ac7aebe64d0f",
+        "u": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "29eb5af8b4047f236dae78e8c75d44bd07d9d1c1063ba6d61f098f6c1b1b7316",
+        "u": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "4194b5f91fdc17983d53832d5cd0cdd50c7e04c14c8f5c86216bb092a2b53e59",
+        "u": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "36fbe8b01ca434eee01bce7d667671028a2b307a4d46a3113e83b7f918fc54a2",
+        "u": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "d7c8c114d55f2c99fb838ebc8ba2bd8780dbae824f55ec02b59c276008ee8351",
+        "u": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "589de6c458961930fa6ebf756f87fd897ba45c94c23be76aecdfa93992b578a8",
+        "u": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "bd0b926eb75b977e4ffd320a3600a6ebadd30a03b0029ca22fe723c68aa926ac",
+        "u": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "e09dfb8e33ca2e73e62e25e7150ac903e0d9c8d23d6145ca5a0c975f95ecf34d",
+        "u": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "60451d6a6d08ebf8ab16dc1c4a78a799c6cb03d8b4bffa70ea9adc4c71bb137f",
+        "u": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "2d99f7f8ef8d4eef081fad096108b7112258465f3e21a9564c4db112b994cb8d",
+        "u": [
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "7e708485d50bb4524defe76a596dc41b7fca1bf5b9c6fc79f9b2fd35d8cc3d4c",
+        "u": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "0bb1de830e25a67dfdbf81044296554676941768d1a2ee7c465297be11033659",
+        "u": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "706bfa673bd1a272113de3b8d8e2c5c503381869387ec5f259ad11b95fc895e7",
+        "u": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "c35e11f7f0745f2a8defad5ed947fb2fdac783f43dde27e18fb42e46e0966677",
+        "u": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "2e38a7c4caed12ec23d8fa96b885b7cb3a6c0c0b4c25b6e537aced39d47ba5ce",
+        "u": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "8083cb19af49472cda8dc266d423f99d2bbd3d6d611caabbfcc0411df10deda4",
+        "u": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "84bc9b8ddc1892719a74b712ec5029a7b961499cd7931965d8f668ce8ebbb16a",
+        "u": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "weight": 3
+      },
+      {
+        "candidate_id": "410811af590aa7cb601866e005c875d59a13e50520ca5ffd0a5d428b2004b0da",
+        "u": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "5683b078c2b82434bf52d88941b2e8076c8b0533786465b28916f8e188b62daf",
+        "u": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "4af79f3c52817bbce6e08018f6cf6dd5d8cc803fbd74cc57f78a8639f8440631",
+        "u": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "0bc4c87c8c7eecbb47b1e341973ddc20ced448a4059605b2c6634f8b54594e9b",
+        "u": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "03ad088474961f7b269f04e0a2feabc9956b2c3b6a7c65dd085cd5f5972948c2",
+        "u": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "7b7706978ecd4549981fc9405f171bae9df460ac1fed466a6a3a8792ccca11e3",
+        "u": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "dc76c0eef3b560af3e4cba03597d82d6b9b36e1ad33df7f90c612af49fd99239",
+        "u": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "e442bde1c3f908516ab16fdfae09d3de40ccb01cfb3e07ceb7ace66a7a9e89f7",
+        "u": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "0d4e65252f76daca77027ffe4a56af7d88b2e0f034769eca0559b6951e7a19e0",
+        "u": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "dc546c69a601450b2c70ebfe75c4e8c1f938b9727da44818c19b719e19e4f4a5",
+        "u": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "6d61423a506972dc78f819462c4e0e17a776e535de3af1e6af48b397c2ec2142",
+        "u": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "cb482150fc41ca301010227a53de743a931f40c4e3cb55f5906c9b21ad816b4c",
+        "u": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "bd9be1715b72194921a24bbc5327ab87d7e4a544de74936a3844754d11233f8b",
+        "u": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "fbd196de520eb669db95335cf4c5f27593cca6a73b7b0f788d56cf194e275565",
+        "u": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "191cd98da39ac05c3b79955a2a95bc21197ad64739a0e5ceacc2876c893ea864",
+        "u": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "weight": 4
+      },
+      {
+        "candidate_id": "0bebcdc40e44af5cc2bb99290a587ed669a17baa4d4e67aad8caa7f9d38a55b9",
+        "u": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "weight": 4
+      }
+    ]
+  }
+}

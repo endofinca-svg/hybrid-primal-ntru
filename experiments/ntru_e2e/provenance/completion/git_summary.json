@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-10-21T14:15:46.114559+00:00",
+  "branch": "experiments/ntru-e2e-phase1",
+  "head": "452be18c741a2d81c106d3bfe3847428ed57229b",
+  "remotes": "origin\tgit@github.com:endofinca-svg/hybrid-primal-ntru.git (fetch)\norigin\tgit@github.com:endofinca-svg/hybrid-primal-ntru.git (push)\n",
+  "status_short": "?? experiments/\n?? main.pdf\n",
+  "tracked_diff_stat": "",
+  "tracked_diff_empty": true,
+  "experiment_untracked": true,
+  "preserved_user_untracked_file": "main.pdf",
+  "ignored_build_paths": [
+    "experiments/ntru_e2e/.deps/"
+  ],
+  "note": "All experiment deliverables are currently untracked. No git add/commit/push performed in this continuation."
+}

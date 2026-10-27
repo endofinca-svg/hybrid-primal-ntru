@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "experiments/ntru_e2e/runs/phase2_n64_first_weight_analysis/inspect_secret_geometry.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-22T01:41:06.874565+00:00",
+  "timeout_seconds": null,
+  "stdout": "geometry_command.stdout.txt",
+  "stderr": "geometry_command.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 3.9787779090038384,
+  "cpu_seconds": 3.962359,
+  "peak_rss_kib": 23052,
+  "finished_utc": "2026-10-22T01:41:10.853146+00:00"
+}

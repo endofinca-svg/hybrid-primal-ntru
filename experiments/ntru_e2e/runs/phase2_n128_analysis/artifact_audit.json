@@ -1,0 +1,41 @@
+{
+  "schema": "ntru-e2e-phase2-artifact-audit-v1",
+  "recorded_utc": "2026-10-22T03:08:58.898364+00:00",
+  "selected_case_ids": [
+    "n128_w12_24",
+    "n128_w8_16"
+  ],
+  "inventory_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/online_inventory.json",
+  "inventory_sha256": "990adb6738d6e4c013aa02b5c7968e7e43a5442a416a9a550abfd79ac9fefa96",
+  "evaluation_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2_n128_analysis/evaluation_phase2.json",
+  "evaluation_sha256": "79c3cba5e996e9d42b3cef6ea18285a5b3d2efa9d9ba7dbf1dc31ecb9c700b7c",
+  "phase1_preservation": {
+    "checked_file_count": 135,
+    "changed": [],
+    "missing": [],
+    "passed": true
+  },
+  "scheduled_trials": 8,
+  "recorded_trials": 8,
+  "trial_status_counts": {
+    "timeout": 8
+  },
+  "instrumentation_trial_counts": {
+    "v2": 8
+  },
+  "all_baselines_precede_sieve_trials": 0,
+  "instances_with_both_patterns_recorded": 2,
+  "stored_candidate_count": 0,
+  "issues": [],
+  "passed": true,
+  "result_sha256": {
+    "n128_w8_16/instance_01/b20_s32_p0.result.json": "22647c5b07a7ac6c39ecd207466edec88c30415d280c64bfb5726c2c1c67a70b",
+    "n128_w8_16/instance_01/b20_s32_p1.result.json": "e7d28b45788b7d506058e524940088868413381dda27eef5a3b9f587ccf4d402",
+    "n128_w8_16/instance_01/b25_s40_p0.result.json": "4dfec7c0f1f086dbfda5c982e81afd2f0276809d998d504f51b2505ffa4a41a3",
+    "n128_w8_16/instance_01/b25_s40_p1.result.json": "f7fb48524847cc7e9657c3ffb1ab0bceb727a327e7ec4c91dfc90bf1d69681d0",
+    "n128_w12_24/instance_01/b20_s32_p0.result.json": "fec7a3b3bca8dbed5d76c9685001513917636a771e0dd00b69575cf3bf57042c",
+    "n128_w12_24/instance_01/b20_s32_p1.result.json": "f2a22aef4fc64d973189dba7958ff6b9cd6584d49c4265c23a103ea4b594bf66",
+    "n128_w12_24/instance_01/b25_s40_p0.result.json": "309dae7b44a913dba6e6fcf29cefcf557501d30e00edb7435bff989c4fd1bb26",
+    "n128_w12_24/instance_01/b25_s40_p1.result.json": "e31e33aff6a446a9199931b90151b2c40d7c3ae6cfba11fcfddabe44aadbf9b4"
+  }
+}

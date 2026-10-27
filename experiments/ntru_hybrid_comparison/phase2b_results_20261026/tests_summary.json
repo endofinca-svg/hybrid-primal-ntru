@@ -1,0 +1,12 @@
+{
+  "tests_run": 91,
+  "passed": 91,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "runner_seconds": 1.816,
+  "exit_code": 0,
+  "timeout": false,
+  "success": true,
+  "scope": "pure correctness tests; no real backend reductions or decoding"
+}

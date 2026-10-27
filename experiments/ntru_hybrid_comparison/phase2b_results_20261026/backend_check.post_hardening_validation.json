@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "validation_only": true,
+  "additional_reduction_calls": 0,
+  "additional_gso_creation_calls": 0,
+  "execution_record_valid": true,
+  "original_package_valid": true,
+  "reduced_package_valid": true,
+  "current_reduction_sha256": "9bf04f0416a28f6c956534caca17ebabc8f849300283482cbdd7be63b8f7844b",
+  "real_execution_source_snapshot": "backend_check.sources_at_execution.json",
+  "source_change_after_real_execution": "Only saved-record validator hardening and targeted tests; execution algorithm unchanged. The saved real output was revalidated without running any additional reduction."
+}

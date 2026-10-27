@@ -1,0 +1,5 @@
+{"case": "legacy_E_full", "status": "completed", "completed": 2, "valid_targets": 2, "kernel_calls": 0, "stop_reason": "full_batch_finished"}
+{"case": "micro_E_full", "status": "completed", "completed": 2, "valid_targets": 2, "kernel_calls": 0, "stop_reason": "full_batch_finished"}
+{"case": "micro_D_full", "status": "completed", "completed": 2, "valid_targets": 2, "kernel_calls": 1, "stop_reason": "full_batch_finished"}
+{"case": "micro_E_first", "status": "completed", "completed": 1, "valid_targets": 1, "kernel_calls": 0, "stop_reason": "first_public_valid"}
+{"case": "micro_D_first", "status": "completed", "completed": 1, "valid_targets": 1, "kernel_calls": 1, "stop_reason": "first_public_valid"}

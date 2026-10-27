@@ -1,0 +1,16 @@
+{
+  "schema": "ntru-phase2a-sealed-integrity-v1",
+  "checked_utc": "2026-10-26T12:24:17.082586+00:00",
+  "phase": "2A",
+  "before_evidence": "preflight.json",
+  "protected_file_count": 1681,
+  "sha256_checked_file_count": 1681,
+  "changed_files": [],
+  "private_metadata_checked_count": 1,
+  "private_metadata_changes": [],
+  "private_contents_read": false,
+  "stage1_output_changed_at_preflight": [],
+  "stage1_source_changed_at_preflight": [],
+  "intact": true,
+  "scope_note": "Phase1 audit, historical A/B files, frozen experiment sources/configs/docs and Slicer backend source/extensions as enumerated by preflight protected_sha256. Private reference file compared by size/mtime_ns/inode only; no content digest assertion."
+}

@@ -1,0 +1,2 @@
+/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/phase2_adapter.py:186: UserWarning: Dimension of lattice is larger than maximum supported. To fix this warning, change the value of MAX_SIEVING_DIM in siever.h and recompile.
+  self.g6k = Siever(self.G, params, seed=self.seed)

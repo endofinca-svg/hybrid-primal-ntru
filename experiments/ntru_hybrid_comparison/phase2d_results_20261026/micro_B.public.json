@@ -1,0 +1,18 @@
+{
+  "schema": "ntru-e2e-public-v1",
+  "instance_id": "phase2d-hand-public-n4",
+  "n": 4,
+  "q": 17,
+  "ring": "x^n+1",
+  "h": [
+    16,
+    1,
+    0,
+    0
+  ],
+  "distribution": {
+    "kind": "fixed_weight_ternary",
+    "w_f": 1,
+    "w_g": 2
+  }
+}

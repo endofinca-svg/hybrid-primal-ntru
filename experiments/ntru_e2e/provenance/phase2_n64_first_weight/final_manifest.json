@@ -1,0 +1,50 @@
+{
+  "schema": "ntru-e2e-phase2-n64-final-manifest-v1",
+  "recorded_utc": "2026-10-22T01:13:27.334316+00:00",
+  "case_ids": [
+    "n64_w4_8"
+  ],
+  "new_online_trials": 0,
+  "original_full_run_status_preserved": "evaluation_failed",
+  "scoped_completion_status": "finished",
+  "tests": {
+    "passed": 95,
+    "subtests_passed": 57
+  },
+  "files_sha256": {
+    "PHASE2_REPORT.md": "1e04ee4bc05dc0b17f996da13f104e58bad113223ae5104da01521170a9f79ed",
+    "audit_phase2.py": "7bbc26898753eaa695d5ee623dd02e7fd642272a9c4a7ff13cd8bdfe04cb1fd1",
+    "complete_phase2_n64.py": "8e63f987e89c59a449e3d068b7df10ec625ec4a95d5a3b8f1b3c3dd53e1a95d3",
+    "evaluate_phase2.py": "1ba263b11dcf160fa6e9fc6eace5df650359fa8e8f3fcef6d14deb05d54cbb5e",
+    "provenance/phase2_n64_first_weight/completed_resume_check.command.json": "87235225db55d9b81a16be37db7c255e619ab502c018529abb97c90823b18e4e",
+    "provenance/phase2_n64_first_weight/completed_resume_check.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provenance/phase2_n64_first_weight/completed_resume_check.stdout.txt": "b0f1a2d0194e9c87019f5350da3a52c2c068ff4eb8156c763c6da5b42be27155",
+    "provenance/phase2_n64_first_weight/offline_continuation.command.json": "ecc3ca4990e359f747fcd22270a2644e66ef6d654308bae823e7ca080dda6a1f",
+    "provenance/phase2_n64_first_weight/offline_continuation.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provenance/phase2_n64_first_weight/offline_continuation.stdout.txt": "b0f1a2d0194e9c87019f5350da3a52c2c068ff4eb8156c763c6da5b42be27155",
+    "provenance/phase2_n64_first_weight/preflight_tests.command.json": "06a7a3e0a6fbbcef3726c8f38686c2fdd387a621e6628d93a59ad0553e3ea770",
+    "provenance/phase2_n64_first_weight/preflight_tests.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provenance/phase2_n64_first_weight/preflight_tests.stdout.txt": "ea7a1ec65dc9d9bb987645efd53a07da50a0a11e06ce0bd92ee728fad81f4e5d",
+    "runs/phase2_n64_first_weight/arms.csv": "0f50cc24bb6636d798944eda1756e858c81bb9b01102628b012ccb8b1a7457f8",
+    "runs/phase2_n64_first_weight/artifact_audit.json": "70435ffef40fae8d70dff366fb8b7d2fec30c6299e5b2cacf5f35475e0ab4f39",
+    "runs/phase2_n64_first_weight/audit_phase2.command.json": "f61cb1e12713fe0a39918e5f0410c6ffd64a124b4dc660d02f6b8a199973354c",
+    "runs/phase2_n64_first_weight/audit_phase2.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/phase2_n64_first_weight/audit_phase2.stdout.txt": "527744f59405a1d0876ba75d18765a85c543f6e5ae78c7cca8682fb1a7d456f3",
+    "runs/phase2_n64_first_weight/completion.json": "b0f1a2d0194e9c87019f5350da3a52c2c068ff4eb8156c763c6da5b42be27155",
+    "runs/phase2_n64_first_weight/config_phase2.json": "3e55f67477e2d2647911c8244b9e3c93049c4e2b9354b3d215e546b43148bcf6",
+    "runs/phase2_n64_first_weight/evaluate_phase2.command.json": "87d5cd053528dce16e8dc1c8cfd132e6b6ecf3d0f511b7c5434dfae14b7b4dd0",
+    "runs/phase2_n64_first_weight/evaluate_phase2.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/phase2_n64_first_weight/evaluate_phase2.stdout.txt": "c3cd2955972f669c4aa9e1c45a3389d40fea8ff9d721b9764382395eb5405257",
+    "runs/phase2_n64_first_weight/evaluation_phase2.json": "b7409ffcbefd0754c351bc189711bec1707db7fe7ef7720edf50c2d35b0b3223",
+    "runs/phase2_n64_first_weight/offline_sources/audit_phase2.py": "7bbc26898753eaa695d5ee623dd02e7fd642272a9c4a7ff13cd8bdfe04cb1fd1",
+    "runs/phase2_n64_first_weight/offline_sources/complete_phase2_n64.py": "8e63f987e89c59a449e3d068b7df10ec625ec4a95d5a3b8f1b3c3dd53e1a95d3",
+    "runs/phase2_n64_first_weight/offline_sources/evaluate_phase2.py": "1ba263b11dcf160fa6e9fc6eace5df650359fa8e8f3fcef6d14deb05d54cbb5e",
+    "runs/phase2_n64_first_weight/online_config.json": "2b55256addfb959d11a6033e44b91e6331341c94fd2c0e1945c7166542384f7d",
+    "runs/phase2_n64_first_weight/schedule_selected.json": "87d257e3fa6e862e9ba0f1095eb678f40672f173fb5ec8df004c5d907af797e8",
+    "runs/phase2_n64_first_weight/scope_frozen.json": "91e0c127e1629bb3a9fc09584ec5c32bba136d0bd33e1775ff64652e880e2d05",
+    "runs/phase2_n64_first_weight/trials.csv": "d1c7a30b5d2b620d07b20a3e0633b1260101df4266b739a13acb85eb436334c2",
+    "tests/test_phase2_audit.py": "3b63c848a17a4b15d50c2f7c3e896ceb77cff5930bfe6079a41a5c31d84aa8d9",
+    "tests/test_phase2_completion.py": "557eae2a3ccb0cef5114576005a88693df93efadd8244cc515465de931703bf1",
+    "tests/test_phase2_evaluate.py": "a11852b2d4664a72eb54b38eb864966481837faf22e819441c62acac79b3e2c2"
+  }
+}

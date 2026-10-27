@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "experiments.ntru_hybrid_comparison.guarded",
+    "--plan",
+    "experiments/ntru_hybrid_comparison/phase2d_results_20261026/small.plan.json",
+    "--output",
+    "experiments/ntru_hybrid_comparison/phase2d_results_20261026/small_run"
+  ],
+  "outer_safety_timeout_seconds": 75,
+  "in_process_global_budget_seconds": 70,
+  "sum_trial_budgets_seconds": 60,
+  "started_utc": "2026-10-27T08:18:48.241899+00:00",
+  "sources": "small.sources.json",
+  "stdout": "small.stdout.txt",
+  "stderr": "small.stderr.txt",
+  "lattice_runs": "exactly one B and one D/E pair; no rerun/tuning"
+}

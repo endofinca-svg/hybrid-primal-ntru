@@ -1,0 +1,9 @@
+{
+  "upstream_commit": "bd72687b2ebbaff16fb692259f83b327bbcd9586",
+  "patch_sha256": "e17fe06b6fb3d8695fcac6cfdb280a354080dae3cff4e5532cde81ec2599d34d",
+  "application": "applied",
+  "repeat": "already_applied",
+  "upstream_blob_sha256": "a9737d136053dac291f6ab1d5293ef412d9e66fdf00a3e1ed364549ec768caaf",
+  "patched_blob_sha256": "557212569e09b9550d000452669a1fffb57e91519e18f43454cd74790408bed1",
+  "checkout": "temporary copy only; existing .deps read using git show"
+}

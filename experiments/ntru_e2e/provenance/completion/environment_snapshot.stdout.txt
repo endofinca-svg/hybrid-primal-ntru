@@ -1,0 +1,66 @@
+{
+  "python": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:29:10) [GCC 14.3.0]",
+  "executable": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+  "prefix": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv",
+  "base_prefix": "/home/inca/miniforge3/envs/g6k",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "compiler": "gcc -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat",
+  "compiler_version": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "upstream_commit": "bd72687b2ebbaff16fb692259f83b327bbcd9586",
+  "upstream_url": "https://github.com/ElenaKirshanova/g6k_hybrid.git",
+  "runtime": {
+    "python": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "base_python": "/home/inca/miniforge3/envs/g6k/bin/python",
+    "source": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "upstream_commit": "bd72687b2ebbaff16fb692259f83b327bbcd9586",
+    "environment": {
+      "PYTHONNOUSERSITE": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "PATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin:/home/inca/miniforge3/envs/g6k/bin:/home/inca/.local/bin:/home/inca/.codex/tmp/arg0/codex-arg0OJtquq:/home/inca/.vscode-server/cli/servers/Stable-6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/inca/.vscode-server/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64",
+      "PYTHONPATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid:/home/inca/hybrid primal multi decoding for NTRU"
+    },
+    "isolation": "Independent venv, read-only system-site-packages from base conda env; local source rebuilt."
+  },
+  "patch_sha256": "e17fe06b6fb3d8695fcac6cfdb280a354080dae3cff4e5532cde81ec2599d34d",
+  "modules": {
+    "fpylll": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/__init__.py",
+    "g6k": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/__init__.py",
+    "g6k.siever": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/siever.cpython-310-x86_64-linux-gnu.so",
+    "g6k.slicer": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/slicer.cpython-310-x86_64-linux-gnu.so",
+    "numpy": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/__init__.py",
+    "Cython": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/Cython/__init__.py",
+    "cysignals": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/cysignals/__init__.py"
+  },
+  "versions": {
+    "fpylll": "0.6.4",
+    "numpy": "2.2.6",
+    "Cython": "3.2.4",
+    "cysignals": "1.12.5",
+    "pytest": "9.0.2",
+    "setuptools": "79.0.1"
+  },
+  "source_files_sha256": {
+    "README.rst": "33786d22c455754b06ea61e45af9936ca89828b111bf2394adc0a883c4581d9d",
+    "setup.py": "a14669fd793ceb121297f2807e79b8b19b28626f7a8a0da709498f819ef79815",
+    "configure.ac": "c3c396919f4c6ec3e7357528e8d7a5550098c10a4c72eb8090ea74427b7a2261",
+    "hybrid_attack.py": "24d86fc41b5e07d4b0596b19b5d8eb5f4a30e376063c01fc48968e635d8e4b0b",
+    "run_prog_hyb.py": "07ed044ed4dbc28ca85930433857141838ce44eb7179b64c9260e18936d0aa1d",
+    "tailBDD.py": "8d6032fba3f94f2c4cc0a68cc31b0951f0a7140898017f525b0dc098c755bac0",
+    "g6k/slicer.pyx": "e503c49171d191de7b56ac3cb94791a83012144e2754ecc53c595264e19e5d5b",
+    "kernel/slicer.cpp": "a45ce6c130b6ab88c6515ad6721b778525df007bc8a9b6b8c97ccbf4a47f4b40",
+    "kernel/hash_table.inl": "557212569e09b9550d000452669a1fffb57e91519e18f43454cd74790408bed1",
+    "utils.py": "d45e0ff52b2901b07e1dcd0fac5e08e6ce826b4366ad0e623475288b1cfc092c",
+    "LICENSE": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad"
+  },
+  "extension_sha256": {
+    "g6k.siever": "ab8bf82195da61ab254e09dcc6bb71b2919ac78ec9953220e510fefb66a22bc3",
+    "g6k.slicer": "17218c3bebe3212c282a5af31e81ebf231f76db0e3c3447e6c90b652d3a6b610"
+  },
+  "max_sieving_dimension": 64,
+  "isolation": "Separate experiment venv and rebuilt local G6K; read-only shared base dependency packages, not a hermetic dependency snapshot."
+}

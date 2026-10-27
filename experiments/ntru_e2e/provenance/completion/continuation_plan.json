@@ -1,0 +1,21 @@
+{
+  "schema": "ntru-e2e-completion-plan-v1",
+  "recorded_utc": "2026-10-21T14:07:42.799229+00:00",
+  "unchanged_config_sha256": "d02b2b8cc04ec23dd8100c1bb88f3835ff8bd3cbdef643d16496b568960461d8",
+  "preserved_result": "instance_01.result.json",
+  "preserved_online_wall_seconds": 300.81439143699936,
+  "remaining_instances": [
+    "instance_02",
+    "instance_03"
+  ],
+  "attack_seeds": [
+    10002,
+    10003
+  ],
+  "per_remaining_command_budget_seconds": 300,
+  "per_remaining_worker_budget_seconds": 295,
+  "supervisor_allowance_seconds": 5,
+  "total_online_cap_seconds": 1800,
+  "maximum_online_wall_seconds_including_prior": 900.8143914369994,
+  "reason": "Continue the unrun fixed seeds after minimal UID repair; seed 1 exhausted its original per-instance budget and will not be retried. No private reference is consumed by online commands."
+}

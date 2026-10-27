@@ -1,0 +1,31 @@
+{
+  "schema": "ntru-e2e-phase2-artifact-audit-v1",
+  "recorded_utc": "2026-10-22T03:08:58.898364+00:00",
+  "selected_case_ids": [
+    "n128_w12_24",
+    "n128_w8_16"
+  ],
+  "inventory_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/online_inventory.json",
+  "inventory_sha256": "990adb6738d6e4c013aa02b5c7968e7e43a5442a416a9a550abfd79ac9fefa96",
+  "evaluation_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2_n128_analysis/evaluation_phase2.json",
+  "evaluation_sha256": "79c3cba5e996e9d42b3cef6ea18285a5b3d2efa9d9ba7dbf1dc31ecb9c700b7c",
+  "phase1_preservation": {
+    "checked_file_count": 135,
+    "changed": [],
+    "missing": [],
+    "passed": true
+  },
+  "scheduled_trials": 8,
+  "recorded_trials": 8,
+  "trial_status_counts": {
+    "timeout": 8
+  },
+  "instrumentation_trial_counts": {
+    "v2": 8
+  },
+  "all_baselines_precede_sieve_trials": 0,
+  "instances_with_both_patterns_recorded": 2,
+  "stored_candidate_count": 0,
+  "issues": [],
+  "passed": true
+}

@@ -1,0 +1,1 @@
+{"audit_passed": true, "classification": "equivalent_secret", "output": "experiments/ntru_compare_n128_w12_w24_q97/baseline_tour2/audit.json"}

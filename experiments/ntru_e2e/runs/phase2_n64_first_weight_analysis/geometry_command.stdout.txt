@@ -1,0 +1,11 @@
+{
+  "output": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2_n64_first_weight_analysis/secret_geometry.json",
+  "completed_row_arms": {
+    "lll_rows": 11,
+    "bkz_rows": 11
+  },
+  "complete_trials_with_exact_58_row_secret_subspace": 4,
+  "compatible_nonzero_rotation_occurrences": 116,
+  "slicer_candidate_occurrences": 32,
+  "input_files_unchanged": true
+}

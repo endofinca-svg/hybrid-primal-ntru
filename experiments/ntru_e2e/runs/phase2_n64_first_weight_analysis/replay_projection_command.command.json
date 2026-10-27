@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "experiments/ntru_e2e/runs/phase2_n64_first_weight_analysis/replay_saved_projections.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-22T01:39:20.747766+00:00",
+  "timeout_seconds": 60.0,
+  "stdout": "replay_projection_command.stdout.txt",
+  "stderr": "replay_projection_command.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 8.287876456000959,
+  "cpu_seconds": 8.245441000000001,
+  "peak_rss_kib": 42256,
+  "finished_utc": "2026-10-22T01:39:29.035188+00:00"
+}

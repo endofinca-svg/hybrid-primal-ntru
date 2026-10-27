@@ -1,0 +1,12 @@
+{
+  "scope": "AST calls in actual solver/decoder path; deliberate launch boundary exists only in supervisor",
+  "detaching_or_process_launch_calls": {
+    "standalone_worker.py": [],
+    "fixed_backend.py": [],
+    "paired_decode.py": [],
+    "reduction.py": [],
+    "inputs.py": []
+  },
+  "all_absent": true,
+  "containment_limitation": "unobserved third-party setsid escape is not guaranteed; native runtime must retain session"
+}

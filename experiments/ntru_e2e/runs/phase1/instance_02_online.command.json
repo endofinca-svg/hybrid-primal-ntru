@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "python3",
+    "experiments/ntru_e2e/run_in_env.py",
+    "-m",
+    "experiments.ntru_e2e.solve",
+    "--public",
+    "experiments/ntru_e2e/runs/phase1/public/instance_02.json",
+    "--config",
+    "experiments/ntru_e2e/runs/phase1/config_phase1.json",
+    "--seed",
+    "10002",
+    "--time-limit",
+    "295",
+    "--output",
+    "experiments/ntru_e2e/runs/phase1/instance_02.result.json"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-21T14:07:42.906792+00:00",
+  "timeout_seconds": 300.0,
+  "stdout": "instance_02_online.stdout.txt",
+  "stderr": "instance_02_online.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 2.734349393998855,
+  "cpu_seconds": 2.694594,
+  "peak_rss_kib": 80084,
+  "finished_utc": "2026-10-21T14:07:45.640970+00:00"
+}

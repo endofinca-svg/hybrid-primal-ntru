@@ -1,0 +1,10 @@
+.deps/
+__pycache__/
+*.pyc
+*.pkl
+*.so
+*.o
+core
+core.*
+# Keep text evidence despite the repository-wide *.log rule.
+!runs/**/*.log

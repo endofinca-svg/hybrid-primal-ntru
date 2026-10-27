@@ -22,3 +22,8 @@ env/
 # *.txt
 # *.png
 # *.pdf
+
+# Local experiment environments and generated private reference keys.
+experiments/**/.deps/
+experiments/**/private/
+experiments/**/*.truth.json

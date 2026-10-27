@@ -1,0 +1,620 @@
+In file included from control.cpp:23:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from sieving.cpp:21:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from bgj1_sieve.cpp:21:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from bdgl_sieve.cpp:21:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from hk3_sieve.cpp:23:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from params.cpp:21:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from cpuperf.cpp:21:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from slicer.cpp:4:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from slicer.cpp:5:
+slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+slicer.h:82:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   82 |     unsigned int n;
+      |                  ^
+In file included from siever.h:42,
+                 from slicer.cpp:4:
+slicer.h:77:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   77 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from slicer.cpp:5:
+slicer.h:46:14: warning:   when initialized here [-Wreorder]
+   46 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+In file included from slicerww.cpp:8:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarraytypes.h:1913,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarrayobject.h:12,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/arrayobject.h:5,
+                 from g6k/siever.cpp:1369:
+/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+In file included from g6k/siever_params.cpp:1354:
+g6k/../kernel/siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+g6k/../kernel/siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+g6k/../kernel/siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+g6k/../kernel/siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from g6k/siever_params.cpp:1355:
+g6k/../kernel/slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+g6k/../kernel/slicer.h:82:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   82 |     unsigned int n;
+      |                  ^
+In file included from g6k/../kernel/siever.h:42,
+                 from g6k/siever_params.cpp:1354:
+g6k/../kernel/slicer.h:77:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   77 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+g6k/../kernel/compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from g6k/siever_params.cpp:1355:
+g6k/../kernel/slicer.h:46:14: warning:   when initialized here [-Wreorder]
+   46 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+In file included from g6k/siever.cpp:1362:
+g6k/../kernel/siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+g6k/../kernel/siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+g6k/../kernel/siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+g6k/../kernel/siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from g6k/siever.cpp:1363:
+g6k/../kernel/slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+g6k/../kernel/slicer.h:82:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   82 |     unsigned int n;
+      |                  ^
+In file included from g6k/../kernel/siever.h:42,
+                 from g6k/siever.cpp:1362:
+g6k/../kernel/slicer.h:77:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   77 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+g6k/../kernel/compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from g6k/siever.cpp:1363:
+g6k/../kernel/slicer.h:46:14: warning:   when initialized here [-Wreorder]
+   46 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+In file included from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarraytypes.h:1913,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarrayobject.h:12,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/arrayobject.h:5,
+                 from g6k/slicer.cpp:1369:
+/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+In file included from g6k/slicer.cpp:1362:
+g6k/../kernel/siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+g6k/../kernel/siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+g6k/../kernel/siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+g6k/../kernel/siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from g6k/slicer.cpp:1363:
+g6k/../kernel/slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+g6k/../kernel/slicer.h:82:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   82 |     unsigned int n;
+      |                  ^
+In file included from g6k/../kernel/siever.h:42,
+                 from g6k/slicer.cpp:1362:
+g6k/../kernel/slicer.h:77:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   77 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+g6k/../kernel/compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from g6k/slicer.cpp:1363:
+g6k/../kernel/slicer.h:46:14: warning:   when initialized here [-Wreorder]
+   46 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+g6k/slicer.cpp: In function ‘PyObject* __pyx_pf_3g6k_6slicer_16RandomizedSlicer_16bdgl_like_sieve(__pyx_obj_3g6k_6slicer_RandomizedSlicer*, std::size_t, std::size_t, std::size_t, PyObject*, PyObject*)’:
+g6k/slicer.cpp:2732:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 2732 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/slicer.cpp:8696:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+ 8696 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_57extend_right(__pyx_obj_3g6k_6siever_Siever*, PyObject*)’:
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:44343:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+44343 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:44346:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44346 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:44347:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44347 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:44349:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44349 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:44350:13: warning: variable ‘__pyx_t_6’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44350 |   PyObject *__pyx_t_6 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:44351:13: warning: variable ‘__pyx_t_7’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44351 |   PyObject *__pyx_t_7 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_45gauss_sieve(__pyx_obj_3g6k_6siever_Siever*, std::size_t, PyObject*)’:
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:40012:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+40012 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:40015:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+40015 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:40018:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+40018 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:40019:13: warning: variable ‘__pyx_t_6’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+40019 |   PyObject *__pyx_t_6 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:40020:13: warning: variable ‘__pyx_t_7’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+40020 |   PyObject *__pyx_t_7 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:40010:121: warning: argument ‘__pyx_v_max_db_size’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+40010 | static PyObject *__pyx_pf_3g6k_6siever_6Siever_45gauss_sieve(struct __pyx_obj_3g6k_6siever_Siever *__pyx_v_self, size_t __pyx_v_max_db_size, PyObject *__pyx_v_reset_stats) {
+      |                                                                                                                  ~~~~~~~^~~~~~~~~~~~~~~~~~~
+g6k/slicer.cpp: In function ‘PyObject* __pyx_pf_3g6k_6slicer_16RandomizedSlicer_2grow_db_with_target(__pyx_obj_3g6k_6slicer_RandomizedSlicer*, PyObject*, std::size_t)’:
+g6k/slicer.cpp:7531:18: warning: variable ‘__pyx_v_target_f’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7531 |   PyArrayObject *__pyx_v_target_f = 0;
+      |                  ^~~~~~~~~~~~~~~~
+g6k/slicer.cpp:2732:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 2732 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/slicer.cpp:7534:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+ 7534 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/slicer.cpp:7536:13: warning: variable ‘__pyx_t_1’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7536 |   PyObject *__pyx_t_1 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:7537:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7537 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:7538:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7538 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:7539:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7539 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:7540:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7540 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:7541:13: warning: variable ‘__pyx_t_6’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7541 |   PyObject *__pyx_t_6 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:7577:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7577 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      |               ^~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_55shrink_left(__pyx_obj_3g6k_6siever_Siever*, PyObject*)’:
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:44153:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+44153 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_53extend_left(__pyx_obj_3g6k_6siever_Siever*, PyObject*)’:
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:43963:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+43963 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_8initialize_local(__pyx_obj_3g6k_6siever_Siever*, PyObject*, PyObject*, PyObject*, PyObject*)’:
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:25050:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+25050 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:25053:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+25053 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:25055:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+25055 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:25056:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+25056 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:25057:13: warning: variable ‘__pyx_t_6’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+25057 |   PyObject *__pyx_t_6 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:25058:13: warning: variable ‘__pyx_t_7’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+25058 |   PyObject *__pyx_t_7 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:25060:13: warning: variable ‘__pyx_t_9’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+25060 |   PyObject *__pyx_t_9 = NULL;
+      |             ^~~~~~~~~
+In file included from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarraytypes.h:1913,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarrayobject.h:12,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/arrayobject.h:5,
+                 from g6k/slicerww.cpp:1369:
+/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_41nv_sieve(__pyx_obj_3g6k_6siever_Siever*, PyObject*)’:
+g6k/siever.cpp:39088:13: warning: variable ‘__pyx_v_N’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39088 |   PyObject *__pyx_v_N = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:39090:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+39090 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:39093:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39093 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39094:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39094 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39095:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39095 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39096:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39096 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39161:17: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39161 |       PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      |                 ^~~~~~~~~~~~~~~
+In file included from g6k/slicerww.cpp:1362:
+g6k/../kernel/siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+g6k/../kernel/siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+g6k/../kernel/siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+g6k/../kernel/siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from g6k/slicerww.cpp:1363:
+g6k/../kernel/slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+g6k/../kernel/slicer.h:82:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   82 |     unsigned int n;
+      |                  ^
+In file included from g6k/../kernel/siever.h:42,
+                 from g6k/slicerww.cpp:1362:
+g6k/../kernel/slicer.h:77:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   77 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+g6k/../kernel/compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from g6k/slicerww.cpp:1363:
+g6k/../kernel/slicer.h:46:14: warning:   when initialized here [-Wreorder]
+   46 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_37bgj1_sieve(__pyx_obj_3g6k_6siever_Siever*, PyObject*)’:
+g6k/siever.cpp:37785:13: warning: variable ‘__pyx_v_N’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37785 |   PyObject *__pyx_v_N = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37786:13: warning: variable ‘__pyx_v_B’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37786 |   PyObject *__pyx_v_B = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37787:13: warning: variable ‘__pyx_v_y’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37787 |   PyObject *__pyx_v_y = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37788:13: warning: variable ‘__pyx_v_x’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37788 |   PyObject *__pyx_v_x = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:37791:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+37791 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:37794:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37794 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37795:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37795 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37796:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37796 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37797:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37797 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37799:13: warning: variable ‘__pyx_t_7’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37799 |   PyObject *__pyx_t_7 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:37864:17: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+37864 |       PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      |                 ^~~~~~~~~~~~~~~
+g6k/siever.cpp:38046:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38046 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_4);
+      |               ^~~~~~~~~~~~~~~
+g6k/slicerww.cpp: In function ‘PyObject* __pyx_pf_3g6k_8slicerww_8SlicerWW_2randomized_iterative_slice(__pyx_obj_3g6k_8slicerww_SlicerWW*, PyObject*, std::size_t, std::size_t)’:
+g6k/slicerww.cpp:7313:18: warning: variable ‘__pyx_v_t_yr’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7313 |   PyArrayObject *__pyx_v_t_yr = 0;
+      |                  ^~~~~~~~~~~~
+g6k/slicerww.cpp:7315:13: warning: variable ‘__pyx_v_return_yr’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7315 |   PyObject *__pyx_v_return_yr = NULL;
+      |             ^~~~~~~~~~~~~~~~~
+g6k/slicerww.cpp:2709:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 2709 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/slicerww.cpp:7317:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+ 7317 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/slicerww.cpp:7320:10: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7320 |   size_t __pyx_t_2;
+      |          ^~~~~~~~~
+g6k/slicerww.cpp:7321:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7321 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/slicerww.cpp:7322:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7322 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/slicerww.cpp:7323:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7323 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/slicerww.cpp:7324:13: warning: variable ‘__pyx_t_6’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7324 |   PyObject *__pyx_t_6 = NULL;
+      |             ^~~~~~~~~
+g6k/slicerww.cpp:7325:13: warning: variable ‘__pyx_t_7’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7325 |   PyObject *__pyx_t_7 = NULL;
+      |             ^~~~~~~~~
+g6k/slicerww.cpp:7326:13: warning: variable ‘__pyx_t_8’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7326 |   PyObject *__pyx_t_8 = NULL;
+      |             ^~~~~~~~~
+g6k/slicerww.cpp:7446:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7446 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      |               ^~~~~~~~~~~~~~~
+g6k/slicerww.cpp:7554:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7554 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_8);
+      |               ^~~~~~~~~~~~~~~
+g6k/slicerww.cpp:7312:196: warning: argument ‘__pyx_v_max_entries_used’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 7312 | static PyObject *__pyx_pf_3g6k_8slicerww_8SlicerWW_2randomized_iterative_slice(struct __pyx_obj_3g6k_8slicerww_SlicerWW *__pyx_v_self, PyObject *__pyx_v_target_yr, size_t __pyx_v_samples, size_t __pyx_v_max_entries_used) {
+      |                                                                                                                                                                                             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_39bdgl_sieve(__pyx_obj_3g6k_6siever_Siever*, PyObject*, PyObject*, PyObject*, PyObject*)’:
+g6k/siever.cpp:38317:13: warning: variable ‘__pyx_v_N’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38317 |   PyObject *__pyx_v_N = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:38319:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+38319 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:38323:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38323 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:38324:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38324 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:38325:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38325 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:38329:13: warning: variable ‘__pyx_t_9’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38329 |   PyObject *__pyx_t_9 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:38397:17: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38397 |       PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      |                 ^~~~~~~~~~~~~~~
+g6k/siever.cpp:38598:17: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38598 |       PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      |                 ^~~~~~~~~~~~~~~
+g6k/siever.cpp:38316:123: warning: argument ‘__pyx_v_blocks’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38316 | static PyObject *__pyx_pf_3g6k_6siever_6Siever_39bdgl_sieve(struct __pyx_obj_3g6k_6siever_Siever *__pyx_v_self, PyObject *__pyx_v_blocks, PyObject *__pyx_v_buckets, PyObject *__pyx_v_reset_stats, PyObject *__pyx_v_check_saturation) {
+      |                                                                                                                 ~~~~~~~~~~^~~~~~~~~~~~~~
+g6k/siever.cpp:38316:149: warning: argument ‘__pyx_v_buckets’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+38316 | static PyObject *__pyx_pf_3g6k_6siever_6Siever_39bdgl_sieve(struct __pyx_obj_3g6k_6siever_Siever *__pyx_v_self, PyObject *__pyx_v_blocks, PyObject *__pyx_v_buckets, PyObject *__pyx_v_reset_stats, PyObject *__pyx_v_check_saturation) {
+      |                                                                                                                                           ~~~~~~~~~~^~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_43hk3_sieve(__pyx_obj_3g6k_6siever_Siever*, std::size_t, PyObject*)’:
+g6k/siever.cpp:39473:13: warning: variable ‘__pyx_v_B’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39473 |   PyObject *__pyx_v_B = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39474:13: warning: variable ‘__pyx_v_y’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39474 |   PyObject *__pyx_v_y = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39475:13: warning: variable ‘__pyx_v_x’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39475 |   PyObject *__pyx_v_x = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:39478:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+39478 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:39481:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39481 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39482:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39482 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39483:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39483 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39484:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39484 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39486:13: warning: variable ‘__pyx_t_7’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39486 |   PyObject *__pyx_t_7 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:39551:17: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39551 |       PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      |                 ^~~~~~~~~~~~~~~
+g6k/siever.cpp:39763:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+39763 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      |               ^~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_6update_gso(__pyx_obj_3g6k_6siever_Siever*, int, int)’:
+g6k/siever.cpp:23886:18: warning: variable ‘__pyx_v__mu’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+23886 |   PyArrayObject *__pyx_v__mu = 0;
+      |                  ^~~~~~~~~~~
+g6k/siever.cpp:23888:18: warning: variable ‘__pyx_v__rr’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+23888 |   PyArrayObject *__pyx_v__rr = 0;
+      |                  ^~~~~~~~~~~
+g6k/siever.cpp:23889:18: warning: variable ‘__pyx_v__muinv’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+23889 |   PyArrayObject *__pyx_v__muinv = 0;
+      |                  ^~~~~~~~~~~~~~
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:23892:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+23892 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:23897:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+23897 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:23898:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+23898 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:23899:13: warning: variable ‘__pyx_t_6’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+23899 |   PyObject *__pyx_t_6 = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:23905:13: warning: variable ‘__pyx_t_12’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+23905 |   PyObject *__pyx_t_12 = NULL;
+      |             ^~~~~~~~~~
+g6k/siever.cpp:24190:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+24190 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_4);
+      |               ^~~~~~~~~~~~~~~
+g6k/siever.cpp:24248:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+24248 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_7);
+      |               ^~~~~~~~~~~~~~~
+g6k/siever.cpp:24293:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+24293 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      |               ^~~~~~~~~~~~~~~
+g6k/siever.cpp: In function ‘PyObject* __pyx_pf_3g6k_6siever_6Siever_59insert(__pyx_obj_3g6k_6siever_Siever*, PyObject*, PyObject*)’:
+g6k/siever.cpp:44605:13: warning: variable ‘__pyx_v_m’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44605 |   PyObject *__pyx_v_m = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:44606:13: warning: variable ‘__pyx_v_full_j’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44606 |   PyObject *__pyx_v_full_j = NULL;
+      |             ^~~~~~~~~~~~~~
+g6k/siever.cpp:44607:13: warning: variable ‘__pyx_v_i’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44607 |   PyObject *__pyx_v_i = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:44608:13: warning: variable ‘__pyx_v_new_l’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44608 |   PyObject *__pyx_v_new_l = NULL;
+      |             ^~~~~~~~~~~~~
+g6k/siever.cpp:44609:13: warning: variable ‘__pyx_v_new_n’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44609 |   PyObject *__pyx_v_new_n = NULL;
+      |             ^~~~~~~~~~~~~
+g6k/siever.cpp:44610:18: warning: variable ‘__pyx_v_T’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44610 |   PyArrayObject *__pyx_v_T = 0;
+      |                  ^~~~~~~~~
+g6k/siever.cpp:44611:13: warning: variable ‘__pyx_v_j’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44611 |   PyObject *__pyx_v_j = NULL;
+      |             ^~~~~~~~~
+g6k/siever.cpp:3242:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 3242 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/siever.cpp:44613:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+44613 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/siever.cpp:44631:13: warning: variable ‘__pyx_t_17’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44631 |   PyObject *__pyx_t_17 = NULL;
+      |             ^~~~~~~~~~
+g6k/siever.cpp:44604:144: warning: argument ‘__pyx_v_v’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+44604 | static PyObject *__pyx_pf_3g6k_6siever_6Siever_59insert(struct __pyx_obj_3g6k_6siever_Siever *__pyx_v_self, PyObject *__pyx_v_kappa, PyObject *__pyx_v_v) {
+      |                                                                                                                                      ~~~~~~~~~~^~~~~~~~~

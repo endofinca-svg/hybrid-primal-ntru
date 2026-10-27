@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-m",
+    "experiments.ntru_compare_n128_w12_w24_q97.solve_baseline",
+    "--public",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+    "--config",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/baseline/config.json",
+    "--output",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/baseline/result.json"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-22T03:52:07.745524+00:00",
+  "timeout_seconds": null,
+  "stdout": "baseline_online.stdout.txt",
+  "stderr": "baseline_online.stderr.txt",
+  "status": "finished",
+  "exit_code": 0,
+  "wall_seconds": 314.7779405619949,
+  "cpu_seconds": 314.63783400000005,
+  "peak_rss_kib": 79944,
+  "finished_utc": "2026-10-22T03:57:22.523344+00:00"
+}

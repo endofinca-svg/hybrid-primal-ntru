@@ -1,0 +1,36 @@
+running build_ext
+Making all in kernel
+make[1]: 进入目录“/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/kernel”
+make  all-am
+make[2]: 进入目录“/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/kernel”
+  CXX      control.lo
+  CXX      sieving.lo
+  CXX      bgj1_sieve.lo
+  CXX      bdgl_sieve.lo
+  CXX      hk3_sieve.lo
+  CXX      params.lo
+  CXX      cpuperf.lo
+  CXX      slicer.lo
+  CXX      slicerww.lo
+  CXXLD    libg6k.la
+make[2]: 离开目录“/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/kernel”
+make[1]: 离开目录“/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/kernel”
+make[1]: 进入目录“/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid”
+make[1]: 对“all-am”无需做任何事。
+make[1]: 离开目录“/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid”
+building 'g6k.siever' extension
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -Ig6k -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/cysignals -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include "-I/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/include" -I/home/inca/miniforge3/envs/g6k/include/python3.10 -c g6k/siever.cpp -o build/temp.linux-x86_64-cpython-310/g6k/siever.o -std=c++11 -pthread -Ofast -ftree-vectorize -funroll-loops -Wall -Wextra -mmmx -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -msha -maes -mavx -mfma -mavx2
+building 'g6k.siever_params' extension
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -Ig6k -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include "-I/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/include" -I/home/inca/miniforge3/envs/g6k/include/python3.10 -c g6k/siever_params.cpp -o build/temp.linux-x86_64-cpython-310/g6k/siever_params.o -std=c++11 -pthread -Ofast -ftree-vectorize -funroll-loops -Wall -Wextra -mmmx -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -msha -maes -mavx -mfma -mavx2
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -shared build/temp.linux-x86_64-cpython-310/g6k/siever_params.o -lgmp -lpthread -o build/lib.linux-x86_64-cpython-310/g6k/siever_params.cpython-310-x86_64-linux-gnu.so kernel/.libs/sieving.o kernel/.libs/control.o kernel/.libs/bgj1_sieve.o kernel/.libs/bdgl_sieve.o kernel/.libs/hk3_sieve.o kernel/.libs/fht_lsh.o kernel/.libs/params.o kernel/.libs/cpuperf.o kernel/.libs/slicer.o kernel/.libs/slicerww.o
+building 'g6k.slicer' extension
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -Ig6k -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/cysignals -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include "-I/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/include" -I/home/inca/miniforge3/envs/g6k/include/python3.10 -c g6k/slicer.cpp -o build/temp.linux-x86_64-cpython-310/g6k/slicer.o -std=c++11 -pthread -Ofast -ftree-vectorize -funroll-loops -Wall -Wextra -mmmx -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -msha -maes -mavx -mfma -mavx2
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -shared build/temp.linux-x86_64-cpython-310/g6k/slicer.o -lgmp -lpthread -o build/lib.linux-x86_64-cpython-310/g6k/slicer.cpython-310-x86_64-linux-gnu.so kernel/.libs/sieving.o kernel/.libs/control.o kernel/.libs/bgj1_sieve.o kernel/.libs/bdgl_sieve.o kernel/.libs/hk3_sieve.o kernel/.libs/fht_lsh.o kernel/.libs/params.o kernel/.libs/cpuperf.o kernel/.libs/slicer.o kernel/.libs/slicerww.o
+building 'g6k.slicerww' extension
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -Ig6k -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/cysignals -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include "-I/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/include" -I/home/inca/miniforge3/envs/g6k/include/python3.10 -c g6k/slicerww.cpp -o build/temp.linux-x86_64-cpython-310/g6k/slicerww.o -std=c++11 -pthread -Ofast -ftree-vectorize -funroll-loops -Wall -Wextra -mmmx -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -msha -maes -mavx -mfma -mavx2
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -shared build/temp.linux-x86_64-cpython-310/g6k/slicerww.o -lgmp -lpthread -o build/lib.linux-x86_64-cpython-310/g6k/slicerww.cpython-310-x86_64-linux-gnu.so kernel/.libs/sieving.o kernel/.libs/control.o kernel/.libs/bgj1_sieve.o kernel/.libs/bdgl_sieve.o kernel/.libs/hk3_sieve.o kernel/.libs/fht_lsh.o kernel/.libs/params.o kernel/.libs/cpuperf.o kernel/.libs/slicer.o kernel/.libs/slicerww.o
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -shared build/temp.linux-x86_64-cpython-310/g6k/siever.o -lgmp -lpthread -o build/lib.linux-x86_64-cpython-310/g6k/siever.cpython-310-x86_64-linux-gnu.so kernel/.libs/sieving.o kernel/.libs/control.o kernel/.libs/bgj1_sieve.o kernel/.libs/bdgl_sieve.o kernel/.libs/hk3_sieve.o kernel/.libs/fht_lsh.o kernel/.libs/params.o kernel/.libs/cpuperf.o kernel/.libs/slicer.o kernel/.libs/slicerww.o
+copying build/lib.linux-x86_64-cpython-310/g6k/siever.cpython-310-x86_64-linux-gnu.so -> g6k
+copying build/lib.linux-x86_64-cpython-310/g6k/siever_params.cpython-310-x86_64-linux-gnu.so -> g6k
+copying build/lib.linux-x86_64-cpython-310/g6k/slicer.cpython-310-x86_64-linux-gnu.so -> g6k
+copying build/lib.linux-x86_64-cpython-310/g6k/slicerww.cpython-310-x86_64-linux-gnu.so -> g6k

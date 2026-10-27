@@ -1,0 +1,33 @@
+{
+  "source_matches_phase1": {
+    "README.rst": true,
+    "setup.py": true,
+    "configure.ac": true,
+    "hybrid_attack.py": true,
+    "run_prog_hyb.py": true,
+    "tailBDD.py": true,
+    "g6k/slicer.pyx": true,
+    "kernel/slicer.cpp": true,
+    "kernel/hash_table.inl": true,
+    "utils.py": true,
+    "LICENSE": true
+  },
+  "runtime": {
+    "python": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:29:10) [GCC 14.3.0]",
+    "modules": {
+      "g6k.siever": {
+        "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/siever.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "ab8bf82195da61ab254e09dcc6bb71b2919ac78ec9953220e510fefb66a22bc3"
+      },
+      "g6k.slicer": {
+        "path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/slicer.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "17218c3bebe3212c282a5af31e81ebf231f76db0e3c3447e6c90b652d3a6b610"
+      }
+    }
+  },
+  "extension_matches_phase1": {
+    "g6k.siever": true,
+    "g6k.slicer": true
+  },
+  "previous_environment_sha256": "886a64797cb4dce0c8a0fc07521b616f040f92d7046ac48bca79dcd1a7fd709c"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "ntru-phase1-workspace-v1",
+  "local_time": "2026-10-26T18:29:49+08:00",
+  "root": "/home/inca/hybrid primal multi decoding for NTRU",
+  "git": {
+    "status": {
+      "exit_code": 0,
+      "stdout": "?? experiments/\n?? main.pdf",
+      "stderr": ""
+    },
+    "branch": {
+      "exit_code": 0,
+      "stdout": "experiments/ntru-e2e-phase1",
+      "stderr": ""
+    },
+    "head": {
+      "exit_code": 0,
+      "stdout": "452be18c741a2d81c106d3bfe3847428ed57229b",
+      "stderr": ""
+    },
+    "remotes": {
+      "exit_code": 0,
+      "stdout": "origin\tgit@github.com:endofinca-svg/hybrid-primal-ntru.git (fetch)\norigin\tgit@github.com:endofinca-svg/hybrid-primal-ntru.git (push)",
+      "stderr": ""
+    }
+  },
+  "requested_repository_url": "https://github.com/endofinca-svg/A-Hybrid-Attack-on-NTRU-with-Sparse-Secrets",
+  "actual_remote": "git@github.com:endofinca-svg/hybrid-primal-ntru.git",
+  "repository_name_difference": "Recorded; local working tree is authoritative for this audit; no remote changed or code fetched.",
+  "applicable_agents_md": [],
+  "phase": 1,
+  "next_phase_started": false,
+  "new_online_trials": 0,
+  "new_keys": 0,
+  "new_reduction_or_slicer_calls": 0,
+  "new_solver_tests_run": false
+}

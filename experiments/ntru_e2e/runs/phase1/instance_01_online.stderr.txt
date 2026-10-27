@@ -1,0 +1,25 @@
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40
+WARNING:root:bdgl_sieve not recommended below dimension 40

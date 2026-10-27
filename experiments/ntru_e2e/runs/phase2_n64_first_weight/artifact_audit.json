@@ -1,0 +1,47 @@
+{
+  "schema": "ntru-e2e-phase2-artifact-audit-v1",
+  "recorded_utc": "2026-10-22T01:10:20.696482+00:00",
+  "selected_case_ids": [
+    "n64_w4_8"
+  ],
+  "inventory_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2/online_inventory.json",
+  "inventory_sha256": "990adb6738d6e4c013aa02b5c7968e7e43a5442a416a9a550abfd79ac9fefa96",
+  "evaluation_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/runs/phase2_n64_first_weight/evaluation_phase2.json",
+  "evaluation_sha256": "b7409ffcbefd0754c351bc189711bec1707db7fe7ef7720edf50c2d35b0b3223",
+  "phase1_preservation": {
+    "checked_file_count": 135,
+    "changed": [],
+    "missing": [],
+    "passed": true
+  },
+  "scheduled_trials": 12,
+  "recorded_trials": 12,
+  "trial_status_counts": {
+    "timeout": 7,
+    "interrupted_censored": 1,
+    "finished": 4
+  },
+  "instrumentation_trial_counts": {
+    "v1": 8,
+    "v2": 4
+  },
+  "all_baselines_precede_sieve_trials": 8,
+  "instances_with_both_patterns_recorded": 3,
+  "stored_candidate_count": 2138,
+  "issues": [],
+  "passed": true,
+  "result_sha256": {
+    "n64_w4_8/instance_01/b20_s32_p0.result.json": "b8d6c9068eba833b973eaa7f3f53c8d9d0c27e7b7faf56651514a80ca01f142c",
+    "n64_w4_8/instance_01/b20_s32_p1.result.json": "a4e0c9a7ce1392ba8cfd963be31b4ee7556d72bd23a96684c66829b4bbe0fb18",
+    "n64_w4_8/instance_01/b25_s40_p0.result.json": "a9074e2f946737f8f383d35f04645fef9ab58719dd4a3bbd46fa5d5800d0ed20",
+    "n64_w4_8/instance_01/b25_s40_p1.result.json": "0394bc46b6b324246505f5dcb41398067c607d13383459b0370de779d8a95c86",
+    "n64_w4_8/instance_02/b20_s32_p0.result.json": "67e0313624a247285cca897dcb2f39b187f58ea325956277a7492631f3512e80",
+    "n64_w4_8/instance_02/b20_s32_p1.result.json": "b69108c88f8f03673056480ce50a82c7361ce58c2ff1bc44dcb9c40894c6c3bb",
+    "n64_w4_8/instance_02/b25_s40_p0.result.json": "bd11f8c33378e6a115e06e47be942ecfc40ff3961c4db680d80541e2eb8f13a9",
+    "n64_w4_8/instance_02/b25_s40_p1.result.json": "d4a57a480b1bebd5e8306de6e4171296619c9340d2a83921f56959d2ec37ee3e",
+    "n64_w4_8/instance_03/b20_s32_p0.result.json": "4651133780074553a5b4f2ba6c4497e63d352a6145359421998e015a2ce2af7e",
+    "n64_w4_8/instance_03/b20_s32_p1.result.json": "cbd642e63fa58b354be3516e5e7e0127d6599f179ac6b85529ebf5e658b8cc64",
+    "n64_w4_8/instance_03/b25_s40_p0.result.json": "e40ce3fe89663f509d82ed1589f39d753f697edb78c3115ffbb54f105147ac62",
+    "n64_w4_8/instance_03/b25_s40_p1.result.json": "e1fd57a71be4db04b73c9144928137574f413e9b19c97bfb6192923fbe809728"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-10-22T04:01:54.367013+00:00",
+  "scope": "Independent offline protocol auditor; not imported by the formal solver",
+  "files_sha256": {
+    "experiments/ntru_compare_n128_w12_w24_q97/evaluate_baseline_tour2.py": "1f7fc1981c6aec619beba9ceb3be62e6a1d89fe31a282560597e3eaebd9d42c9",
+    "experiments/ntru_compare_n128_w12_w24_q97/test_evaluate_baseline_tour2.py": "a69d976e1d62dffd082c075b871856f493ca6bbf891f584e1627c6a3b7e40288"
+  }
+}

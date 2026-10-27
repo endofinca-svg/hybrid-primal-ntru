@@ -1,0 +1,14 @@
+{
+  "tests_run": 50,
+  "runner_seconds": 1.149,
+  "success": true,
+  "exit_code": 0,
+  "timeout": false,
+  "failed_test_entries": [],
+  "error_test_entries": [],
+  "skipped_test_entries": [],
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": 50
+}
