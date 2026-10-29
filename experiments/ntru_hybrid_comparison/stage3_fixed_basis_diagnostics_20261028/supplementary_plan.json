@@ -1,0 +1,12 @@
+{
+  "scope": "distinct exact saved-artifact proof after preserved primary timeout; no new algorithm attempt",
+  "global_clock_reset": false,
+  "retry_of_algorithm_configs": false,
+  "main_configuration_count_still": 7,
+  "proof_budget_seconds": 180,
+  "primary_audit_budget_not_extended": true,
+  "integer_products": "int64 only with explicit bound for every partial sum; otherwise Python bigint",
+  "public_rejection": "exact full norm unequal36 is sufficient; full public verification for potentially admissible pairs/anchor",
+  "original_global_started_monotonic": 192396.995364985,
+  "command": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/supplementary_validation/command.json"
+}

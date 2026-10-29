@@ -1,0 +1,8 @@
+{"event": "stage_started", "monotonic": 193156.295439384, "stage": "input_load_verify"}
+{"event": "stage_finished", "monotonic": 193175.271147002, "seconds": 18.91199371899711, "stage": "input_load_verify"}
+{"event": "stage_started", "monotonic": 193175.319286598, "stage": "basis_row_check"}
+{"event": "stage_finished", "monotonic": 193175.389488724, "seconds": 0.007521838997490704, "stage": "basis_row_check"}
+{"event": "stage_started", "monotonic": 193175.463673028, "stage": "gso_initialization"}
+{"event": "stage_finished", "monotonic": 193198.132925706, "seconds": 22.608350162015995, "stage": "gso_initialization"}
+{"event": "stage_started", "monotonic": 193198.241378564, "stage": "database_preprocessing"}
+{"event": "worker_exception", "message": "stage3 blocked forbidden content path before open: /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__init__.py", "monotonic": 193203.93433826, "type": "PermissionError"}

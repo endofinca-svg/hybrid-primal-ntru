@@ -1,0 +1,167 @@
+{
+  "schema": "ntru-stage3-fixed-basis-plan-v1",
+  "mode": "fixed_basis_diagnostic",
+  "public_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+  "public_file_sha256": "8c03b57a732fb8114d900ff47c2b04f93ca257bef5066db0988e74a10d89baf9",
+  "public_sha256": "8e2e7cd27fdbd595d58a4baefb5326a4b04d05d0804962395ab9f74b26146bc7",
+  "reduction_protocol": {
+    "schedule": [
+      {
+        "beta": 30,
+        "requested_tours": 2
+      },
+      {
+        "beta": 31,
+        "requested_tours": 2
+      },
+      {
+        "beta": 32,
+        "requested_tours": 2
+      }
+    ],
+    "float_type": "mpfr",
+    "precision_bits": 192,
+    "lll_delta": 0.99,
+    "lll_eta": 0.51,
+    "lll_method": "proved",
+    "lll_flags": 0,
+    "bkz_flags": 0,
+    "gso_flags": 0,
+    "tour_semantics": "strict",
+    "auto_abort": false,
+    "seed": 10001,
+    "threads": 1,
+    "strategy": "fpylll_default_extend_unpruned",
+    "schema": "ntru-shared-reduction-protocol-v1",
+    "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+    "initial_lll_implementation": "fpylll.LLL.reduction",
+    "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+    "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+    "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+    "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+    "early_termination": "exception or external termination only; no public-success callback in this interface",
+    "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+    "main_experiment_schedule_frozen": false,
+    "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum"
+  },
+  "pattern_indices": [
+    0,
+    2
+  ],
+  "pattern_rule": "historical_sha256_shuffle_v1",
+  "parameters": {
+    "n": 128,
+    "q": 97,
+    "k": 40,
+    "kappa": 4,
+    "d": 212,
+    "pattern_seed": 10001
+  },
+  "reduction_attempts_per_pattern": 1,
+  "retry_allowed": false,
+  "index0_expected_basis_sha256": "d883f3f8157c213be9de4ff1eabb45b4b3da76ded23859567199f0750f42ded9",
+  "index0_mismatch_policy": "save actual matrix and evidence; block index0 decoding as historical same-basis comparison",
+  "index2_status": "posthoc_known_coverage_exploratory_diagnostic",
+  "configurations": [
+    {
+      "label": "A",
+      "pattern_index": 0,
+      "configuration": "E",
+      "iteration_cap": null,
+      "budget_seconds": 120
+    },
+    {
+      "label": "B",
+      "pattern_index": 0,
+      "configuration": "D-normal",
+      "iteration_cap": 400,
+      "budget_seconds": 600
+    },
+    {
+      "label": "C",
+      "pattern_index": 2,
+      "configuration": "E",
+      "iteration_cap": null,
+      "budget_seconds": 120
+    },
+    {
+      "label": "D",
+      "pattern_index": 2,
+      "configuration": "D-skip",
+      "iteration_cap": 0,
+      "budget_seconds": 600
+    },
+    {
+      "label": "E",
+      "pattern_index": 2,
+      "configuration": "D-normal",
+      "iteration_cap": 400,
+      "budget_seconds": 600
+    },
+    {
+      "label": "F",
+      "pattern_index": 2,
+      "configuration": "D-probe-1",
+      "iteration_cap": 1,
+      "budget_seconds": 600
+    },
+    {
+      "label": "G",
+      "pattern_index": 2,
+      "configuration": "D-probe-400",
+      "iteration_cap": 400,
+      "budget_seconds": 600
+    }
+  ],
+  "backend_parameters": {
+    "float_type": "mpfr",
+    "precision_bits": 192,
+    "sieve_dim": 40,
+    "seed": 10001,
+    "db_size": 4096,
+    "nrand": 16,
+    "max_iterations": 400,
+    "preprocessing": "bdgl2",
+    "buckets": 256,
+    "blocks": 1,
+    "multi_hash": 4,
+    "interface_test_mode": false,
+    "force_kernel_iterations": false
+  },
+  "batch": {
+    "mode": "full_nonzero",
+    "count": 80,
+    "batch_size": 80,
+    "zero_tail_policy": "skip",
+    "stop_after_first_valid": false
+  },
+  "budgets": {
+    "global_seconds": 4800,
+    "reduction_task_seconds": 600,
+    "E_seconds": 120,
+    "D_seconds": 600,
+    "task_cleanup_reserve_seconds": 5,
+    "global_cleanup_reserve_seconds": 5,
+    "origin": "before first numerical owner launch; never reset between patterns"
+  },
+  "probe_gate": "execute probe400 exactly once after probe1 confirms control/counter/state integrity, independently of improvement",
+  "pairing": "independently rebuild each D from saved immutable integer basis; compare actual lattice DB/ordered target DB/RNG state snapshots; no inheritance",
+  "witness_isolation": "historical public B output read only by separate offline process; no labels/anchor/known lattice vector accepted by decoder",
+  "production_backend": "unchanged; independent diagnostic copy and extension; no dependency updates",
+  "protected_original_inventory": "preflight_original.json",
+  "limits": [
+    "no private reference array reads",
+    "no new public keys",
+    "no pattern1",
+    "no parameter expansion",
+    "no end-to-end speedup claims"
+  ],
+  "preparation_access_assurance": {
+    "status": "not_fully_attested",
+    "incident": "preparation_access_incident.json",
+    "private_scan_set_unknown": true,
+    "no_private_arrays_identified_or_used": true,
+    "numeric_boundary": "deny-before-open Python audit hook plus independent native open syscall trace on each numerical task",
+    "does_not_retroactively_certify_preparation": true
+  }
+}

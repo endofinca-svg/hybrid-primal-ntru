@@ -1,0 +1,53 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.run"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "global_budget_seconds": 4800,
+  "plan": "plan.json",
+  "sources": "sources.json",
+  "inner_runtime": "experiments/ntru_e2e/.deps/runtime.json",
+  "diagnostic_runtime": "diagnostic_runtime.json",
+  "supervision": "existing supervise_command; outer session, inner process_group; PID/starttime identity; TERM/KILL; subreaper; residual checks",
+  "worker_arguments": "--request <task>/request.json --output <task>; concrete argv and absolute deadlines durably written before each launch",
+  "order": [
+    "pattern_0",
+    "pattern_2",
+    "witness_check",
+    "decode_p0_E",
+    "decode_p0_D-normal",
+    "decode_p2_E",
+    "decode_p2_D-skip",
+    "decode_p2_D-normal",
+    "decode_p2_D-probe-1",
+    "decode_p2_D-probe-400",
+    "independent_validation"
+  ],
+  "scope": "one finite numerical run only; CLI refuses implicit rerun once numerical_started.json exists",
+  "preparation_access_assurance": {
+    "status": "not_fully_attested",
+    "incident": "preparation_access_incident.json",
+    "private_scan_set_unknown": true,
+    "no_private_arrays_identified_or_used": true,
+    "numeric_boundary": "deny-before-open Python audit hook plus independent native open syscall trace on each numerical task",
+    "does_not_retroactively_certify_preparation": true
+  },
+  "inner_command_prefix": [
+    "/usr/bin/strace",
+    "-f",
+    "-qq",
+    "-e",
+    "trace=open,openat,openat2",
+    "-o",
+    "<task>/file_opens.log",
+    "<pinned python>",
+    "-B",
+    "<stage3>/audit_entry.py",
+    "--audit-log",
+    "<task>/file_access.jsonl",
+    "<worker module>"
+  ]
+}

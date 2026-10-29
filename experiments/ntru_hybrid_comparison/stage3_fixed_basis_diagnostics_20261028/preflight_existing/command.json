@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "60s",
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ntru_e2e/run_in_env.py",
+    "-B",
+    "experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/run_existing_tests.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-28T14:31:14.714460+00:00",
+  "runtime": "pinned experiments/ntru_e2e/.deps/runtime.json",
+  "numerical_diagnostic_budget_charged": false,
+  "private_contents_read": false
+}

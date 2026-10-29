@@ -1,0 +1,28 @@
+{
+  "N_entries": 640,
+  "Nt_groups": 40,
+  "checked_monotonic": 194457.413385184,
+  "compressed_ordinal_change_explanation": "Normal call sorts compressed target DB before pre-iteration saturation check; slot contents, UIDs, residuals and groups stay identical at0iterations.",
+  "cpp_index_recomputed": 40,
+  "entries_strictly_below": 638,
+  "exact_recorded_predicate_fields_match": true,
+  "gh_recorded": 5.748818646657477,
+  "iterations_completed": 0,
+  "iterations_entered": 0,
+  "legacy_itercount": 0,
+  "limitations": [
+    "GH uses recorded mapper value; no new GSO calculation"
+  ],
+  "min_bound_sq_from_public_full80": 32,
+  "scope": "read_only_saved_snapshot_arithmetic_no_backend_imports",
+  "selected_len_sq": 2.1942403316497803,
+  "source_refs": [
+    "kernel/slicer.cpp:513-517",
+    "fixed_backend.py:452-456",
+    "slicer_adapter.py:50"
+  ],
+  "strict_saturation_pre": true,
+  "target_slot_content_excluding_sort_order_identical_pre_post": true,
+  "target_slot_records_including_compressed_ordinal_identical_pre_post": false,
+  "threshold_recomputed": 5.566917651613093
+}

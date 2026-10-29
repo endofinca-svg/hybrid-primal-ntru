@@ -1,0 +1,49 @@
+{
+  "budget_seconds": 600,
+  "cleanup_reserve_seconds": 5,
+  "hard_deadline": 192997.189208636,
+  "pattern_index": 0,
+  "public_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_compare_n128_w12_w24_q97/public/instance_01.json",
+  "reduction_protocol": {
+    "auto_abort": false,
+    "bkz_flags": 0,
+    "bkz_implementation": "fpylll.algorithms.bkz2.BKZReduction.tour",
+    "bkz_internal_lll": "fpylll.LLL.Reduction on the same explicitly MPFR GSO",
+    "decoder_internal_precision": "separate future decoder configuration, not specified by this protocol",
+    "early_termination": "exception or external termination only; no public-success callback in this interface",
+    "float_type": "mpfr",
+    "gso_flags": 0,
+    "historical_anchor": "beta32tour2 was a progressive warm-start success, not a measured cold-start minimum",
+    "initial_lll_implementation": "fpylll.LLL.reduction",
+    "lll_delta": 0.99,
+    "lll_eta": 0.51,
+    "lll_flags": 0,
+    "lll_method": "proved",
+    "main_experiment_schedule_frozen": false,
+    "precision_bits": 192,
+    "schedule": [
+      {
+        "beta": 30,
+        "requested_tours": 2
+      },
+      {
+        "beta": 31,
+        "requested_tours": 2
+      },
+      {
+        "beta": 32,
+        "requested_tours": 2
+      }
+    ],
+    "schema": "ntru-shared-reduction-protocol-v1",
+    "seed": 10001,
+    "strategy": "fpylll_default_extend_unpruned",
+    "strategy_extension": "above loaded strategy maximum: Strategy(beta, [], []), unpruned, no preprocessing blocks",
+    "strategy_resolution": "backend metadata records actual strategy file bytes and SHA256",
+    "strict_tour_definition": "one completed explicit BKZReduction.tour call; clean does not skip later calls",
+    "threads": 1,
+    "tour_semantics": "strict"
+  },
+  "started_monotonic": 192397.189208636,
+  "work_deadline": 192992.189208636
+}

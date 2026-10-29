@@ -1,0 +1,16 @@
+{
+  "started_monotonic": 195847.572133735,
+  "finished_monotonic": 195883.232468974,
+  "total_wall_seconds": 35.660335238993866,
+  "original_global_started_monotonic": 192396.995364985,
+  "numerical_full_scope_wall_seconds": 3486.2371039889986,
+  "budget_seconds": 180,
+  "global_budget_seconds": 4800,
+  "global_clock_reset": false,
+  "global_hard_deadline_met": true,
+  "task_hard_deadline_met": true,
+  "cleanup_verified": true,
+  "execution_status": "completed",
+  "returncode": 0,
+  "access_all_checks_passed": true
+}

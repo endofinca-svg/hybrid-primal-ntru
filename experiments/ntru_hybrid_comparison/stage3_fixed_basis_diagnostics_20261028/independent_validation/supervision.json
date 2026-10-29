@@ -1,0 +1,98 @@
+{
+  "boundary": "new Linux process group in inherited session; PID/starttime verified group members and observed descendants",
+  "cleanup_error": null,
+  "cleanup_seconds": 0.15767509600846097,
+  "cleanup_verified": true,
+  "containment_limitation": "unobserved children that leave the process group can escape this inner boundary; inherited outer session still owns non-setsid descendants",
+  "execution_status": "timeout",
+  "execution_status_before_cleanup": "timeout",
+  "finished_monotonic": 195214.970226305,
+  "group_creation_backend": "Popen(process_group=0)",
+  "hard_deadline": 195219.515589575,
+  "hard_deadline_from_start_seconds": 179.73411659698468,
+  "hard_deadline_met": true,
+  "memory": {
+    "backend": "Linux /proc/<pid>/stat RSS, one process entry per PID",
+    "covers_descendants": true,
+    "descendant_scope_limitation": "no guarantee for unobserved process-group escape; outer session ownership is preserved",
+    "enforcement_backend": null,
+    "includes_supervisor": false,
+    "maximum_sampling_sweep_seconds": 0.06146610699943267,
+    "metric_name": "sampled_simultaneous_process_tree_rss_bytes",
+    "missing_reason": null,
+    "not_atomic_snapshot": true,
+    "peak_sample_offset_seconds": 146.1402286569937,
+    "process_count_at_peak": 2,
+    "rss_semantics": "sum within one sequential /proc sampling sweep, then maximum over sweeps; shared pages can be counted repeatedly; not exclusive physical memory",
+    "sample_count": 3011,
+    "sample_interval_seconds": 0.01,
+    "sampling_estimate": true,
+    "scope": "trial process group and observed descendants in inherited session, through cleanup; excludes supervisor",
+    "strict_memory_limit": false,
+    "unit": "bytes",
+    "value": 124993536
+  },
+  "observed_processes": [
+    {
+      "first_observed_monotonic": 195039.784968863,
+      "first_observed_process_group_id": 104446,
+      "first_observed_session_id": 103881,
+      "last_observed_monotonic": 195214.919238963,
+      "pgid": 104446,
+      "pid": 104446,
+      "ppid": 103881,
+      "rss_bytes": 0,
+      "session_id": 103881,
+      "starttime_ticks": 19503978,
+      "state": "Z"
+    },
+    {
+      "first_observed_monotonic": 195039.840576014,
+      "first_observed_process_group_id": 104446,
+      "first_observed_session_id": 103881,
+      "last_observed_monotonic": 195214.863477219,
+      "pgid": 104446,
+      "pid": 104449,
+      "ppid": 104446,
+      "rss_bytes": 121192448,
+      "session_id": 103881,
+      "starttime_ticks": 19503979,
+      "state": "R"
+    }
+  ],
+  "ownership": "process_group",
+  "pid": 104446,
+  "process_group_id": 104446,
+  "reaped_adopted_processes": [],
+  "residual_active_processes": [],
+  "returncode": -15,
+  "run_success": false,
+  "schema": "ntru-trial-supervision-v1",
+  "session_id": 103881,
+  "signals": [
+    {
+      "at_seconds": 175.08221716000116,
+      "pid": 104446,
+      "signal": 15,
+      "starttime_ticks": 19503978
+    },
+    {
+      "at_seconds": 175.08247777298675,
+      "pid": 104449,
+      "signal": 15,
+      "starttime_ticks": 19503979
+    }
+  ],
+  "started_monotonic": 195039.781472978,
+  "subreaper": {
+    "already_enabled": true,
+    "enabled": true,
+    "scope": "supervisor process; persists for this process lifetime"
+  },
+  "supervisor_errors": [],
+  "termination_reason": "work_deadline_reached",
+  "total_wall_seconds": 175.18875332700554,
+  "work_deadline": 195214.765589575,
+  "work_deadline_from_start_seconds": 174.98411659698468,
+  "work_seconds": 175.0310780769796
+}

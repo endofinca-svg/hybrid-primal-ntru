@@ -1,0 +1,14 @@
+{
+  "measured_task_wall_lower_bound_seconds": 5037.006807223021,
+  "full_task_exact_wall_seconds": null,
+  "initial_unmeasured_scope": "initial user attachment and source reads before stage3 directory creation",
+  "initial_recorded_preparation_seconds": 1043.0241915450024,
+  "numerical_full_scope_wall_seconds": 3682.2764064730145,
+  "report_and_packaging_seconds_after_numerical_close": 311.7062092050037,
+  "scope_stopped": true,
+  "new_experiments_started_after_finite_scope": false,
+  "delivered_report": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/REPORT.md",
+  "delivered_report_sha256": "f07f25af9ab61dc6df5ae7276a56b863dba528741024d306fd9a3a2d479a81b4",
+  "artifact_file_count": 321,
+  "completed_monotonic": 196390.977980663
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "ntru-stage3-access-v2-preflight",
+  "passed": true,
+  "rows": [
+    {
+      "case": "unittest",
+      "execution_status": "completed",
+      "returncode": 0,
+      "cleanup_verified": true,
+      "wall_seconds": 0.38898324000183493,
+      "passed": true
+    },
+    {
+      "case": "normal_smoke",
+      "execution_status": "completed",
+      "returncode": 0,
+      "cleanup_verified": true,
+      "wall_seconds": 14.660184637003113,
+      "access_all_checks_passed": true,
+      "allowed_module_paths": [
+        {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc",
+          "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc",
+          "source": "python_audit_hook"
+        },
+        {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc",
+          "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc",
+          "source": "python_audit_hook"
+        },
+        {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc",
+          "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc",
+          "source": "python_audit_hook"
+        }
+      ],
+      "denied_count": 0,
+      "native_forbidden_count": 0,
+      "unresolved_native_count": 0,
+      "passed": true
+    },
+    {
+      "case": "guard_denial",
+      "execution_status": "completed",
+      "returncode": 0,
+      "cleanup_verified": true,
+      "wall_seconds": 2.5945438150083646,
+      "access_all_checks_passed": false,
+      "allowed_module_paths": [],
+      "denied_count": 2,
+      "native_forbidden_count": 0,
+      "unresolved_native_count": 0,
+      "passed": true
+    },
+    {
+      "case": "diagnostic_runtime_smoke",
+      "execution_status": "completed",
+      "returncode": 0,
+      "cleanup_verified": true,
+      "wall_seconds": 16.036903974978486,
+      "access_all_checks_passed": true,
+      "allowed_module_paths": [
+        {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc",
+          "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc",
+          "source": "python_audit_hook"
+        },
+        {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc",
+          "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc",
+          "source": "python_audit_hook"
+        },
+        {
+          "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc",
+          "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc",
+          "source": "python_audit_hook"
+        }
+      ],
+      "denied_count": 0,
+      "native_forbidden_count": 0,
+      "unresolved_native_count": 0,
+      "passed": true
+    }
+  ],
+  "completed_utc": "2026-10-28T15:05:43.014234+00:00",
+  "scope": "isolated corrective policy tests; d28 normal preprocessing only; no n128 jobs, no reduction, no retry of blocked D0",
+  "original_global_started_monotonic": 192396.995364985,
+  "global_timer_not_reset": true
+}

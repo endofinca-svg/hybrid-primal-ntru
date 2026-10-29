@@ -1,0 +1,10 @@
+{
+  "budget_seconds": 120,
+  "cleanup_reserve_seconds": 5,
+  "configuration": "E",
+  "hard_deadline": 193825.650722656,
+  "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+  "pattern_index": 2,
+  "started_monotonic": 193705.650722656,
+  "work_deadline": 193820.650722656
+}

@@ -1,0 +1,83 @@
+{
+  "python": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+  "base_python": "/home/inca/miniforge3/envs/g6k/bin/python",
+  "source": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_g6k",
+  "upstream_commit": "bd72687b2ebbaff16fb692259f83b327bbcd9586",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin:/home/inca/miniforge3/envs/g6k/bin:/home/inca/.local/bin:/home/inca/.codex/tmp/arg0/codex-arg0OJtquq:/home/inca/.vscode-server/cli/servers/Stable-6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/inca/.vscode-server/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64",
+    "PYTHONPATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_g6k:/home/inca/hybrid primal multi decoding for NTRU"
+  },
+  "isolation": "Independent venv, read-only system-site-packages from base conda env; local source rebuilt.",
+  "diagnostic_build": {
+    "changed_sources": {
+      "kernel/random.hpp": {
+        "old_sha256": "340229f870a67dc20b5977866dd0963724986c12823991a3512aae4ca0057212",
+        "new_sha256": "7aa675620f029bf169e5dff78a80a1fce279788d4c4dad8a11c434cc950514c4"
+      },
+      "kernel/slicer.h": {
+        "old_sha256": "676ce186f0f0fc21c13d7544b50fed1b12c03c7072cd728e7c625b052240ceb5",
+        "new_sha256": "681df0fbb203e26646503677e39272a925a744321d5081b519f6557fd8a6fd02"
+      },
+      "kernel/slicer.cpp": {
+        "old_sha256": "a45ce6c130b6ab88c6515ad6721b778525df007bc8a9b6b8c97ccbf4a47f4b40",
+        "new_sha256": "f33f67d6f17bef1c2ad022c0a16b4f94693bba317a560202d2f2402b9b123e9b"
+      },
+      "g6k/decl.pxd": {
+        "old_sha256": "fc87c2b2e9b57961d1ba6be3cc512145e248041ac1fb23a989238b57df17dd44",
+        "new_sha256": "1d97ad2e7b1eda00f469b4a73477ad9fbef8a997ef071f462c98b24ec307b2c0"
+      },
+      "g6k/slicer.pyx": {
+        "old_sha256": "e503c49171d191de7b56ac3cb94791a83012144e2754ecc53c595264e19e5d5b",
+        "new_sha256": "294c5d289a9d2750584abd3922af726a14973963a810074a49dae1f6e7939954"
+      }
+    },
+    "commands": [
+      [
+        "/usr/bin/g++",
+        "-std=c++11",
+        "-Ofast",
+        "-ftree-vectorize",
+        "-funroll-loops",
+        "-Wall",
+        "-Wextra",
+        "-mmmx",
+        "-msse",
+        "-msse2",
+        "-msse3",
+        "-mssse3",
+        "-msse4.1",
+        "-msse4.2",
+        "-msha",
+        "-maes",
+        "-mavx",
+        "-mfma",
+        "-mavx2",
+        "-pthread",
+        "-fPIC",
+        "-DHAVE_CONFIG_H",
+        "-I.",
+        "-I..",
+        "-c",
+        "slicer.cpp",
+        "-o",
+        ".libs/slicer.o"
+      ],
+      [
+        "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+        "setup_diagnostic.py",
+        "build_ext",
+        "--inplace",
+        "--force"
+      ]
+    ],
+    "preparation_seconds": 41.354798076004954,
+    "original_backend_preserved": true
+  }
+}

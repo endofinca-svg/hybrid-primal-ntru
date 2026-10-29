@@ -1,0 +1,427 @@
+{
+  "checked_monotonic": 194457.353217623,
+  "configurations": {
+    "D-normal": {
+      "21": {
+        "actual_submitted": true,
+        "best_randomized_entry": {
+          "ambient_residual_sq": 2547142,
+          "ancestor_uid": 15059977419113869560,
+          "backend_integer_id": 21,
+          "entry_was_randomized": true,
+          "full_norm_sq": 2547144,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 3.2871878147125244,
+          "radius_pass": false,
+          "randomization_entry_id": 11,
+          "sign": -1,
+          "slot_id": 187,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 15059977419113869560
+        },
+        "minimum_full_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 21,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": -1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "minimum_projected_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 21,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": -1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "original_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 21,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": -1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "post_lifts": 16,
+        "public_valid_count": 0,
+        "radius_pass_count": 0
+      },
+      "22": {
+        "actual_submitted": true,
+        "best_randomized_entry": {
+          "ambient_residual_sq": 2547142,
+          "ancestor_uid": 15059977419113869560,
+          "backend_integer_id": 22,
+          "entry_was_randomized": true,
+          "full_norm_sq": 2547144,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 3.2871878147125244,
+          "radius_pass": false,
+          "randomization_entry_id": 11,
+          "sign": 1,
+          "slot_id": 187,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 15059977419113869560
+        },
+        "minimum_full_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 22,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": 1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "minimum_projected_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 22,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": 1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "original_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 22,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": 1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "post_lifts": 16,
+        "public_valid_count": 0,
+        "radius_pass_count": 0
+      }
+    },
+    "D-skip": {
+      "21": {
+        "actual_submitted": true,
+        "best_randomized_entry": {
+          "ambient_residual_sq": 2547142,
+          "ancestor_uid": 15059977419113869560,
+          "backend_integer_id": 21,
+          "entry_was_randomized": true,
+          "full_norm_sq": 2547144,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 3.2871878147125244,
+          "radius_pass": false,
+          "randomization_entry_id": 11,
+          "sign": -1,
+          "slot_id": 187,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 15059977419113869560
+        },
+        "minimum_full_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 21,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": -1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "minimum_projected_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 21,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": -1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "original_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 21,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": -1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "post_lifts": 16,
+        "public_valid_count": 0,
+        "radius_pass_count": 0
+      },
+      "22": {
+        "actual_submitted": true,
+        "best_randomized_entry": {
+          "ambient_residual_sq": 2547142,
+          "ancestor_uid": 15059977419113869560,
+          "backend_integer_id": 22,
+          "entry_was_randomized": true,
+          "full_norm_sq": 2547144,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 3.2871878147125244,
+          "radius_pass": false,
+          "randomization_entry_id": 11,
+          "sign": 1,
+          "slot_id": 187,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 15059977419113869560
+        },
+        "minimum_full_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 22,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": 1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "minimum_projected_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 22,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": 1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "original_entry": {
+          "ambient_residual_sq": 1775349,
+          "ancestor_uid": 554038325370871800,
+          "backend_integer_id": 22,
+          "entry_was_randomized": false,
+          "full_norm_sq": 1775351,
+          "group_id": 11,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": 1.546468734741211,
+          "radius_pass": false,
+          "randomization_entry_id": 0,
+          "sign": 1,
+          "slot_id": 176,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": 554038325370871800
+        },
+        "post_lifts": 16,
+        "public_valid_count": 0,
+        "radius_pass_count": 0
+      }
+    },
+    "E": {
+      "21": {
+        "actual_submitted": true,
+        "minimum_full_entry": {
+          "ambient_residual_sq": 56623,
+          "ancestor_uid": null,
+          "backend_integer_id": 21,
+          "entry_was_randomized": null,
+          "full_norm_sq": 56625,
+          "group_id": null,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": null,
+          "radius_pass": false,
+          "randomization_entry_id": null,
+          "sign": null,
+          "slot_id": null,
+          "tail": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "uid": null
+        },
+        "post_lifts": 1,
+        "public_valid_count": 0,
+        "radius_pass_count": 0
+      },
+      "22": {
+        "actual_submitted": true,
+        "minimum_full_entry": {
+          "ambient_residual_sq": 56623,
+          "ancestor_uid": null,
+          "backend_integer_id": 22,
+          "entry_was_randomized": null,
+          "full_norm_sq": 56625,
+          "group_id": null,
+          "owner_candidate_returned": false,
+          "projection_norm_sq_normalized": null,
+          "radius_pass": false,
+          "randomization_entry_id": null,
+          "sign": null,
+          "slot_id": null,
+          "tail": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "uid": null
+        },
+        "post_lifts": 1,
+        "public_valid_count": 0,
+        "radius_pass_count": 0
+      }
+    }
+  },
+  "scope": "read_only_existing_telemetry_labels_for_explanation_only_not_decoder_inputs",
+  "utc": "2026-10-28T15:19:26.309304+00:00"
+}

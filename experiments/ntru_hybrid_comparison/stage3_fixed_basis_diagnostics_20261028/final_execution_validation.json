@@ -1,0 +1,183 @@
+{
+  "all_cleanup_verified": true,
+  "all_task_hard_deadlines_met": true,
+  "complete_task_wall_exact_seconds": null,
+  "complete_task_wall_missing_reason": "initial user-file/source reads preceded first persisted task clock; recorded task start is stage3 directory creation",
+  "corrective_access_instrumentation_revision_preserved": true,
+  "data_checks_passed": true,
+  "distinct_supplementary_proof_status": "passed",
+  "global_budget_met": true,
+  "global_budget_seconds": 4800,
+  "global_started_monotonic": 192396.995364985,
+  "global_timer_reset": false,
+  "initial_preparation_recorded_seconds": 1043.0241915450024,
+  "numerical_closed_monotonic": 196079.271771458,
+  "numerical_decoder_and_backend_frozen_source_unchanged": true,
+  "numerical_full_scope_wall_seconds": 3682.2764064730145,
+  "observed_active_residuals_now": [],
+  "preparation_private_access_assurance": "not_fully_attested; see preparation_access_incident.json",
+  "primary_independent_validation_status": "timeout",
+  "protocol_all_requested_configurations_completed": false,
+  "reason_incomplete": "index0 D-normal blocked by diagnostic access guard before targets, preserved without retry",
+  "report_timestamp_utc": "2026-10-28T15:46:29.261445+00:00",
+  "schema": "ntru-stage3-final-execution-validation-v1",
+  "scope": "original numerical start through all algorithm attempts, intervening corrective preparation, primary timeout, supplementary proof, cleanup, required summary and final integrity checks; final report/artifact packaging excluded",
+  "source_integrity": {
+    "corrective": {
+      "all_match": true,
+      "file_count": 22,
+      "mismatches": []
+    },
+    "frozen": {
+      "all_match": true,
+      "file_count": 663,
+      "mismatches": []
+    },
+    "original": {
+      "all_match": true,
+      "file_count": 2195,
+      "mismatches": []
+    },
+    "supplementary": {
+      "all_match": true,
+      "file_count": 12,
+      "mismatches": []
+    }
+  },
+  "supervised_task_count": 12,
+  "task_cleanup_and_deadlines": [
+    {
+      "cleanup_verified": true,
+      "execution_status": "worker_nonzero_exit",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 86392832,
+      "residual_active_processes": [],
+      "returncode": 2,
+      "task_id": "decode_p0_D-normal",
+      "total_wall_seconds": 50.634706395998364
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 65363968,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "decode_p0_E",
+      "total_wall_seconds": 51.244757335982285
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 139259904,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "decode_p2_D-normal",
+      "total_wall_seconds": 312.79988279001554
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 139677696,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "decode_p2_D-probe-1",
+      "total_wall_seconds": 314.28433259102167
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 140996608,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "decode_p2_D-probe-400",
+      "total_wall_seconds": 331.5074006560026
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 139878400,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "decode_p2_D-skip",
+      "total_wall_seconds": 309.5979542330024
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 65208320,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "decode_p2_E",
+      "total_wall_seconds": 50.111607894999906
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "timeout",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 124993536,
+      "residual_active_processes": [],
+      "returncode": -15,
+      "task_id": "independent_validation",
+      "total_wall_seconds": 175.18875332700554
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 80457728,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "pattern_0",
+      "total_wall_seconds": 341.80425484100124
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 80535552,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "pattern_2",
+      "total_wall_seconds": 356.6229044889915
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 68448256,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "supplementary_validation",
+      "total_wall_seconds": 35.06394299099338
+    },
+    {
+      "cleanup_verified": true,
+      "execution_status": "completed",
+      "hard_deadline_met": true,
+      "identity_matched_active_now": [],
+      "peak_rss_bytes": 33083392,
+      "residual_active_processes": [],
+      "returncode": 0,
+      "task_id": "witness_check",
+      "total_wall_seconds": 6.576464840996778
+    }
+  ],
+  "task_wall_recorded_lower_bound_through_numerical_close": 4725.300598018017
+}

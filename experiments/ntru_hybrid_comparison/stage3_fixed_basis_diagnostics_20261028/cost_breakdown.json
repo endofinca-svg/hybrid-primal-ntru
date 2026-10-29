@@ -1,0 +1,73 @@
+{
+  "scope": "observed disjoint primitive operations and enclosing stages; stage walls include components, cannot add across levels; no E2E inference",
+  "D_configurations": [
+    {
+      "configuration": "D-skip",
+      "input_load_seconds": 18.582710310991388,
+      "gso_initialization_seconds": 22.181655758991838,
+      "normal_BDGL_preprocessing_seconds": 10.624485997017473,
+      "target_randomization_seconds": 4.945187055011047,
+      "diagnostic_snapshot_gso_seconds": 1.6883141349826474,
+      "extra_prestate_babai_seconds": 60.17344526012312,
+      "post_babai_seconds": 59.53016958368244,
+      "kernel_calls": 0,
+      "kernel_call_seconds": null,
+      "skip_sort_seconds": 0.00011834999895654619,
+      "owner_candidate_validation_seconds": 0.0,
+      "extra_diagnostic_validation_seconds": 71.34517322198371,
+      "telemetry_save_seconds": 50.49852470296901,
+      "cleanup_seconds": 0.09360537200700492
+    },
+    {
+      "configuration": "D-normal",
+      "input_load_seconds": 18.045022542995866,
+      "gso_initialization_seconds": 22.091137500014156,
+      "normal_BDGL_preprocessing_seconds": 10.94953081899439,
+      "target_randomization_seconds": 5.095819149020826,
+      "diagnostic_snapshot_gso_seconds": 1.7033293949789368,
+      "extra_prestate_babai_seconds": 61.699401510180905,
+      "post_babai_seconds": 60.53252242365852,
+      "kernel_calls": 1,
+      "kernel_call_seconds": 0.0037769100163131952,
+      "skip_sort_seconds": null,
+      "owner_candidate_validation_seconds": 0.0,
+      "extra_diagnostic_validation_seconds": 73.075409020792,
+      "telemetry_save_seconds": 49.568372252600966,
+      "cleanup_seconds": 0.09117613299167715
+    },
+    {
+      "configuration": "D-probe-1",
+      "input_load_seconds": 18.80076266202377,
+      "gso_initialization_seconds": 22.50243166598375,
+      "normal_BDGL_preprocessing_seconds": 10.477890865993686,
+      "target_randomization_seconds": 4.659264324000105,
+      "diagnostic_snapshot_gso_seconds": 1.5733443239878397,
+      "extra_prestate_babai_seconds": 60.045440952439094,
+      "post_babai_seconds": 62.067116929305485,
+      "kernel_calls": 1,
+      "kernel_call_seconds": 0.022958476998610422,
+      "skip_sort_seconds": null,
+      "owner_candidate_validation_seconds": 0.0,
+      "extra_diagnostic_validation_seconds": 72.66939597093733,
+      "telemetry_save_seconds": 50.95372914496693,
+      "cleanup_seconds": 0.10668207501294091
+    },
+    {
+      "configuration": "D-probe-400",
+      "input_load_seconds": 18.10585921999882,
+      "gso_initialization_seconds": 22.359856070019305,
+      "normal_BDGL_preprocessing_seconds": 11.383932774013374,
+      "target_randomization_seconds": 5.01462119599455,
+      "diagnostic_snapshot_gso_seconds": 1.6580546690092888,
+      "extra_prestate_babai_seconds": 62.84507466049399,
+      "post_babai_seconds": 61.78439793139114,
+      "kernel_calls": 1,
+      "kernel_call_seconds": 9.196484457002953,
+      "skip_sort_seconds": null,
+      "owner_candidate_validation_seconds": 0.0,
+      "extra_diagnostic_validation_seconds": 73.75439802309847,
+      "telemetry_save_seconds": 53.070903534593526,
+      "cleanup_seconds": 0.11330997198820114
+    }
+  ]
+}

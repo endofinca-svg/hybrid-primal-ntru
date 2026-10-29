@@ -1,0 +1,28 @@
+{
+  "schema": "ntru-stage3-file-access-v2",
+  "audit_hook_log_present": true,
+  "native_open_log_present": true,
+  "denied_python_open_attempts": [],
+  "native_forbidden_path_open_attempts": [],
+  "unresolved_native_path_records": [],
+  "allowed_module_paths": [
+    {
+      "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc",
+      "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc",
+      "source": "python_audit_hook"
+    },
+    {
+      "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc",
+      "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc",
+      "source": "python_audit_hook"
+    },
+    {
+      "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc",
+      "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc",
+      "source": "python_audit_hook"
+    }
+  ],
+  "all_checks_passed": true,
+  "scope": "current traced worker and descendants; native relative names use fixed worker cwd or -yy dirfd annotation",
+  "native_symlink_limit": "Native post-run realpath resolution cannot reconstruct a symlink removed during execution; Python hook records realpath before open."
+}

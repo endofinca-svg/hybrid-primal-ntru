@@ -1,0 +1,26 @@
+test_entry_order_statistic_is_not_group_coverage (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_lineage_follows_reduction_source_across_slot_replacement (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_normal_default_and_probe_change_only_saturation_and_limit (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_probe_gate_depends_on_integrity_not_improvement (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_root_request_shape_is_accepted_before_input_load (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_skip_does_not_call_kernel_but_preserves_original_sort_boundary (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_unfinished_stage_keeps_null_and_inherited_deadline (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_g6k/g6k/__init__.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from .siever_params import SieverParams  # noqa
+test_normal_matches_original_and_skip_preserves_every_lift (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.RealBackendTests) ... WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+ok
+test_probe_single_iteration_and_independent_rebuild_state (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.RealBackendTests) ... WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.449s
+
+OK

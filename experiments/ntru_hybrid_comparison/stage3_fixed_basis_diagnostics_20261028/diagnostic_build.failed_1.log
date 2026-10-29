@@ -1,0 +1,53 @@
+{"argv": ["/usr/bin/g++", "-std=c++11", "-Ofast", "-ftree-vectorize", "-funroll-loops", "-Wall", "-Wextra", "-mmmx", "-msse", "-msse2", "-msse3", "-mssse3", "-msse4.1", "-msse4.2", "-msha", "-maes", "-mavx", "-mfma", "-mavx2", "-pthread", "-fPIC", "-DHAVE_CONFIG_H", "-I.", "-I..", "-c", "slicer.cpp", "-o", ".libs/slicer.o"]}
+In file included from slicer.cpp:4:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from slicer.cpp:5:
+slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+slicer.h:84:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   84 |     unsigned int n;
+      |                  ^
+In file included from siever.h:42,
+                 from slicer.cpp:4:
+slicer.h:79:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   79 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from slicer.cpp:5:
+slicer.h:48:14: warning:   when initialized here [-Wreorder]
+   48 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+{"argv": ["/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python", "setup_diagnostic.py", "build_ext", "--inplace", "--force"]}
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+        for ordinal in range(self._core.cdb_t.size()):
+            slot = self._core.cdb_t[ordinal].i
+            e = &self._core.db_t[slot]
+            entries.append({'compressed_ordinal': ordinal, 'slot_id': slot,
+                            'group_id': e.i, 'uid': e.uid,
+                            'stored_len_sq': self._core.cdb_t[ordinal].len,
+                                                                      ^
+------------------------------------------------------------
+g6k/slicer.pyx:202:70: Object of type 'CompressedEntry &' has no attribute 'len'
+Compiling g6k/slicer.pyx because it changed.
+[1/1] Cythonizing g6k/slicer.pyx
+Traceback (most recent call last):
+  File "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_g6k/setup_diagnostic.py", line 7, in <module>
+    setup(name='stage3-diagnostic-g6k', ext_modules=cythonize([Extension('g6k.slicer', ['g6k/slicer.pyx'], language='c++', include_dirs=[numpy.get_include()], extra_objects=objects, libraries=['gmp','pthread'], extra_compile_args=FLAGS)], compiler_directives={'binding':True,'embedsignature':True,'language_level':2}))
+  File "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/Cython/Build/Dependencies.py", line 1153, in cythonize
+    cythonize_one(*args)
+  File "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/Cython/Build/Dependencies.py", line 1297, in cythonize_one
+    raise CompileError(None, pyx_file)
+Cython.Compiler.Errors.CompileError: g6k/slicer.pyx

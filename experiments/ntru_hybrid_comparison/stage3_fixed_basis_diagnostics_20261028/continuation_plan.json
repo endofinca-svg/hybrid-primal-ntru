@@ -1,0 +1,44 @@
+{
+  "scope": "same finite stage3; continue only never-started original configurations after fixing access guard false positive",
+  "original_plan": "plan.json",
+  "original_source_freeze": "sources.json",
+  "global_started_monotonic": 192396.995364985,
+  "global_budget_seconds": 4800,
+  "global_clock_reset": false,
+  "retry_of_started_tasks": false,
+  "remain": [
+    [
+      2,
+      "E"
+    ],
+    [
+      2,
+      "D-skip"
+    ],
+    [
+      2,
+      "D-normal"
+    ],
+    [
+      2,
+      "D-probe-1"
+    ],
+    [
+      2,
+      "D-probe-400"
+    ]
+  ],
+  "no_new_reduction": true,
+  "decoder_source_unchanged": true,
+  "backend_source_unchanged": true,
+  "corrected_component": "pre-import access guard and native trace pathname completeness; numerical algorithm and parameters unchanged",
+  "index0_D_normal": "blocked during original attempt before targets; preserved and never retried",
+  "why_continue_is_within_scope": "no extra pattern, key, target, configuration, seed, database, schedule or algorithm attempt; original overall deadline remains in force",
+  "source_freeze_revision": "corrective access instrumentation frozen before the remaining never-started configurations",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.continue_run"
+  ]
+}

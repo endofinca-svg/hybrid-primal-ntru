@@ -1,0 +1,12 @@
+{"event": "task_started", "monotonic": 193705.650722656, "task_id": "decode_p2_E", "timing": {"budget_seconds": 120, "cleanup_reserve_seconds": 5, "hard_deadline": 193825.650722656, "started_monotonic": 193705.650722656, "work_deadline": 193820.650722656}}
+{"event": "task_finished", "monotonic": 193756.290636485, "status": "completed", "task_id": "decode_p2_E"}
+{"event": "task_started", "monotonic": 193756.304725291, "task_id": "decode_p2_D-skip", "timing": {"budget_seconds": 600, "cleanup_reserve_seconds": 5, "hard_deadline": 194356.304725291, "started_monotonic": 193756.304725291, "work_deadline": 194351.304725291}}
+{"event": "task_finished", "monotonic": 194069.373889818, "status": "completed", "task_id": "decode_p2_D-skip"}
+{"event": "task_started", "monotonic": 194069.394165595, "task_id": "decode_p2_D-normal", "timing": {"budget_seconds": 600, "cleanup_reserve_seconds": 5, "hard_deadline": 194669.394165595, "started_monotonic": 194069.394165595, "work_deadline": 194664.394165595}}
+{"event": "task_finished", "monotonic": 194385.740668347, "status": "completed", "task_id": "decode_p2_D-normal"}
+{"event": "task_started", "monotonic": 194385.759310713, "task_id": "decode_p2_D-probe-1", "timing": {"budget_seconds": 600, "cleanup_reserve_seconds": 5, "hard_deadline": 194985.759310713, "started_monotonic": 194385.759310713, "work_deadline": 194980.759310713}}
+{"event": "task_finished", "monotonic": 194703.865977268, "status": "completed", "task_id": "decode_p2_D-probe-1"}
+{"event": "task_started", "monotonic": 194703.914275515, "task_id": "decode_p2_D-probe-400", "timing": {"budget_seconds": 600, "cleanup_reserve_seconds": 5, "hard_deadline": 195303.914275515, "started_monotonic": 194703.914275515, "work_deadline": 195298.914275515}}
+{"event": "task_finished", "monotonic": 195039.743043303, "status": "completed", "task_id": "decode_p2_D-probe-400"}
+{"event": "task_started", "monotonic": 195039.765589575, "task_id": "independent_validation", "timing": {"budget_seconds": 180, "cleanup_reserve_seconds": 5, "hard_deadline": 195219.765589575, "started_monotonic": 195039.765589575, "work_deadline": 195214.765589575}}
+{"event": "task_finished", "monotonic": 195215.209381315, "status": "timeout", "task_id": "independent_validation"}

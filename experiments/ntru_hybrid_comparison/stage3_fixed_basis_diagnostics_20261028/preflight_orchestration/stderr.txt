@@ -1,0 +1,10 @@
+test_actual_owner_request_shape_reaches_decoder_input_boundary (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_failed_current_witness_cannot_use_stale_success (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_index0_digest_mismatch_does_not_block_index2 (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_probe_integrity_failure_blocks_probe400_only (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_repository_path_and_exact_finite_schedule (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.086s
+
+OK

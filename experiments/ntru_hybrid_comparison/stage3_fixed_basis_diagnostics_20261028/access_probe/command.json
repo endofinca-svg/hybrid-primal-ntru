@@ -1,0 +1,16 @@
+[
+  "/usr/bin/strace",
+  "-f",
+  "-qq",
+  "-e",
+  "trace=open,openat,openat2",
+  "-o",
+  "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/access_probe/file_opens.log",
+  "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+  "-B",
+  "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/audit_entry.py",
+  "--audit-log",
+  "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/access_probe/file_access.jsonl",
+  "json.tool",
+  "--help"
+]

@@ -1,0 +1,13 @@
+{
+  "schema": "ntru-stage3-explicit-trusted-numpy-modules-v2",
+  "source_and_imported_cache_sha256": {
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc": "01bb9fd70282d1688ff0d2eea884b901cbd96fa5fe39581ad65bebc4c2ab506c",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc": "96862d377147e0e5c118c952fdbe953cd503ce4556bc162b545425e8519fb061",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc": "348ff387ad47ed35dd8802d8ea06e9e815c4b9d22df365c04f9f7e5443bc4049",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/extbuild.py": "7f2e0397e0aa32da81bba3128493487bd0c0b981fc90dfd766551d39571bd614",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/utils.py": "52b5a931fb20403e782b8eae8f4d1d015c753db97c2450abd3fc9bee6d6e6644"
+  },
+  "scope": "Exact pinned NumPy implementation code modules only; no reference arrays",
+  "private_reference_arrays_read": false
+}

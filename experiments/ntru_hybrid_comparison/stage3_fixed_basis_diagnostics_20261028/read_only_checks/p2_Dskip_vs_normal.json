@@ -1,0 +1,99 @@
+{
+  "Dskip_best_equal_E_targets": 0,
+  "Dskip_best_improved_over_E_targets": 0,
+  "Dskip_best_worse_E_targets": 80,
+  "all1280_full_residual_radius_rejected": true,
+  "checked_monotonic": 194421.110910271,
+  "compared_rows": 1280,
+  "fields_compared": [
+    "projection_residual",
+    "projection_norm_sq_normalized",
+    "lattice_vector",
+    "coefficients",
+    "ambient_residual_sq",
+    "full_norm_sq",
+    "radius_pass",
+    "full_pair"
+  ],
+  "identical_post_entry_identity_sets": true,
+  "minimum_complete_entry": {
+    "ambient_residual_sq": 300015,
+    "ancestor_uid": 2667221035558415288,
+    "backend_integer_id": 50,
+    "entry_was_randomized": false,
+    "full_norm_sq": 300018,
+    "group_id": 26,
+    "projection_norm_sq_normalized": 0.7780178785324097,
+    "randomization_entry_id": 0,
+    "sign": 1,
+    "slot_id": 416,
+    "tail": [
+      -1,
+      0,
+      1,
+      -1
+    ],
+    "uid": 2667221035558415288
+  },
+  "minimum_projection_entry": {
+    "ambient_residual_sq": 300015,
+    "ancestor_uid": 2667221035558415288,
+    "backend_integer_id": 50,
+    "entry_was_randomized": false,
+    "full_norm_sq": 300018,
+    "group_id": 26,
+    "projection_norm_sq_normalized": 0.7780178785324097,
+    "randomization_entry_id": 0,
+    "sign": 1,
+    "slot_id": 416,
+    "tail": [
+      -1,
+      0,
+      1,
+      -1
+    ],
+    "uid": 2667221035558415288
+  },
+  "normal_counters": {
+    "babai_lift_calls": 1280,
+    "diagnostic_additional_babai_lift_calls": 1280,
+    "iterations_completed": 0,
+    "iterations_entered": 0,
+    "itercount_slicer": 0,
+    "kernel_calls": 1,
+    "kernel_completed_calls": 1,
+    "redsucc": 0,
+    "replacements": 0
+  },
+  "normal_exit_reason": "projection_saturation",
+  "owner_returned_candidates": 0,
+  "pairing_all_match": true,
+  "pairing_fields_compared": [
+    "basis_sha256",
+    "lattice_db_sha256",
+    "lattice_db_ordered_sha256",
+    "target_db_sha256",
+    "target_db_ordered_sha256",
+    "rng_state_sha256",
+    "sieve_rng_state_sha256",
+    "lsh_seed",
+    "gh_sub",
+    "target_order_sha256",
+    "id_mapping_sha256"
+  ],
+  "post_entries_identical_all_compared_fields": true,
+  "public_valid_lifts": 0,
+  "randomized_lift_best_improved_over_D_original_targets": 22,
+  "scope": "read_only_existing_stage3_artifacts_no_backend_calls",
+  "skip_counters": {
+    "babai_lift_calls": 1280,
+    "diagnostic_additional_babai_lift_calls": 1280,
+    "iterations_completed": 0,
+    "iterations_entered": 0,
+    "itercount_slicer": 0,
+    "kernel_calls": 0,
+    "kernel_completed_calls": 0,
+    "redsucc": 0,
+    "replacements": 0
+  }
+}

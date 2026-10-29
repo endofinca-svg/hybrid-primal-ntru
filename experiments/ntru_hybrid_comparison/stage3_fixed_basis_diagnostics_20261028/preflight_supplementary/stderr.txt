@@ -1,0 +1,12 @@
+test_cancellation_does_not_excuse_unproved_partial_sum_range (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_supplementary_validate.SupplementaryProofTests) ... ok
+test_correct_norm_calls_full_public_verifier_and_checks_relation (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_supplementary_validate.SupplementaryProofTests) ... ok
+test_exact_int64_with_signed_cancellation_and_bound (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_supplementary_validate.SupplementaryProofTests) ... ok
+test_huge_coefficient_uses_bigint_without_wrap (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_supplementary_validate.SupplementaryProofTests) ... ok
+test_huge_matrix_uses_bigint_and_preserves_exact_value (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_supplementary_validate.SupplementaryProofTests) ... ok
+test_norm_mismatch_is_complete_rejection_without_inverse_or_ring (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_supplementary_validate.SupplementaryProofTests) ... ok
+test_product_rejects_bool_and_wrong_dimension (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_supplementary_validate.SupplementaryProofTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.173s
+
+OK

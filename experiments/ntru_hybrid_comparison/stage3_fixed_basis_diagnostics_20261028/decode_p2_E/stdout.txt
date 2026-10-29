@@ -1,0 +1,1 @@
+{"status": "completed", "configuration": "E", "processed": 80, "public_valid": 0, "counters": {"iterations_entered": 0, "iterations_completed": 0, "itercount_slicer": 0, "replacements": 0, "redsucc": 0, "kernel_calls": 0, "babai_lift_calls": 80}, "gate": null}

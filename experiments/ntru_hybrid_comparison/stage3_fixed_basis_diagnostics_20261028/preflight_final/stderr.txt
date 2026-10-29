@@ -1,0 +1,61 @@
+test_expired_stage_never_starts (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration.DeadlineRecords) ... ok
+test_global_and_local_deadlines (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration.DeadlineRecords) ... ok
+test_unfinished_stage_stays_null (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration.DeadlineRecords) ... ok
+test_actual_owner_request_shape_reaches_decoder_input_boundary (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_failed_basis_finalization_cannot_use_partial_manifest (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_failed_current_witness_cannot_use_stale_success (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_failed_probe1_cannot_use_partial_integrity_flag (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_index0_digest_mismatch_does_not_block_index2 (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_probe_integrity_failure_blocks_probe400_only (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_repository_path_and_exact_finite_schedule (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit.OwnerIntegration) ... ok
+test_correct_norm_does_not_hide_invalid_public_relation (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_corrupt_target_for_matching_identity_fails (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_external_target_ids_are_exact_tail_and_order (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_independent_convolution_folds_wraparound (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_negacyclic_signed_rotations_positive_negative_global_sign (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_state_copy_does_not_inherit_prior_mutations (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_witness_algebra_norm_reconstruction_and_public_validation (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_wrong_pattern_is_not_a_witness (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_witness.WitnessTests) ... ok
+test_claimed_validation_cannot_override_actual_public_vector (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_validate.ValidatorTests) ... ok
+test_expired_deadline_prevents_more_validation (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_validate.ValidatorTests) ... ok
+test_fresh_validation_reconstructs_norm_and_public_relation (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_validate.ValidatorTests) ... ok
+test_full_norm_and_tail_identity_are_recomputed (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_validate.ValidatorTests) ... ok
+test_no_entry_completion_needs_terminal_and_empty_saved_group (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_validate.ValidatorTests) ... ok
+test_timeout_phase_has_null_exact_time (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_validate.ValidatorTests) ... ok
+test_entry_order_statistic_is_not_group_coverage (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_lineage_follows_reduction_source_across_slot_replacement (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_normal_default_and_probe_change_only_saturation_and_limit (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_probe_gate_depends_on_integrity_not_improvement (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_root_request_shape_is_accepted_before_input_load (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_skip_does_not_call_kernel_but_preserves_original_sort_boundary (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+test_unfinished_stage_keeps_null_and_inherited_deadline (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.ControlTests) ... ok
+/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_g6k/g6k/__init__.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from .siever_params import SieverParams  # noqa
+test_normal_matches_original_and_skip_preserves_every_lift (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.RealBackendTests) ... WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+ok
+test_probe_single_iteration_and_independent_rebuild_state (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_diagnostic_backend.RealBackendTests) ... WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+WARNING:root:bdgl_sieve not recommended below dimension 40
+Not saturated after 10000 iterations
+ok
+test_allowed_file_read_is_logged (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_guard.AccessGuard) ... ok
+test_exact_traced_worker_boundary_and_cleanup (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_guard.AccessGuard) ... FAIL
+test_forbidden_file_and_symlink_blocked_before_read (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_guard.AccessGuard) ... ok
+
+======================================================================
+FAIL: test_exact_traced_worker_boundary_and_cleanup (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_guard.AccessGuard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/test_access_guard.py", line 28, in test_exact_traced_worker_boundary_and_cleanup
+    self.assertTrue(access_check(output)['all_checks_passed'])
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 36 tests in 12.840s
+
+FAILED (failures=1)

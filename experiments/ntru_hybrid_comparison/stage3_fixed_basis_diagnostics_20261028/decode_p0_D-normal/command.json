@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "/usr/bin/strace",
+    "-f",
+    "-qq",
+    "-e",
+    "trace=open,openat,openat2",
+    "-o",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p0_D-normal/file_opens.log",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/audit_entry.py",
+    "--audit-log",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p0_D-normal/file_access.jsonl",
+    "experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.decode_worker",
+    "--request",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p0_D-normal/request.json",
+    "--output",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p0_D-normal"
+  ],
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONPATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_g6k:/home/inca/hybrid primal multi decoding for NTRU"
+  },
+  "timing": {
+    "budget_seconds": 600,
+    "cleanup_reserve_seconds": 5,
+    "hard_deadline": 193753.653792605,
+    "started_monotonic": 193153.653792605,
+    "work_deadline": 193748.653792605
+  }
+}

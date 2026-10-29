@@ -1,0 +1,39 @@
+{
+  "schema": "ntru-stage3-preparation-access-incident-v1",
+  "phase": "source inspection before numerical launch and before source freeze",
+  "reporting_agent": "witness_validation",
+  "incident": "A recursive source-search command did not exclude private, truth, or reference paths or JSON files.",
+  "exact_shell_command": "find .. -name AGENTS.md -print; rg --files experiments/ntru_hybrid_comparison/main_feasibility_20261027 | head -60; rg -n \"recovered_class|negacyclic|def.*valid|def.*reconstruct|def.*tail\" experiments/ntru_hybrid_comparison experiments/ntru_e2e | head -120",
+  "content_search_command": "rg -n \"recovered_class|negacyclic|def.*valid|def.*reconstruct|def.*tail\" experiments/ntru_hybrid_comparison experiments/ntru_e2e | head -120",
+  "working_directory": "/home/inca/hybrid primal multi decoding for NTRU",
+  "search_scope": [
+    "experiments/ntru_hybrid_comparison",
+    "experiments/ntru_e2e"
+  ],
+  "observed_output": {
+    "tool_return_was_truncated": true,
+    "visible_matches": "Python source, historical reports, public-valid historical experiment records and test logs. One or more long historical result JSON lines caused tool-output truncation.",
+    "private_array_content_identified_in_visible_response": false,
+    "private_file_match_identified_in_visible_response": false,
+    "full_stdout_saved_to_file": false,
+    "private_file_open_trace_available": false
+  },
+  "metadata_only_followup_command": "rg --files experiments/ntru_e2e -g '*private*' -g '*reference*' -g '*truth*' -g '*secret*'; git check-ignore experiments/ntru_e2e/private experiments/ntru_e2e/reference experiments/ntru_e2e/truth",
+  "metadata_only_followup_observation": "File-name enumeration confirmed historical private/*.truth.json files are visible to rg --files under experiments/ntru_e2e/runs. No private file contents were opened to investigate.",
+  "certainty": {
+    "source_search_had_no_private_path_exclusion": true,
+    "private_files_in_recursive_search_scope": true,
+    "individual_private_file_scanned_internally": null,
+    "reason_for_unknown_scan_set": "No open/read tracing was enabled. The head pipe can stop rg after matched output, and rg traverses/searches concurrently. File-name enumeration proves eligibility, not that every file was scanned before termination.",
+    "cannot_claim_total_no_private_content_read_by_any_process": true,
+    "private_reference_array_deliberately_opened_by_agent": false,
+    "private_reference_array_used_to_generate_witness_or_parameters": false
+  },
+  "containment": {
+    "no_numerical_main_instance_job_started_by_reporting_agent": true,
+    "witness_source": "Only historical main_feasibility B-main-0 public-validated basis_row output",
+    "decoder_requests_receive_anchor_or_correct_tail_labels": false,
+    "further_searches": "Restrict content reads to explicit public/source/stage3 files; exclude private/truth/reference content paths before opening.",
+    "decision": "Parent task must account for this uncertainty before numerical purity gate; do not describe entire preparation as an established no-read process."
+  }
+}

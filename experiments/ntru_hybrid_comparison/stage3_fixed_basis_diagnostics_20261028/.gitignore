@@ -1,0 +1,15 @@
+# Rebuildable upstream source/build copies remain local.
+diagnostic_g6k/
+diagnostic_g6k.build_failed_*/
+__pycache__/
+*.pyc
+*.so
+*.o
+*.a
+
+# Ephemeral synthetic guard fixture and its machine-specific absolute symlink.
+preflight_access_v2/guard_denial/synthetic_private/
+preflight_access_v2/guard_denial/alias.dat
+
+# Preserve raw experiment/build logs despite the repository-wide *.log rule.
+!*.log

@@ -1,0 +1,1 @@
+{"status": "completed", "configuration": "D-probe-400", "processed": 80, "public_valid": 0, "counters": {"iterations_entered": 400, "iterations_completed": 400, "itercount_slicer": 400, "replacements": 6242, "redsucc": 6248, "kernel_calls": 1, "kernel_completed_calls": 1, "babai_lift_calls": 1280, "diagnostic_additional_babai_lift_calls": 1280}, "gate": null}

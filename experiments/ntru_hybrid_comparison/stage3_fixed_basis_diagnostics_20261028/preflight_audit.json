@@ -1,0 +1,46 @@
+{
+  "schema": "ntru-stage3-preflight-audit-v1",
+  "completed_utc": "2026-10-28T14:31:56.297788+00:00",
+  "applicable_agents_found": [],
+  "historical_protected_count": 2195,
+  "historical_mismatch_counts": {
+    "historical_protected": 0,
+    "historical_sources": 0
+  },
+  "environment_checks": {
+    "all_compared_loaded_modules": true,
+    "fplll_version": true,
+    "fpylll_version": true,
+    "python_version": true,
+    "reduction_sources_exact_metadata": true,
+    "strategy_exact_metadata": true
+  },
+  "strategy_sha256": "f516b0a6f0c580cff72e1e2c3562c44dc6f17e8f99613e9e4020e35481b27a18",
+  "runtime_modules_matched_to_history": 169,
+  "existing_tests": {
+    "schema": "ntru-stage3-existing-tests-v1",
+    "completed_utc": "2026-10-28T14:31:27.162710+00:00",
+    "tests_run": 239,
+    "passed": 239,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "unittest_wall_seconds": 12.191547402995639,
+    "real_supervisor_observation_count": 14,
+    "real_lattice_calls": 0,
+    "scope": "Existing comparison regression suite: pure correctness/mocks plus bounded real process and memory supervision fixtures; no n128 numerical jobs."
+  },
+  "protected_after_tests": {
+    "original": {
+      "file_count": 2195,
+      "mismatches": [],
+      "all_match": true
+    }
+  },
+  "private_contents_read": false,
+  "numeric_n128_jobs_started": 0,
+  "final_source_freeze_performed": false,
+  "final_source_freeze_instructions": "After source, backend, targeted tests, plan and command are complete, invoke freeze_sources.py freeze; verify before and after numerical work.",
+  "material_issues": []
+}

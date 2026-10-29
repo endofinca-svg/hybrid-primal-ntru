@@ -1,0 +1,18 @@
+{
+  "scope": "supplementary integer proof only; numerical decoder source remains first freeze",
+  "frozen_monotonic": 195847.573505655,
+  "source_sha256": {
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/supplementary_validate.py": "a7a42a5b71db5e322e223c0a8a253eb9f3da9811396afee97c5977c0fec1d15c",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/test_supplementary_validate.py": "100cdd2a244394b8440752f3010bf332e319ef66da689046e932c3d5fe4e29b2",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/supplementary_plan.json": "781925e79d1d1b6a8a5acce7ae6f22170243e65a89d34f8710b94156b442221d",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/preflight_supplementary/summary.json": "1f9a4c7549029f290edac41b43a8c788689c4b81ff147c69bdef96fc6a0ade92",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/preflight_supplementary/command.json": "4413b4e3ba06b5fce886437e36b64e0b2a53bac1fafb208c4a0bb92c65bf8a04",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/supplementary_validation/command.json": "b7c9775ee743f45493f85af67609ed8a74302d7a869f009fc7e34e227d451781",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/supplementary_validation/request.json": "cc189a14f8929b66502572ef6f1230b223dabb18f9b4a1d1abca33d9acd1bc79",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/sources.json": "9dbd751fea68507ef8ff8ce551c3f7b12cbcb992b80ffade1c235c7cdd857277",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/continuation_sources.json": "e6a9c830f91f9c6fe03698d4f7cbd8668ae915bcfdea20ebfb1aaf4f6f9f8fb0",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_runtime.json": "5344c10a0b4ca79ffa13efbcf7cb499199382fba64af4a15bb91c58c2e49e320",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/access_v2.py": "725e88c909c961856458004780d467068888b0d3ba89c73816ae36fc3627642f",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/audit_entry_v2.py": "59f41b360c1d59b30908d04fc25cbee47b289f4e09d6f046cd9024df17b787b1"
+  }
+}

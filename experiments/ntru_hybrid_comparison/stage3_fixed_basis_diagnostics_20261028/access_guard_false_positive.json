@@ -1,0 +1,22 @@
+{
+  "type": "diagnostic_access_guard_false_positive",
+  "observed_task": "decode_p0_D-normal",
+  "worker_error": {
+    "message": "stage3 blocked forbidden content path before open: /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__init__.py",
+    "type": "PermissionError"
+  },
+  "stage": "database_preprocessing",
+  "actual_target_submission_count": 0,
+  "actual_kernel_calls": 0,
+  "kernel_calls_evidence": "failed before target construction/normal Slicer creation; no kernel checkpoint",
+  "candidate_targets_already_constructed": 80,
+  "started_task_retry_allowed": false,
+  "started_task_retry_performed": false,
+  "correction": "isolated v2 audit guard and shared native-open classifier distinguish trusted NumPy internal Python modules from protected repository arrays; use strace -s4096 -yy for complete pathnames",
+  "frozen_originals_modified": false,
+  "initial_outcome_preserved": "initial_outcome/ plus original owner/execution and D0 directory",
+  "continuation_scope": "only previously not_run index2 configs, same frozen numerical decoder/backend and original global deadline",
+  "initial_native_trace_limit": "initial strace omitted -s4096; default string limit may truncate native paths, so those traces alone do not attest complete native path access. Python hook full-path records remain available.",
+  "global_clock_reset": false,
+  "recorded_monotonic": 193510.171115506
+}

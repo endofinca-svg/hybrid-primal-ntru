@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "returncode": 0,
+  "tests_run": 7,
+  "wall_seconds": 0.6630714030179661,
+  "scope": "new exact saved-artifact proof tests; no new solver or numerical configuration"
+}

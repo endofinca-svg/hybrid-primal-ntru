@@ -1,0 +1,12 @@
+test_only_original_never_started_configs_and_original_clock (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_continuation.Continuation) ... ok
+test_probe_gate_retained (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_continuation.Continuation) ... ok
+test_exact_numpy_private_modules_are_allowed (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_v2.ContentPolicy) ... ok
+test_native_parser_uses_same_policy_and_records_module (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_v2.ContentPolicy) ... ok
+test_secret_arrays_and_repository_content_are_denied (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_v2.ContentPolicy) ... ok
+test_symlink_resolution_cannot_bypass_array_denial (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_v2.ContentPolicy) ... ok
+test_truncated_native_path_is_not_silently_accepted (experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_v2.ContentPolicy) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.716s
+
+OK

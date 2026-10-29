@@ -1,0 +1,8 @@
+task_id,pattern_index,configuration,mode,status,wall_seconds,constructed_count,submitted_count,processed_count,radius_pass_target_count,public_valid_target_count,independently_valid_candidates,basis_row_valid_count,kernel_calls,iterations_entered,iterations_completed,replacements,successful_reductions,babai_lift_calls,extra_diagnostic_lift_calls,minimum_full_norm_sq,minimum_pre_full_norm_sq,peak_rss_bytes,cleanup_verified,deadline_met,exit_reason
+decode_p0_E,0,E,fixed_basis_diagnostic,completed,51.297600379009964,80,80,80,0,0,,0,0,0,0,0,0,80,,36869,,65363968,True,True,full80_finished
+decode_p0_D-normal,0,D-normal,fixed_basis_diagnostic,worker_nonzero_exit,50.69151300599333,,0,0,,,,0,,,,,,,,,,86392832,True,True,
+decode_p2_E,2,E,fixed_basis_diagnostic,completed,50.639913829014404,80,80,80,0,0,,0,0,0,0,0,0,80,,41959,,65208320,True,True,full80_finished
+decode_p2_D-skip,2,D-skip,fixed_basis_diagnostic,completed,313.06916452699807,80,80,80,0,0,,0,0,0,0,0,0,1280,1280,300018,300018,139878400,True,True,explicit_diagnostic_skip
+decode_p2_D-normal,2,D-normal,fixed_basis_diagnostic,completed,316.3465027519851,80,80,80,0,0,,0,1,0,0,0,0,1280,1280,300018,300018,139259904,True,True,projection_saturation
+decode_p2_D-probe-1,2,D-probe-1,fixed_basis_diagnostic,completed,318.1066665549879,80,80,80,0,0,,0,1,1,1,568,568,1280,1280,300018,300018,139677696,True,True,iteration_limit
+decode_p2_D-probe-400,2,D-probe-400,fixed_basis_diagnostic,completed,335.82876778798527,80,80,80,0,0,,0,1,400,400,6242,6248,1280,1280,289218,300018,140996608,True,True,iteration_limit

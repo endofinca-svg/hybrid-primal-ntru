@@ -1,0 +1,21 @@
+{"event": "stage_started", "monotonic": 194388.051219226, "stage": "input_load_verify"}
+{"event": "stage_finished", "monotonic": 194406.910419975, "seconds": 18.80076266202377, "stage": "input_load_verify"}
+{"event": "stage_started", "monotonic": 194406.977878155, "stage": "basis_row_check"}
+{"event": "stage_finished", "monotonic": 194407.047840599, "seconds": 0.004972638009348884, "stage": "basis_row_check"}
+{"event": "stage_started", "monotonic": 194407.094110925, "stage": "gso_initialization"}
+{"event": "stage_finished", "monotonic": 194429.673178252, "seconds": 22.50243166598375, "stage": "gso_initialization"}
+{"event": "stage_started", "monotonic": 194429.753312197, "stage": "database_preprocessing"}
+{"event": "stage_finished", "monotonic": 194440.293162088, "seconds": 10.477890865993686, "stage": "database_preprocessing"}
+{"event": "full80_submitted", "ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79], "monotonic": 194440.338319031, "ordered_targets_sha256": "12b49bb0caa1b6ab420aba61a26f5b60812ff3f3439399f92fab5bbfced70008"}
+{"event": "stage_started", "monotonic": 194440.394139741, "stage": "target_construction_randomization"}
+{"event": "stage_finished", "monotonic": 194445.098229867, "seconds": 4.659264324000105, "stage": "target_construction_randomization"}
+{"event": "stage_started", "monotonic": 194445.456507278, "stage": "diagnostic_prestate_snapshot_gso"}
+{"event": "stage_finished", "monotonic": 194447.432274685, "seconds": 1.5733443239878397, "stage": "diagnostic_prestate_snapshot_gso"}
+{"event": "stage_started", "monotonic": 194447.75587315, "stage": "diagnostic_additional_lifts"}
+{"event": "stage_finished", "monotonic": 194569.483235646, "seconds": 121.45159507798962, "stage": "diagnostic_additional_lifts"}
+{"event": "stage_started", "monotonic": 194569.928430073, "stage": "slicer_kernel"}
+{"event": "stage_finished", "monotonic": 194571.31416998, "seconds": 0.9471446509996895, "stage": "slicer_kernel"}
+{"event": "stage_started", "monotonic": 194571.726264306, "stage": "post_kernel_babai_lifts"}
+{"event": "stage_finished", "monotonic": 194698.099254366, "seconds": 125.96509969601175, "stage": "post_kernel_babai_lifts"}
+{"event": "stage_started", "monotonic": 194698.440330487, "stage": "final_integrity_and_save"}
+{"event": "stage_finished", "monotonic": 194698.861540436, "seconds": 0.033294496999587864, "stage": "final_integrity_and_save"}

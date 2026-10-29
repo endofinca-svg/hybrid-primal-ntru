@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "normal_bdgl_preprocess_count": 1,
+  "interface_test_mode": false,
+  "sample_database_only": false,
+  "main_n128_jobs": 0,
+  "reduction_calls": 0,
+  "lattice_db_size": 128,
+  "dimension": 28,
+  "g6k_siever_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/siever.cpython-310-x86_64-linux-gnu.so",
+  "g6k_slicer_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid/g6k/slicer.cpython-310-x86_64-linux-gnu.so"
+}

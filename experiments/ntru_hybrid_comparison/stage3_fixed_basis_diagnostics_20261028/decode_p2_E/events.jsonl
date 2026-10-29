@@ -1,0 +1,13 @@
+{"event": "stage_started", "monotonic": 193707.699276107, "stage": "input_load_verify"}
+{"event": "stage_finished", "monotonic": 193726.199614073, "seconds": 18.448427827999694, "stage": "input_load_verify"}
+{"event": "stage_started", "monotonic": 193726.247838728, "stage": "basis_row_check"}
+{"event": "stage_finished", "monotonic": 193726.303448238, "seconds": 0.005090477992780507, "stage": "basis_row_check"}
+{"event": "stage_started", "monotonic": 193726.376952919, "stage": "gso_initialization"}
+{"event": "stage_finished", "monotonic": 193748.311701918, "seconds": 21.80688268801896, "stage": "gso_initialization"}
+{"event": "stage_started", "monotonic": 193748.354551894, "stage": "database_preprocessing"}
+{"event": "stage_finished", "monotonic": 193748.422087609, "seconds": 0.0319039819878526, "stage": "database_preprocessing"}
+{"event": "full80_submitted", "ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79], "monotonic": 193748.486992554, "ordered_targets_sha256": "12b49bb0caa1b6ab420aba61a26f5b60812ff3f3439399f92fab5bbfced70008"}
+{"event": "stage_started", "monotonic": 193748.545219252, "stage": "babai_decoding_and_lifting"}
+{"event": "stage_finished", "monotonic": 193755.309924086, "seconds": 6.697233464015881, "stage": "babai_decoding_and_lifting"}
+{"event": "stage_started", "monotonic": 193755.365183545, "stage": "final_integrity_and_save"}
+{"event": "stage_finished", "monotonic": 193755.441662529, "seconds": 0.03118735400494188, "stage": "final_integrity_and_save"}

@@ -1,0 +1,183 @@
+--- original/kernel/random.hpp
++++ diagnostic/kernel/random.hpp
+@@ -24,6 +24,7 @@
+ #include <cstdint>
+ #include <random>
+ #include <mutex>
++#include <sstream>
+ 
+ namespace rng {
+ 
+@@ -71,6 +72,8 @@
+ 			return _rng();
+ 		}
+ 
++		std::string diagnostic_state() const { std::ostringstream out; out << _rng; return out.str(); }
++
+ 	private:
+ 		std::mutex _mut;
+ 		base_rng_t _rng;
+--- original/kernel/slicer.h
++++ diagnostic/kernel/slicer.h
+@@ -17,6 +17,8 @@
+ #define MAX_SIEVING_DIM 128
+ #endif
+ 
++#include <fstream>
++#include <string>
+ #include "compat.hpp"
+ #include "statistics_slicer.hpp"
+ 
+@@ -81,6 +83,24 @@
+ 
+     unsigned int n;
+ 
++    // Diagnostic observations. Defaults preserve the original stopping rule.
++    bool diagnostic_bypass_saturation = false;
++    size_t diagnostic_iterations_entered = 0;
++    size_t diagnostic_iterations_completed = 0;
++    std::string diagnostic_checkpoint_path;
++    std::vector<std::vector<uint64_t>> diagnostic_lineage;
++    std::string diagnostic_rng_state() const { return rng_t.diagnostic_state(); }
++    std::string diagnostic_sieve_rng_state() const { return sieve.rng.diagnostic_state(); }
++    int64_t diagnostic_lsh_seed() const { return sieve.lsh_seed; }
++    void diagnostic_checkpoint(const char* event) {
++        if(diagnostic_checkpoint_path.empty()) return;
++        std::ofstream out(diagnostic_checkpoint_path, std::ios::app);
++        out << event << "\t" << diagnostic_iterations_entered << "\t"
++            << diagnostic_iterations_completed << "\t"
++            << statistics.get_stats_replacements() << "\t"
++            << statistics.get_stats_redsucc_total() << "\n";
++    }
++
+     unsigned int Nt = 1;  //number of unique targets
+     FT saturation_scalar = 1.1; // Nt*saturation_scalar = number of vectors of length < proj_error_bound required to terminate
+     FT proj_error_bound = 0.9; //arbitrary value, expect to be set by the caller
+--- original/kernel/slicer.cpp
++++ diagnostic/kernel/slicer.cpp
+@@ -233,6 +233,7 @@
+                 recompute_data_for_entry_t<RandomizedSlicer::RecomputeSlicer::recompute_all>(new_entry);
+ 
+                 statistics.inc_stats_redsucc_s();
++                diagnostic_lineage.push_back({0, uint64_t(db_t[i1].uid), uint64_t(new_entry.uid), uint64_t(i1), uint64_t(new_entry.i)});
+ 
+                 return 1;
+             }
+@@ -282,6 +283,7 @@
+     uid_hash_table_t.erase_uid(db_t[ce.i].uid);
+     ce.len = e.len;
+     ce.c = e.c;
++    diagnostic_lineage.push_back({1, uint64_t(db_t[ce.i].uid), uint64_t(e.uid), uint64_t(ce.i), uint64_t(e.i)});
+     db_t[ce.i] = e;
+     statistics.inc_stats_replacements();
+     return true;
+@@ -514,7 +516,8 @@
+     size_t it = 0;
+     while( it < MAX_SLICER_ITERS ) {
+ 
+-        if(cdb_t[saturation_index].len<proj_error_bound){
++        if(!diagnostic_bypass_saturation && cdb_t[saturation_index].len<proj_error_bound){
++            diagnostic_checkpoint("saturation_return");
+             if(verbose) {
+                 std::cout << "Saturated on:" << it  << "-th iteration"  << std::endl;
+             }
+@@ -522,6 +525,8 @@
+             return true;
+         }
+ 
++        ++diagnostic_iterations_entered;
++        diagnostic_checkpoint("iteration_entered");
+         //DO WE NEED TO DO REBUCKETING? Every X-round?
+         this->sieve.bdgl_bucketing(blocks, multi_hash, nr_buckets_aim, this->sieve.buckets, this->sieve.buckets_i,
+                                    this->sieve.lsh_seed);
+@@ -540,8 +545,11 @@
+         //     dump_cdb_t(filename_cdbt, it);
+         // }
+         statistics.inc_stats_itercount_slicer();
++        ++diagnostic_iterations_completed;
++        diagnostic_checkpoint("iteration_completed");
+         it++;
+     }
++    diagnostic_checkpoint("iteration_limit_return");
+     if(showstats) statistics.print_statistics();
+     if(verbose) std::cerr << "Couldn't find a close vector after " << MAX_SLICER_ITERS << " iterations" << std::endl;
+     return false;
+--- original/g6k/decl.pxd
++++ diagnostic/g6k/decl.pxd
+@@ -4,7 +4,7 @@
+ from libcpp.unordered_set cimport unordered_set
+ from libcpp.string cimport string
+ from libcpp cimport bool
+-from libc.stdint cimport int16_t, int32_t, uint64_t
++from libc.stdint cimport int16_t, int32_t, int64_t, uint64_t
+ 
+ from cpython cimport array
+ import array
+@@ -228,6 +228,7 @@
+ 
+ 
+     cdef struct CompressedEntry:
++       LFT len
+     # CompressedVector c
+        IT i
+     #  FT len
+@@ -342,6 +343,7 @@
+ 
+     cdef struct Entry_t:
+         vector[LFT] yr
++        UidType uid
+         IT i # index in Unique_entry_t
+         FT len
+ 
+@@ -351,6 +353,17 @@
+     cdef cppclass RandomizedSlicer:
+ 
+         RandomizedSlicer(Siever &sieve, unsigned long int seed)
++
++        bool diagnostic_bypass_saturation
++        size_t diagnostic_iterations_entered
++        size_t diagnostic_iterations_completed
++        string diagnostic_checkpoint_path
++        vector[vector[uint64_t]] diagnostic_lineage
++        string diagnostic_rng_state()
++        string diagnostic_sieve_rng_state()
++        int64_t diagnostic_lsh_seed()
++        void parallel_sort_cdb()
++
+         void grow_db_with_target( double* t_yr, size_t n_per_target);
+         void bdgl_like_sieve(size_t nr_buckets, size_t blocks, size_t multi_hash, bool verbose, bool showstats);
+         void set_nthreads(size_t nt);
+--- original/g6k/slicer.pyx
++++ diagnostic/g6k/slicer.pyx
+@@ -181,3 +181,31 @@
+ 
+ 
+ 
++
++
++    def diagnostic_configure(self, bypass_saturation=False, checkpoint_path=None):
++        self._core.diagnostic_bypass_saturation = bypass_saturation
++        if checkpoint_path is not None:
++            self._core.diagnostic_checkpoint_path = str(checkpoint_path).encode('utf8')
++
++    def diagnostic_sort_targets(self):
++        self._core.parallel_sort_cdb()
++
++    def diagnostic_snapshot(self):
++        cdef Entry_t *e
++        entries = []
++        for ordinal in range(self._core.cdb_t.size()):
++            slot = self._core.cdb_t[ordinal].i
++            e = &self._core.db_t[slot]
++            entries.append({'compressed_ordinal': ordinal, 'slot_id': slot,
++                            'group_id': e.i, 'uid': e.uid,
++                            'stored_len_sq': self._core.cdb_t[ordinal].len,
++                            'entry_len_sq': e.len,
++                            'residual': [e.yr[j] for j in range(self._core.n)]})
++        return {'entries': entries,
++                'rng_state': self._core.diagnostic_rng_state().decode('ascii'),
++                'sieve_rng_state': self._core.diagnostic_sieve_rng_state().decode('ascii'),
++                'lsh_seed': self._core.diagnostic_lsh_seed(),
++                'iterations_entered': self._core.diagnostic_iterations_entered,
++                'iterations_completed': self._core.diagnostic_iterations_completed,
++                'lineage': self._core.diagnostic_lineage}

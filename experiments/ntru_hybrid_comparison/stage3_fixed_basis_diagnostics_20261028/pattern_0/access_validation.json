@@ -1,0 +1,8 @@
+{
+  "all_checks_passed": true,
+  "audit_hook_log_present": true,
+  "denied_python_open_attempts": [],
+  "native_forbidden_path_open_attempts": [],
+  "native_open_log_present": true,
+  "scope": "this numerical worker process and traced descendants; preparation scan uncertainty is separate"
+}

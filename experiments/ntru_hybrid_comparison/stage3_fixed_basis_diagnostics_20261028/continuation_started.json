@@ -1,0 +1,8 @@
+{
+  "continued_monotonic": 193705.432842511,
+  "global_budget_seconds": 4800,
+  "global_clock_reset": false,
+  "global_started_monotonic": 192396.995364985,
+  "scope": "only never-started index2 configurations; index0 D-normal remains blocked without retry",
+  "utc": "2026-10-28T15:06:54.388929+00:00"
+}

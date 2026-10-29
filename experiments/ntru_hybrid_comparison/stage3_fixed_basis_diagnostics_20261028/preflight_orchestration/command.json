@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "30s",
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_orchestration_audit",
+    "-v"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "started_utc": "2026-10-28T14:35:49.735674+00:00",
+  "scope": "dry mocked orchestration; no numerical execution"
+}

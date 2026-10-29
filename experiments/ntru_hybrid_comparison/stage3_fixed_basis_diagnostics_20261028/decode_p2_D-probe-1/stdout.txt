@@ -1,0 +1,1 @@
+{"status": "completed", "configuration": "D-probe-1", "processed": 80, "public_valid": 0, "counters": {"iterations_entered": 1, "iterations_completed": 1, "itercount_slicer": 1, "replacements": 568, "redsucc": 568, "kernel_calls": 1, "kernel_completed_calls": 1, "babai_lift_calls": 1280, "diagnostic_additional_babai_lift_calls": 1280}, "gate": true}

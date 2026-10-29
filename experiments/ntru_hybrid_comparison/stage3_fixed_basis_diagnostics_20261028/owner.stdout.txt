@@ -1,0 +1,10 @@
+{"task_started": "pattern_0", "elapsed": 0.19384365100995637}
+{"task_finished": "pattern_0", "status": "completed", "wall": 341.85242230200674}
+{"task_started": "pattern_2", "elapsed": 342.05653041700134}
+{"task_finished": "pattern_2", "status": "completed", "wall": 356.66151142300805}
+{"task_started": "witness_check", "elapsed": 698.7270321249962}
+{"task_finished": "witness_check", "status": "completed", "wall": 6.610685938008828}
+{"task_started": "decode_p0_E", "elapsed": 705.348376584996}
+{"task_finished": "decode_p0_E", "status": "completed", "wall": 51.297600379009964}
+{"task_started": "decode_p0_D-normal", "elapsed": 756.6584276200156}
+{"task_finished": "decode_p0_D-normal", "status": "worker_nonzero_exit", "wall": 50.69151300599333}

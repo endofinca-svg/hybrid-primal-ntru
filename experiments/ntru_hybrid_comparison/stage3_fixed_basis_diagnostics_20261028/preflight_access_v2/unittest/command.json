@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "experiments.ntru_hybrid_comparison.stage3_fixed_basis_diagnostics_20261028.test_access_v2",
+    "-v"
+  ],
+  "started_utc": "2026-10-28T15:04:06.394682+00:00",
+  "work_deadline": 193562.438568599,
+  "hard_deadline": 193567.438568599
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "ntru-stage3-orchestration-independent-review-v1",
+  "completed_utc": "2026-10-28T14:37:32.010448+00:00",
+  "reviewed_files": [
+    "run.py",
+    "common.py",
+    "reduce_worker.py",
+    "test_orchestration.py",
+    "test_orchestration_audit.py"
+  ],
+  "numeric_execution_performed": false,
+  "repository_path_correct": true,
+  "exact_reduction_patterns": [
+    0,
+    2
+  ],
+  "reduction_schedule": "proved LLL then beta30x2, beta31x2, beta32x2 explicit strict tours",
+  "exact_configurations": [
+    [
+      0,
+      "E"
+    ],
+    [
+      0,
+      "D-normal"
+    ],
+    [
+      2,
+      "E"
+    ],
+    [
+      2,
+      "D-skip"
+    ],
+    [
+      2,
+      "D-normal"
+    ],
+    [
+      2,
+      "D-probe-1"
+    ],
+    [
+      2,
+      "D-probe-400"
+    ]
+  ],
+  "budgets": {
+    "global_seconds": 4800,
+    "E_seconds": 120,
+    "D_and_reduction_seconds": 600,
+    "cleanup_seconds_in_each_task": 5,
+    "global_cleanup_seconds": 5,
+    "outer_evidence_save_reserve_seconds": 0.25
+  },
+  "identified_and_fixed": [
+    {
+      "issue": "Owner-generated timing fields were rejected by decoder allowlist before journaling",
+      "resolution": "Explicit three timing fields allowed; witness fields remain forbidden",
+      "regression": "test_actual_owner_request_shape_reaches_decoder_input_boundary"
+    },
+    {
+      "issue": "Stale successful witness file could outlive a failed current witness task",
+      "resolution": "Require current witness task completed and each actual saved input mapping confirmed",
+      "regression": "test_failed_current_witness_cannot_use_stale_success"
+    },
+    {
+      "issue": "Partial eligible basis manifest could outlive failed preparation finalization",
+      "resolution": "Require current preparation task completed before corresponding decoder configurations",
+      "regression": "test_failed_basis_finalization_cannot_use_partial_manifest"
+    },
+    {
+      "issue": "Partial true single-step integrity flag could outlive a failed later probe1 stage",
+      "resolution": "Require current single-step task completion as well as integrity gate before probe400",
+      "regression": "test_failed_probe1_cannot_use_partial_integrity_flag"
+    },
+    {
+      "issue": "Frozen source verification was not enforced by launcher",
+      "resolution": "Launcher verifies protected originals plus frozen sources before numerical timer and launch",
+      "regression": "source inspection plus final targeted suite"
+    },
+    {
+      "issue": "Outer hard deadline left no reserve for its own durable evidence writes",
+      "resolution": "Outer supervisor hard deadline shortened by 0.25 seconds inside global hard deadline",
+      "regression": "source inspection plus window deadline tests"
+    },
+    {
+      "issue": "Diagnostic PYTHONPATH runtime JSON was omitted from final source freeze",
+      "resolution": "freeze_sources.py now requires and hashes diagnostic_runtime.json",
+      "regression": "freeze requires the file and final launcher verifies the resulting digest"
+    }
+  ],
+  "test_evidence": {
+    "initial_five_integration_tests": "preflight_orchestration",
+    "final_full_targeted_suite": "root will capture after backend build/tests ready",
+    "new_test_module": "test_orchestration_audit.py",
+    "new_integration_case_count": 7
+  },
+  "material_remaining_issues": [],
+  "private_contents_read": false
+}

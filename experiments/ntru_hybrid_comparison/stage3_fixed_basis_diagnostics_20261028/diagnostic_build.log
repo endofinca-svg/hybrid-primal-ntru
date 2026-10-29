@@ -1,0 +1,112 @@
+{"argv": ["/usr/bin/g++", "-std=c++11", "-Ofast", "-ftree-vectorize", "-funroll-loops", "-Wall", "-Wextra", "-mmmx", "-msse", "-msse2", "-msse3", "-mssse3", "-msse4.1", "-msse4.2", "-msha", "-maes", "-mavx", "-mfma", "-mavx2", "-pthread", "-fPIC", "-DHAVE_CONFIG_H", "-I.", "-I..", "-c", "slicer.cpp", "-o", ".libs/slicer.o"]}
+In file included from slicer.cpp:4:
+siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from slicer.cpp:5:
+slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+slicer.h:84:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   84 |     unsigned int n;
+      |                  ^
+In file included from siever.h:42,
+                 from slicer.cpp:4:
+slicer.h:79:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   79 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from slicer.cpp:5:
+slicer.h:48:14: warning:   when initialized here [-Wreorder]
+   48 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+{"argv": ["/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python", "setup_diagnostic.py", "build_ext", "--inplace", "--force"]}
+Compiling g6k/slicer.pyx because it changed.
+[1/1] Cythonizing g6k/slicer.pyx
+running build_ext
+building 'g6k.slicer' extension
+creating build/temp.linux-x86_64-cpython-310/g6k
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -Ig6k -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/cysignals -I/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include "-I/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/include" -I/home/inca/miniforge3/envs/g6k/include/python3.10 -c g6k/slicer.cpp -o build/temp.linux-x86_64-cpython-310/g6k/slicer.o -std=c++11 -Ofast -ftree-vectorize -funroll-loops -Wall -Wextra -mmmx -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -msha -maes -mavx -mfma -mavx2 -pthread
+In file included from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarraytypes.h:1913,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarrayobject.h:12,
+                 from /home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/arrayobject.h:5,
+                 from g6k/slicer.cpp:1369:
+/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/_core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+In file included from g6k/slicer.cpp:1362:
+g6k/../kernel/siever.h: In constructor ‘Siever::Siever(const SieverParams&, long unsigned int)’:
+g6k/../kernel/siever.h:718:15: warning: ‘Siever::sim_hashes’ will be initialized after [-Wreorder]
+  718 |     SimHashes sim_hashes; // needs to go after rng!
+      |               ^~~~~~~~~~
+g6k/../kernel/siever.h:480:13: warning:   ‘int64_t Siever::lsh_seed’ [-Wreorder]
+  480 |     int64_t lsh_seed;
+      |             ^~~~~~~~
+g6k/../kernel/siever.h:456:14: warning:   when initialized here [-Wreorder]
+  456 |     explicit Siever(const SieverParams &params, unsigned long int seed = 0) :
+      |              ^~~~~~
+In file included from g6k/slicer.cpp:1363:
+g6k/../kernel/slicer.h: In constructor ‘RandomizedSlicer::RandomizedSlicer(Siever&, long unsigned int)’:
+g6k/../kernel/slicer.h:84:18: warning: ‘RandomizedSlicer::n’ will be initialized after [-Wreorder]
+   84 |     unsigned int n;
+      |                  ^
+In file included from g6k/../kernel/siever.h:42,
+                 from g6k/slicer.cpp:1362:
+g6k/../kernel/slicer.h:79:45: warning:   ‘rng::threadsafe_rng RandomizedSlicer::rng_t’ [-Wreorder]
+   79 |     CACHELINE_VARIABLE(rng::threadsafe_rng, rng_t);
+      |                                             ^~~~~
+g6k/../kernel/compat.hpp:435:85: note: in definition of macro ‘CACHELINE_VARIABLE’
+  435 | #define CACHELINE_VARIABLE(type,name) cacheline_padding_t _ ## name ## prepad; type name; cacheline_padding_t _ ## name ## postpad;
+      |                                                                                     ^~~~
+In file included from g6k/slicer.cpp:1363:
+g6k/../kernel/slicer.h:48:14: warning:   when initialized here [-Wreorder]
+   48 |     explicit RandomizedSlicer(Siever &sieve, unsigned long int seed = 0) :
+      |              ^~~~~~~~~~~~~~~~
+g6k/slicer.cpp: In function ‘PyObject* __pyx_pf_3g6k_6slicer_16RandomizedSlicer_16bdgl_like_sieve(__pyx_obj_3g6k_6slicer_RandomizedSlicer*, std::size_t, std::size_t, std::size_t, PyObject*, PyObject*)’:
+g6k/slicer.cpp:2732:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 2732 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/slicer.cpp:9517:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+ 9517 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/slicer.cpp: In function ‘PyObject* __pyx_pf_3g6k_6slicer_16RandomizedSlicer_2grow_db_with_target(__pyx_obj_3g6k_6slicer_RandomizedSlicer*, PyObject*, std::size_t)’:
+g6k/slicer.cpp:8352:18: warning: variable ‘__pyx_v_target_f’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8352 |   PyArrayObject *__pyx_v_target_f = 0;
+      |                  ^~~~~~~~~~~~~~~~
+g6k/slicer.cpp:2732:11: warning: variable ‘__Pyx_use_tracing’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 2732 |       int __Pyx_use_tracing = 0;
+      |           ^~~~~~~~~~~~~~~~~
+g6k/slicer.cpp:8355:3: note: in expansion of macro ‘__Pyx_TraceDeclarationsFunc’
+ 8355 |   __Pyx_TraceDeclarationsFunc
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g6k/slicer.cpp:8357:13: warning: variable ‘__pyx_t_1’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8357 |   PyObject *__pyx_t_1 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:8358:13: warning: variable ‘__pyx_t_2’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8358 |   PyObject *__pyx_t_2 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:8359:13: warning: variable ‘__pyx_t_3’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8359 |   PyObject *__pyx_t_3 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:8360:13: warning: variable ‘__pyx_t_4’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8360 |   PyObject *__pyx_t_4 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:8361:13: warning: variable ‘__pyx_t_5’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8361 |   PyObject *__pyx_t_5 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:8362:13: warning: variable ‘__pyx_t_6’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8362 |   PyObject *__pyx_t_6 = NULL;
+      |             ^~~~~~~~~
+g6k/slicer.cpp:8398:15: warning: variable ‘__pyx__function’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+ 8398 |     PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      |               ^~~~~~~~~~~~~~~
+creating build/lib.linux-x86_64-cpython-310/g6k
+g++ -pthread -B /home/inca/miniforge3/envs/g6k/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -fPIC -O2 -isystem /home/inca/miniforge3/envs/g6k/include -shared build/temp.linux-x86_64-cpython-310/g6k/slicer.o kernel/.libs/sieving.o kernel/.libs/slicerww.o kernel/.libs/cpuperf.o kernel/.libs/control.o kernel/.libs/bgj1_sieve.o kernel/.libs/slicer.o kernel/.libs/hk3_sieve.o kernel/.libs/params.o kernel/.libs/bdgl_sieve.o kernel/.libs/fht_lsh.o -lgmp -lpthread -o build/lib.linux-x86_64-cpython-310/g6k/slicer.cpython-310-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-cpython-310/g6k/slicer.cpython-310-x86_64-linux-gnu.so -> g6k

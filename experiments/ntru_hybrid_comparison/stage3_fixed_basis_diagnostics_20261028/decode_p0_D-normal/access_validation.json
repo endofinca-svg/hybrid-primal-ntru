@@ -1,0 +1,21 @@
+{
+  "all_checks_passed": false,
+  "audit_hook_log_present": true,
+  "denied_python_open_attempts": [
+    {
+      "denied": true,
+      "event": "open",
+      "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc",
+      "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc"
+    },
+    {
+      "denied": true,
+      "event": "open",
+      "path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__init__.py",
+      "realpath": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__init__.py"
+    }
+  ],
+  "native_forbidden_path_open_attempts": [],
+  "native_open_log_present": true,
+  "scope": "this numerical worker process and traced descendants; preparation scan uncertainty is separate"
+}

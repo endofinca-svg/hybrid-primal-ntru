@@ -1,0 +1,32 @@
+{
+  "schema": "ntru-stage3-corrective-instrumentation-freeze-v2",
+  "frozen_monotonic": 193704.299860574,
+  "source_sha256": {
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/continue_run.py": "8ad05f32e074bb81863eb1d7f9ba7202f27a7b103397184922df562b6c75888a",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/access_v2.py": "725e88c909c961856458004780d467068888b0d3ba89c73816ae36fc3627642f",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/audit_entry_v2.py": "59f41b360c1d59b30908d04fc25cbee47b289f4e09d6f046cd9024df17b787b1",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/test_access_v2.py": "d71eddd9b94354d37cfda6e824f83ad31ce4e25ac2a972739ea6e852d7202b93",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/test_continuation.py": "cb3ef88933dd28146eefb85ee9fe095e11545a6ee07567715780f221236fdd2a",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/continuation_controller.patch": "38e4b9b3f5602a01099ebf59e79d91ed78841040d34d2ad912a68248a0146139",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/continuation_plan.json": "8cc22780df58d597db836a45018aa3783f9c9cab5771aaa7540db9b6f9455ad9",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/access_guard_false_positive.json": "0b22b55a5b623d4bee14c4c47b81db1e3f1f7e19deb2c2fce65755510f33b68d",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/preflight_access_v2/summary.json": "36c2eb3d1d463751b5d935bdff71ef77a655e12483280251837d1c0c06d0f54e",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/preflight_access_v2/trusted_module_hashes.json": "23b7dc1a141228cf1298d176af34c9d12a569640a6ba493ef1c4eb0c931c056f",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/preflight_continuation/summary.json": "a8f1f7ef196438bcb8dad39cae809a7120bba71b3c02916aea8c60f5f65d8745",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/sources.json": "9dbd751fea68507ef8ff8ce551c3f7b12cbcb992b80ffade1c235c7cdd857277",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/plan.json": "1c8346542f3fdf320ba4af5899408e3352dfb6d5c2a0ff8de4c29da299fb5436",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/environment.json": "d25ffcf88146eb6051bce3e9683db63c027bedaa74ec46fcd087547e2e8e6fd8",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/command.json": "9378beaf6e1496c957886315e3f34f600733f7e23f899fdbbfe92d2fa0187d27",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/diagnostic_runtime.json": "5344c10a0b4ca79ffa13efbcf7cb499199382fba64af4a15bb91c58c2e49e320",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/__init__.cpython-310.pyc": "01bb9fd70282d1688ff0d2eea884b901cbd96fa5fe39581ad65bebc4c2ab506c",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/extbuild.cpython-310.pyc": "96862d377147e0e5c118c952fdbe953cd503ce4556bc162b545425e8519fb061",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/__pycache__/utils.cpython-310.pyc": "348ff387ad47ed35dd8802d8ea06e9e815c4b9d22df365c04f9f7e5443bc4049",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/extbuild.py": "7f2e0397e0aa32da81bba3128493487bd0c0b981fc90dfd766551d39571bd614",
+    "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/numpy/testing/_private/utils.py": "52b5a931fb20403e782b8eae8f4d1d015c753db97c2450abd3fc9bee6d6e6644"
+  },
+  "original_global_started_monotonic": 192396.995364985,
+  "scope": "only access instrumentation and never-started original configurations; numerical decoder/backend and original freeze remain unchanged",
+  "original_global_deadline_reset": false,
+  "new_reduction_or_retry": false
+}
