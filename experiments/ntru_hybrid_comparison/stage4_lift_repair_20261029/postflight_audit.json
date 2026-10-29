@@ -1,0 +1,279 @@
+{
+  "Dnormal_vs_Dskip_independently_recompared": {
+    "compared": 1280,
+    "matched": 1280
+  },
+  "Dskip_original_vs_E_independently_recompared": {
+    "compared": 80,
+    "matched": 80
+  },
+  "all_requested_checks_passed": true,
+  "checks": {
+    "549_final_tests_no_skip": true,
+    "Dnormal_1280_match_Dskip": true,
+    "Dskip_original_80_match_E": true,
+    "all_deadlines_and_original_global_origin_valid": true,
+    "all_file_access_logs_reparsed_pass": true,
+    "all_five_full80_replays_and_5200_rows": true,
+    "all_seven_tasks_supervised_and_clean": true,
+    "exact_frozen_finite_task_order": true,
+    "frozen_36_files_unchanged": true,
+    "historical_321_files_unchanged": true,
+    "ideal_four_cases_pass_without_search_credit": true,
+    "independent_5200_repaired_and_5200_original_variants_verified": true,
+    "no_fresh_reduction_bdgl_kernel": true,
+    "no_observed_worker_identity_still_live": true,
+    "production_only_lift_ast_changed": true,
+    "real_saved_projection_replays_no_public_valid_candidate": true,
+    "witness_isolation_in_all_replay_requests": true
+  },
+  "created_utc": "2026-10-29T09:11:48.902729+00:00",
+  "frozen_sources": {
+    "command_json_in_source_freeze": false,
+    "file_count": 36,
+    "hash_mismatches": []
+  },
+  "historical_artifacts": {
+    "hash_mismatches": [],
+    "manifest_entries": 321
+  },
+  "independent_integer_verification": {
+    "matrix_product_proof": {
+      "floating_arithmetic_used_for_integer_proof": false,
+      "int64_limit": 9223372036854775807,
+      "matrix_dimension": 212,
+      "max_column_abs_sum": 4216,
+      "maximum_proved_absolute_accumulation_bound": 285929120,
+      "overflow_proof": "|any partial dot sum| <= max|coefficient| * max_j(sum_i |B_ij|) <= 2^63-1; otherwise Python bigint",
+      "row_counts": {
+        "proved_safe_int64_rows": 10400
+      }
+    },
+    "original_rows": 5200,
+    "repaired_rows": 5200,
+    "variant_total": 10400,
+    "verification_program_frozen": true
+  },
+  "numeric_jobs_launched_by_this_audit": 0,
+  "numerical_execution": {
+    "all_tasks_completed": true,
+    "cleanup_verified": true,
+    "finished_monotonic": 5912.688613688,
+    "global_budget_seconds": 4800,
+    "global_hard_deadline_met": true,
+    "global_started_monotonic": 5106.452717899,
+    "numerical_total_wall_seconds": 806.2358957890001
+  },
+  "observed_worker_identities_still_live": [],
+  "private_array_contents_read_by_this_audit": false,
+  "production_ast_changed_units": [
+    "SlicerDecoder._lift"
+  ],
+  "replay_configurations": {
+    "D-normal": {
+      "actual_external_id_count": 80,
+      "actual_ids_are_full80": true,
+      "basis_unchanged": true,
+      "expected_rows": 1280,
+      "fresh_bdgl_calls": 0,
+      "fresh_kernel_iterations": 0,
+      "fresh_lll_bkz_calls": 0,
+      "mode": "saved_projection_replay",
+      "output_file_sha256": "d0ea431013ceb62b2f5bed55b2e38933affce331475d0b5f3522d2c2c0f8dd93",
+      "public_valid_rows_in_telemetry": 0,
+      "raw_jsonl_rows": 1280,
+      "source_count_matches_output": true,
+      "worker_completed": true
+    },
+    "D-probe-1": {
+      "actual_external_id_count": 80,
+      "actual_ids_are_full80": true,
+      "basis_unchanged": true,
+      "expected_rows": 1280,
+      "fresh_bdgl_calls": 0,
+      "fresh_kernel_iterations": 0,
+      "fresh_lll_bkz_calls": 0,
+      "mode": "saved_projection_replay",
+      "output_file_sha256": "e5111af2eb2a21d1f6dfced8d8c467c2fbda1a9fb243fdccafad5423e9b812b6",
+      "public_valid_rows_in_telemetry": 0,
+      "raw_jsonl_rows": 1280,
+      "source_count_matches_output": true,
+      "worker_completed": true
+    },
+    "D-probe-400": {
+      "actual_external_id_count": 80,
+      "actual_ids_are_full80": true,
+      "basis_unchanged": true,
+      "expected_rows": 1280,
+      "fresh_bdgl_calls": 0,
+      "fresh_kernel_iterations": 0,
+      "fresh_lll_bkz_calls": 0,
+      "mode": "saved_projection_replay",
+      "output_file_sha256": "e3bf679082c16c665e35967a613beaaaa9774a959cef940d2c69e852cdb6d4cb",
+      "public_valid_rows_in_telemetry": 0,
+      "raw_jsonl_rows": 1280,
+      "source_count_matches_output": true,
+      "worker_completed": true
+    },
+    "D-skip": {
+      "actual_external_id_count": 80,
+      "actual_ids_are_full80": true,
+      "basis_unchanged": true,
+      "expected_rows": 1280,
+      "fresh_bdgl_calls": 0,
+      "fresh_kernel_iterations": 0,
+      "fresh_lll_bkz_calls": 0,
+      "mode": "saved_projection_replay",
+      "output_file_sha256": "1addb9e19e1b966d4e128cf518305e7b3aaacc66a65438e735e263a1664492c0",
+      "public_valid_rows_in_telemetry": 0,
+      "raw_jsonl_rows": 1280,
+      "source_count_matches_output": true,
+      "worker_completed": true
+    },
+    "E": {
+      "actual_external_id_count": 80,
+      "actual_ids_are_full80": true,
+      "basis_unchanged": true,
+      "expected_rows": 80,
+      "fresh_bdgl_calls": 0,
+      "fresh_kernel_iterations": 0,
+      "fresh_lll_bkz_calls": 0,
+      "mode": "saved_projection_replay",
+      "output_file_sha256": "add38e21155ce84034cbc17ee4ea6555598d34b0d9670305ead580067dd1585b",
+      "public_valid_rows_in_telemetry": 0,
+      "raw_jsonl_rows": 80,
+      "source_count_matches_output": true,
+      "worker_completed": true
+    }
+  },
+  "schema": "ntru-stage4-postflight-audit-v1",
+  "scope_notes": [
+    "This audit rereads evidence, hashes, source AST, telemetry identities and access logs; it does not rerun GSO, decoding, reduction, BDGL or a Slicer kernel.",
+    "Independent 10400 integer product proofs are supplied by the separately frozen verify_repair process; telemetry coverage and two equality comparisons were rechecked directly here.",
+    "The separate ideal diagnostic used the previously published public witness; no witness or correct-tail label appears in a replay request.",
+    "command.json is durable but is not one of the36 source-freeze entries; plan, environment, numerical runtime configuration, programs and explicit inputs are frozen, and each actual invocation is durably logged."
+  ],
+  "tasks": [
+    {
+      "access_reparsed_all_checks_passed": true,
+      "budget_and_original_global_origin_valid": true,
+      "budget_seconds": 180,
+      "cleanup_verified": true,
+      "completed": true,
+      "denied_python_open_attempt_count": 0,
+      "native_forbidden_open_attempt_count": 0,
+      "residual_active_processes": [],
+      "task_id": "ideal_projection_check",
+      "unresolved_native_path_record_count": 0,
+      "wall_seconds": 46.35312823100048,
+      "witness_inputs_absent_from_replay_request": true
+    },
+    {
+      "access_reparsed_all_checks_passed": true,
+      "budget_and_original_global_origin_valid": true,
+      "budget_seconds": 120,
+      "cleanup_verified": true,
+      "completed": true,
+      "denied_python_open_attempt_count": 0,
+      "native_forbidden_open_attempt_count": 0,
+      "residual_active_processes": [],
+      "task_id": "replay_E",
+      "unresolved_native_path_record_count": 0,
+      "wall_seconds": 50.98524727899985,
+      "witness_inputs_absent_from_replay_request": true
+    },
+    {
+      "access_reparsed_all_checks_passed": true,
+      "budget_and_original_global_origin_valid": true,
+      "budget_seconds": 600,
+      "cleanup_verified": true,
+      "completed": true,
+      "denied_python_open_attempt_count": 0,
+      "native_forbidden_open_attempt_count": 0,
+      "residual_active_processes": [],
+      "task_id": "replay_D-skip",
+      "unresolved_native_path_record_count": 0,
+      "wall_seconds": 164.76619871800085,
+      "witness_inputs_absent_from_replay_request": true
+    },
+    {
+      "access_reparsed_all_checks_passed": true,
+      "budget_and_original_global_origin_valid": true,
+      "budget_seconds": 600,
+      "cleanup_verified": true,
+      "completed": true,
+      "denied_python_open_attempt_count": 0,
+      "native_forbidden_open_attempt_count": 0,
+      "residual_active_processes": [],
+      "task_id": "replay_D-normal",
+      "unresolved_native_path_record_count": 0,
+      "wall_seconds": 168.6989654049994,
+      "witness_inputs_absent_from_replay_request": true
+    },
+    {
+      "access_reparsed_all_checks_passed": true,
+      "budget_and_original_global_origin_valid": true,
+      "budget_seconds": 600,
+      "cleanup_verified": true,
+      "completed": true,
+      "denied_python_open_attempt_count": 0,
+      "native_forbidden_open_attempt_count": 0,
+      "residual_active_processes": [],
+      "task_id": "replay_D-probe-1",
+      "unresolved_native_path_record_count": 0,
+      "wall_seconds": 164.82007360700027,
+      "witness_inputs_absent_from_replay_request": true
+    },
+    {
+      "access_reparsed_all_checks_passed": true,
+      "budget_and_original_global_origin_valid": true,
+      "budget_seconds": 600,
+      "cleanup_verified": true,
+      "completed": true,
+      "denied_python_open_attempt_count": 0,
+      "native_forbidden_open_attempt_count": 0,
+      "residual_active_processes": [],
+      "task_id": "replay_D-probe-400",
+      "unresolved_native_path_record_count": 0,
+      "wall_seconds": 157.553610897,
+      "witness_inputs_absent_from_replay_request": true
+    },
+    {
+      "access_reparsed_all_checks_passed": true,
+      "budget_and_original_global_origin_valid": true,
+      "budget_seconds": 180,
+      "cleanup_verified": true,
+      "completed": true,
+      "denied_python_open_attempt_count": 0,
+      "native_forbidden_open_attempt_count": 0,
+      "residual_active_processes": [],
+      "task_id": "independent_validation",
+      "unresolved_native_path_record_count": 0,
+      "wall_seconds": 52.37324224199983,
+      "witness_inputs_absent_from_replay_request": true
+    }
+  ],
+  "tests": {
+    "additional": {
+      "errors": 0,
+      "failures": 0,
+      "passed": true,
+      "skipped": 0,
+      "tests": 18
+    },
+    "counting_note": "Pytest JUnit suite tests=531 comprises278 regular cases plus253 passing subtests; additional suite has18 cases. Final549 counts include subtests.",
+    "earlier_failed_collection_retained": "preflight_regression_collection_failed/",
+    "final_passed_subtests": 253,
+    "final_regular_cases": 296,
+    "final_total": 549,
+    "regression_junit_independently_counted": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "testcase_elements": 278,
+      "tests": 531
+    },
+    "regression_passed_subtests": 253,
+    "regression_regular_test_cases": 278
+  }
+}

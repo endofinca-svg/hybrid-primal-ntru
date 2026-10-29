@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests": 18,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "wall_seconds": 1.8971259240006475,
+  "scope": "independent integer verification and isolated known-public-witness ideal-projection diagnostics"
+}

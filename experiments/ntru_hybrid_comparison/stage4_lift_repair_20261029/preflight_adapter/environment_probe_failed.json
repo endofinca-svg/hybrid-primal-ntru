@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "-c",
+    "import fpylll.config;print(fpylll.config.fplll_version)"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nAttributeError: module 'fpylll.config' has no attribute 'fplll_version'\n",
+  "failure": "optional compiled-version attribute not exposed; use installed conda package metadata"
+}

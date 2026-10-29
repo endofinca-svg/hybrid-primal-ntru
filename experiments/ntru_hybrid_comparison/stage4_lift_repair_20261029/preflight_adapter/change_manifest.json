@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-29T08:45:59.454348+00:00",
+  "production_file": "experiments/ntru_e2e/slicer_adapter.py",
+  "original_sha256": "713b2d3752292a1a0ae72f84336a9e9742180a78c8402c02ceb02544413e75c6",
+  "repaired_sha256": "b9f7a69a2c289f52ee89bd26cee681d6a6e5dd8b6ef9e946b25cc06607c67fc1",
+  "new_test_file": "experiments/ntru_e2e/tests/test_lift_transport.py",
+  "new_test_sha256": "209f600e6ef25a444bd1df6f7252475d0d248c324be80f94900454ecb2de178e",
+  "positive_preflight": "53 passed, 0 skipped; 7 real MPFR192 GSO cases and 46 existing adapter/mock regressions",
+  "negative_control": "2 targeted tests fail against original _lift, as expected",
+  "changed_semantics": "global padded GSO residual -> ambient conversion; numerical parameters and subsequent Babai/integer/radius checks unchanged",
+  "not_run": [
+    "main-instance decoding",
+    "lattice reduction",
+    "G6K kernels"
+  ]
+}

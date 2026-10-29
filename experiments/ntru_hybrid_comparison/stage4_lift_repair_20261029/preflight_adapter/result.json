@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "wall_seconds": 2.7455541009994704,
+  "command_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/preflight_adapter/command.json",
+  "test_scope": "small GSO transport tests and existing pure adapter regression; no main instance or lattice reduction"
+}

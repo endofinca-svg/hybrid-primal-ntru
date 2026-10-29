@@ -1,0 +1,11 @@
+{
+  "completed_utc": "2026-10-29T09:12:50.158556+00:00",
+  "recorded_task_wall_lower_bound_seconds": 2370.524327531,
+  "task_exact_wall_seconds": null,
+  "scope_limit": "initial context and attachment reads preceded task directory timestamp",
+  "numerical_wall_seconds": 806.2358957890001,
+  "artifact_manifest_sha256": "cd9789281819279933189fc5528b66891a332e44ee2a78e26fae83fef001e800",
+  "manifest_bound_files": 138,
+  "git_committed_or_pushed_for_stage4": false,
+  "unrelated_main_pdf_untouched": true
+}

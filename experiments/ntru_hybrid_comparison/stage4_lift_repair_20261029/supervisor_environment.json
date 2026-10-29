@@ -1,0 +1,16 @@
+{
+  "cgroup_root_writable": false,
+  "containment": "session members and observed descendants; no guarantee for unobserved setsid escape",
+  "current_cgroup": "0::/user.slice/user-1000.slice/session-5.scope",
+  "pidfd_available": false,
+  "platform": "Linux",
+  "popen_process_group_keyword_available": false,
+  "proc_available": true,
+  "process_group_fallback": "preexec_fn=os.setpgrp, accepted only in a single-threaded supervisor",
+  "selected_backend": "linux_session_proc_identity",
+  "strict_memory_limit": false,
+  "supported_ownership": [
+    "session",
+    "process_group"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "scope": "posthoc comparison to already-public representative, separate from replay inputs; no new decoding or search",
+  "known_labels_passed_to_replay": false,
+  "configurations": {
+    "D-skip": {
+      "22": {
+        "entry_count": 16,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 3.0570959783192473,
+          "orthogonal_tail_squared_distance": 17.57469036478327,
+          "slot_id": 176,
+          "uid": 554038325370871800,
+          "projection_norm_sq_normalized": 1.5464687859276784
+        }
+      },
+      "21": {
+        "entry_count": 16,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 3.0570959783192473,
+          "orthogonal_tail_squared_distance": 17.57469036478327,
+          "slot_id": 176,
+          "uid": 554038325370871800,
+          "projection_norm_sq_normalized": 1.5464687859276784
+        }
+      }
+    },
+    "D-normal": {
+      "22": {
+        "entry_count": 16,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 3.0570959783192473,
+          "orthogonal_tail_squared_distance": 17.57469036478327,
+          "slot_id": 176,
+          "uid": 554038325370871800,
+          "projection_norm_sq_normalized": 1.5464687859276784
+        }
+      },
+      "21": {
+        "entry_count": 16,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 3.0570959783192473,
+          "orthogonal_tail_squared_distance": 17.57469036478327,
+          "slot_id": 176,
+          "uid": 554038325370871800,
+          "projection_norm_sq_normalized": 1.5464687859276784
+        }
+      }
+    },
+    "D-probe-1": {
+      "22": {
+        "entry_count": 17,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 2.9026538143764244,
+          "orthogonal_tail_squared_distance": 16.68683037287864,
+          "slot_id": 546,
+          "uid": 15701428541525034924,
+          "projection_norm_sq_normalized": 1.8154635545516238
+        }
+      },
+      "21": {
+        "entry_count": 17,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 2.9026538143764244,
+          "orthogonal_tail_squared_distance": 16.68683037287864,
+          "slot_id": 546,
+          "uid": 15701428541525034924,
+          "projection_norm_sq_normalized": 1.8154635545516238
+        }
+      }
+    },
+    "D-probe-400": {
+      "22": {
+        "entry_count": 45,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 1.5563062887666825,
+          "orthogonal_tail_squared_distance": 8.9469226127722,
+          "slot_id": 487,
+          "uid": 11987172773410506581,
+          "projection_norm_sq_normalized": 1.1997487937702553
+        }
+      },
+      "21": {
+        "entry_count": 45,
+        "supplied_witness_projection_norm_sq_normalized": 1.217304550158603,
+        "closest_saved_entry": {
+          "normalized_squared_distance_to_supplied_witness_projection": 1.5563062887666825,
+          "orthogonal_tail_squared_distance": 8.9469226127722,
+          "slot_id": 487,
+          "uid": 11987172773410506581,
+          "projection_norm_sq_normalized": 1.1997487937702553
+        }
+      }
+    }
+  },
+  "wall_seconds": 2.327308382999945
+}

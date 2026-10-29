@@ -1,0 +1,58 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_____ test_skew_two_dimensional_counterexample_uses_global_orthogonal_tail _____
+
+    def test_skew_two_dimensional_counterexample_uses_global_orthogonal_tail():
+        decoder = mapper([[10, 0], [1000, 10]], 1)
+        target = [0, 4]
+        normalized = decoder._project_reduced(target)
+        assert normalized == pytest.approx([0.8])
+    
+        # Fixed fplll's nonzero-start conversion selects the original subbasis row,
+        # not the global orthogonal tail. This was the old production lift.
+        local_residual = decoder.G.to_canonical([0.4], start=1)
+        assert local_residual == pytest.approx([400.0, 4.0])
+        old_coefficients = [int(x) for x in decoder.G.babai(
+            [t - r for t, r in zip(target, local_residual)])]
+        old_vector = _multiply_left(decoder.rows, old_coefficients)
+        assert old_vector == [-400, 0]
+        assert sum((t - v) ** 2 for t, v in zip(target, old_vector)) == 160016
+    
+        coefficients, vector, distance_sq = decoder._lift(target, normalized)
+>       assert (coefficients, vector, distance_sq) == ([0, 0], [0, 0], 16)
+E       assert ([-40, 0], [-400, 0], 160016) == ([0, 0], [0, 0], 16)
+E         
+E         At index 0 diff: [-40, 0] != [0, 0]
+E         Use -v to get more diff
+
+experiments/ntru_e2e/tests/test_lift_transport.py:54: AssertionError
+_____ test_lift_transport_preserves_zero_global_prefix_and_roundtrips_tail _____
+
+    def test_lift_transport_preserves_zero_global_prefix_and_roundtrips_tail():
+        rows = [[7, 1, 0, 0], [3, 6, 1, 0], [-5, 4, 5, 1], [8, -9, 2, 4]]
+        decoder = mapper(rows, 2, gh_sub=3.0)
+        gso = decoder.G
+        tail_coordinates = [0.125, -0.25]
+        normalized = [value * scale for value, scale in zip(tail_coordinates, decoder._sqrt_r_over_gh)]
+        calls = []
+    
+        class ObservedGSO:
+            def to_canonical(self, coordinates, start=0):
+                residual = gso.to_canonical(coordinates, start=start)
+                calls.append((list(coordinates), start, residual))
+                return residual
+    
+            def babai(self, target):
+                return gso.babai(target)
+    
+        decoder.G = ObservedGSO()
+        decoder._lift([1, -2, 3, 4], normalized)
+        coordinates, start, residual = calls[0]
+>       assert start == 0
+E       assert 2 == 0
+
+experiments/ntru_e2e/tests/test_lift_transport.py:78: AssertionError
+=========================== short test summary info ============================
+FAILED experiments/ntru_e2e/tests/test_lift_transport.py::test_skew_two_dimensional_counterexample_uses_global_orthogonal_tail
+FAILED experiments/ntru_e2e/tests/test_lift_transport.py::test_lift_transport_preserves_zero_global_prefix_and_roundtrips_tail
+2 failed in 0.35s

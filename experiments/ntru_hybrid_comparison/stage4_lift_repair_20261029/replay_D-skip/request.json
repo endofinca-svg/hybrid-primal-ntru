@@ -1,0 +1,9 @@
+{
+  "configuration": "D-skip",
+  "global_deadline": 9906.452717899,
+  "hard_deadline": 5804.220192446,
+  "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+  "source_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p2_D-skip/target_telemetry.jsonl",
+  "started_monotonic": 5204.220192446,
+  "work_deadline": 5799.220192446
+}

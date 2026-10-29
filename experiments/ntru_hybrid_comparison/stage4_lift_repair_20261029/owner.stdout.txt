@@ -1,0 +1,14 @@
+{"task_started": "ideal_projection_check", "elapsed_seconds": 0.408010624999406}
+{"task_finished": "ideal_projection_check", "status": "completed", "wall_seconds": 46.35312823100048}
+{"task_started": "replay_E", "elapsed_seconds": 46.772983208999904}
+{"task_finished": "replay_E", "status": "completed", "wall_seconds": 50.98524727899985}
+{"task_started": "replay_D-skip", "elapsed_seconds": 97.76747454699944}
+{"task_finished": "replay_D-skip", "status": "completed", "wall_seconds": 164.76619871800085}
+{"task_started": "replay_D-normal", "elapsed_seconds": 262.5432688000001}
+{"task_finished": "replay_D-normal", "status": "completed", "wall_seconds": 168.6989654049994}
+{"task_started": "replay_D-probe-1", "elapsed_seconds": 431.25789121599973}
+{"task_finished": "replay_D-probe-1", "status": "completed", "wall_seconds": 164.82007360700027}
+{"task_started": "replay_D-probe-400", "elapsed_seconds": 596.089656354}
+{"task_finished": "replay_D-probe-400", "status": "completed", "wall_seconds": 157.553610897}
+{"task_started": "independent_validation", "elapsed_seconds": 753.6556328549996}
+{"task_finished": "independent_validation", "status": "completed", "wall_seconds": 52.37324224199983}

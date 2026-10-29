@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "/usr/bin/strace",
+    "-f",
+    "-qq",
+    "-s",
+    "4096",
+    "-yy",
+    "-e",
+    "trace=open,openat,openat2",
+    "-o",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/replay_D-skip/file_opens.log",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/audit_entry_v2.py",
+    "--audit-log",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/replay_D-skip/file_access.jsonl",
+    "experiments.ntru_hybrid_comparison.stage4_lift_repair_20261029.replay_fixed_basis",
+    "--request",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/replay_D-skip/request.json",
+    "--output",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/replay_D-skip"
+  ],
+  "environment": {
+    "BLIS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin:/home/inca/miniforge3/envs/g6k/bin:/home/inca/.local/bin:/home/inca/.codex/tmp/arg0/codex-arg0OJtquq:/home/inca/.vscode-server/cli/servers/Stable-6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/inca/.vscode-server/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid:/home/inca/hybrid primal multi decoding for NTRU"
+  },
+  "task_budget_seconds": 600,
+  "timing": {
+    "global_deadline": 9906.452717899,
+    "hard_deadline": 5804.220192446,
+    "started_monotonic": 5204.220192446,
+    "work_deadline": 5799.220192446
+  }
+}

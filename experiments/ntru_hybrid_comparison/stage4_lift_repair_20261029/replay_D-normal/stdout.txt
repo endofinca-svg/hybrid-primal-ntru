@@ -1,0 +1,1 @@
+{"configuration": "D-normal", "status": "completed", "emitted_rows": 1280, "mode": "saved_projection_replay"}

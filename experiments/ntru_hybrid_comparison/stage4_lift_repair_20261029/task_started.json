@@ -1,0 +1,13 @@
+{
+  "task_started_monotonic": 3778.168468051,
+  "task_started_utc": "2026-10-29T08:33:21.522231+00:00",
+  "scope": "repair projected-residual lifting; original fixed-basis verification; no new end-to-end speedup claim",
+  "adapter_before_sha256": "713b2d3752292a1a0ae72f84336a9e9742180a78c8402c02ceb02544413e75c6",
+  "historical_stage3": "experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028",
+  "historical_outputs_immutable": true,
+  "private_reference_reads_forbidden": true,
+  "working_tree_before": [
+    "?? main.pdf"
+  ],
+  "git_commit_at_start": "789a8cdf60ef3b54a78227ebf17e26673454fdec"
+}

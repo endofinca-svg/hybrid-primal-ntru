@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "-m",
+    "experiments.ntru_hybrid_comparison.stage4_lift_repair_20261029.preflight"
+  ],
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin:/home/inca/miniforge3/envs/g6k/bin:/home/inca/.local/bin:/home/inca/.codex/tmp/arg0/codex-arg0OJtquq:/home/inca/.vscode-server/cli/servers/Stable-6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/inca/.vscode-server/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64",
+    "PYTHONPATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid:/home/inca/hybrid primal multi decoding for NTRU"
+  },
+  "budget_seconds": 300,
+  "work_deadline": 4953.071091285,
+  "hard_deadline": 4958.071091285
+}

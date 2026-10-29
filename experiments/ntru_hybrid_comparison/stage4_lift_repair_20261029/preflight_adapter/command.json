@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "experiments/ntru_e2e/tests/test_lift_transport.py",
+    "experiments/ntru_e2e/tests/test_adapter.py",
+    "experiments/ntru_e2e/tests/test_phase2_adapter.py",
+    "experiments/ntru_e2e/tests/test_phase2_instrumentation.py",
+    "experiments/ntru_hybrid_comparison/tests/test_fixed_backend.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "utc": "2026-10-29T08:43:37.445174+00:00",
+  "scope": "small GSO transport tests and existing pure adapter regression; no main instance or lattice reduction",
+  "environment": {
+    "PYTHONPATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid:/home/inca/hybrid primal multi decoding for NTRU",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "experiments/ntru_e2e/slicer_adapter.py": "b9f7a69a2c289f52ee89bd26cee681d6a6e5dd8b6ef9e946b25cc06607c67fc1",
+    "experiments/ntru_e2e/tests/test_lift_transport.py": "209f600e6ef25a444bd1df6f7252475d0d248c324be80f94900454ecb2de178e"
+  }
+}

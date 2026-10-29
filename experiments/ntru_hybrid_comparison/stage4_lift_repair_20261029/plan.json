@@ -1,0 +1,93 @@
+{
+  "scope": "production lifting correction and fixed-basis verification; saved_projection_replay, no new end-to-end comparison",
+  "created_utc": "2026-10-29T08:42:31.137575+00:00",
+  "input_pattern_index": 2,
+  "basis_sha256": "0dfef9f816af814f078e219b11eadb103f63397f0dcfce064bbeb287c73b74a7",
+  "public_file_sha256": "8c03b57a732fb8114d900ff47c2b04f93ca257bef5066db0988e74a10d89baf9",
+  "production_change": "pad orthogonal tail residual with 172 leading zero global GSO coordinates; to_canonical(start=0); keep all other decoding and public acceptance behavior",
+  "replay_phases": {
+    "E": "babai",
+    "D": "post"
+  },
+  "expected_replay_rows": 5200,
+  "expected_nonzero_targets_per_configuration": 80,
+  "global_numerical_budget_seconds": 4800,
+  "cleanup_reserve_seconds_per_task": 5,
+  "rerun_bkz": false,
+  "rerun_bdgl_or_kernel": false,
+  "no_new_public_keys_or_parameter_grid": true,
+  "known_witness_policy": "only a separate ideal-projection diagnostic; no known vector or tail label passed to replay",
+  "public_acceptance_unchanged": true,
+  "stop_rule_unchanged": true,
+  "historical_stage3_outputs_immutable": true,
+  "jobs": [
+    {
+      "task_id": "ideal_projection_check",
+      "module": "ideal_projection_check",
+      "budget_seconds": 180,
+      "fields": {
+        "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+        "stage3_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028"
+      }
+    },
+    {
+      "task_id": "replay_E",
+      "module": "replay_fixed_basis",
+      "budget_seconds": 120,
+      "fields": {
+        "configuration": "E",
+        "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+        "source_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p2_E/target_telemetry.jsonl"
+      }
+    },
+    {
+      "task_id": "replay_D-skip",
+      "module": "replay_fixed_basis",
+      "budget_seconds": 600,
+      "fields": {
+        "configuration": "D-skip",
+        "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+        "source_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p2_D-skip/target_telemetry.jsonl"
+      }
+    },
+    {
+      "task_id": "replay_D-normal",
+      "module": "replay_fixed_basis",
+      "budget_seconds": 600,
+      "fields": {
+        "configuration": "D-normal",
+        "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+        "source_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p2_D-normal/target_telemetry.jsonl"
+      }
+    },
+    {
+      "task_id": "replay_D-probe-1",
+      "module": "replay_fixed_basis",
+      "budget_seconds": 600,
+      "fields": {
+        "configuration": "D-probe-1",
+        "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+        "source_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p2_D-probe-1/target_telemetry.jsonl"
+      }
+    },
+    {
+      "task_id": "replay_D-probe-400",
+      "module": "replay_fixed_basis",
+      "budget_seconds": 600,
+      "fields": {
+        "configuration": "D-probe-400",
+        "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+        "source_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/decode_p2_D-probe-400/target_telemetry.jsonl"
+      }
+    },
+    {
+      "task_id": "independent_validation",
+      "module": "verify_repair",
+      "budget_seconds": 180,
+      "fields": {
+        "stage4_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029"
+      }
+    }
+  ],
+  "ideal_ordering_note": "Independent ideal-projection diagnostic runs first for early feedback; replay inputs, parameters and all four arms are fixed and cannot depend on its outcome."
+}

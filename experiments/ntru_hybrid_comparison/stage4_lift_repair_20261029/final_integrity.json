@@ -1,0 +1,14 @@
+{
+  "stage4_frozen": {
+    "files_checked": 36,
+    "mismatches": [],
+    "all_match": true
+  },
+  "stage3_historical_artifacts": {
+    "checked": 321,
+    "mismatches": [],
+    "all_match": true
+  },
+  "stage3_manifest_unchanged": true,
+  "original_adapter_copy_matches_before": true
+}

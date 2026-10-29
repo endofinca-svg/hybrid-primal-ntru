@@ -1,0 +1,23 @@
+{
+  "python": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+  "python_version": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:29:10) [GCC 14.3.0]",
+  "fpylll_version": "0.6.4",
+  "mpfr_precision_bits": 192,
+  "fpylll_path": "/home/inca/miniforge3/envs/g6k/lib/python3.10/site-packages/fpylll/__init__.py",
+  "test_GSO_float_type": "mpfr",
+  "test_dimensions": [
+    2,
+    4,
+    5
+  ],
+  "G6K_or_reduction_called": false,
+  "command": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "-c",
+    "import json,sys,fpylll\nfrom fpylll import FPLLL\nFPLLL.set_precision(192)\nprint(json.dumps({'python':sys.executable,'python_version':sys.version,'fpylll_version':fpylll.__version__,'mpfr_precision_bits':FPLLL.get_precision(),'fpylll_path':fpylll.__file__,'test_GSO_float_type':'mpfr','test_dimensions':[2,4,5],'G6K_or_reduction_called':False}))\n"
+  ],
+  "fplll_version": "5.5.0",
+  "fplll_package_sha256": "35fe2404f9d2d92a3529528e58f224dff7bc7c5a1d6c721e6758ed83109db140",
+  "fplll_version_evidence": "/home/inca/miniforge3/envs/g6k/conda-meta/fplll-5.5.0-hd20a173_0.json"
+}

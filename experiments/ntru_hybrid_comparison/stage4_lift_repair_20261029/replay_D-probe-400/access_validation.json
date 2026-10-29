@@ -1,0 +1,12 @@
+{
+  "all_checks_passed": true,
+  "allowed_module_paths": [],
+  "audit_hook_log_present": true,
+  "denied_python_open_attempts": [],
+  "native_forbidden_path_open_attempts": [],
+  "native_open_log_present": true,
+  "native_symlink_limit": "Native post-run realpath resolution cannot reconstruct a symlink removed during execution; Python hook records realpath before open.",
+  "schema": "ntru-stage3-file-access-v2",
+  "scope": "current traced worker and descendants; native relative names use fixed worker cwd or -yy dirfd annotation",
+  "unresolved_native_path_records": []
+}

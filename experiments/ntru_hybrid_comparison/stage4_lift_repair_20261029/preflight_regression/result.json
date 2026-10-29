@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "tests": 531,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "wall_seconds": 14.07266404999973,
+  "arguments": [
+    "-q",
+    "--disable-warnings",
+    "--junitxml=/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/preflight_regression/tests.xml",
+    "experiments/ntru_e2e/tests/test_adapter.py",
+    "experiments/ntru_e2e/tests/test_phase2_adapter.py",
+    "experiments/ntru_e2e/tests/test_phase2_instrumentation.py",
+    "experiments/ntru_hybrid_comparison/tests",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/tests/test_lift_transport.py",
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/test_replay_fixed_basis.py"
+  ],
+  "scope": "adapter coordinate transport, mapping, public reconstruction, fixed backends, and existing comparison regressions"
+}

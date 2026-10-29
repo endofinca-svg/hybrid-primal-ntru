@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/test_ideal_projection_check.py"
+  ],
+  "cwd": "/home/inca/hybrid primal multi decoding for NTRU",
+  "scope": "small public ring fixtures and mocked projection lift only; no saved main-instance numerical calls"
+}

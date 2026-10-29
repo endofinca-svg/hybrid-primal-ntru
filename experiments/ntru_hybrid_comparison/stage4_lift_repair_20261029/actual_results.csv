@@ -1,0 +1,6 @@
+configuration,mode,status,targets,rows,original_min_full_norm_sq,repaired_min_full_norm_sq,known_id21_repaired_best,known_id22_repaired_best,radius_pass_rows,public_valid_rows,public_valid_target_count,improved_rows,supervised_wall_seconds,peak_rss_bytes
+E,saved_projection_replay,completed,80,80,41959,41959,56625,56625,0,0,0,0,50.98524727899985,66797568
+D-skip,saved_projection_replay,completed,80,1280,300018,37256,45479,45479,0,0,0,1280,164.76619871800085,67080192
+D-normal,saved_projection_replay,completed,80,1280,300018,37256,45479,45479,0,0,0,1280,168.6989654049994,67125248
+D-probe-1,saved_projection_replay,completed,80,1280,300018,35680,44520,44520,0,0,0,1280,164.82007360700027,67158016
+D-probe-400,saved_projection_replay,completed,80,1280,289218,38818,44562,44562,0,0,0,1280,157.553610897,67399680

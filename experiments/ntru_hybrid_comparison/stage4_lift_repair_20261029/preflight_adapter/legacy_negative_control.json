@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "-B",
+    "-c",
+    "import importlib.util\nimport pytest\nfrom experiments.ntru_e2e.slicer_adapter import SlicerDecoder\nspec=importlib.util.spec_from_file_location('stage4_original_adapter', 'experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/original_sources/slicer_adapter.py')\nlegacy=importlib.util.module_from_spec(spec)\nspec.loader.exec_module(legacy)\nSlicerDecoder._lift=legacy.SlicerDecoder._lift\nraise SystemExit(pytest.main(['-q','-p','no:cacheprovider','experiments/ntru_e2e/tests/test_lift_transport.py::test_skew_two_dimensional_counterexample_uses_global_orthogonal_tail','experiments/ntru_e2e/tests/test_lift_transport.py::test_lift_transport_preserves_zero_global_prefix_and_roundtrips_tail']))\n"
+  ],
+  "returncode": 1,
+  "expected_returncode": 1,
+  "expected_regression_detected": true,
+  "wall_seconds": 1.0746830790003514,
+  "scope": "temporary in-process method substitution using backed-up adapter; production files untouched; small GSO tests only"
+}

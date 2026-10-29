@@ -1,0 +1,8 @@
+{
+  "global_deadline": 9906.452717899,
+  "hard_deadline": 5286.860728524,
+  "input_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028/pattern_2/input.json",
+  "stage3_path": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage3_fixed_basis_diagnostics_20261028",
+  "started_monotonic": 5106.860728524,
+  "work_deadline": 5281.860728524
+}

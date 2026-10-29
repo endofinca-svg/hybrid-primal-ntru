@@ -1,0 +1,14 @@
+{"event": "task_started", "monotonic": 5106.860728524, "task_id": "ideal_projection_check"}
+{"event": "task_finished", "monotonic": 5153.213856755, "status": "completed", "task_id": "ideal_projection_check"}
+{"event": "task_started", "monotonic": 5153.225701108, "task_id": "replay_E"}
+{"event": "task_finished", "monotonic": 5204.210948387, "status": "completed", "task_id": "replay_E"}
+{"event": "task_started", "monotonic": 5204.220192446, "task_id": "replay_D-skip"}
+{"event": "task_finished", "monotonic": 5368.986391164, "status": "completed", "task_id": "replay_D-skip"}
+{"event": "task_started", "monotonic": 5368.995986699, "task_id": "replay_D-normal"}
+{"event": "task_finished", "monotonic": 5537.694952104, "status": "completed", "task_id": "replay_D-normal"}
+{"event": "task_started", "monotonic": 5537.710609115, "task_id": "replay_D-probe-1"}
+{"event": "task_finished", "monotonic": 5702.530682722, "status": "completed", "task_id": "replay_D-probe-1"}
+{"event": "task_started", "monotonic": 5702.542374253, "task_id": "replay_D-probe-400"}
+{"event": "task_finished", "monotonic": 5860.09598515, "status": "completed", "task_id": "replay_D-probe-400"}
+{"event": "task_started", "monotonic": 5860.108350754, "task_id": "independent_validation"}
+{"event": "task_finished", "monotonic": 5912.481592996, "status": "completed", "task_id": "independent_validation"}

@@ -1,0 +1,16 @@
+
+==================================== ERRORS ====================================
+_ ERROR collecting experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/test_replay_fixed_basis.py _
+ImportError while importing test module '/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/test_replay_fixed_basis.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../miniforge3/envs/g6k/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/test_replay_fixed_basis.py:12: in <module>
+    from . import replay_fixed_basis as replay
+E   ImportError: attempted relative import with no known parent package
+=========================== short test summary info ============================
+ERROR experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/test_replay_fixed_basis.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 1.36s
+{"passed": false, "exit_code": 2, "tests": 1, "failures": 0, "errors": 1, "skipped": 0, "wall_seconds": 1.5780975150000813, "arguments": ["-q", "--disable-warnings", "--junitxml=/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/preflight_regression/tests.xml", "experiments/ntru_e2e/tests/test_adapter.py", "experiments/ntru_e2e/tests/test_phase2_adapter.py", "experiments/ntru_e2e/tests/test_phase2_instrumentation.py", "experiments/ntru_hybrid_comparison/tests", "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/tests/test_lift_transport.py", "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_hybrid_comparison/stage4_lift_repair_20261029/test_replay_fixed_basis.py"], "scope": "adapter coordinate transport, mapping, public reconstruction, fixed backends, and existing comparison regressions"}

@@ -223,7 +223,12 @@ class SlicerDecoder:
 
     def _lift(self, target: Sequence[int], normalized_residual: Sequence[float]) -> tuple[list[int], list[int], int]:
         coordinates = [float(x) * scale for x, scale in zip(normalized_residual, self._sqrt_gh_over_r)]
-        residual = self.G.to_canonical(coordinates, start=self.dim - self.sieve_dim)
+        # A nonzero start converts through only those original basis rows; it
+        # need not cancel their components along the earlier GSO vectors.
+        # Padding the global GSO coordinates preserves a purely orthogonal
+        # tail residual, so subtracting it does not perturb the prefix target.
+        global_coordinates = [0.0] * (self.dim - self.sieve_dim) + coordinates
+        residual = self.G.to_canonical(global_coordinates, start=0)
         coefficients = [_integer(x) for x in self.G.babai([t - float(e) for t, e in zip(target, residual)])]
         vector = _multiply_left(self.rows, coefficients)
         return coefficients, vector, _residual_sq(target, vector)

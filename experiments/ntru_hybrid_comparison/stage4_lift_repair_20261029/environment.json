@@ -1,0 +1,36 @@
+{
+  "python": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:29:10) [GCC 14.3.0]",
+  "executable": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "fpylll": "0.6.4",
+  "fplll": {
+    "name": "fplll",
+    "version": "5.5.0",
+    "build": "hd20a173_0",
+    "sha256": "35fe2404f9d2d92a3529528e58f224dff7bc7c5a1d6c721e6758ed83109db140"
+  },
+  "runtime": {
+    "python": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin/python",
+    "base_python": "/home/inca/miniforge3/envs/g6k/bin/python",
+    "source": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid",
+    "upstream_commit": "bd72687b2ebbaff16fb692259f83b327bbcd9586",
+    "environment": {
+      "PYTHONNOUSERSITE": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "PATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/venv/bin:/home/inca/miniforge3/envs/g6k/bin:/home/inca/.local/bin:/home/inca/.codex/tmp/arg0/codex-arg0OJtquq:/home/inca/.vscode-server/cli/servers/Stable-6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/inca/.vscode-server/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64",
+      "PYTHONPATH": "/home/inca/hybrid primal multi decoding for NTRU/experiments/ntru_e2e/.deps/g6k_hybrid:/home/inca/hybrid primal multi decoding for NTRU"
+    },
+    "isolation": "Independent venv, read-only system-site-packages from base conda env; local source rebuilt."
+  },
+  "requested_gso": {
+    "float_type": "mpfr",
+    "precision_bits": 192
+  },
+  "native_backend_modified": false,
+  "new_lattice_reduction": false
+}
